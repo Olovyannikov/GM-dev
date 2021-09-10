@@ -1,0 +1,17 @@
+.empty {
+  @include center;
+  @include flex-column-center;
+
+  max-width: 500px;
+  text-align: center;
+
+  h2 {
+    margin-top: 32px;
+    margin-bottom: 12px;
+    font: var(--font-heading-5);
+  }
+
+  p {
+    font: var(--font-body-regular-l);
+  }
+}

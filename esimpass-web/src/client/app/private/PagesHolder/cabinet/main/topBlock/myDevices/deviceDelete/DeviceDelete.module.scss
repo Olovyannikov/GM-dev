@@ -1,0 +1,56 @@
+.deviceModalContent {
+  min-width: rem-calc(500);
+  max-width: rem-calc(500);
+
+  h3 {
+    margin: 0;
+    font: var(--font-subtitle-s);
+  }
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.burger {
+  @include burger(32px, 32px, 2px);
+
+  border-radius: 50%;
+  background-color: var(--color-background);
+
+  &::after,
+  &::before {
+    left: 25%;
+    width: 50%;
+  }
+}
+
+.main {
+  margin-top: rem-calc(8);
+  margin-bottom: rem-calc(24);
+
+  p {
+    max-width: 391px;
+    font: var(--font-body-regular-m);
+  }
+}
+
+.controls {
+  display: flex;
+
+  button:first-child {
+    margin-right: rem-calc(16);
+  }
+
+  button {
+    max-width: rem-calc(160);
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    font: var(--font-link-m);
+    padding: 11px 44px;
+    border-radius: 1rem;
+  }
+}

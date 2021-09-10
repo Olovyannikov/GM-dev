@@ -1,0 +1,27 @@
+.addDevice {
+  border: 1px solid rgba($color-off-black, 0.2);
+  border-radius: 8px;
+  width: rem-calc(52);
+  height: 142px;
+  color: rgba($color-off-black, 0.2);
+
+  svg {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  span {
+    margin: 8px auto 0;
+    display: none;
+    width: 110px;
+    font: var(--font-body-regular-xs);
+    text-align: center;
+  }
+
+  &:hover {
+    border-color: #000;
+    color: #000;
+  }
+}
+
+

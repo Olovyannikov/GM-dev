@@ -1,0 +1,43 @@
+.charges {
+  padding-top: 52px;
+}
+
+.title {
+  margin-bottom: 24px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  margin-bottom: rem-calc(40);
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  font: var(--font-link-s);
+
+  svg {
+    margin-right: 12px;
+  }
+}
+
+.deviceDropdown {
+  margin-right: 24px;
+  width: 413px;
+  margin-bottom: 0;
+
+  button {
+    color: var(--color-off-black);
+  }
+}
+
+.yearDropdown {
+  width: 252px;
+  margin-bottom: 0;
+
+  button {
+    color: var(--color-off-black);
+  }
+}

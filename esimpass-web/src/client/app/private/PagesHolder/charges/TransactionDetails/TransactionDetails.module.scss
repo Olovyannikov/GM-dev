@@ -1,0 +1,143 @@
+.aside {
+  position: fixed;
+  right: -100%;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  padding: 32px 24px;
+  width: 369px;
+  background-color: #fff;
+  transition: 0.5s ease-in-out;
+  overflow: scroll;
+
+  &.active {
+    right: 0;
+  }
+}
+
+.title {
+  margin-top: rem-calc(25);
+  margin-bottom: rem-calc(10);
+  font: var(--font-subtitle-s);
+}
+
+.descr {
+  margin-bottom: rem-calc(25);
+  font: var(--font-body-regular-m);
+}
+
+.close {
+  position: relative;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background-color: var(--color-background);
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 18px;
+    height: 2px;
+    background-color: #000;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+.input {
+  :global {
+    input {
+      border: none;
+      border-radius: rem-calc(16);
+      padding-top: 25px;
+      padding-bottom: 7px;
+      padding-left: 24px;
+      width: 100%;
+      height: 56px;
+      font: var(--font-body-regular-m);
+      color: var(--color-off-black);
+      background-color: var(--color-input);
+    }
+  }
+
+  &.start {
+    margin-bottom: rem-calc(16);
+
+    :global {
+      .react-datepicker__input-container {
+        position: relative;
+
+        &::after {
+          content: "Начальная дата";
+          position: absolute;
+          left: 24px;
+          top: 16px;
+          font: var(--font-body-regular-m);
+          color: var(--color-label);
+          transition: 0.3s ease-in-out;
+        }
+
+        &.active {
+          &::after {
+            top: 7px;
+            font: var(--font-body-regular-s);
+          }
+        }
+      }
+    }
+  }
+
+  &.end {
+    margin-bottom: rem-calc(45);
+
+    :global {
+      .react-datepicker__input-container {
+        position: relative;
+
+        &::after {
+          content: "Конечная дата";
+          position: absolute;
+          left: 24px;
+          top: 16px;
+          font: var(--font-body-regular-m);
+          color: var(--color-label);
+          transition: 0.3s ease-in-out;
+        }
+
+        &.active {
+          &::after {
+            top: 7px;
+            font: var(--font-body-regular-s);
+          }
+        }
+      }
+    }
+  }
+}
+
+.calendar {
+  margin-bottom: rem-calc(40);
+}
+
+.bottom {
+  text-align: center;
+
+  small {
+    display: block;
+    margin-bottom: rem-calc(4);
+    font: var(--font-body-regular-s);
+    color: var(--color-label);
+  }
+
+  p {
+    margin-bottom: rem-calc(16);
+    font: var(--font-body-medium-m);
+    color: var(--color-off-black);
+  }
+}

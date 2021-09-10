@@ -1,0 +1,140 @@
+.mainMobile {
+  @include xl-block {
+    display: none;
+  }
+}
+
+/* DeviceChoose */
+
+.deviceChoose {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 4;
+  width: 100%;
+  height: 100vh;
+  transform: translateX(-1000%);
+  transition: 0.8s ease-in-out;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: $color-background;
+  }
+
+  h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .back {
+    display: flex;
+  }
+
+  &.active {
+    transform: translateX(0);
+  }
+
+  .top {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.deviceList {
+  li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    padding-left: $rare-offset;
+    background-color: $color-off-white;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: $rare-offset;
+      border: 1px solid $color-placeholder;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+    }
+
+    button {
+      width: 100%;
+      height: 48px;
+      font: $font-body-medium-l;
+      text-align: left;
+    }
+
+    &.active {
+      &::after {
+        border-width: 6px;
+        border-color: $color-ash;
+      }
+    }
+  }
+}
+
+.mobileControls {
+  display: flex;
+  flex-direction: column;
+
+  @include xl-block {
+    display: none;
+  }
+}
+
+.maintainerList {
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 40px;
+  max-height: 100%;
+
+  li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: rem-calc(16);
+    line-height: rem-calc(24);
+
+    &::after {
+      content: "поддерживает";
+      font-size: rem-calc(12);
+      line-height: rem-calc(18);
+      color: #7ba300;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+      padding-bottom: 16px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(to right, #d9dbe9 44%, rgba(255, 255, 255, 0) 0%);
+        background-size: 16px 2px;
+      }
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #d9dbe9;
+    height: 1px;
+    top: 0;
+    left: -$gutter;
+    width: calc(100% + #{$gutter * 2});
+  }
+}

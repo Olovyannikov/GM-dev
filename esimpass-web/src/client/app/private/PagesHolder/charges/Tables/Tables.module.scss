@@ -1,0 +1,67 @@
+.tables {
+  overflow: scroll;
+  max-height: 70vh;
+
+  table {
+    margin-bottom: rem-calc(52);
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  caption {
+    margin-bottom: rem-calc(16);
+    font: var(--font-body-medium-m);
+    text-align: left;
+  }
+
+  tr {
+    border-bottom: 1px solid var(--color-line);
+
+    &:hover {
+      background-color: var(--color-input);
+    }
+  }
+
+  td {
+    overflow: hidden;
+    padding-top: rem-calc(27);
+    padding-bottom: rem-calc(25);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+.date {
+  padding-right: rem-calc(56);
+  padding-left: rem-calc(20);
+  width: 120px;
+  font: var(--font-body-regular-xs);
+  color: var(--color-label);
+}
+
+.type {
+  padding-right: rem-calc(44);
+  width: rem-calc(244);
+  font-size: rem-calc(16);
+  line-height: rem-calc(24);
+  color: #050406;
+}
+
+.about {
+  padding-right: rem-calc(115);
+  width: rem-calc(325);
+  font: var(--font-body-regular-s);
+  color: var(--color-body);
+}
+
+.transaction {
+  width: rem-calc(120);
+  padding-right: rem-calc(20);
+  font: var(--font-link-m);
+  text-align: right;
+  color: var(--color-blue);
+
+  &.negative {
+    color: var(--color-error);
+  }
+}

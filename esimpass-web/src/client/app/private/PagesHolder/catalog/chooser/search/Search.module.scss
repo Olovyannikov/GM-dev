@@ -1,0 +1,10 @@
+.search {
+  margin-top: rem-calc(32);
+  margin-bottom: rem-calc(32);
+
+  input[type="search"] {
+    min-width: 100%;
+    height: 52px;
+    background-position-y: 50%;
+  }
+}

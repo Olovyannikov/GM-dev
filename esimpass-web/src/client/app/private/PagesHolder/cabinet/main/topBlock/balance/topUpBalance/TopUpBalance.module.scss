@@ -1,0 +1,47 @@
+.topup {
+  display: grid;
+  gap: rem-calc(16);
+}
+
+.topupButton {
+  border-radius: 16px;
+  padding: 16px 14px;
+  width: 202px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  background: #fff;
+}
+
+.topupForm {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 241px 112px;
+  width: 100%;
+
+  button {
+    width: 100%;
+  }
+
+  label {
+    .burger {
+      @include burger(16px, 16px, 2px);
+
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      display: none;
+      transform: translateY(-50%);
+    }
+  }
+
+  input {
+    border: 1px solid #000;
+    background-color: transparent;
+
+    &:focus {
+      box-shadow: none;
+      background-color: transparent;
+    }
+  }
+}

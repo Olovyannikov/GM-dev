@@ -1,0 +1,133 @@
+.slider {
+  position: relative;
+
+  :global {
+    .swiper-button-disabled {
+      display: none;
+    }
+  }
+}
+
+.myDevices {
+  position: relative;
+  border-radius: 1rem;
+  padding: rem-calc(24);
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba($color-input, 0.5);
+
+  svg {
+    width: 142px;
+    height: 142px;
+  }
+
+  h3 {
+    margin-bottom: rem-calc(18);
+    font: var(--font-body-medium-s);
+  }
+
+  :global {
+    .swiper-slide {
+      &:only-child {
+        button {
+          width: rem-calc(142);
+
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+
+
+
+    .swiper {
+      position: relative;
+      overflow: visible;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: -24px;
+        top: 0;
+        z-index: 1;
+        width: 120px;
+        height: 100%;
+        background: linear-gradient(270deg, #eff0f7 0%, rgba(239, 240, 247, 0) 100%);
+      }
+    }
+
+    .swiper-wrapper {
+      overflow: visible;
+    }
+
+    .swiper-end {
+    }
+
+    .swiper-end::after {
+      right: -100%;
+    }
+
+    .swiper-middle {
+      &::after {
+        content: "";
+        position: absolute;
+        left: -24px;
+        top: 0;
+        z-index: 1;
+        width: 120px;
+        height: 142px;
+        background: linear-gradient(-270deg, #eff0f7 0%, rgba(239, 240, 247, 0) 100%);
+      }
+    }
+  }
+}
+
+.myDevicesList {
+  display: flex;
+}
+
+.control {
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  z-index: 2;
+  border-radius: 50%;
+  width: rem-calc(40);
+  height: rem-calc(40);
+  box-shadow: 0 4px 8px rgba($color-off-black, 0.25);
+  color: var(--color-off-black);
+  background-color: #fff;
+  transition: 0.3s ease-in-out;
+
+  svg {
+    @include center;
+
+    width: rem-calc(24);
+    height: rem-calc(24);
+  }
+
+  &:hover {
+    background-color: #000;
+
+    svg {
+      color: #fff;
+    }
+  }
+
+  &.next {
+    left: unset;
+    right: -12px;
+
+    svg {
+      left: unset;
+      right: 50%;
+      transform: rotate(180deg) translate(-50%, 50%);
+    }
+  }
+}
+
+.swiper {
+  display: flex;
+  flex-direction: initial;
+}

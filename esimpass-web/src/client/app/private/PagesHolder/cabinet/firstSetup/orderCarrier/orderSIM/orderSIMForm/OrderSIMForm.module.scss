@@ -1,0 +1,20 @@
+.form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.block {
+  --columns: 12;
+  width: calc(100% * 7 / var(--columns));
+  margin-right: 36px;
+}
+
+.disclaimer {
+  display: block;
+  max-width: 500px;
+  margin-bottom: 32px;
+  color: var(--color-body);
+  font: var(--font-body-regular-s);
+}

@@ -1,0 +1,23 @@
+.toast {
+  display: flex;
+  align-items: center;
+  margin-bottom: rem-calc(24);
+  border-radius: 12px;
+  padding: rem-calc(21) rem-calc(20) rem-calc(21) rem-calc(33);
+  background: rgba(#eff0f7, 0.5);
+
+  svg {
+    margin-right: rem-calc(13);
+  }
+
+  p {
+    font: var(--font-body-regular-m);
+  }
+
+  button,
+  a {
+    margin-left: auto;
+    height: 46px;
+    max-width: 238px;
+  }
+}

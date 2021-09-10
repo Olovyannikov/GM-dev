@@ -1,0 +1,81 @@
+.dropdown {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.dropdownList {
+  border-radius: 1rem;
+  background-color: var(--color-off-white);
+  z-index: 10;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.08);
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
+
+.btn {
+  border: 1px solid var(--color-off-white);
+  border-radius: 1rem;
+  width: 100%;
+  padding: 16px 16px;
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-label);
+  font: var(--font-body-regular-m);
+  background: var(--color-off-white);
+  text-align: left;
+  transition: 0.3s ease-in-out;
+
+  &:focus {
+    border-color: var(--color-off-black);
+  }
+
+  > svg {
+    width: 16px;
+    height: 16px;
+    transition: 0.3s ease-in-out;
+  }
+
+  > div {
+    display: flex;
+    align-items: center;
+
+    span:first-of-type {
+      display: flex;
+      margin-right: 16px;
+    }
+  }
+}
+
+.btn.active {
+  color: var(--color-off-black);
+}
+
+.dropdownItem {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--color-input);
+  background-color: var(--color-off-white);
+
+  span {
+    margin-left: 16px;
+    font: var(--font-body-regular-m);
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.dropdownBtn {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  width: 100%;
+
+  &:hover {
+    background: $color-input;
+  }
+}

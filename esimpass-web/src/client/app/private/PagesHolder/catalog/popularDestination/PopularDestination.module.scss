@@ -1,0 +1,50 @@
+.popularDestination {
+  display: block;
+
+  section {
+    margin-bottom: 28px;
+  }
+
+  h2 {
+    margin-bottom: rem-calc(32);
+    font-size: rem-calc(32);
+    line-height: rem-calc(36);
+    text-align: left;
+  }
+
+  :global {
+    .container {
+      padding: 0;
+    }
+
+    span:not(.swiper-pagination-bullet), p, button:not(.btn-reset) {
+      display: none !important;
+    }
+
+    h3 {
+      width: 95%;
+      margin-bottom: 0!important;
+      font-size: rem-calc(28) !important;
+      line-height: rem-calc(32) !important;
+    }
+
+    .swiper-slide {
+      max-height: 180px;
+    }
+
+    .swiper-slide > div + div > div {
+      padding-bottom: 24px !important;
+    }
+
+    .btn-reset {
+      background-color: $color-off-white;
+      top: 42%;
+      width: 40px;
+      height: 40px;
+
+      svg {
+        stroke: $color-off-black;
+      }
+    }
+  }
+}

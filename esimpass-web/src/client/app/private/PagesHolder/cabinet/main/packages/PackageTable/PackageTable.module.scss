@@ -1,0 +1,144 @@
+.packages {
+  position: relative;
+  border-collapse: collapse;
+  width: 100%;
+
+  tr {
+    border-bottom: 1px solid rgba($color-line, 0.6);
+    cursor: pointer;
+
+    &:hover {
+      border-color: var(--color-input);
+      background-color: #f3f4f9;
+    }
+  }
+
+  td {
+    padding-top: 17px;
+    padding-bottom: 16px;
+    height: auto;
+
+    &:first-child {
+      padding-left: rem-calc(20);
+    }
+
+    &:last-child {
+      padding-right: rem-calc(20);
+    }
+  }
+}
+
+.error {
+  opacity: 0.2;
+  transition: 0.3s ease-in-out;
+
+  .buyNewPackage {
+    display: none;
+    border-radius: 1rem;
+    padding: 12px 22px;
+    width: 200px;
+    font-weight: 500;
+    font-size: rem-calc(16);
+    line-height: rem-calc(22);
+  }
+
+  &:hover {
+    opacity: 1;
+
+    .country > div {
+      display: none;
+    }
+
+    .buyNewPackage {
+      display: block;
+      border: none;
+    }
+  }
+}
+
+.progressBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: rem-calc(4);
+  border-radius: 27px;
+  width: 100%;
+  height: 4px;
+  max-width: rem-calc(238);
+  background-color: #eff0f7;
+}
+
+.progressActive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 27px;
+  width: 0;
+  height: 4px;
+  color: #0f1011;
+  background: #10b97b;
+  transition: 1.5s;
+}
+
+.status {
+  padding-right: rem-calc(60);
+  width: rem-calc(147);
+  box-sizing: border-box;
+  font: var(--font-body-regular-xs);
+  color: var(--color-label);
+}
+
+.device {
+  display: flex;
+  align-items: center;
+  width: 267px + 111px;
+  height: 28px + 32px;
+
+  svg {
+    margin-right: rem-calc(12);
+  }
+
+  h4 {
+    font-weight: 700;
+    font-size: rem-calc(16);
+    line-height: rem-calc(27);
+  }
+
+  small {
+    font: var(--font-body-regular-xs);
+    color: var(--color-label);
+  }
+}
+
+.progress {
+  width: 238px + 111px;
+
+  .progressText {
+    display: block;
+    font: var(--font-body-regular-s);
+  }
+}
+
+.country {
+  min-width: 200px;
+  font: var(--font-body-regular-m);
+
+  div {
+    display: flex;
+    justify-content: flex-end;
+
+    span:first-child {
+      margin-right: rem-calc(12);
+    }
+  }
+}
+
+.countryFlag {
+  display: block;
+  border-radius: 5px;
+  width: 35px;
+  height: 24px;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

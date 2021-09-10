@@ -1,0 +1,159 @@
+.restore {
+  position: absolute;
+  left: -1000%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 4;
+  width: 100%;
+  height: 100vh;
+  background-color: $color-background;
+  transition: 1.2s ease-in-out;
+
+  &.active {
+    left: 0;
+
+    @include xl-block {
+      left: 50%;
+      top: 50%;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  @include xl-block {
+    left: 50%;
+    top: 40%;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    border-radius: $middle-offset;
+    padding-top: 0;
+    height: fit-content;
+    max-width: 628px;
+    transform: translate(-50%, -50%);
+    padding-bottom: 32px;
+  }
+}
+
+.top {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $small-offset $gutter $middle-offset;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $color-line;
+
+    @include xl-block {
+      display: none;
+    }
+  }
+
+  h2 {
+    margin: 0;
+    width: 100%;
+    font: $font-subtitle-s;
+    text-align: center;
+
+    @include xl-block {
+      margin-left: 19px;
+      text-align: left;
+    }
+  }
+
+  @include xl-block {
+    display: flex;
+    justify-content: flex-start;
+    padding: $strong-offset $strong-offset $middle-offset;
+  }
+}
+
+.burger {
+  margin-left: auto;
+  @include burger(18px, 18px, 2px);
+}
+
+.main {
+  padding-top: $middle-offset;
+
+  p {
+    margin: 0 0 $strong-offset;
+    font: $font-body-regular-m;
+    line-height: rem-calc(24);
+    text-align: center;
+    color: $color-off-black;
+
+    @include xl-block {
+      margin-right: auto;
+      margin-bottom: $middle-offset;
+      margin-left: auto;
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      &:not(:last-of-type) {
+        margin-bottom: $rare-offset;
+
+        @include xl-block {
+          margin-bottom: 20px;
+        }
+      }
+
+      &:last-of-type {
+        margin-bottom: $middle-offset;
+      }
+
+      input {
+        height: 72px;
+      }
+    }
+
+    button {
+      @include xl-block {
+        margin: 0 auto;
+        max-width: 311px;
+      }
+    }
+  }
+
+  @include xl-block {
+    padding-top: $strong-offset;
+  }
+}
+
+.container {
+  @include xl-block {
+    padding: 0 $strong-offset;
+  }
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  margin-top: 175px;
+  margin-bottom: 33px;
+
+  @include xl-block {
+    margin-top: 0;
+  }
+}
+
+.imageDescr {
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: rem-calc(24);
+  line-height: rem-calc(36);
+  text-align: center;
+}

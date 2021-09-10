@@ -1,0 +1,28 @@
+
+.preloader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  width: 355px;
+  height: 100%;
+  text-align: center;
+
+  svg {
+    margin-bottom: rem-calc(34);
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #050406;
+  }
+
+  span {
+    font-size: 16px;
+    line-height: 24px;
+    color: #514f5a;
+  }
+}

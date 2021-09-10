@@ -1,0 +1,56 @@
+.preloader {
+  max-width: 144px;
+}
+
+foreignObject.preloader__logoBack {
+  transform-origin: 50px 50px;
+  animation: colorRotate 7.5s infinite linear;
+}
+
+.preloader__logoGradient {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(from 180deg at 50% 50%, #ededef 0deg, #b9f348 80.63deg, rgba(185, 243, 72, 0.796875) 180deg, rgba(255, 255, 255, 0.957682) 262.5deg, #EDEDEF 360deg), conic-gradient(from 180deg at 50% 50%, rgba(157, 159, 173, 0) 0deg, #9D9FAD 71.25deg, rgba(157, 159, 173, 0) 360deg);
+}
+
+g.preloader__logoBlend {
+  mix-blend-mode: lighten;
+  box-shadow: 0 14px 104px rgba(157, 159, 173, 0.5);
+}
+
+g.preloader__logoBlend > rect {
+  fill: transparent;
+}
+
+g.preloader__logoBlend > path {
+  stroke: #fff;
+  stroke-width: 0;
+  stroke-dasharray: 288.5;
+  stroke-linecap: round;
+  fill: none;
+  transform-origin: 50px 50px;
+  animation: pathRotate 7.5s infinite cubic-bezier(1, 0.5, 0, 0.5);
+}
+
+@keyframes colorRotate {
+  from {
+    transform: rotate(-270deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+
+@keyframes pathRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-540deg);
+  }
+  100% {
+    transform: rotate(-1080deg);
+  }
+}

@@ -1,0 +1,179 @@
+.device {
+  margin-bottom: 40px;
+
+  @include xl-block {
+    margin-bottom: 165px;
+  }
+}
+
+.background {
+  position: relative;
+  left: -$gutter;
+  width: calc(100% + #{$gutter * 2});
+
+  &::after {
+    border-radius: $middle-offset;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc(100% - 20px);
+    height: 100%;
+
+    @include xl-block {
+      left: $gutter;
+      background: linear-gradient(77.74deg, rgba(0, 0, 0, 0.73) 10.65%, rgba(0, 0, 0, 0) 82.1%);
+    }
+  }
+
+  div {
+    @include xl-block {
+      border-radius: $middle-offset;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  @include xl-block {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    height: 600px;
+    padding-left: $gutter;
+    padding-right: $gutter;
+    width: 100%;
+    max-width: calc(1280px + #{$gutter * 2});
+  }
+}
+
+.container {
+  position: relative;
+
+  @include xl-block {
+    height: 600px;
+    max-height: 600px;
+  }
+}
+
+.title {
+  margin: 0 0 $middle-offset;
+  font: $font-heading-4;
+  line-height: rem-calc(40);
+  text-align: center;
+
+  @include xl-block {
+    display: none;
+  }
+}
+
+.titleDesktop {
+  display: none;
+  margin: 0 0 36px;
+  padding-top: 116px;
+  font: $font-jumbo-1;
+  line-height: rem-calc(72);
+  text-align: left;
+  color: $color-off-white;
+
+  @include xl-block {
+    display: block;
+  }
+}
+
+.descr {
+  margin-top: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: rem-calc(16);
+  line-height: rem-calc(24);
+
+  @include xl-block {
+    display: none;
+  }
+}
+
+.descrDesktop {
+  display: none;
+  margin: 0;
+  margin-bottom: $strong-offset;
+  max-width: 626px;
+  font: $font-body-regular-l;
+  color: $color-off-white;
+
+  @include xl-block {
+    display: block;
+  }
+}
+
+.content {
+  @include xl-block {
+    padding-left: 109px;
+  }
+}
+
+.controls {
+  button:not(:last-child) {
+    margin-bottom: $gutter;
+
+    @include xl-block {
+      margin-right: $rare-offset;
+      margin-bottom: 0;
+      width: 202px;
+    }
+  }
+
+  button:last-of-type {
+    @include xl-block {
+      border-color: $color-off-white;
+      width: 302px;
+      color: $color-off-white;
+    }
+  }
+
+  @include xl-block {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.features {
+  display: none;
+
+  li {
+    display: flex;
+    align-items: center;
+    width: 33.3%;
+
+    svg {
+      margin-right: $rare-offset;
+      border-radius: $rare-offset;
+      padding: 10px;
+      width: 100%;
+      height: 100%;
+      max-width: 60px;
+      background-color: $color-line;
+      object-fit: contain;
+    }
+  }
+
+  span {
+    font: $font-body-regular-m;
+    line-height: rem-calc(24);
+    color: $color-off-black;
+  }
+
+  @include xl-block {
+    position: absolute;
+    left: calc(#{$gutter} + 108px);
+    right: calc(108px + #{$gutter});
+    bottom: -10%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: $rare-offset;
+    padding: $strong-offset;
+    box-shadow: 0 -3px 22px rgba(0, 0, 0, 0.15);
+    background: $color-background;
+  }
+}

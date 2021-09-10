@@ -1,0 +1,190 @@
+.burger {
+  @include burger(14px, 14px, 2px);
+
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background-color: var(--color-background);
+
+  &::before,
+  &::after {
+    left: 50%;
+    top: 50%;
+    width: 56%;
+    transform: translate(-50%, -50%) rotate(45deg) !important;
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(-45deg) !important;
+  }
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  margin-top: rem-calc(16);
+  margin-bottom: rem-calc(32);
+}
+
+.flag {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.flagIcon {
+  display: block;
+  border-radius: 5px;
+  width: 99px;
+  height: 66px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  + span {
+    display: block;
+    margin-top: rem-calc(16);
+    width: 100%;
+    font: var(--font-link-l);
+    text-align: center;
+  }
+}
+
+.controlBtn {
+  position: absolute;
+  left: rem-calc(24);
+  top: rem-calc(122);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background-color: var(--color-background);
+  transform: rotate(180deg);
+
+  &.next {
+    left: unset;
+    right: rem-calc(24);
+    transform: rotate(0);
+  }
+
+  &.back {
+    top: 32px;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: rem-calc(20) 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -#{rem-calc(24)};
+    top: 0;
+    width: calc(100% + #{rem-calc(24)} * 2);
+    height: 1px;
+    background-color: var(--color-line);
+  }
+
+  &:last-child {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -#{rem-calc(24)};
+      bottom: 0;
+      width: calc(100% + #{rem-calc(24)} * 2);
+      height: 1px;
+      background-color: var(--color-line);
+    }
+  }
+
+  &:hover {
+    color: var(--color-off-black);
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -24px;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+      width: calc(100% + 24px * 2);
+      height: 100%;
+      background-color: var(--color-primary);
+    }
+
+    span {
+      color: var(--color-off-black);
+    }
+
+    .cardBadge {
+      border-color: var(--color-off-black);
+    }
+
+    svg {
+      color: var(--color-off-black);
+    }
+  }
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: rem-calc(16);
+
+  p {
+    font: var(--font-body-regular-m);
+  }
+}
+
+.cardTitle {
+  font: var(--font-body-medium-l);
+
+  + span {
+    font: var(--font-body-medium-s);
+    font-weight: 400;
+    color: var(--color-label);
+  }
+}
+
+.cardBottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.cardBadge {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid var(--color-label);
+  border-radius: 10px;
+  padding: 10px;
+
+  svg {
+    color: var(--color-label);
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+}
+
+.cardBadgeName {
+  font: var(--font-body-regular-m);
+}
+
+.cardBadgeTitle {
+  font: var(--font-body-regular-xs);
+  color: var(--color-label);
+}

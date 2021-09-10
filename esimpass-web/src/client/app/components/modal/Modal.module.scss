@@ -1,0 +1,35 @@
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+
+  &.active {
+    pointer-events: all;
+    opacity: 1;
+  }
+}
+
+.content {
+  position: absolute;
+  border-radius: rem-calc(16);
+  padding: rem-calc(32);
+  background-color: #fff;
+  top: 40%;
+  height: fit-content;
+  transition: 0.5s ease-in-out;
+  transform: translateY(-50%);
+
+  &.active {
+    top: 50%;
+  }
+}
+

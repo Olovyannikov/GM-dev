@@ -1,0 +1,111 @@
+.deviceModalContent {
+  min-width: rem-calc(500);
+
+  h3 {
+    margin: 0;
+    font: var(--font-subtitle-s);
+  }
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: rem-calc(20);
+}
+
+.burger {
+  @include burger(32px, 32px, 2px);
+
+  border-radius: 50%;
+  background-color: var(--color-background);
+
+  &::after,
+  &::before {
+    left: 25%;
+    width: 50%;
+  }
+}
+
+.block {
+  &:not(:last-child) {
+    margin-bottom: rem-calc(32);
+  }
+
+  h4 {
+    margin-bottom: 1rem;
+    font: var(--font-body-medium-m);
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  li {
+    position: relative;
+    border-radius: 1rem;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-background);
+
+    button {
+      width: 100%;
+      height: 100%;
+
+      &:hover,
+      &:focus-visible {
+        background-color: rgba($color-green-300, 0.5);
+
+        svg {
+          opacity: 0.5;
+        }
+      }
+    }
+
+    svg {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 52px;
+      height: 52px;
+      opacity: 0.2;
+      transform: translate(-50%, -50%);
+    }
+
+    &.active {
+      background-color: var(--color-primary);
+
+      svg {
+        opacity: 1;
+      }
+    }
+  }
+
+  :global {
+    .label.full {
+      margin-bottom: rem-calc(40);
+
+      &:last-of-type {
+        margin-bottom: rem-calc(24);
+      }
+    }
+  }
+
+  button {
+    border-radius: 1rem;
+    padding: rem-calc(13) rem-calc(31);
+    width: auto;
+  }
+}
+
+.deviceModel {
+  &::after {
+    content: "Например: iPhone X";
+    position: absolute;
+    left: 24px;
+    bottom: -24px;
+    font: var(--font-body-regular-xs);
+    color: var(--color-label);
+  }
+}

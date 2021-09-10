@@ -1,0 +1,29 @@
+.card-btn {
+  margin-top: auto;
+  border-radius: 16px;
+  padding: 14px 64px;
+  font-weight: 500;
+  font-size: rem-calc(18);
+  line-height: rem-calc(24);
+  color: var(--color-off-black);
+  background-color: var(--color-off-white);
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    color: $color-green-300;
+    background-color: $color-ash;
+  }
+}
+
+.cabinet-later {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--color-label);
+
+  svg {
+    margin-left: 4px;
+  }
+}
