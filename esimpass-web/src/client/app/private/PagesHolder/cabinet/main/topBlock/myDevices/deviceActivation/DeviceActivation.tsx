@@ -33,7 +33,7 @@ export const DeviceActivation = (props: DeviceActivationModel) => {
         <Modal active={props.active} setActive={props.setActive}>
             <div className={s.modal}>
                 <div className={s.modalTop}>
-                    <h3>Активация устройства</h3>
+                    <h4>Активация устройства</h4>
                     <button
                         className={`${s.burger} ${s.active}`}
                         aria-label="Закрыть модальное окно"
@@ -41,12 +41,12 @@ export const DeviceActivation = (props: DeviceActivationModel) => {
                     />
                     <div className={s.tabs}>
                         {tabs.map(tab => (
-                                <button key={tab}
-                                        className={`${s.tabBtn} ${selectedItem === tab ? s.active : ''}`}
-                                        onClick={() => handleItemClick(tab)}
-                                        type={'button'}>
-                                    {tab}
-                                </button>
+                            <button key={tab}
+                                    className={`${s.tabBtn} ${selectedItem === tab ? s.active : ''}`}
+                                    onClick={() => handleItemClick(tab)}
+                                    type={'button'}>
+                                {tab}
+                            </button>
                             )
                         )}
                     </div>
