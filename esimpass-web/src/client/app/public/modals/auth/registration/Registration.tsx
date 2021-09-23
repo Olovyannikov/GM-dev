@@ -111,7 +111,7 @@ export const Registration = () => {
     }
 
     const handleToManyErrorAttemptsResponse = (response: RegisterWebResponse) => {
-        let secondsToWait = Math.round(parseInt(response.tooManyAttempts) / 1000)
+        const secondsToWait = Math.round(parseInt(response.tooManyAttempts) / 1000)
 
         rx.interval(1000)
             .pipe(
@@ -148,6 +148,7 @@ export const Registration = () => {
     });
 
     const handleEventEnter = (e: React.KeyboardEvent) => {
+        e.preventDefault();
         if (e.key === 'Enter') {
             if (document.activeElement === emailInput.current) {
                 passwordInput.current.focus()
@@ -161,7 +162,7 @@ export const Registration = () => {
 
     const showError = () => {
         if (state.error) {
-            return <p className={'error mb-4'}>{state.error}</p>
+            return <p style={{marginBottom: '1rem'}} className={'error'}>{state.error}</p>
         }
     }
 
@@ -172,9 +173,9 @@ export const Registration = () => {
                 виртуальной eSIM на Вашем устройстве. Так же мы создадим создадим Личный кабинет, привязанный к
                 указанному e-mail.
             </p>
-            <div onKeyUp={handleEventEnter} className={s.form}>
+            <form autoComplete="off" aria-autocomplete="none" onKeyUp={handleEventEnter} className={s.form}>
                 <label className={`label full`}>
-                    <input ref={emailInput} type="text" className={`input ${state.error ? 'invalid' : ''}`}
+                    <input autoComplete="off" ref={emailInput} type="text" className={`input ${state.error ? 'invalid' : ''}`}
                            required
                     />
                     <span>Электронная почта</span>
@@ -182,7 +183,8 @@ export const Registration = () => {
                 <label className={`label full`}>
                     <input ref={passwordInput} type="password"
                            className={`input ${state.error ? 'invalid' : ''}`}
-                           required/>
+                           required
+                    />
                     <span>Придумайте пароль</span>
                 </label>
                 <label className={`label full`}>
@@ -195,7 +197,7 @@ export const Registration = () => {
                 {showError()}
                 <Button size={'large'} disabled={state.inProgress} onClick={handleRegister}>Создать
                     аккаунт</Button>
-            </div>
+            </form>
         </Container>
     )
 }

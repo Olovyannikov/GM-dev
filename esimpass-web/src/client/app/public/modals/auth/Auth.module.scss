@@ -23,19 +23,18 @@
   @include xl-block {
     left: 50%;
     top: 40%;
-    opacity: 0;
-    visibility: hidden;
+    overflow: hidden;
     border-radius: $middle-offset;
     padding-top: 0;
     padding-bottom: $strong-offset;
     height: fit-content;
     max-width: 628px;
     max-height: 706px;
+    opacity: 0;
+    visibility: hidden;
     transform: translate(-50%, -50%);
-    overflow: hidden;
   }
 }
-
 
 .top {
   position: relative;
@@ -66,12 +65,11 @@
   @include xl-block {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: $middle-offset;
     padding-top: $strong-offset;
     padding-bottom: 0;
-    margin-bottom: $middle-offset;
   }
 }
-
 
 .title {
   display: none;
@@ -106,8 +104,20 @@
 
   .tab {
     position: relative;
+    left: -20px;
     width: 50%;
     opacity: 0.3;
+
+    &:last-child {
+      left: unset;
+      right: -20px;
+
+      &::after {
+        left: unset;
+        right: -20px;
+        width: calc(100% + 20px);
+      }
+    }
 
     &.active {
       opacity: 1;
@@ -115,18 +125,11 @@
       &::after {
         content: "";
         position: absolute;
-        left: -$gutter;
+        left: -20px;
         bottom: 0;
-        width: 100%;
+        width: calc(100% + 20px);
         height: 3px;
         background-color: #000;
-      }
-    }
-
-    &:last-child {
-      &::after {
-        left: unset;
-        right: -$gutter;
       }
     }
   }
@@ -140,9 +143,9 @@
   }
 
   @include xl-block {
-    width: 100%;
-    padding-top: 0;
     margin-bottom: 0;
+    padding-top: 0;
+    width: 100%;
   }
 }
 
@@ -181,7 +184,6 @@
     }
 
     button {
-
       @include xl-block {
         margin: 0 auto;
         max-width: 311px;

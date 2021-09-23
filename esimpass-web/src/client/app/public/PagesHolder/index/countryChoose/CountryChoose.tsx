@@ -31,9 +31,7 @@ export const CountryChoose = () => {
     const [isActive, setActive] = React.useState<boolean>(false);
     const toggleModal = () => {
         setActive(!isActive);
-        scrollToTop();
         document.body.style.overflow = isActive ? '' : 'hidden';
-        isActive ? document.getElementById('country').scrollIntoView({behavior: "smooth"}) : '';
     }
 
     /* Modal end */

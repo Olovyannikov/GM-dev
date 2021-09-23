@@ -30,7 +30,7 @@ export const Login = () => {
 
     const showError = () => {
         if (state.error) {
-            return <p className="error mb-4">{state.error}</p>
+            return <p style={{marginBottom: '1rem'}} className="error">{state.error}</p>
         }
     }
 
@@ -80,6 +80,7 @@ export const Login = () => {
     }
 
     const handleEventEnter = (e: React.KeyboardEvent) => {
+        e.preventDefault();
         if (e.key === 'Enter') {
             if (document.activeElement === emailInput.current) {
                 passwordInput.current.focus()
@@ -90,7 +91,7 @@ export const Login = () => {
     }
 
     const handleToManyErrorAttemptsResponse = (response: LoginResponse) => {
-        let secondsToWait = Math.round(parseInt(response.tooManyErrorAttempts) / 1000)
+        const secondsToWait = Math.round(parseInt(response.tooManyErrorAttempts) / 1000)
 
         rx.interval(1000)
             .pipe(
@@ -130,7 +131,7 @@ export const Login = () => {
 
     return (
         <Container className={s.container}>
-            <div onKeyUp={handleEventEnter} className={s.form}>
+            <form autoComplete="off" onKeyUp={handleEventEnter} className={s.form}>
                 <label className={`label full`}>
                     <input className={`input ${state.error ? 'invalid' : ''}`} ref={emailInput} type="text"
                            disabled={state.inProgress} required/>
@@ -145,7 +146,7 @@ export const Login = () => {
                 <Button onClick={handleLogin} size={'large'} disabled={state.inProgress} color={'primary'}>Войти
                     в аккаунт</Button>
                 <Button onClick={handleRestorePassword} color={'link'}>Забыли пароль?</Button>
-            </div>
+            </form>
         </Container>
     )
 }

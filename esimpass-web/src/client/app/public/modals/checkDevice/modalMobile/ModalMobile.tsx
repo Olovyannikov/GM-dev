@@ -100,7 +100,7 @@ export const ModalMobile = () => {
                         <button className={`btn-reset ${s.back}`} onClick={toggleDevice}>
                             <BackArr/>
                         </button>
-                        <h2 className={s.title}>Выберите производителя</h2>
+                        <h2 className={s.title}>Выберите устройство</h2>
                     </div>
                     <div className={s.main}>
                         <ul className={`list-reset ${s.deviceList}`}>
