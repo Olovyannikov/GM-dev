@@ -11,10 +11,11 @@ interface ButtonModel {
     href?: string;
     disabled?: boolean;
     className?: string;
+    icon?: string;
 }
 
 export const Button = (props: ButtonModel) => {
-    let buttonClass
+    let buttonClass;
 
     if (props.color === 'primary') {
         buttonClass = `${s.primary}`
@@ -40,6 +41,12 @@ export const Button = (props: ButtonModel) => {
         buttonClass += ` ${s.badge}`
     }
 
+    if (props.icon === 'left') {
+        buttonClass += ` ${s.leftIcon}`;
+    } else if (props.icon === 'right') {
+        buttonClass += ` ${s.rightIcon}`;
+    }
+
     if (props.isLink) {
         return (
             <Link href={props.href}>
@@ -62,4 +69,5 @@ Button.defaultProps = {
     disabled: false,
     color: 'primary',
     className: '',
+    icon: ''
 }

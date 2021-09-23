@@ -10,9 +10,9 @@ export const Progress = (props: ProgressModel) => {
         <div className={`${s.progress} ${props.className}`}>
             <span className={s.progressText}>
                 <span style={{color: props.item.less / props.item.price * 100 > 50 ? '#000' : '#e40101'}}>
-                    {props.item.less} МБ /</span> <span>{props.item.price / 1000} ГБ</span>
+                    {props.item.less >= 1000 ? props.item.less / 1000 + ' ГБ' : props.item.less + ' МБ'} /</span> <span>{props.item.price / 1000} ГБ</span>
             </span>
-            {props.item.less > 0 ?
+            {props.item.less > 0 && props.item.time !== 'Неактивен' ?
                 <div className={s.progressBar}>
                     <span style={{
                         width: props.item.less / props.item.price * 100 + '%',

@@ -21,7 +21,8 @@ export const TopUpBalance = () => {
     const [state, setState] = React.useState<TopUpBalanceStateModel>({});
     const [balanceForm, setBalanceForm] = React.useState<boolean>(false);
 
-    const balanceFormToggle = () => {
+    const balanceFormToggle = (e: any) => {
+        e.preventDefault();
         setBalanceForm(!balanceForm);
     };
 
@@ -110,7 +111,6 @@ export const TopUpBalance = () => {
     const validateInput = (e: any) => {
         e.target.value = e.target.value.replace(/[^0-9]/g, '');
         e.target.parentElement.querySelector('button').style.display = e.target.value !== '' ? 'block' : 'none';
-
     };
 
     const clearInput = (e: any) => {
@@ -142,7 +142,7 @@ export const TopUpBalance = () => {
                         <button onClick={clearInput} className={`${s.burger} ${s.active}`} type='button'
                                 aria-label='Очистить' />
                     </label>
-                    <button className={s.topupButton} onClick={handleBalancePayment}>К оплате</button>
+                    <button className={s.topupButton} onClick={handleBalancePayment} type="button">К оплате</button>
                     {/*{showDisclaimer()}*/}
                 </div>
                 :

@@ -1,0 +1,31 @@
+.firstQuestion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  margin: 195px auto 0;
+
+  svg {
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    font: var(--font-heading-5);
+    margin-bottom: 12px;
+  }
+
+  p {
+    margin-bottom: 24px;
+    font: var(--font-body-regular-l);
+  }
+
+  button {
+    max-width: 340px;
+    padding: 1rem 105px;
+    border-radius: 16px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

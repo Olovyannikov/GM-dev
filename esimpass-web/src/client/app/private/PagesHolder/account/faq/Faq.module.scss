@@ -1,0 +1,34 @@
+.faq {
+  margin-bottom: 100px;
+}
+
+.back {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  font: var(--font-heading-4);
+
+  svg {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.category {
+  h3 {
+    margin-bottom: 2rem;
+    padding: 1.063rem 2rem;
+    font: var(--font-subtitle-m);
+    background-color: #c1f7ff;
+  }
+}
+
+.accordion {
+  margin-bottom: 2rem;
+
+  &:last-of-type {
+    margin-bottom: 52px;
+  }
+}

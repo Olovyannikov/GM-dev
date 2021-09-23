@@ -1,0 +1,26 @@
+.back {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  align-items: center;
+  gap: 1rem;
+  font: var(--font-heading-4);
+
+  svg {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.newQuestionBtn {
+  display: grid;
+  grid-template-columns: 1rem 1fr;
+  gap: 12px;
+}

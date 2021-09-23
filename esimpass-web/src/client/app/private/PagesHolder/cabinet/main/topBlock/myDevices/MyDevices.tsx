@@ -76,6 +76,7 @@ export const MyDevices = (props: MyDevicesModel) => {
             title: e.target.querySelector('p').innerText,
             type: e.target.querySelector('small').innerText,
             status: e.target.querySelector('span').innerText,
+            agent: e.target.querySelector('b').innerText
         }))
     }
 
@@ -114,7 +115,7 @@ export const MyDevices = (props: MyDevicesModel) => {
                                 onClick={() => setActivation(true)}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Device user={'Ксюха'} type={'tablet'} name={'iPad mini 9'} isActiveStatus={true}
+                        <Device user={'Ксюха'} type={'pad'} name={'iPad mini 9'} isActiveStatus={true}
                                 onClick={(e: any) => getDataToObject(e)}/>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -122,7 +123,7 @@ export const MyDevices = (props: MyDevicesModel) => {
                                 onClick={(e: any) => getDataToObject(e)}/>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <Device user={'Ксюха'} type={'mobile'} name={'Iphone X'} isActiveStatus={true}
+                        <Device user={'Ксюха'} type={'tel'} name={'Iphone X'} isActiveStatus={true}
                                 onClick={(e: any) => getDataToObject(e)}/>
                     </SwiperSlide>
 

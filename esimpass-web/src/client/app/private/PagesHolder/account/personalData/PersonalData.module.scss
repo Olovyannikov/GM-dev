@@ -1,0 +1,135 @@
+.personalData {
+  margin-bottom: 100px;
+}
+
+.back {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  font: var(--font-heading-4);
+
+  svg {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.formSection {
+  display: grid;
+  grid-template-columns: repeat(2, 285px);
+  column-gap: 16px;
+  row-gap: 24px;
+  margin-bottom: rem-calc(48);
+
+  &:not(:first-child) {
+    row-gap: 44px;
+
+    h5 {
+      margin-bottom: calc(16px - 44px);
+    }
+  }
+
+  &:last-of-type {
+    margin-bottom: rem-calc(56);
+  }
+
+  input {
+    width: 100%;
+  }
+
+  h5 {
+    grid-column: span 2;
+    margin-bottom: calc(16px - 24px);
+    font: var(--font-body-regular-s);
+  }
+}
+
+.fileUpload {
+  margin-bottom: rem-calc(24);
+  width: fit-content;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  padding: rem-calc(12) rem-calc(23);
+  font-weight: 500;
+  font-size: rem-calc(16);
+  line-height: rem-calc(22);
+  background-color: var(--color-primary);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+
+  &:hover,
+  &:focus-within {
+    background-color: #262626;
+    color: var(--color-primary);
+  }
+
+  svg {
+    margin-right: 1rem;
+  }
+}
+
+.checkbox {
+  display: block;
+  padding-left: calc(24px + 8px);
+  cursor: pointer;
+  margin-bottom: rem-calc(40);
+
+  input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    &:checked + span {
+      background-color: #111012;
+      border-color: #111012;
+      background-image: url("data:image/svg+xml,%0A%3Csvg width='17' height='16' viewBox='0 0 17 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.8327 4L6.49935 11.3333L3.16602 8' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+      background-position: center;
+    }
+
+    &:disabled + span {
+      background-color: #d9dbe9;
+    }
+
+    &:disabled:checked + span {
+      border-color: #d9dbe9;
+    }
+
+    &:focus-visible + span {
+      box-shadow: 0 0 0 2px var(--color-primary);
+    }
+  }
+
+  span {
+    margin-left: calc(-24px - 8px);
+    position: absolute;
+    border-radius: 6px;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #d9dbe9;
+    background-color: var(--color-background);
+  }
+
+  p {
+    max-width: 292px;
+  }
+
+  a {
+    color: #00a6ce;
+  }
+}
+
+.form {
+  button {
+    width: fit-content;
+    border-radius: 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: rem-calc(20);
+    padding: rem-calc(12) rem-calc(35);
+  }
+}

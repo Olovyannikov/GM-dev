@@ -3,8 +3,6 @@ import s from './Packages.module.scss';
 import { Toast } from '../../../../components/toast/Toast';
 import { Button } from '../../../../../components/button/Button';
 import { PackageTable } from './PackageTable/PackageTable';
-import { Sidebar } from '../../../../components/sidebar/Sidebar';
-import { useState } from 'react';
 import { MoreIcon } from '../../../../../components/icons';
 import { More } from '../../../../components/more/More';
 
@@ -22,7 +20,6 @@ export const Packages = () => {
             {/*    <Button isLink href={'/account'}>Заполнить данные</Button>*/}
             {/*</Toast>*/}
             <PackageTable />
-
         </div>
     );
 };

@@ -346,12 +346,16 @@ input.error {
 }
 
 .airplane {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  left: 55%;
-  top: -67%;
-  width: 85px;
-  height: 100px;
-  transform: translate(-100%, 47%);
+  top: -50%;
+  left: 46%;
+  width: 58px;
+  height: 48px;
+
+  transform: translateY(70%);
 
   svg {
     height: 48px;
@@ -363,14 +367,15 @@ input.error {
   }
 
   @include xl-block {
-    left: 52%;
-    top: -101%;
+    width: 85px;
+    height: 100px;
+    transform: translate(50%, 10%);
   }
 }
 
 .label {
-  display: block;
   position: relative;
+  display: block;
   width: 50%;
 
   &:not(:last-child) {
@@ -394,6 +399,10 @@ input.error {
   }
 
   input.invalid + span {
+    top: 7px;
+    font-size: rem-calc(14);
+    line-height: rem-calc(18);
+    transform: none;
     color: #980101;
   }
 
@@ -416,6 +425,16 @@ input.error {
     font-size: rem-calc(14);
     line-height: rem-calc(18);
     transform: none;
+  }
+
+  span + small {
+    position: relative;
+    top: rem-calc(8);
+    display: block;
+    height: 0;
+    margin-left: rem-calc(24);
+    font: var(--font-body-regular-xs);
+    color: var(--color-label);
   }
 
   &.full {

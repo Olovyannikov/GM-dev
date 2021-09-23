@@ -71,6 +71,7 @@
     height: 132px;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
   &.topShadow {
@@ -134,6 +135,11 @@
 .cardColumn {
   display: flex;
   align-items: center;
+
+  small {
+    font: var(--font-body-regular-xs);
+    color: var(--color-label);
+  }
 
   :global {
     .flag {

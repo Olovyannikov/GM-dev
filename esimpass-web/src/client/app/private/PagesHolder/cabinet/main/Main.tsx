@@ -12,6 +12,5 @@ export const Main = () => {
                 <Packages />
             </Container>
         </div>
-
     );
 };

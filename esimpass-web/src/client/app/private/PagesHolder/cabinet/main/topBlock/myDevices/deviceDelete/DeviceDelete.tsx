@@ -20,7 +20,7 @@ export const DeviceDelete = (props: DeviceDeleteModel) => {
                     будут удалены без возврата средств.</p>
             </div>
             <div className={s.controls}>
-                <Button>Отменить</Button>
+                <Button onClick={() => props.setActive(false)}>Отменить</Button>
                 <Button>Удалить</Button>
             </div>
         </Modal>

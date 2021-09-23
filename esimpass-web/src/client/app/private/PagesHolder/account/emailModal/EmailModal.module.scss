@@ -1,0 +1,55 @@
+.emailModal {
+  min-width: 499px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+
+  h3 {
+    font: var(--font-subtitle-s);
+  }
+
+  .burger {
+    @include burger(14px, 14px, 2px);
+    width: 32px;
+    height: 32px;
+    position: relative;
+    background-color: var(--color-background);
+    border-radius: 50%;
+
+    &::after, &::before {
+      width: 14px;
+      display: flex;
+      left: 9.5px;
+    }
+  }
+}
+
+.actualMail {
+  margin-bottom: rem-calc(24);
+  font: var(--font-body-regular-m);
+
+  span {
+    color: #00a6ce;
+  }
+}
+
+.form {
+  button {
+    width: fit-content;
+    font: var(--font-link-m);
+    line-height: rem-calc(22);
+    border-radius: 1rem;
+    padding: 14px 41.5px;
+  }
+
+  :global {
+    label.full {
+      display: block;
+      margin-bottom: rem-calc(24);
+    }
+  }
+}

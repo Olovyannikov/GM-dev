@@ -1,0 +1,39 @@
+.message {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  width: 245px;
+  box-sizing: border-box;
+  padding: 12px;
+  margin-bottom: 12px;
+  font: var(--font-body-regular-m);
+  background-color: var(--color-background);
+
+  p {
+    margin-bottom: 2px;
+  }
+
+  time {
+    font-size: rem-calc(13);
+    line-height: rem-calc(14.3);
+    text-align: right;
+    display: block;
+    color: var(--color-label);
+  }
+}
+
+.files {
+  display: flex;
+  align-items: center;
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    width: 48px;
+    height: 48px;
+    border-radius: 0.5rem;
+    background-color: var(--color-input);
+  }
+}

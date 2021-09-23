@@ -21,6 +21,7 @@ export const Device = (props : DeviceModel) => {
                 <p className={s.name}>{props.user}</p>
                 <small className={`${s.status}`}>{props.isActiveStatus ? props.name || "Активирован" : "Не активировано"}</small>
                 <span className={`${s.statusBadge}`}>{props.isActiveStatus ? "Активен" : "Неактивен"}</span>
+                <b className="visually-hidden">{props.type}</b>
             </div>
         </div>
     )

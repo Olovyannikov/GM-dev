@@ -769,3 +769,7 @@
 .react-datepicker__day--keyboard-selected.react-datepicker__day--in-range {
   background: #f1ffd7;
 }
+
+.react-datepicker__day--today.react-datepicker__day--in-range {
+  border-radius: 0;
+}
