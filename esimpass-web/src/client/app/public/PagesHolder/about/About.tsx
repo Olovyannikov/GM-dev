@@ -16,7 +16,7 @@ export const About = () => {
     return (
         <main className="main">
             <section className={s.about}>
-                <Container className={s.container}>
+                <Container className={`${s.container}`}>
                     <h2 className={s.title}>О Глонасс Мобайл</h2>
                     <div className={s.content}>
                         <div className={s.col}>
