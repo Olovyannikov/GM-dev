@@ -4,13 +4,12 @@ import * as React from "react";
 import * as rx from "rxjs";
 import * as ro from "rxjs/operators";
 
-import {convertEndingOfNoun, Logger, nothingToNull, waitForClose} from "../../../../../utils";
-import {LoginRequest, LoginResponse, RegisterWebRequest, RegisterWebResponse} from "../../../../../generated/proto.web";
+import {convertEndingOfNoun, Logger, waitForClose} from "../../../../../utils";
+import {LoginRequest, LoginResponse} from "../../../../../generated/proto.web";
 import {DefaultStateComponent} from "../../../../../codebase/types";
 import {CONNECTION} from "../../../../../Connection";
 import {STORAGE} from "../../../../../StorageAdapter";
 import {STATE_API} from "../../../../../redux/StateApi";
-import {Container} from "../../../../components/container/Container";
 import {Button} from "../../../../components/button/Button";
 import {useRouter} from "next/router";
 
@@ -130,8 +129,8 @@ export const Login = () => {
 
 
     return (
-        <Container className={s.container}>
-            <form autoComplete="off" onKeyUp={handleEventEnter} className={s.form}>
+        <React.Fragment>
+            <div onKeyUp={handleEventEnter} className={s.form}>
                 <label className={`label full`}>
                     <input className={`input ${state.error ? 'invalid' : ''}`} ref={emailInput} type="text"
                            disabled={state.inProgress} required/>
@@ -146,7 +145,7 @@ export const Login = () => {
                 <Button onClick={handleLogin} size={'large'} disabled={state.inProgress} color={'primary'}>Войти
                     в аккаунт</Button>
                 <Button onClick={handleRestorePassword} color={'link'}>Забыли пароль?</Button>
-            </form>
-        </Container>
+            </div>
+        </React.Fragment>
     )
 }

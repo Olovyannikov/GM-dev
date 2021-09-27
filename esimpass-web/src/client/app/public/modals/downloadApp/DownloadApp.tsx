@@ -1,21 +1,21 @@
-import s from './DownloadApp.module.scss';
-import { Container } from '../../../components/container/Container';
+import React from 'react';
+import s from "./DownloadApp.module.scss";
+import {Container} from "../../../components/container/Container";
 import iphone from '../../../../resources/img/iphoneModal.png';
 import qrcode from '../../../../resources/img/qrcode.png';
-import Link from 'next/link';
-import { AppGallery, Appstore, GooglePlay } from '../../../components/icons';
-import { STATE_API } from 'redux/StateApi';
-import Image from 'next/image';
+import Link from "next/link";
+import {AppGallery, Appstore, GooglePlay} from "../../../components/icons";
+import { STATE_API } from "redux/StateApi";
+import Image from "next/image";
+import { useModalShow } from 'hooks/useModalShow';
 
-interface DownloadAppModel {
-    mode?: string;
-}
 
-export const DownloadApp = (props: DownloadAppModel) => {
+export const DownloadApp: React.FC = () => {
+
+    const show = useModalShow(false); 
 
     return (
-        <div onClick={(e) => e.stopPropagation()}
-             className={`${s.appModal} ${props.mode === 'downloadApp' ? s.active : ''}`}>
+        <div onClick={(e) => e.stopPropagation()} className={`${s.appModal} ${show ? s.active : ''}`}>
             <Container className={s.container}>
                 <div className={s.modalTop}>
                     <button onClick={STATE_API.hideModal} className={`${s.burger} ${s.active}`} />

@@ -4,14 +4,12 @@ import * as React from "react";
 import * as rx from "rxjs";
 import * as ro from "rxjs/operators";
 
-import {Container} from "../../../../components/container/Container";
 import {convertEndingOfNoun, Logger, nothingToNull, waitForClose} from "../../../../../utils";
 import {RegisterWebRequest, RegisterWebResponse} from "../../../../../generated/proto.web";
 import {DefaultStateComponent} from "../../../../../codebase/types";
 import {CONNECTION} from "../../../../../Connection";
 import {STORAGE} from "../../../../../StorageAdapter";
 import {Button} from "../../../../components/button/Button";
-import { STATE_API } from 'redux/StateApi';
 
 interface RegistrationStateModel extends DefaultStateComponent {
     success?: boolean;
@@ -167,7 +165,7 @@ export const Registration = () => {
     }
 
     return (
-        <Container className={s.container}>
+        <React.Fragment>
             <p className={s.descr}>
                 На данный email мы отправим письмо с QR-кодом для автоматической настройки
                 виртуальной eSIM на Вашем устройстве. Так же мы создадим создадим Личный кабинет, привязанный к
@@ -198,7 +196,7 @@ export const Registration = () => {
                 <Button size={'large'} disabled={state.inProgress} onClick={handleRegister}>Создать
                     аккаунт</Button>
             </form>
-        </Container>
+        </React.Fragment>
     )
 }
 

@@ -1,0 +1,32 @@
+.contentWrapper {
+  position: absolute;
+  left: -1000%;
+  top: 0;
+  z-index: 4;
+  padding-top: 30px;
+  background-color: $color-background;
+  transition: 0.8s ease-in-out;
+
+  &.active {
+    left: 0;
+
+    @include xl-block {
+      left: 50%;
+      top: 50%;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  @include xl-block {
+    left: 50%;
+    top: 40%;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: $middle-offset;
+    padding-top: 0;
+    padding-bottom: $strong-offset;
+    transform: translate(-50%, -50%);
+  }
+}

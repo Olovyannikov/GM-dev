@@ -10,21 +10,21 @@ import {Partners} from "./partners/Partners";
 import { CheckDeviceModal } from './checkDevice/CheckDeviceModal';
 import {Auth} from "./auth/Auth";
 
-const ModalsImpl = (props: ReturnType<typeof mapStateToProps>) => {
+const ModalsImpl = ({mode}: ReturnType<typeof mapStateToProps>) => {
 
     React.useEffect(() => {
-        props.mode ?
+        mode ?
             document.body.classList.add('overlay') :
             document.body.classList.remove('overlay');
-    }, [props.mode]);
+    }, [mode]);
 
     return (
-        <div className={props.mode ? s.Modals : ''} onClick={STATE_API.hideModal}>
-            <Auth mode={props.mode}/>
-            <Restore mode={props.mode}/>
-            <DownloadApp mode={props.mode}/>
-            <CheckDeviceModal mode={props.mode}/>
-            <Partners mode={props.mode}/>
+        <div className={mode ? s.Modals : ''} onClick={STATE_API.hideModal}>
+            {mode == 'auth' && <Auth />}
+            {mode == 'passwordRestore' && <Restore />}            
+            {mode == 'downloadApp' && <DownloadApp />}
+            {mode == 'checkDevice' && <CheckDeviceModal />}
+            {mode == 'partners' && <Partners />}
         </div>
     )
 }

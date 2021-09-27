@@ -1,15 +1,11 @@
 import * as React from 'react';
 
 import s from './Auth.module.scss';
-import {STATE_API} from 'redux/StateApi';
 import {Registration} from "./registration/Registration";
 import {Login} from "./login/Login";
+import {ContentWrapper} from './../common/contentWrapper/ContentWrapper'
 
-interface AuthModel {
-    mode?: string;
-}
-
-export const Auth = (props: AuthModel) => {
+export const Auth: React.FC = () => {
 
     const tabs = [
         'Регистрация',
@@ -29,28 +25,32 @@ export const Auth = (props: AuthModel) => {
         else return <Login/>
     }
 
-    return (
-        <section onClick={(e) => e.stopPropagation()}
-                 className={`${s.auth} ${props.mode === 'auth' ? s.active : ''}`}>
-            <div className={s.top}>
-                <h2 className={s.title}>
-                    Войти в аккаунт
-                </h2>
-                <button onClick={STATE_API.hideModal} className={`${s.burger} ${s.active}`}
-                        aria-label={'Вернуться на главную'}/>
-                <ul className={`${s.tabs}`}>
-                    {tabs.map(tab => (
+    const navs = (
+        <div className={s.navs}>
+            <ul className={`${s.tabs}`}>
+                {tabs.map(tab => (
                         <li key={tab}
                             className={`${s.tab} ${selectedItem === tab ? s.active : ''}`}>
                             <button onClick={() => handleItemClick(tab)} type={'button'}>
                                 {tab}
                             </button>
                         </li>
-                        )
-                    )}
-                </ul>
-            </div>
-            {renderTabs()}
-        </section>
+                    )
+                )}
+            </ul>
+        </div> 
     )
+
+    return (
+        <ContentWrapper
+            title="Войти в аккаунт"
+            closeIconLabel="Вернуться на главную"
+            headerClassName={s.header}
+            containerClassName={s.container}
+            className={s.auth}
+            navigation={navs}
+        >
+            {renderTabs()} 
+        </ContentWrapper>
+    );
 }

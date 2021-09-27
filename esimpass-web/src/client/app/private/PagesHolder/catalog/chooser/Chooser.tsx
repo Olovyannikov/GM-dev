@@ -50,8 +50,8 @@ export const Chooser = () => {
             .pipe(
                 ro.tap(response => {
                     if (response.success) {
-                        let filteredCountries = response.success.rates.reduce((acc, e) => {
-                            let group = e.countryName[0];
+                        const filteredCountries = response.success.rates.reduce((acc, e) => {
+                            const group = e.countryName[0];
                             if (!acc[group]) acc[group] = { group, children: [e] };
                             else acc[group].children.push(e);
                             return acc;

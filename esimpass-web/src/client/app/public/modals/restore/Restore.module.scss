@@ -1,39 +1,44 @@
 .restore {
-  position: absolute;
-  left: -1000%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 4;
   width: 100%;
   height: 100vh;
-  background-color: $color-background;
-  transition: 1.2s ease-in-out;
 
-  &.active {
+  @include xl-block {
+    height: fit-content;
+    max-width: 628px;
+  }
+}
+
+.header {
+  &::after {
+    content: '';
+    position: absolute;
     left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $color-line;
 
     @include xl-block {
-      left: 50%;
-      top: 50%;
-      opacity: 1;
-      visibility: visible;
+      display: none;
+    }
+  }
+
+  h2 {
+    @include xl-block {
+      text-align: left;
     }
   }
 
   @include xl-block {
-    left: 50%;
-    top: 40%;
-    opacity: 0;
-    visibility: hidden;
-    overflow: hidden;
-    border-radius: $middle-offset;
-    padding-top: 0;
-    height: fit-content;
-    max-width: 628px;
-    transform: translate(-50%, -50%);
-    padding-bottom: 32px;
+    display: flex;
+    justify-content: flex-start;
+    padding: $strong-offset $strong-offset $middle-offset;
   }
+}
+
+.btnLeft {
+  margin-top: -20px;
+  margin-right: 20px;
 }
 
 .top {
@@ -44,7 +49,7 @@
   padding: $small-offset $gutter $middle-offset;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     bottom: 0;
@@ -74,11 +79,6 @@
     justify-content: flex-start;
     padding: $strong-offset $strong-offset $middle-offset;
   }
-}
-
-.burger {
-  margin-left: auto;
-  @include burger(18px, 18px, 2px);
 }
 
 .main {

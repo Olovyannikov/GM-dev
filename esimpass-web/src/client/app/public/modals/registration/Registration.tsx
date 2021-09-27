@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as ro from 'rxjs/operators';
 import * as rx from 'rxjs';
 
-import s from './Registration.module.scss';
+import s from '../Auth.module.scss';
 import {Container} from "../../../components/container/Container";
 import {Button} from "../../../components/button/Button";
 import {convertEndingOfNoun, Logger, nothingToNull, waitForClose} from 'utils';
@@ -130,7 +130,7 @@ export const Registration = (props: RegistrationModel) => {
     }
 
     const handleToManyErrorAttemptsResponse = (response: RegisterWebResponse) => {
-        let secondsToWait = Math.round(parseInt(response.tooManyAttempts) / 1000)
+        const secondsToWait = Math.round(parseInt(response.tooManyAttempts) / 1000)
 
         rx.interval(1000)
             .pipe(
