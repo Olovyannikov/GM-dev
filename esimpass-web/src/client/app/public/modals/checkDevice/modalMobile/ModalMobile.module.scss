@@ -54,6 +54,7 @@
       height: 1px;
       width: calc(100% + 40px);
       background-color: $color-line;
+
     }
   }
 }
@@ -138,16 +139,6 @@
         background-size: 16px 2px;
       }
     }
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    background-color: #d9dbe9;
-    height: 1px;
-    top: 0;
-    left: -$gutter;
-    width: calc(100% + #{$gutter * 2});
   }
 }
 

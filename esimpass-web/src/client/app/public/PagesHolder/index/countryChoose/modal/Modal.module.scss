@@ -11,7 +11,6 @@
 
   .top {
     position: relative;
-    padding-bottom: 10px;
 
     &::after {
       @include xl-block {
@@ -33,11 +32,12 @@
 
 .preheader {
   position: relative;
+  margin-bottom: $rare-offset;
   display: flex;
+  align-items: center;
 
   h2 {
     margin: 0;
-    margin-bottom: $rare-offset;
     width: 100%;
     font: $font-subtitle-s;
     text-align: center;
@@ -45,7 +45,6 @@
 }
 
 .main {
-  overflow: visible;
   height: 100vh;
 
   svg {

@@ -30,6 +30,15 @@
       border-radius: rem-calc(16);
       height: 220px;
 
+      &-prev {
+        transition: 0.3s ease-in-out;
+        opacity: 0;
+
+        @include md-block {
+          opacity: 1;
+        }
+      }
+
       > div {
         content: "";
         position: absolute;

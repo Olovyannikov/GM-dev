@@ -38,7 +38,7 @@
       margin-bottom: $middle-offset;
     }
 
-    .swiper-container {
+    .swiper {
       @include xl-block {
         position: relative;
       }
@@ -48,6 +48,8 @@
       @include xl-block {
         position: absolute;
         bottom: $middle-offset * 2;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
 

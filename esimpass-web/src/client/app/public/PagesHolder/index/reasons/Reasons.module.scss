@@ -40,6 +40,13 @@
       width: 93px;
       height: 93px;
       background-color: $color-input;
+
+      &.custom {
+        svg {
+          min-width: 48px;
+          min-height: 48px;
+        }
+      }
     }
 
     p {

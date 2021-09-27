@@ -362,3 +362,42 @@
   font: $font-body-regular-m;
   color: $color-label;
 }
+
+.searchField {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    width: calc(100% + 40px);
+    height: 1px;
+    background: $color-line;
+
+    @include xl-block {
+      display: none;
+    }
+  }
+
+  input {
+    margin-bottom: 10px;
+  }
+}
+
+.main {
+  overflow: scroll;
+  height: 100vh;
+
+  svg {
+    margin: auto;
+    width: 40px;
+    height: 40px;
+  }
+
+  h5 {
+    margin: $middle-offset 0 $small-offset;
+    font: $font-body-regular-l;
+    color: $color-label;
+  }
+}

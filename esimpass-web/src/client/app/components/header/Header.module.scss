@@ -72,7 +72,7 @@
   }
 
   .burger {
-    @include burger(24px, 14px, 2px);
+    @include burger(24px, 16px, 2px);
 
     &::before,
     &::after {

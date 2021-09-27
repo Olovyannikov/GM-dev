@@ -1,11 +1,11 @@
-import s from "./DownloadApp.module.scss";
-import {Container} from "../../../components/container/Container";
+import s from './DownloadApp.module.scss';
+import { Container } from '../../../components/container/Container';
 import iphone from '../../../../resources/img/iphoneModal.png';
 import qrcode from '../../../../resources/img/qrcode.png';
-import Link from "next/link";
-import {AppGallery, Appstore, GooglePlay} from "../../../components/icons";
-import { STATE_API } from "redux/StateApi";
-import Image from "next/image";
+import Link from 'next/link';
+import { AppGallery, Appstore, GooglePlay } from '../../../components/icons';
+import { STATE_API } from 'redux/StateApi';
+import Image from 'next/image';
 
 interface DownloadAppModel {
     mode?: string;
@@ -14,13 +14,14 @@ interface DownloadAppModel {
 export const DownloadApp = (props: DownloadAppModel) => {
 
     return (
-        <div onClick={(e) => e.stopPropagation()} className={`${s.appModal} ${props.mode === 'downloadApp' ? s.active : ''}`}>
+        <div onClick={(e) => e.stopPropagation()}
+             className={`${s.appModal} ${props.mode === 'downloadApp' ? s.active : ''}`}>
             <Container className={s.container}>
                 <div className={s.modalTop}>
-                    <button onClick={STATE_API.hideModal} className={`${s.burger} ${s.active}`}/>
+                    <button onClick={STATE_API.hideModal} className={`${s.burger} ${s.active}`} />
                 </div>
                 <div className={s.modalPhone}>
-                    <Image src={iphone}/>
+                    <Image src={iphone} />
                 </div>
                 <div className={s.modalMessage}>
                     <p className={s.modalTitle}>
@@ -28,26 +29,28 @@ export const DownloadApp = (props: DownloadAppModel) => {
                         ко всем функциям!
                     </p>
                     <div className={s.appDownload}>
-                        <Image className={s.qrcode} src={qrcode} alt="Кью Ар Код - Скачать приложение"/>
+                        <div className={s.qrcode}>
+                            <Image src={qrcode} alt='Кью Ар Код - Скачать приложение' />
+                        </div>
                         <ul className={`list-reset ${s.appstores}`}>
                             <li>
-                                <Link href="#">
+                                <Link href='#'>
                                     <a>
-                                        <Appstore/>
+                                        <Appstore />
                                     </a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#">
+                                <Link href='#'>
                                     <a>
-                                        <GooglePlay/>
+                                        <GooglePlay />
                                     </a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#">
+                                <Link href='#'>
                                     <a>
-                                        <AppGallery/>
+                                        <AppGallery />
                                     </a>
                                 </Link>
                             </li>
@@ -56,5 +59,5 @@ export const DownloadApp = (props: DownloadAppModel) => {
                 </div>
             </Container>
         </div>
-    )
-}
+    );
+};
