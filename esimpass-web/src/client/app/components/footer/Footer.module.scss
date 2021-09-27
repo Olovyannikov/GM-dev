@@ -7,7 +7,7 @@
 
   @include xl-block {
     padding-top: 48px;
-    padding-bottom: 108px;
+    padding-bottom: 62px;
   }
 }
 
@@ -23,6 +23,10 @@
   :global {
     .list-reset {
       margin-bottom: 56px;
+
+      @include xl-block {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -56,8 +60,6 @@
       line-height: rem-calc(40);
     }
   }
-
-
 }
 
 .contacts {
@@ -73,6 +75,12 @@
     font: $font-body-regular-m;
     line-height: rem-calc(24);
     text-transform: uppercase;
+
+    @include xl-block {
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
   }
 
   address {

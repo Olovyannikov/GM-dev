@@ -79,7 +79,6 @@ export const StepSlider = () => {
                             updateOnWindowResize={true}
                             controller={{control: firstSwiper}}
                             onSwiper={setSecondSwiper}
-                            autoHeight={true}
                             onResize={swiper => swiper.update()}
                             onReachEnd={swiper => swiper.params.slidesOffsetBefore = -200}
                             slidesPerView={1}

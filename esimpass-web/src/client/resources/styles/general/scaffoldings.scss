@@ -313,7 +313,7 @@ input.error {
     max-width: 99%;
     font-size: rem-calc(16);
     background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20Z' stroke='%236E7191' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M22 22L18 18' stroke='%236E7191' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-    background-position: 24px 10px;
+    background-position: 24px 16px;
     background-repeat: no-repeat;
 
     &::-webkit-search-cancel-button {
@@ -369,7 +369,7 @@ input.error {
   @include xl-block {
     width: 85px;
     height: 100px;
-    transform: translate(50%, 10%);
+    transform: translate(50%, 9%);
   }
 }
 
