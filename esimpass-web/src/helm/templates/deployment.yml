@@ -20,9 +20,9 @@ spec:
       containers:
         - name: web
           image: "registry.gmdp.io/glonassmobile/mvne/project/esimpass/web:{{ .Values.version }}"
-          imagePullPolicy: Always
+          imagePullPolicy: Always            
           env:
-  {{- if .Values.reload }}
-- name: "reload"
-  value: {{ .Values.reload }}
-  {{- end }}
+{{- if .Values.reload }}
+            - name: "reload"
+              value: {{ .Values.reload | quote }}
+{{- end }}

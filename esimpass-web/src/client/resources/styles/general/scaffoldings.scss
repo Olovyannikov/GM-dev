@@ -180,7 +180,6 @@ body {
 img {
   max-width: 100%;
   object-fit: cover;
-  object-position: top;
 }
 
 a {
@@ -351,7 +350,7 @@ input.error {
   justify-content: center;
   position: absolute;
   top: -50%;
-  left: 46%;
+  left: 44%;
   width: 58px;
   height: 48px;
 
@@ -362,14 +361,13 @@ input.error {
     object-fit: cover;
 
     @include xl-block {
-      height: 100px;
+      height: auto;
     }
   }
 
   @include xl-block {
-    width: 85px;
-    height: 100px;
-    transform: translate(50%, 9%);
+    width: 100px;
+    transform: translate(64%, 72%);
   }
 }
 

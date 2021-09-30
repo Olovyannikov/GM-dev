@@ -9,8 +9,8 @@
 }
 
 .title {
-  margin: 0 0 $middle-offset;
-  font: $font-heading-6;
+  margin: 0 0 rem-calc(50);
+  font: $font-heading-3;
   text-align: center;
   color: $color-off-black;
 }
@@ -54,6 +54,12 @@
       }
     }
   }
+
+  &:first-child {
+    .image {
+      padding-top: rem-calc(50);
+    }
+  }
 }
 
 .image {
@@ -86,7 +92,7 @@
 }
 
 .descr {
-  margin: 0 0 $middle-offset;
+  margin: 0 0 rem-calc(27);
   font: $font-body-regular-m;
   line-height: rem-calc(24);
   color: $color-off-black;

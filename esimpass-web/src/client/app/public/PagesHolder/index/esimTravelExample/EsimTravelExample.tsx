@@ -27,7 +27,7 @@ export const EsimTravelExample = (props: {title?: string, stroke?: string}) => {
     return (
         <section className={s.travel}>
             <Container>
-                <h2 className={s.title}>{props.title || `Сколько будет стоить E-Sim в путешествии?`}</h2>
+                <h2 className={s.title}>{props.title || `Сколько будет стоить eSIM в путешествии?`}</h2>
                 <div className={s.slider}>
                     {loaded && <Swiper
                         loop={true}

@@ -3,7 +3,7 @@
   overflow: hidden;
 
   @include xl-block {
-    padding-bottom: 156px;
+    padding-bottom: rem-calc(160);
   }
 }
 
@@ -55,7 +55,7 @@
 .tariffMain {
   display: flex;
   flex-direction: column;
-  margin-bottom: $strong-offset;
+  margin-bottom: rem-calc(18);
   width: 100%;
 
   @include xl-block {
@@ -101,11 +101,14 @@
     font: $font-body-regular-l;
     color: $color-ash;
     opacity: 0.5;
+    letter-spacing: 1.6px;
   }
 
   p {
     margin: 0;
-    font: $font-subtitle-m;
+    font-weight: 500;
+    font-size: rem-calc(32);
+    line-height: rem-calc(40);
     color: $color-ash;
   }
 }
@@ -136,7 +139,7 @@
   color: $color-ash;
 
   @include xl-block {
-    margin-top: 0;
+    margin-top: -5px;
     width: 100%;
     max-width: 352px;
   }
@@ -224,10 +227,10 @@
 /* Desktop only */
 
 .tariffDesktopTitle {
-  max-width: 500px;
   display: none;
-  margin: 0 0 $middle-offset;
+  margin: 0 0 rem-calc(31);
   padding-top: 72px;
+  max-width: 500px;
   font: $font-heading-2;
   color: $color-ash;
 
@@ -262,20 +265,20 @@
 .desktopList {
   display: none;
   overflow: hidden;
-  margin-right: 12%;
+  margin-right: 14.3%;
   padding-left: 109px;
   min-width: calc(302px + 109px);
   max-width: calc(302px + 109px);
-  height: 450px;
+  height: rem-calc(475);
 
   :global {
     .input[type="search"] {
       margin-top: 49px;
-      margin-bottom: 32px;
+      margin-bottom: rem-calc(30);
       border: 1px dashed $color-label;
-      padding-top: 14px;
-      padding-bottom: 14px;
-      padding-left: 64px;
+      padding-top: rem-calc(14);
+      padding-bottom: rem-calc(14);
+      height: rem-calc(54);
       font: $font-body-regular-l;
       background-position: 24px 14px;
       background-color: $color-input;
@@ -288,14 +291,13 @@
 
   .main {
     h5 {
-      margin: 0;
-      margin-bottom: 20px;
+      margin: 0 0 rem-calc(14);
       font: $font-heading-6;
       color: $color-ash;
     }
 
     li {
-      margin-bottom: 20px;
+      margin-bottom: rem-calc(4);
       padding-left: 0;
       background: transparent;
 
@@ -348,9 +350,7 @@
 
 .tariffGrid {
   display: grid;
-  grid-auto-columns: 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 260px 150px;
   gap: 0 0;
   grid-template-areas:
     "col1 col2"

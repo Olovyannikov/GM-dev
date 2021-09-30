@@ -22,14 +22,18 @@ export const StepSlider = () => {
     return (
         <section className={s.steps}>
             <Container className={s.container}>
-                <h2 className={s.title}>Как подключить eSIM-pass?</h2>
+                <h2 className={s.title}>Как подключить eSIM pass?</h2>
                 <div className={s.content}>
                     <div className={s.sliderWithImages}>
                         <Swiper
                             modules={[Navigation, Pagination, Controller, EffectFade]}
                             effect={'fade'}
                             updateOnWindowResize={true}
-                            onResize={swiper => swiper.update()}
+                            freeMode={false}
+                            observeParents={true}
+                            observer={true}
+                            resizeObserver={true}
+                            watchSlidesProgress={true}
                             onInit={swiper => {
                                 setStep(1);
                                 setLength(swiper.$wrapperEl[0].childElementCount);
@@ -43,10 +47,12 @@ export const StepSlider = () => {
                             controller={{control: secondSwiper}}
                             slidesPerView={1}
                             centeredSlides={true}
+                            centeredSlidesBounds={true}
+                            pagination={{clickable: true}}
                             breakpoints={{
                                 1200: {
                                     direction: 'vertical',
-                                    slidesPerView: 'auto'
+                                    slidesPerView: 1
                                 },
                             }}
                         >
@@ -75,23 +81,19 @@ export const StepSlider = () => {
 
                     <div className={s.textSlider}>
                         <Swiper
-                            modules={[Navigation, Pagination, Controller]}
+                            freeMode={false}
+                            autoHeight={true}
                             updateOnWindowResize={true}
                             controller={{control: firstSwiper}}
                             onSwiper={setSecondSwiper}
-                            onResize={swiper => swiper.update()}
                             onReachEnd={swiper => swiper.params.slidesOffsetBefore = -200}
                             slidesPerView={1}
-                            pagination={{clickable: true}}
-
-
                             watchOverflow={false}
                             breakpoints={{
                                 1200: {
                                     direction: 'vertical',
                                     slidesPerView: 'auto',
-                                    autoHeight: true,
-                                    spaceBetween: 50,
+                                    spaceBetween: 40,
                                     slideToClickedSlide: true,
                                     centeredSlides: true,
                                 },
@@ -101,8 +103,7 @@ export const StepSlider = () => {
                                 <span className={s.counter}>
                                     Шаг 1/{length}
                                 </span>
-                                <h3 className={s.slideTitle}>Скачай приложение eSIM pass
-                                    и зарегистрируйся в нём.</h3>
+                                <h3 className={s.slideTitle}>Советуем скачать приложение eSIM pass</h3>
                                 <div className={s.sliderContent}>
                                     <p className={s.sliderText}>Приложение eSIM pass позволяет быстро работать с
                                         подключением и управлением пакетами интернет-трафика. В приложении отражается
@@ -119,14 +120,14 @@ export const StepSlider = () => {
                                             <li>
                                                 <Link href={'#'}>
                                                     <a>
-                                                        <Appstore/>
+                                                        <GooglePlay/>
                                                     </a>
                                                 </Link>
                                             </li>
                                             <li>
                                                 <Link href={'#'}>
                                                     <a>
-                                                        <GooglePlay/>
+                                                        <Appstore/>
                                                     </a>
                                                 </Link>
                                             </li>
@@ -181,8 +182,8 @@ export const StepSlider = () => {
                     </div>
                 </div>
                 <div className={s.controls}>
-                    <button className={`btn-reset ${s.prev}`}><CircleBtn/></button>
-                    <button className={`btn-reset ${s.next}`}><CircleBtn/></button>
+                    <button type="button" className={`btn-reset ${s.prev}`}><CircleBtn/></button>
+                    <button type="button" className={`btn-reset ${s.next}`}><CircleBtn/></button>
                 </div>
             </Container>
 

@@ -38,8 +38,8 @@
     color: $color-off-black;
 
     @include xl-block {
-      text-align: left;
       margin-bottom: $middle-offset;
+      text-align: left;
     }
   }
 
@@ -69,8 +69,6 @@
     }
 
     button {
-
-
       @include xl-block {
         margin: 0 auto;
         max-width: 311px;

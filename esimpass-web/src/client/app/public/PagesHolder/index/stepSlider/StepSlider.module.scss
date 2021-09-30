@@ -1,7 +1,7 @@
 .steps {
   position: relative;
-  padding-top: 62px;
-  padding-bottom: 32px;
+  padding-top: rem-calc(62);
+  padding-bottom: rem-calc(53);
   background-color: $color-input;
 
   :global {
@@ -9,16 +9,9 @@
       overflow: hidden;
 
       .swiper-slide {
-        transition-timing-function: ease-out;
-      }
-
-      .swiper-slide {
         transition-property: opacity;
+        transition-timing-function: ease-out;
         pointer-events: none;
-
-        .swiper-slide {
-          pointer-events: none;
-        }
       }
 
       .swiper-slide-active {
@@ -73,11 +66,11 @@
       @include xl-block {
         content: "";
         position: absolute;
-        right: 0;
-        top: 0;
+        right: rem-calc(29);
+        bottom: 52.5%;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 1rem;
       }
     }
   }
@@ -148,8 +141,9 @@
 }
 
 .counter {
-  margin-bottom: 4px;
-  font: $font-body-medium-m;
+  display: block;
+  margin-bottom: rem-calc(10);
+  font: $font-link-l;
   color: $color-off-black;
   opacity: 0.5;
 }
@@ -197,34 +191,33 @@
 
 .content {
   @include xl-block {
+    display: grid;
+    grid-template-columns: 350px 1fr;
     overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    padding-right: 15%;
+    margin: 0 auto;
     height: 800px;
+    max-width: rem-calc(950);
+    gap: 88px;
   }
 }
 
 .sliderWithImages {
   @include xl-block {
-    margin-left: 150px;
     overflow: hidden;
     height: 100%;
 
     :global {
-      .swiper-container {
+      .swiper {
         margin-right: 88px;
       }
 
       .swiper-wrapper {
-        margin-right: rem-calc(20);
         display: flex;
         flex-direction: column;
-        max-width: 350px;
         width: 100%;
+        max-width: 350px;
       }
     }
-
   }
 }
 
@@ -272,7 +265,7 @@
       }
 
       .swiper-slide:first-child.swiper-slide-active {
-        margin-top: -40%;
+        margin-top: -48.5%;
       }
 
       .swiper-slide {
@@ -294,8 +287,7 @@
         }
 
         h3 {
-          margin: 0;
-          margin-bottom: $rare-offset;
+          margin: 0 0 rem-calc(25);
           font: $font-heading-3;
           color: $color-ash;
         }
@@ -310,24 +302,11 @@
       display: none;
     }
   }
-
-
-
-  @include xl-block {
-    :global {
-      .swiper-container {
-        position: static;
-      }
-
-      .swiper-pagination {
-        right: -150px;
-        top: 32%;
-      }
-    }
-  }
 }
 
 .download {
+  padding-top: rem-calc(11);
+
   .qrcode {
     display: none;
     margin-right: $middle-offset;
@@ -383,8 +362,8 @@
 .next,
 .prev {
   position: absolute;
-  right: 52px;
-  top: 31%;
+  right: rem-calc(20);
+  top: 30.3%;
   display: none;
 
   @include xl-block {
@@ -393,6 +372,6 @@
 }
 
 .next {
-  top: 53%;
+  top: 50%;
   transform: rotate(180deg);
 }

@@ -2,7 +2,7 @@ import s from './DeviceCheck.module.scss';
 import {Container} from "../../../../components/container/Container";
 import {Button} from "../../../../components/button/Button";
 import background from '../../../../../resources/img/MainImage@2x.jpg';
-import {FastInternetIcon, Globe, PhoneIcon} from "../../../../components/icons";
+import {FastInternetIcon, Globe, PhoneIcon, WifiIcon} from "../../../../components/icons";
 import {STATE_API} from 'redux/StateApi';
 import Image from "next/image";
 
@@ -13,11 +13,10 @@ export const DeviceCheck = () => {
             <Container className={s.container}>
                 <div className={s.content}>
                     <h2 className={s.title}>
-                        Подключи eSIM-pass и путешествуй по миру без роуминга!
+                        Подключи eSIM-pass и путешествуй по миру без переплат!
                     </h2>
                     <h2 className={s.titleDesktop}>
-                        Путешествуйте <br/>
-                        c eSIM без роуминга
+                        Путешествуйте <br/> c eSIM без переплат
                     </h2>
                     <div className={s.background}>
                         <div>
@@ -29,9 +28,8 @@ export const DeviceCheck = () => {
                         технологию виртуальной eSIM.
                     </p>
                     <p className={s.descrDesktop}>
-                        Подключи ESIM-pass и путешествуй по миру без роуминга! <br/>
-                        Подключение виртуальной eSIM не займет много времени, главное чтобы устройство поддерживало
-                        технологию виртуальной eSIM.
+                        Подключи eSIM pass и путешествуй по миру без переплат за роуминг! <br/>
+                        Подключение виртуальной eSIM не займет много времени, главное чтобы устройство поддерживало технологию виртуальной eSIM.
                     </p>
                     <div className={s.controls}>
                         <Button onClick={() => STATE_API.showPublicWizard('auth')} color={'primary'}>Подключить</Button>
@@ -49,8 +47,8 @@ export const DeviceCheck = () => {
                         <span>Работает в 200 странах<br/> без роуминга</span>
                     </li>
                     <li>
-                        <FastInternetIcon/>
-                        <span>4G связь<br/> без абонентской платы</span>
+                        <WifiIcon/>
+                        <span>Раздача интернета <br/> без абонентской платы</span>
                     </li>
                 </ul>
             </Container>

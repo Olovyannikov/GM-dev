@@ -5,8 +5,9 @@
   align-items: center;
   justify-content: center;
   border: 1px solid transparent;
-  border-radius: $small-offset;
+  border-radius: 16px;
   width: 100%;
+  box-sizing: border-box;
   color: $color-ash;
   transition: 0.3s ease-in-out;
   gap: $small-offset;
@@ -60,7 +61,7 @@
 }
 
 .medium {
-  padding: $rare-offset $middle-offset;
+  padding: rem-calc(14) $middle-offset;
   font: $font-body-medium-m;
   font-size: rem-calc(18);
 }

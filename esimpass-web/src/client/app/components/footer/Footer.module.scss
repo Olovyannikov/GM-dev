@@ -6,7 +6,7 @@
   background-color: $color-off-black;
 
   @include xl-block {
-    padding-top: 48px;
+    padding-top: rem-calc(56);
     padding-bottom: 62px;
   }
 }
@@ -34,7 +34,7 @@
     :global {
       .list-reset {
         @include xl-block {
-          margin-top: -70px;
+          margin-top: rem-calc(-73);
         }
       }
     }
@@ -60,18 +60,22 @@
       line-height: rem-calc(40);
     }
   }
+
+  @include xl-block {
+    padding-right: rem-calc(138);
+  }
 }
 
 .contacts {
   h3 {
-    margin: 0 0 $small-offset;
+    margin: 0 0 rem-calc(8);
     color: $color-off-white;
   }
 
   span,
   address {
     display: block;
-    margin-bottom: $small-offset;
+    margin-bottom: rem-calc(5);
     font: $font-body-regular-m;
     line-height: rem-calc(24);
     text-transform: uppercase;
