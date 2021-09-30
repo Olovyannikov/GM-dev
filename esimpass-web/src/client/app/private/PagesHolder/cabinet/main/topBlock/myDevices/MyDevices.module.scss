@@ -41,7 +41,7 @@
 
 
 
-    .swiper {
+    .swiper-container {
       position: relative;
       overflow: visible;
 
@@ -127,7 +127,7 @@
   }
 }
 
-.swiper {
+.swiper-container {
   display: flex;
   flex-direction: initial;
 }

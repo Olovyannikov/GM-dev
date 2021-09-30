@@ -5,13 +5,14 @@ import iphone2 from '../../../../../resources/img/iPhoneScroll2@2x.png';
 import iphone3 from '../../../../../resources/img/iPhoneScroll3@2x.png';
 import iphone4 from '../../../../../resources/img/iPhoneScroll4@2x.png';
 import qr from '../../../../../resources/img/qrcode.png';
-import {Swiper, SwiperSlide} from "swiper/react";
-import {Controller, Navigation, Pagination, EffectFade} from 'swiper';
+import SwiperCore, {Controller, Navigation, Pagination, EffectFade} from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import {useState} from "react";
 import {AppGallery, Appstore, BackArr, CircleBtn, GooglePlay} from "../../../../components/icons";
 import Link from "next/link";
 import Image from 'next/image';
 
+SwiperCore.use([Navigation, Pagination, Controller, EffectFade]);
 
 export const StepSlider = () => {
     const [step, setStep] = useState(0)
@@ -26,9 +27,14 @@ export const StepSlider = () => {
                 <div className={s.content}>
                     <div className={s.sliderWithImages}>
                         <Swiper
-                            modules={[Navigation, Pagination, Controller, EffectFade]}
                             effect={'fade'}
                             updateOnWindowResize={true}
+                            onResize={swiper => {
+                                swiper.update();
+                                swiper.updateSize();
+                                swiper.updateSlides();
+                                swiper.updateAutoHeight();
+                            }}
                             freeMode={false}
                             observeParents={true}
                             observer={true}

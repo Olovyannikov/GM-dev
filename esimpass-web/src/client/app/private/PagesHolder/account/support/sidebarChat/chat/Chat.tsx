@@ -1,10 +1,12 @@
 import React from 'react';
 import s from './Chat.module.scss';
 import {Swiper, SwiperSlide} from 'swiper/react';
-import {FreeMode, Mousewheel, Scrollbar} from "swiper";
+import SwiperCore, {Mousewheel, Scrollbar} from "swiper";
 import {Message} from './message/Message';
 import Image from 'next/image';
 import img from '../../../../../../../resources/img/userAvatar.jpeg';
+
+SwiperCore.use([Scrollbar, Mousewheel])
 
 interface ChatModel {
     isReverse?: boolean;
@@ -14,15 +16,10 @@ export const Chat = (props: ChatModel) => {
     return (
         <Swiper
             className={s.swiper}
-            modules={[Scrollbar, Mousewheel, FreeMode]}
             direction={'vertical'}
             slidesPerView={'auto'}
-            freeMode={{
-                enabled: true,
-            }}
-            scrollbar={{
-                draggable: false
-            }}
+            freeMode={true}
+            scrollbar={true}
             mousewheel={true}
             onScroll={swiper => swiper.update()}
         >

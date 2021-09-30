@@ -32,7 +32,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      order: -1;
+      order: 2;
 
       .swiper-pagination-bullet {
         border-radius: 36px;
@@ -116,6 +116,7 @@
   }
 
   img {
+    object-position: top;
     width: 70%;
 
     @include xl-block {
@@ -207,9 +208,6 @@
     height: 100%;
 
     :global {
-      .swiper {
-        margin-right: 88px;
-      }
 
       .swiper-wrapper {
         display: flex;
@@ -249,7 +247,7 @@
     height: 100%;
 
     :global {
-      .swiper {
+      .swiper-container {
         overflow: hidden;
         height: 1200px !important;
       }
