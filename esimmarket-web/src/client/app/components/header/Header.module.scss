@@ -1,0 +1,77 @@
+.header {
+  padding: rem-calc(12) 0;
+  min-height: rem-calc(48);
+  color: $color-white;
+  background-color: $color-background;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 500;
+  font-size: rem-calc(24);
+  line-height: rem-calc(24);
+
+  @include lg-block {
+    line-height: rem-calc(33);
+  }
+}
+
+.burger {
+  @include lg-block {
+    display: none;
+  }
+}
+
+.search {
+  display: flex;
+  max-height: rem-calc(24);
+
+  svg {
+    position: absolute;
+    pointer-events: none;
+  }
+
+  input {
+    margin-left: rem-calc(25);
+    border: none;
+    border-bottom: 1px solid $color-gray-button;
+    height: rem-calc(25);
+    max-width: 0;
+    font: inherit;
+    color: $color-white;
+    background-color: transparent;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+
+    &:focus {
+      outline: none;
+      max-width: 100%;
+      opacity: 1;
+    }
+  }
+}
+
+.nav {
+  position: absolute;
+  left: -150%;
+  top: rem-calc(58);
+  width: 100%;
+  background-color: $color-white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04), 0 4px 16px rgba(0, 0, 0, 0.02);
+  transition: 0.3s ease-in-out;
+
+  &.active {
+    left: 0;
+  }
+
+  @include lg-block {
+    position: static;
+    background-color: transparent;
+  }
+}

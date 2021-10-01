@@ -1,0 +1,77 @@
+@import "mixins";
+
+/* Colors */
+
+// Main Colors
+
+$color-white: #fff;
+$color-black: #000;
+
+// Accent colors
+
+$color-primary: #46edf0;
+$color-tele2: #66d4fd;
+$color-megafon: #00985f;
+$color-beeline: #fbc400;
+$color-mts: #e30613;
+$color-danycom: #14558c;
+
+// UI Colors
+
+$color-background: #1f2326;
+$color-background-2: #292e32;
+$color-background-linear: linear-gradient(180deg, $color-background 0%, rgba(31, 35, 38, 0.9) 100%);
+$color-gray-button: #f4f4f5;
+$color-light-button: #f8f8f8;
+$color-dark-button: #1b1b1b;
+
+// Typography
+
+$color-heading: $color-background;
+$color-typo-primary: $color-dark-button;
+$color-typo-secondary: rgba($color-typo-primary, 0.8);
+$color-typo-light: rgba($color-typo-primary, 0.6);
+
+// Tech colors
+$color-green: #1dbe5e;
+$color-blue: #28d2d6;
+$color-yellow: #d6b924;
+$color-red: #d62459;
+
+// Gradients
+
+$color-gradient-light: linear-gradient(90.2deg, #72eeff 11.9%, #e6ffb5 100%);
+$color-gradient-dark: linear-gradient(90.2deg, #53eaff 11.9%, #b9f348 100%);
+
+/* Offset */
+$container-width: 1280px;
+$cabinet-width: 1024px;
+$gutter: 20px;
+$small-offset: 12px;
+$rare-offset: 16px;
+$middle-offset: 24px;
+$strong-offset: 32px;
+$big-offset: 40px;
+
+/* Fonts */
+$font-alt: "Manrope", "Roboto", sans-serif;
+$font-family: "Montserrat", $font-alt;
+
+// Jumbo
+$font-h1-extrabold: 800 rem-calc(46) / rem-calc(48.3) $font-family;
+$font-h2-extrabold: 800 rem-calc(38) / rem-calc(46) $font-family;
+$font-h2-bold: 700 rem-calc(38) / rem-calc(46) $font-family;
+$font-h3-semibold: 600 rem-calc(26) / rem-calc(31) $font-alt;
+$font-h4-bold: 700 rem-calc(24) / rem-calc(26) $font-alt;
+$font-h5-semibold: 600 rem-calc(18) / rem-calc(22) $font-alt;
+
+// Body
+
+$font-body-4: 700 rem-calc(22) / rem-calc(26) $font-alt;
+$font-body-3: 700 rem-calc(20) / rem-calc(24) $font-alt;
+$font-body-2: 500 rem-calc(18) / rem-calc(22) $font-alt;
+$font-body-1: 500 rem-calc(16) / rem-calc(20) $font-alt;
+$font-body: 500 rem-calc(15) / rem-calc(20) $font-alt;
+$font-body-small-1: 500 rem-calc(14) / rem-calc(18) $font-alt;
+$font-body-small-semibold-1: 600 rem-calc(14) / rem-calc(18) $font-alt;
+$font-body-small-2: 500 rem-calc(12) / rem-calc(16) $font-alt;

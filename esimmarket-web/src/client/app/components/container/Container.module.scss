@@ -1,0 +1,13 @@
+.container {
+  margin: 0 auto;
+  padding: 0 rem-calc(30);
+  width: 100%;
+
+  @include xl-block {
+    max-width: calc(1216px + 30px * 2);
+  }
+
+  @include xxl-block {
+    max-width: calc(1400px + 30px * 2);
+  }
+}
