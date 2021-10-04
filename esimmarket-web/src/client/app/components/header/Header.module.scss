@@ -18,7 +18,23 @@
   line-height: rem-calc(24);
 
   @include lg-block {
+    white-space: nowrap;
+    position: relative;
+    margin-right: rem-calc(25);
+    padding-right: rem-calc(25);
     line-height: rem-calc(33);
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      width: 1px;
+      height: rem-calc(24);
+      background-color: #fff;
+      opacity: 0.1;
+      transform: translateY(-50%);
+    }
   }
 }
 
@@ -61,10 +77,20 @@
   position: absolute;
   left: -150%;
   top: rem-calc(58);
+  padding: 0 15px;
   width: 100%;
-  background-color: $color-white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04), 0 4px 16px rgba(0, 0, 0, 0.02);
+  background-color: $color-white;
   transition: 0.3s ease-in-out;
+
+  a {
+    display: flex;
+    align-items: center;
+
+    &:visited {
+      color: $color-typo-primary;
+    }
+  }
 
   &.active {
     left: 0;
@@ -72,6 +98,85 @@
 
   @include lg-block {
     position: static;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    box-shadow: none;
     background-color: transparent;
+  }
+}
+
+.cabinetLink {
+  position: relative;
+  margin-bottom: rem-calc(15);
+  padding-top: rem-calc(25);
+  padding-bottom: rem-calc(15);
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: rem-calc(-15);
+    bottom: 0;
+    width: calc(100% + 30px);
+    height: 1px;
+    background-color: #f2f2f2;
+
+    @include lg-block {
+      display: none;
+    }
+  }
+
+  @include lg-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+
+    svg {
+      display: none;
+    }
+  }
+
+  .loginDesktop {
+    display: none;
+    margin-right: rem-calc(10);
+  }
+
+  @include lg-block {
+    color: $color-white !important;
+
+    .loginIcon {
+      display: none;
+    }
+
+    .loginDesktop {
+      display: block;
+    }
+  }
+}
+
+.loginIcon {
+  margin-right: rem-calc(15);
+}
+
+.chevron {
+  margin-left: auto;
+}
+
+.help {
+  margin: 0 auto rem-calc(20);
+  width: auto;
+
+  @include lg-block {
+    display: none !important;
+  }
+}
+
+.social {
+  @include lg-block {
+    display: none;
   }
 }

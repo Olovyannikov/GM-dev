@@ -1,7 +1,39 @@
 .collapse {
+  position: relative;
+  margin-bottom: rem-calc(15);
 
+  &::after {
+    content: "";
+    position: absolute;
+    left: rem-calc(-15);
+    bottom: 0;
+    width: calc(100% + #{rem-calc(30)});
+    height: 1px;
+    background-color: $color-gray-button;
+  }
 }
 
 .toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: $color-typo-primary;
+  cursor: pointer;
+}
 
+.chevron {
+  opacity: 0.6;
+  transform: rotate(90deg);
+  transition: 0.3s ease-in-out;
+
+  .active & {
+    transform: rotate(-90deg);
+  }
+}
+
+.contentWrapper {
+  overflow: hidden;
+  height: 0;
+  transition: height ease 0.3s;
 }

@@ -1,0 +1,56 @@
+.search {
+  width: 67px;
+  position: relative;
+  display: none;
+  align-items: center;
+  transition: 0.3s ;
+
+  input {
+    width: 44px;
+    border: none;
+    background: transparent;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(#fff, 0.6);
+    transition: 0.3s;
+
+    &:focus {
+      width: fit-content;
+      outline: none;
+      color: #fff;
+    }
+  }
+
+  svg {
+    margin-right: rem-calc(5);
+    color: rgba(#fff, 0.6);
+  }
+
+  @include lg-block {
+    display: flex;
+    order: -1;
+    margin-right: rem-calc(25);
+    margin-left: auto;
+  }
+
+  &:focus-within {
+    width: fit-content;
+    transition: 0.3s ;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: calc(100% - 25px);
+      height: 1px;
+      left: 25px;
+      bottom: -5px;
+      background-color: #fff;
+      transition: 0.3s ;
+    }
+
+    svg {
+      color: #fff;
+    }
+  }
+}

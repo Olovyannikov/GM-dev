@@ -1,0 +1,93 @@
+.private {
+  @include lg-block {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: auto;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+
+    a {
+      padding: rem-calc(12) 0;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: rgba($color-dark-button, 0.9) !important;
+    }
+  }
+}
+
+.toggle {
+  position: relative;
+  margin-bottom: rem-calc(15);
+  font: $font-body-1-semibold;
+  color: $color-typo-primary;
+
+  @include lg-block {
+    margin: 0 rem-calc(35) 0 0;
+    color: $color-white;
+
+    svg {
+      display: none;
+    }
+  }
+}
+
+.link {
+  padding-bottom: rem-calc(15);
+  font: $font-body-small-1;
+  color: $color-typo-secondary;
+
+  @include lg-block {
+    color: $color-white !important;
+  }
+}
+
+.wrapper {
+  &::after {
+    @include lg-block {
+      display: none;
+    }
+  }
+
+  @include lg-block {
+    position: static;
+    margin: 0;
+  }
+}
+
+.content {
+  @include lg-block {
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+    overflow: auto;
+    width: 100%;
+    height: 100% !important;
+    background-color: #fff;
+  }
+}
+
+.business {
+  @include lg-block {
+    display: none;
+  }
+}
+
+.businessLink {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: rem-calc(20);
+  color: $color-background;
+
+  @include lg-block {
+    font-size: rem-calc(14);
+    line-height: rem-calc(18);
+    color: rgba($color-white, 0.6);
+  }
+}

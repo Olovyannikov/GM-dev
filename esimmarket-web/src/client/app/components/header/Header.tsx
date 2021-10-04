@@ -6,8 +6,10 @@ import React, { useEffect, useState } from 'react';
 import sprite from '../../../resources/img/sprite/sprite.svg';
 import { HeaderNavigation } from './headerNavigation/HeaderNavigation';
 import Link from 'next/link';
-
-console.log(sprite);
+import { LanguageSwitch } from './languageSwitch/LanguageSwitch';
+import { Button } from '../button/Button';
+import { Social } from '../social/Social';
+import { Search } from './headerNavigation/search/Search';
 
 export const Header = () => {
 
@@ -40,17 +42,30 @@ export const Header = () => {
                     />
                     <div className={cn(s.nav, isActiveMenu ? s.active : '')}>
                         <Link href='/cabinet'>
-                            <a>
-                                <svg width='20' height='20'>
+                            <a className={s.cabinetLink}>
+                                <svg className={s.loginIcon} width='20' height='20'>
                                     <use href={`${sprite.src}#login`} />
                                 </svg>
+                                <svg className={s.loginDesktop} width={25} height={25}>
+                                    <use href={`${sprite.src}#login-icon`}/>
+                                </svg>
                                 Личный кабинет
-                                <svg width="24" height="24">
+                                <svg className={s.chevron} width="24" height="24">
                                     <use href={`${sprite.src}#chevron`}/>
                                 </svg>
                             </a>
                         </Link>
                         <HeaderNavigation />
+                        <Search/>
+                        <LanguageSwitch/>
+                        <Button
+                            className={s.help}
+                            size={'tiny'}
+                            color={'secondary'}
+                        >
+                            Поддержка
+                        </Button>
+                        <Social className={s.social}/>
                     </div>
                 </div>
             </Container>

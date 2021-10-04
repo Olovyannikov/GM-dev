@@ -1,0 +1,55 @@
+.nav {
+  margin-bottom: rem-calc(65);
+
+  @include lg-block {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    order: -1;
+  }
+}
+
+.list {
+  @include lg-block {
+    display: flex;
+    align-items: center;
+
+    button {
+      svg {
+        display: none;
+      }
+    }
+  }
+}
+
+.away {
+  position: relative;
+  margin-bottom: rem-calc(15);
+  padding-bottom: rem-calc(15);
+  font: $font-body-1-semibold;
+  color: $color-typo-primary;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: rem-calc(-15);
+    bottom: 0;
+    width: calc(100% + #{rem-calc(30)});
+    height: 1px;
+    background-color: $color-gray-button;
+
+    @include lg-block {
+      display: none;
+    }
+  }
+}
+
+.icon {
+  margin-left: auto;
+}
+
+.about {
+  @include lg-block {
+    display: none;
+  }
+}

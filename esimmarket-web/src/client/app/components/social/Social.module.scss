@@ -1,0 +1,26 @@
+.social {
+  h5 {
+    margin-bottom: rem-calc(11);
+    font: $font-body-1-semibold;
+    text-align:  center;
+    color: $color-background-2;
+  }
+}
+
+.list {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, rem-calc(25));
+  margin-bottom: rem-calc(25);
+  gap: rem-calc(10);
+
+  svg {
+    color: $color-background-2;
+  }
+
+  .inverted & {
+    svg {
+      color: $color-white;
+    }
+  }
+}
