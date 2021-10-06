@@ -3,11 +3,11 @@
   padding: 0 rem-calc(30);
   width: 100%;
 
-  @include xl-block {
+  @include lg-block {
     max-width: calc(1216px + 30px * 2);
   }
 
-  @include xxl-block {
+  @include xl-block {
     max-width: calc(1400px + 30px * 2);
   }
 }

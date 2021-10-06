@@ -16,7 +16,7 @@ export const DeviceCheck = () => {
                         Подключи eSIM-pass и путешествуй по миру без переплат!
                     </h2>
                     <h2 className={s.titleDesktop}>
-                        Путешествуйте <br/> c eSIM без переплат
+                        Путешествуй <br/> c eSIM без переплат
                     </h2>
                     <div className={s.background}>
                         <div>

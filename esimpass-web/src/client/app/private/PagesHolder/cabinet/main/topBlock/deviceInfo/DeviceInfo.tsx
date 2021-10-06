@@ -1,9 +1,11 @@
 import s from './DeviceInfo.module.scss';
 import * as React from "react";
 import {Swiper, SwiperSlide} from 'swiper/react';
-import {FreeMode, Mousewheel, Scrollbar} from "swiper";
+import SwiperCore, {Mousewheel, Scrollbar} from "swiper";
 import {Progress} from "../../../../../components/progress/Progress";
 import {Button} from "../../../../../../components/button/Button";
+
+SwiperCore.use([Scrollbar, Mousewheel]);
 
 interface DeviceInfoModel {
     data?: any;
@@ -167,12 +169,9 @@ export const DeviceInfo = (props: DeviceInfoModel) => {
             </div>
             <Swiper
                 className={s.swiper}
-                modules={[Scrollbar, Mousewheel, FreeMode]}
                 direction={'vertical'}
                 slidesPerView={'auto'}
-                freeMode={{
-                    enabled: true,
-                }}
+                freeMode={true}
                 scrollbar={{
                     draggable: false
                 }}

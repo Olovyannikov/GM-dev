@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 export const LanguageSwitch = () => {
 
-    const [isRu, setIsRu] = useState(false);
+    const [isRu, setIsRu] = useState(true);
 
     return (
         <div className={s.switch}>

@@ -1,20 +1,21 @@
 .private {
   @include lg-block {
-    position: absolute;
     left: 0;
     bottom: 0;
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-rows: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     height: 100%;
     background: #fff;
+    overflow-x: scroll;
+    gap: 0 6%;
 
     a {
       padding: rem-calc(12) 0;
       font-weight: 500;
-      font-size: 16px;
-      line-height: 20px;
+      font-size: rem-calc(16);
+      line-height: rem-calc(20);
       color: rgba($color-dark-button, 0.9) !important;
     }
   }
@@ -39,6 +40,7 @@
 .link {
   padding-bottom: rem-calc(15);
   font: $font-body-small-1;
+  white-space: nowrap;
   color: $color-typo-secondary;
 
   @include lg-block {
@@ -64,7 +66,7 @@
     position: absolute;
     left: 0;
     bottom: -50px;
-    overflow: auto;
+    overflow: visible;
     width: 100%;
     height: 100% !important;
     background-color: #fff;

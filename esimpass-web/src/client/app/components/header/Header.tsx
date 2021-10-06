@@ -18,7 +18,7 @@ export const Header = () => {
     React.useEffect(() => {
 
         const handleResizeListener = () => {
-            if (window.screen.availWidth < 1200) {
+            if (window.screen.availWidth < 992) {
                 setActive('');
                 document.body.classList.remove('menu-active');
                 document.body.style.overflow = 'auto';
@@ -84,7 +84,7 @@ export const Header = () => {
                             <li><Link href='#'><a onClick={() => {
                                 setActive('');
                                 document.body.classList.remove('menu-active');
-                            }} className={s.active}>Устройства и тарифы</a></Link></li>
+                            }} className={s.active}>Тарифы</a></Link></li>
                             <li><Link href='#'><a onClick={() => {
                                 setActive('');
                                 document.body.classList.remove('menu-active');

@@ -6,6 +6,11 @@
     padding-top: 152px;
     padding-bottom: 88px;
   }
+
+  @media (min-width: 1200px) and (max-width: 1536px) {
+    padding-top: rem-calc(120);
+    padding-bottom: 30px;
+  }
 }
 
 .title {
@@ -13,6 +18,11 @@
   font: $font-heading-3;
   text-align: center;
   color: $color-off-black;
+
+  @media (min-width: 1200px) and (max-width: 1536px) {
+    font-size: rem-calc(32);
+    line-height: rem-calc(36);
+  }
 }
 
 .content {
@@ -46,11 +56,21 @@
 
     button {
       width: 302px;
+
+      @media (min-width: 1200px) and (max-width: 1536px) {
+        width: 272px;
+        height: 50px;
+      }
     }
 
     &:last-child {
       button {
         width: 202px;
+
+        @media (min-width: 1200px) and (max-width: 1536px) {
+          width: 182px;
+          height: 50px;
+        }
       }
     }
   }
@@ -58,6 +78,14 @@
   &:first-child {
     .image {
       padding-top: rem-calc(50);
+    }
+  }
+
+  @media (min-width: 1200px) and (max-width: 1536px) {
+    button {
+      margin-top: 0;
+      font-size: 16px;
+      line-height: 24px;
     }
   }
 }
@@ -79,6 +107,10 @@
     margin-bottom: $big-offset;
     height: 378px;
   }
+
+  @media (min-width: 1200px) and (max-width: 1536px) {
+    height: 304px;
+  }
 }
 
 .subtitle {
@@ -97,4 +129,10 @@
   line-height: rem-calc(24);
   color: $color-off-black;
   opacity: 0.8;
+
+  @media (min-width: 1200px) and (max-width: 1536px) {
+    margin: 0 0 24px 0;
+    font-size: rem-calc(14);
+    line-height: rem-calc(18);
+  }
 }

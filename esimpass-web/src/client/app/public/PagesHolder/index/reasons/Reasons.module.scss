@@ -5,6 +5,10 @@
     padding-top: 88px;
     padding-bottom: 74px;
   }
+
+  @media (min-width: 1200px) and (max-width: 1536px) {
+    padding-bottom: rem-calc(62);
+  }
 }
 
 .title {
@@ -16,6 +20,11 @@
   @include xl-block {
     margin-bottom: 52px;
     font: $font-heading-3;
+  }
+
+  @media (min-width: 1200px) and (max-width: 1536px) {
+    font-size: rem-calc(32);
+    line-height: rem-calc(36);
   }
 }
 
@@ -48,6 +57,19 @@
           min-height: 48px;
         }
       }
+
+      @media (min-width: 1200px) and (max-width: 1536px) {
+        width: 84px;
+        height: 84px;
+        margin-bottom: 20px;
+
+        svg {
+          @media (min-width: 1200px) and (max-width: 1536px) {
+            width: 44px;
+            height: 44px;
+          }
+        }
+      }
     }
 
     p {
@@ -55,6 +77,11 @@
       font: $font-body-regular-m;
       line-height: rem-calc(24);
       text-align: center;
+
+      @media (min-width: 1200px) and (max-width: 1536px) {
+        font-size: 14px;
+        line-height: 18px;
+      }
     }
 
     &:nth-last-child(-n+2) {
@@ -79,6 +106,16 @@
         margin-right: rem-calc(107);
       }
     }
+
+    @media (min-width: 1200px) and (max-width: 1536px) {
+      max-width: 293px;
+      margin-right: 0;
+      margin-bottom: 49px;
+
+      &:not(:nth-child(3n)) {
+        margin-right: 72px;
+      }
+    }
   }
 
   + button {
@@ -93,6 +130,18 @@
     @include xl-block {
       display: flex;
       text-align: center;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1536px) {
+      max-width: 410px;
+      font-size: 15px;
+      line-height: 24px;
+      gap: 7px;
+
+      svg {
+        width: 14px;
+        height: 14px;
+      }
     }
   }
 
@@ -116,7 +165,7 @@
   &::after {
     content: "";
     position: absolute;
-    left: rem-calc(-25);
+    left: rem-calc(-20);
     top: 0;
     z-index: -1;
     width: calc(100% + #{$gutter * 2});
@@ -178,5 +227,39 @@
     padding-bottom: 23px;
     width: calc(412px - 40px);
     min-width: calc(412px - 40px);
+  }
+
+  @media (min-width: 1200px) and (max-width: 1536px) {
+    min-width: 255px;
+    max-width: 255px;
+    width: 255px;
+    padding: 20px 0;
+
+    h4 {
+      margin-bottom: 8px;
+      font-size: rem-calc(18);
+      line-height: rem-calc(24);
+    }
+
+    small {
+      font-size: 10px;
+      line-height: 16px;
+    }
+
+    .controls {
+      margin-bottom: 12px;
+
+      button {
+        font-size: 14px;
+        line-height: 18px;
+        width: 115px;
+        height: 36px;
+      }
+    }
+
+    &::after {
+      left: -18px;
+      width: 293px;
+    }
   }
 }

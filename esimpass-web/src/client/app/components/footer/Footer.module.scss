@@ -9,6 +9,10 @@
     padding-top: rem-calc(56);
     padding-bottom: 62px;
   }
+
+  @media (min-width: 1200px) and (max-width: 1536px) {
+    padding-top: rem-calc(53);
+  }
 }
 
 .container {
@@ -39,6 +43,13 @@
       }
     }
   }
+
+
+  @media (min-width: 1200px) and (max-width: 1536px) {
+    display: grid;
+    grid-template-columns: 535px 1fr;
+    gap: 160px;
+  }
 }
 
 .logo {
@@ -63,6 +74,10 @@
 
   @include xl-block {
     padding-right: rem-calc(138);
+  }
+
+  @media (min-width: 1200px) and (max-width: 1536px) {
+    padding-right: 0;
   }
 }
 

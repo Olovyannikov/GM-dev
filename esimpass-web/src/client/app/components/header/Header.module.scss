@@ -24,7 +24,11 @@
     display: flex;
     align-items: center;
 
-    @include xl-block {
+    @include lg-block {
+      margin-right: rem-calc(28);
+    }
+
+    @include custom-breakpoint(1537px) {
       margin-right: rem-calc(44);
     }
   }
@@ -40,20 +44,28 @@
         text-align: left;
 
         &:not(:last-child) {
-          margin-right: $big-offset;
+          margin-right: rem-calc(24);
         }
 
         &.last {
-          margin-right: $big-offset;
+          margin-right: rem-calc(24);
 
           @include custom-breakpoint(1320px) {
-            margin-left: 32%;
+            margin-left: 30.6%;
 
             a {
               color: $color-ash;
             }
           }
+
+          @media (min-width: 1537px) {
+            margin-left: 81%;
+          }
         }
+      }
+
+      @include custom-breakpoint(1537px) {
+        margin-right: $big-offset;
       }
     }
 
@@ -86,6 +98,10 @@
 
   @include xl-block {
     margin-bottom: rem-calc(22);
+  }
+
+  @media (min-width: 1024px) and (max-width: 1536px) {
+    margin-bottom: rem-calc(16);
   }
 }
 
@@ -198,11 +214,15 @@
     }
   }
 
+  @include custom-breakpoint(1537px) {
+    gap: rem-calc(40);
+  }
+
   @include xl-block {
     display: flex;
     flex-direction: row;
     margin: 0;
-    gap: 40px;
+    gap: rem-calc(24);
   }
 }
 

@@ -20,6 +20,10 @@
       @include md-block {
         margin-bottom: rem-calc(38.5);
       }
+
+      @media (min-width: 1200px) and (max-width: 1536px) {
+        margin-bottom: rem-calc(35);
+      }
     }
 
     .swiper-slide {
@@ -52,6 +56,10 @@
       @include md-block {
         height: 252px;
       }
+
+      @media (min-width: 1200px) and (max-width: 1536px) {
+        height: 200px;
+      }
     }
 
     .swiper-pagination {
@@ -82,6 +90,10 @@
     overflow: unset;
     margin-top: 50px;
   }
+
+  @media (min-width: 1200px) and (max-width: 1536px) {
+    margin-bottom: 0;
+  }
 }
 
 .title {
@@ -92,6 +104,13 @@
   @include md-block {
     margin-bottom: 56px;
     font: $font-heading-3;
+  }
+
+  @media (min-width: 1200px) and (max-width: 1536px) {
+    margin-top: -9px;
+    margin-bottom: rem-calc(52);
+    font-size: rem-calc(32);
+    line-height: rem-calc(36);
   }
 }
 
@@ -110,6 +129,12 @@
     padding-left: rem-calc(9);
     font: $font-heading-4;
     line-height: 3.3rem;
+
+    @media (min-width: 1200px) and (max-width: 1536px) {
+      margin-bottom: rem-calc(12);
+      font-size: 28px;
+      line-height: 32px;
+    }
   }
 
   .info {
@@ -129,6 +154,10 @@
     margin-bottom: 6px;
     font: $font-body-medium-l;
     opacity: 0.8;
+
+    @media (min-width: 1200px) and (max-width: 1536px) {
+      margin-bottom: rem-calc(2);
+    }
   }
 
   p {
@@ -168,6 +197,16 @@
       @include md-block {
         transform: translateY(-34px);
       }
+
+      @media (min-width: 1200px) and (max-width: 1536px) {
+        transform: translateY(-22px);
+      }
+    }
+
+    h3 {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
 
     .info {
@@ -180,11 +219,22 @@
       @include xl-block {
         padding-bottom: 108px;
       }
+
+      @media (min-width: 1200px) and (max-width: 1536px) {
+        padding-bottom: rem-calc(78);
+      }
     }
   }
 
   @include md-block {
     padding-left: rem-calc(33);
+  }
+
+  @media (min-width: 1200px) and (max-width: 1536px) {
+    button {
+      width: rem-calc(145);
+      height: rem-calc(44);
+    }
   }
 }
 

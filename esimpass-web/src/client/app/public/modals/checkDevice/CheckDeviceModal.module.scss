@@ -6,6 +6,10 @@
     width: 1065px;
     height: 465px;
   }
+
+  @media (min-width: 1200px) and (max-width: 1536px) {
+    width: 1024px;
+  }
 }
 
 .header {
