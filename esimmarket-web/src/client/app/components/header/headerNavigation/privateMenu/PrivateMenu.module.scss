@@ -3,13 +3,12 @@
     left: 0;
     bottom: 0;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     height: 100%;
     background: #fff;
-    overflow-x: scroll;
-    gap: 0 6%;
 
     a {
       padding: rem-calc(12) 0;
