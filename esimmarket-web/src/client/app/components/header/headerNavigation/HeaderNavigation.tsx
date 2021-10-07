@@ -2,6 +2,7 @@ import s from './HeaderNavigation.module.scss';
 import { useRouter } from 'next/router';
 import { PrivateMenu } from './privateMenu/PrivateMenu';
 import { BusinessMenu } from './businessMenu/BusinessMenu';
+import { AboutMenu } from './aboutMenu/AboutMenu';
 
 export const HeaderNavigation = () => {
 
@@ -16,6 +17,7 @@ export const HeaderNavigation = () => {
         <nav className={s.nav}>
             <ul className={s.list}>
                 {navigationRender()}
+                <AboutMenu/>
             </ul>
         </nav>
     );

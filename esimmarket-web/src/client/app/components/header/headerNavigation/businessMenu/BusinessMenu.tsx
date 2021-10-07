@@ -9,7 +9,8 @@ export const BusinessMenu = () => {
                 <Link href={'/'}><a className={s.toggle}>Частным клиентам</a></Link>
             </li>
             <li>
-                <Collapse className={s.toggle} label={'Бизнесу'} isOpen={true} collapseWrapperClassName={s.wrapper} contentWrapperClassName={s.content}>
+                <Collapse className={s.toggle} label={'Бизнесу'} isOpen={true} collapseWrapperClassName={s.wrapper}
+                          contentWrapperClassName={s.content}>
                     <ul className={s.list}>
                         <li>
                             <Link href='#'>

@@ -1,0 +1,45 @@
+.item {
+  @include lg-block {
+    display: none;
+  }
+}
+
+.toggle {
+  position: relative;
+  margin-bottom: rem-calc(15);
+  font: $font-body-1-semibold;
+  color: $color-typo-primary;
+
+  @include lg-block {
+    margin: 0 rem-calc(35) 0 0;
+    color: $color-white;
+
+    svg {
+      display: none;
+    }
+  }
+}
+
+.link {
+  padding-bottom: rem-calc(15);
+  font: $font-body-small-1;
+  white-space: nowrap;
+  color: $color-typo-secondary;
+
+  @include lg-block {
+    color: $color-white !important;
+  }
+}
+
+.wrapper {
+  &::after {
+    @include lg-block {
+      display: none;
+    }
+  }
+
+  @include lg-block {
+    position: static;
+    margin: 0;
+  }
+}

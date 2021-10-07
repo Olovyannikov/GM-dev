@@ -1,0 +1,19 @@
+.background {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: rem-calc(479);
+  max-width: 100%;
+  max-height: rem-calc(479);
+
+  :global {
+    [aria-hidden] {
+      object-position: left 10%;
+    }
+  }
+
+  @include lg-block {
+    height: rem-calc(450);
+    max-height: rem-calc(450);
+  }
+}

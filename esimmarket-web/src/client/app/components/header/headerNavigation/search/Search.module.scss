@@ -16,8 +16,8 @@
     transition: 0.3s;
 
     &:focus {
-      width: fit-content;
       outline: none;
+      width: fit-content;
       color: #fff;
     }
   }

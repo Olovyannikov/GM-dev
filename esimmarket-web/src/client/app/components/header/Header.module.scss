@@ -3,6 +3,10 @@
   min-height: rem-calc(48);
   color: $color-white;
   background-color: $color-background;
+
+  @include lg-block {
+    margin-bottom: rem-calc(44);
+  }
 }
 
 .wrapper {
