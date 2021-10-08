@@ -76,13 +76,17 @@
   }
 
   @include xl-block {
-    margin-top: -71px;
+    margin-top: 50px;
     width: 746px;
     order: unset;
 
     img {
       border-radius: 24px;
     }
+  }
+
+  @include custom-breakpoint(1537px) {
+    margin-top: -71px;
   }
 }
 

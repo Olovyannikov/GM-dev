@@ -25,7 +25,7 @@ export const EsimTravelExample = (props: {title?: string, stroke?: string}) => {
     const loaded = useLoaded();
 
     return (
-        <section className={s.travel}>
+        <section className={s.travel} id="tarrifs">
             <Container>
                 <h2 className={s.title}>{props.title || `Сколько будет стоить eSIM в путешествии?`}</h2>
                 <div className={s.slider}>

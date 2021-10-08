@@ -32,7 +32,6 @@ export const MainSlider = () => {
                 </SwiperSlide>
             </Swiper>
 
-
             <Container>
             </Container>
         </section>

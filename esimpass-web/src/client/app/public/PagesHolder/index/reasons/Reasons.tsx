@@ -7,7 +7,7 @@ import {STATE_API} from 'redux/StateApi';
 
 
 export const Reasons = () => (
-    <section className={s.reasons}>
+    <section className={s.reasons} id="speciality">
         <Container>
             <h2 className={s.title}>
                 8 причин оформить виртуальную eSIM
@@ -23,7 +23,7 @@ export const Reasons = () => (
                     <div className={s.icon}>
                         <Dualsim/>
                     </div>
-                    <p>eSIM не требует отдельного SIM-слота и используется в смартфоне как 2я SIM</p>
+                    <p>eSIM не требует отдельного SIM-слота и используется в смартфоне как вторая SIM</p>
                 </li>
                 <li>
                     <div className={s.icon}>
@@ -47,7 +47,7 @@ export const Reasons = () => (
                     <div className={s.icon}>
                         <Clock/>
                     </div>
-                    <p>Практически не ограниченный срок действия eSIM  </p>
+                    <p>Практически неограниченный срок действия eSIM  </p>
                 </li>
                 <li>
                     <div className={s.icon}>
