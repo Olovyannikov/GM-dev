@@ -11,7 +11,7 @@
 }
 
 @mixin xxl-block {
-  @media (min-width: (1441px)) {
+  @media (min-width: (1600px)) {
     @content;
   }
 }
