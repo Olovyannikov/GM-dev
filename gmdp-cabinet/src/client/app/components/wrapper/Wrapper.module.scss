@@ -1,0 +1,15 @@
+.wrapper {
+  transition: 0.8s ease-in-out;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
+  padding: 0 24px;
+  max-width: 100%;
+  gap: get-vw(17px);
+
+  div {
+    display: grid;
+    width: 100%;
+    height: 50px;
+    background-color: #f00;
+  }
+}

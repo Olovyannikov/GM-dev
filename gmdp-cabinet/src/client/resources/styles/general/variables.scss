@@ -1,0 +1,56 @@
+@import "mixins";
+
+/* Colors */
+
+// Main Colors
+
+$color-white: #fff;
+$color-black: #000;
+
+// Accent colors
+
+$color-primary: #262f37;
+$color-accent: #00e0ff;
+
+// UI Colors
+
+$color-background: #1f2326;
+$color-background-2: #292e32;
+$color-background-linear: linear-gradient(180deg, $color-background 0%, rgba(31, 35, 38, 0.9) 100%);
+$color-gray-button: #f4f4f5;
+$color-light-button: #f8f8f8;
+$color-dark-button: #1b1b1b;
+
+// Typography
+
+$color-heading: $color-background;
+$color-typo-primary: $color-dark-button;
+$color-typo-secondary: rgba($color-typo-primary, 0.8);
+$color-typo-light: rgba($color-typo-primary, 0.6);
+
+// Tech colors
+$color-green: #1dbe5e;
+$color-blue: #28d2d6;
+$color-yellow: #d6b924;
+$color-red: #d62459;
+
+
+/* Offset */
+$container-width: 1280px;
+$gutter: 20px;
+$small-offset: 12px;
+$rare-offset: 16px;
+$middle-offset: 24px;
+$strong-offset: 32px;
+$big-offset: 40px;
+
+/* Fonts */
+$font-alt: "Arial", sans-serif;
+$font-family: "Roboto", $font-alt;
+
+// Jumbo
+$font-h1-extrabold: 800 rem-calc(46) / rem-calc(48.3) $font-family;
+
+// Body
+
+$font-body-14-regular: 400 rem-calc(14) / rem-calc(22) $font-family;

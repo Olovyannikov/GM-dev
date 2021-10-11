@@ -1,0 +1,44 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: rem-calc(9) 0;
+  width: 100%;
+  min-height: rem-calc(48);
+  color: $color-white;
+  background-color: $color-primary;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: rem-calc(-32);
+    bottom: 0;
+    width: calc(100% + 32px * 2);
+    height: 1px;
+    background-color: #3d4452;
+  }
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: rem-calc(12);
+
+  div {
+    border-radius: 50%;
+    width: rem-calc(24);
+    height: rem-calc(24);
+  }
+}

@@ -1,0 +1,17 @@
+.container {
+  margin: 0 auto;
+  padding: 0 rem-calc(30);
+  width: 100%;
+
+  &.full {
+    padding: 0 1rem;
+  }
+
+  @include xl-block {
+    max-width: calc(1216px + 30px * 2);
+
+    &.full {
+      max-width: 100%;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import "mixins";
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.btn-reset {
+  @include btn-reset;
+}
+
+.list-reset {
+  @include list-reset;
+}
+
+.is-hidden {
+  display: none !important; // stylelint-disable-line declaration-no-important
+}

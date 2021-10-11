@@ -1,0 +1,54 @@
+.collapse {
+  position: relative;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: $color-white;
+  cursor: pointer;
+
+  svg {
+    color: #7a8c9c;
+  }
+
+  &.open {
+    color: $color-accent;
+
+    svg {
+      color: currentColor;
+    }
+  }
+}
+
+.chevron {
+  opacity: 0.6;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out;
+
+  .active & {
+    transform: rotate(-180deg);
+  }
+}
+
+.contentWrapper {
+  overflow: hidden;
+  height: 0;
+  transition: all ease 0.3s;
+
+  .active & {
+    animation: overflowed 1s forwards;
+  }
+}
+
+@keyframes overflowed {
+  0% {
+    overflow: hidden;
+  }
+
+  1%, 100% {
+    overflow: visible;
+  }
+}

@@ -1,0 +1,39 @@
+.btn {
+  display: flex;
+  border: 1px solid transparent;
+  border-radius: rem-calc(100);
+  padding: rem-calc(13) rem-calc(30);
+  width: auto;
+  box-sizing: border-box;
+  font-family: $font-alt;
+  font-weight: 600;
+  font-size: rem-calc(14);
+  line-height: rem-calc(20);
+  color: $color-heading;
+  background-color: $color-primary;
+}
+
+.small {
+  padding: rem-calc(9) rem-calc(30);
+  font-size: rem-calc(15);
+}
+
+.tiny {
+  padding: rem-calc(9) rem-calc(44);
+  font-size: rem-calc(15);
+}
+
+.secondary {
+  color: $color-black;
+  background-color: $color-light-button;
+}
+
+.light {
+  color: $color-white;
+}
+
+.dark {
+  border: 1px solid $color-white;
+  color: $color-white;
+  background-color: transparent;
+}
