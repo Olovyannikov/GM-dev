@@ -92,7 +92,7 @@ export const Header = () => {
                             <li><Link href='#speciality'><a onClick={() => {
                                 setActive('');
                                 document.body.classList.remove('menu-active');
-                            }}>Особенности E-SIM</a></Link></li>
+                            }}>Особенности eSIM</a></Link></li>
                             <li className={s.last}><Link href='/about'><a onClick={() => {
                                 setActive('');
                                 document.body.classList.remove('menu-active');

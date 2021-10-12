@@ -2,7 +2,7 @@ import s from './FAQ.module.scss';
 import {Container} from "../../../../components/container/Container";
 import {Button} from "../../../../components/button/Button";
 import {BigPhone, Simicon} from "../../../../components/icons";
-import { STATE_API } from 'redux/StateApi';
+import {STATE_API} from 'redux/StateApi';
 
 export const FAQ = () => (
     <section className={s.faq}>
@@ -14,11 +14,13 @@ export const FAQ = () => (
                         <Simicon/>
                     </div>
                     <h3 className={s.subtitle}>Инновация</h3>
-                    <p className={s.descr}>Виртуальная eSIM это новая технология, которая не требует отдельного
-                        SIM-слота в смартфоне, ваш смартфон может иметь только 1 слот для При этом виртуальная eSIM
+                    <p className={s.descr}>Виртуальная eSIM - это новая технология, которая не требует отдельного
+                        SIM-слота в смартфоне, ваш смартфон может иметь только один слот для сим-карты.
+                        При этом виртуальная eSIM
                         функционирует как обычная SIM-карта. Перед оформлением eSIM обязательно проверьте, поддерживает
                         ли Ваше устройство технологию виртуальной eSIM. </p>
-                    <Button onClick={() => STATE_API.showPublicWizard('checkDevice')} color={'secondary'}>Моё устройство подойдет?</Button>
+                    <Button onClick={() => STATE_API.showPublicWizard('checkDevice')} color={'secondary'}>Моё устройство
+                        подойдет?</Button>
                 </div>
                 <div className={s.column}>
                     <div className={s.image}>
@@ -30,7 +32,7 @@ export const FAQ = () => (
                         будут доступны льготные тарифы на мобильный интернет местных мобильных операторов.
                         С виртуальной eSIM партнеры и родственники смогут дозвонится также и по стандартному российскому
                         номеру.</p>
-                    <Button onClick={() =>STATE_API.showPublicWizard('auth')}>Подключить</Button>
+                    <Button onClick={() => STATE_API.showPublicWizard('auth')}>Подключить</Button>
                 </div>
             </div>
         </Container>

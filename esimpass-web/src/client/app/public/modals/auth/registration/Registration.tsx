@@ -168,7 +168,7 @@ export const Registration = () => {
         <React.Fragment>
             <p className={s.descr}>
                 На данный email мы отправим письмо с QR-кодом для автоматической настройки
-                виртуальной eSIM на Вашем устройстве. Так же мы создадим создадим Личный кабинет, привязанный к
+                виртуальной eSIM на Вашем устройстве. Также мы создадим создадим Личный кабинет, привязанный к
                 указанному e-mail.
             </p>
             <form autoComplete="off" aria-autocomplete="none" onKeyUp={handleEventEnter} className={s.form}>
