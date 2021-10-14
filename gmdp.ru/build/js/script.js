@@ -109,6 +109,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
+/***/ "./src/js/modules/menu.module.js":
+/*!***************************************!*\
+  !*** ./src/js/modules/menu.module.js ***!
+  \***************************************/
+/*! exports provided: menu */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"menu\", function() { return menu; });\nvar menu = function menu() {\n  var $body = document.body;\n  var $header = document.querySelector('#header');\n  var $burgerBtn = document.querySelector('#burger');\n  var $navigation = document.querySelector('#navigation');\n  var menuOpenClass = 'menu--open';\n  console.log($navigation.scrollHeight);\n\n  var getHeightHandler = function getHeightHandler(element) {\n    if (element.style.maxHeight === \"0px\" || +element.style.maxHeight === 0) {\n      element.style.maxHeight = element.scrollHeight + 'px';\n    } else {\n      element.style.maxHeight = \"0\";\n    }\n  };\n\n  var toggleMenuHandler = function toggleMenuHandler() {\n    if ($body.classList.contains(menuOpenClass)) {\n      $body.classList.remove(menuOpenClass);\n      $burgerBtn.classList.remove('header__burger--active');\n      $navigation.classList.remove('navigation--active');\n      getHeightHandler($navigation);\n    } else {\n      $body.classList.add(menuOpenClass);\n      $burgerBtn.classList.add('header__burger--active');\n      $navigation.classList.add('navigation--active');\n      getHeightHandler($navigation);\n    }\n  };\n\n  $burgerBtn.addEventListener('click', toggleMenuHandler);\n};\n\n//# sourceURL=webpack:///./src/js/modules/menu.module.js?");
+
+/***/ }),
+
 /***/ "./src/js/script.js":
 /*!**************************!*\
   !*** ./src/js/script.js ***!
@@ -117,7 +129,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_aos_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/aos.module */ \"./src/js/modules/aos.module.js\");\n\nwindow.addEventListener('DOMContentLoaded', function () {\n  Object(_modules_aos_module__WEBPACK_IMPORTED_MODULE_0__[\"aos\"])();\n});\n\n//# sourceURL=webpack:///./src/js/script.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_aos_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/aos.module */ \"./src/js/modules/aos.module.js\");\n/* harmony import */ var _modules_menu_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/menu.module */ \"./src/js/modules/menu.module.js\");\n\n\nwindow.addEventListener('DOMContentLoaded', function () {\n  Object(_modules_aos_module__WEBPACK_IMPORTED_MODULE_0__[\"aos\"])();\n  Object(_modules_menu_module__WEBPACK_IMPORTED_MODULE_1__[\"menu\"])();\n});\n\n//# sourceURL=webpack:///./src/js/script.js?");
 
 /***/ })
 

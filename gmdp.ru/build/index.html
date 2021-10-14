@@ -33,9 +33,18 @@
           <source srcset="./img/round-1-big@2x.png 2x, ./img/round-1-big.png" media="(min-width: 480px)"/><img srcset="./img/round-1@2x.png 2x" src="./img/round-1.png"/>
         </picture>
       </div>
-      <header class="header" id="js-header">
-        <div class="container header__container">
-          <div class="header__logo"><img src="./img/logo.svg" alt="Логотип Глонасс"/></div>
+      <header class="header" id="header">
+        <div class="container header__container"><a class="header__logo" href="/"><img src="./img/logo.svg" alt="Логотип Глонасс"/></a>
+          <button class="header__burger" id="burger" aria-label="Управлять меню" type="button"></button>
+          <nav class="header__navigation navigation" id="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item"><a class="navigation__link navigation__link--active">Платформа GMDP</a></li>
+              <li class="navigation__item"><a class="navigation__link">Платформа GMDP</a></li>
+              <li class="navigation__item"><a class="navigation__link">GSM операторам</a></li>
+              <li class="navigation__item"><a class="navigation__link">Производителям eSIM</a></li>
+              <li class="navigation__item"><a class="navigation__link">Дистрибьюторам</a></li>
+            </ul>
+          </nav>
         </div>
       </header>
       <main class="main">

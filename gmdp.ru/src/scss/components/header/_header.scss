@@ -3,7 +3,14 @@
   padding-top: rem-calc(23);
 
   @include sm-block {
-    padding-top: rem-calc(43);
+    padding-top: rem-calc(39);
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   &__image {
@@ -13,7 +20,57 @@
   }
 
   &__logo {
-    width: 43vw;
-    height: 10vw;
+    display: block;
+    width: 54vw;
+
+    @include sm-block {
+      width: 11vw;
+    }
+  }
+
+  &__burger {
+    position: relative;
+    width: rem-calc(18);
+    height: rem-calc(18);
+
+    &::after,
+    &::before {
+      $full-width: 18px;
+      $size: 6px;
+      content: "";
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background-color: $color-accent;
+      top: 0;
+      left: 0;
+      border-radius: 1px;
+      box-shadow: ($full-width - $size) 0 0 0 $color-accent;
+      transition: 0.3s ease-in-out;
+    }
+
+    &::before {
+      top: unset;
+      bottom: 0;
+    }
+
+    &--active {
+      &::after,
+      &::before {
+        top: 85%;
+        left: 35%;
+        box-shadow: none;
+        width: 110%;
+        height: 2.8px;
+        transform: rotate(45deg) translate(-50%, -50%);
+        border-radius: 2px;
+      }
+
+      &::after {
+        top: 10%;
+        left: 40%;
+        transform: rotate(-45deg) translate(-50%, -50%);
+      }
+    }
   }
 }

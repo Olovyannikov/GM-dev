@@ -23,17 +23,9 @@ html {
   margin: 0 auto;
   padding: 0 $gutter;
 
-  @include md-block {
-    padding: 0 92px;
-    max-width: calc(1380px + 60px);
-  }
-
-  @include xl-block {
-    padding: 0 91px;
-  }
-
-  @include custom-breakpoint(1401px) {
-    padding: 0 50px;
+  @include sm-block {
+    padding: 0 20px;
+    max-width: calc(1380px + 40px);
   }
 }
 
@@ -52,4 +44,12 @@ picture {
 img {
   max-width: 100%;
   object-fit: cover;
+}
+
+button {
+  @include btn-reset;
+}
+
+ul {
+  @include list-reset;
 }

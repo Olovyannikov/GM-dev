@@ -1,4 +1,21 @@
-header#js-header.header
+-
+    var links = [
+        {isActive: true, text: "Платформа GMDP"},
+        {isActive: false, text: "GSM операторам"},
+        {isActive: false, text: "Производителям eSIM"},
+        {isActive: false, text: "Дистрибьюторам"},
+    ]
+
+header#header.header
     .container.header__container
-        .header__logo
+        a(href="/").header__logo
             img(src="./img/logo.svg" alt="Логотип Глонасс")
+        button.header__burger#burger(aria-label="Управлять меню" type="button")
+        nav.header__navigation.navigation#navigation
+            ul.navigation__list
+                each link in links
+                    if link.isActive
+                        li.navigation__item
+                            a.navigation__link.navigation__link--active #{link.text}
+                    li.navigation__item
+                        a.navigation__link #{link.text}

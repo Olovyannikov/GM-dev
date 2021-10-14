@@ -1,0 +1,14 @@
+.navigation {
+  width: 100%;
+  max-height: 0;
+  pointer-events: none;
+  overflow: hidden;
+  transition: 1s ease-in-out;
+
+  &--active {
+    margin-top: rem-calc(80);
+    overflow: visible;
+    pointer-events: all;
+    max-height: fit-content;
+  }
+}
