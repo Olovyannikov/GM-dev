@@ -1,0 +1,42 @@
+/* Colors */
+
+$color-background: #262f37;
+$color-background-alt: #292e32;
+$color-background-gradient: linear-gradient(180deg, $color-background 0%, rgba(31, 35, 38, 0.9) 100%);
+$color-background-light: #fff;
+$color-gray: #f4f4f5;
+$color-gray-light: #f8f8f8;
+$color-turquoise-blue: #28d2d6;
+$color-accent: #18c8cc;
+
+/* Color-accent */
+
+$color-tele2: #66d4fd;
+$color-megafon: #00985f;
+$color-beeline: #fbc400;
+$color-mts: #e30613;
+$color-danycom: #14558c;
+
+/* Color-typography */
+
+$color-heading: #1f2326;
+$color-primary: #1b1b1b;
+$color-secondary: rgba(27, 27, 27, 0.8);
+$color-light: rgba(27, 27, 27, 0.6);
+$color-white: #fff;
+$color-typo-secondary: rgba(255, 255, 255, 0.8);
+$color-typo-light: rgba(255, 255, 255, 0.6);
+
+/* Fonts */
+$font-family: "Montserrat", "Roboto", sans-serif;
+
+
+/* Offsets */
+
+$gap: 32px;
+$gutter: 30px;
+$small-offset: 10px;
+$rare-offset: 15px;
+$medium-offset: 20px;
+$large-offset: 25px;
+$extra-offset: 35px;

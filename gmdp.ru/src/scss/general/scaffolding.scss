@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: $font-family;
+  font-size: 16px;
+  line-height: 1.1;
+  background-color: $color-background;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 $gutter;
+
+  @include md-block {
+    padding: 0 92px;
+    max-width: calc(1440px + 60px);
+  }
+
+  @include xl-block {
+    padding: 0 91px;
+  }
+
+  @include custom-breakpoint(1401px) {
+    padding: 0 50px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $color-primary;
+}
+
