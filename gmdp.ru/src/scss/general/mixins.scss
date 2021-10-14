@@ -160,13 +160,27 @@
 }
 
 @function rem-calc($size) {
-  $remSize: math.div($size, 16);
+  $remSize: $size / 16;
 
-  @return #{$remSize}rem;
+  @return $remSize * 1rem;
 }
 
-@function get-vw($font){
-  $vw-context: $vw-viewport * 0.01 * 1px;
-  @return $font / $vw-context * 1vw;
-  @return $font;
+@function get-vw($font, $vw-viewport) {
+  $vw-enable: true;
+
+  @if $vw-enable {
+    $vw-context: $vw-viewport * 0.01 * 1px;
+
+    @return $font / $vw-context * 1vw;
+  }
+
+  @return $font
+}
+
+@function vw($x){
+  @return #{100 * $x / 1920}vw;
+}
+
+@function vm($x){
+  @return #{100 * $x / 360}vw;
 }

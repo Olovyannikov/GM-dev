@@ -1,0 +1,22 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: vm(360);
+    height: vm(883);
+
+    img {
+      width: 100%;
+    }
+
+    @include sm-block {
+      width: vw(905);
+      height: vw(1386);
+    }
+  }
+}

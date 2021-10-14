@@ -1,0 +1,19 @@
+.header {
+  position: relative;
+  padding-top: rem-calc(23);
+
+  @include sm-block {
+    padding-top: rem-calc(43);
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__logo {
+    width: 43vw;
+    height: 10vw;
+  }
+}

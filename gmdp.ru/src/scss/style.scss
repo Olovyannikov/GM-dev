@@ -6,3 +6,8 @@
 @import "general/mixins";
 @import "general/variables";
 @import "general/utils";
+@import "general/scaffolding";
+
+/* Components */
+@import "components/wrapper/wrapper";
+@import "components/header/header";
