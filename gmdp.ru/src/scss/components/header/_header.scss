@@ -3,7 +3,7 @@
   padding-top: rem-calc(23);
 
   @include sm-block {
-    padding-top: rem-calc(39);
+    padding-top: rem-calc(38);
   }
 
   &__container {
@@ -20,11 +20,12 @@
   }
 
   &__logo {
-    display: block;
+    display: flex;
     width: 54vw;
 
     @include sm-block {
-      width: 11vw;
+      width: 10.5vw;
+      margin-right: 5.1vw;
     }
   }
 
@@ -57,8 +58,8 @@
     &--active {
       &::after,
       &::before {
-        top: 85%;
-        left: 35%;
+        top: 90%;
+        left: 30%;
         box-shadow: none;
         width: 110%;
         height: 2.8px;
@@ -71,6 +72,10 @@
         left: 40%;
         transform: rotate(-45deg) translate(-50%, -50%);
       }
+    }
+
+    @include sm-block {
+      display: none;
     }
   }
 }

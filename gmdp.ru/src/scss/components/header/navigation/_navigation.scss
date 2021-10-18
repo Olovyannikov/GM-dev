@@ -1,14 +1,155 @@
 .navigation {
   width: 100%;
   max-height: 0;
-  pointer-events: none;
   overflow: hidden;
+  pointer-events: none;
   transition: 1s ease-in-out;
 
   &--active {
     margin-top: rem-calc(80);
-    overflow: visible;
     pointer-events: all;
+
+    @include sm-block {
+      margin-top: 0;
+    }
+  }
+
+  &__wrapper {
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  &__list {
+    overflow: hidden;
+    transition: 1s ease-in-out;
+    display: grid;
+    gap: rem-calc(25);
+    margin-bottom: rem-calc(63);
+
+    @include sm-block {
+      grid-auto-flow: column;
+      gap: rem-calc(30);
+      margin-bottom: 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    &:last-child {
+      display: none;
+    }
+  }
+
+  &__link {
+    font-family: $font-alt;
+    font-size: rem-calc(18);
+    line-height: 120%;
+    color: #cccacd;
+
+    &--active {
+      position: relative;
+      color: $color-accent;
+      opacity: 1;
+
+      @include sm-block {
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: $color-accent;
+        }
+      }
+    }
+
+    @include sm-block {
+      letter-spacing: 0.03em;
+      margin-top: rem-calc(3);
+      padding-bottom: rem-calc(3);
+      font-size: vw(15);
+      line-height: rem-calc(18);
+    }
+  }
+
+  &__button {
+    margin-bottom: rem-calc(35);
+    width: 100%;
+
+    @include sm-block {
+      max-width: vw(172);
+      margin-bottom: 0;
+      order: 4;
+      font-size: vw(14);
+      padding: vw(9) vw(30) vw(8) vw(30);
+    }
+
+    @include xxl-block {
+      font-size: rem-calc(14);
+    }
+  }
+
+  &__lang {
+    margin-bottom: rem-calc(35);
+    display: grid;
+    gap: rem-calc(20);
+    grid-auto-flow: column;
+    justify-content: flex-start;
+
+    &-btn {
+      font-family: $font-alt;
+      letter-spacing: 0.03em;
+      color: #F0F0F0;
+      opacity: 0.6;
+
+      &--active {
+        opacity: 1;
+      }
+
+      @include sm-block {
+        font-size: vw(15);
+        line-height: vw(18);
+      }
+    }
+
+    @include sm-block {
+      margin-bottom: 0;
+      margin-left: 1%;
+      order: 3;
+    }
+  }
+
+  &__copy {
+    display: grid;
+    grid-auto-flow: row;
+    gap: rem-calc(20);
+    color: #fff;
+
+    a {
+      color: currentColor;
+      opacity: 0.6;
+    }
+
+    span {
+      color: #fff;
+      opacity: 0.2;
+    }
+
+    @include sm-block {
+      display: none;
+    }
+  }
+
+  @include sm-block {
+    width: auto;
+    overflow: auto;
     max-height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: auto;
+    pointer-events: all;
   }
 }

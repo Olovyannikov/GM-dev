@@ -18,7 +18,7 @@
   position: relative;
   z-index: 1;
   display: flex;
-  order: 1;
+  order: 0;
   width: 100%;
   box-sizing: content-box;
   transition-property: transform;
@@ -171,4 +171,31 @@
 
 .swiper-pagination-lock {
   display: none;
+}
+
+.swiper-fade {
+  .swiper-slide {
+    pointer-events: none;
+    transition-property: opacity;
+    .swiper-slide {
+      pointer-events: none;
+    }
+  }
+  .swiper-slide-active {
+    &,
+    & .swiper-slide-active {
+      pointer-events: auto;
+    }
+  }
+
+  .swiper-slide,
+  .swiper-slide-prev,
+  .swiper-slide-next {
+    opacity: 0 !important;
+  }
+
+  .swiper-slide-active {
+
+    opacity: 1 !important;
+  }
 }

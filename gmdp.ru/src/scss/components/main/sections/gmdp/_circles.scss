@@ -1,0 +1,128 @@
+.circles {
+  position: relative;
+  min-height: 35vh;
+
+  &__img {
+    transition: 0.7s ease-in-out;
+  }
+
+  &__circle {
+    transition: all 0.7s ease 0s;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &--otap {
+
+      width: 26.3888888889vw;
+      height: 26.3888888889vw;
+      z-index: 19;
+
+      .circles__img {
+        display: flex;
+        position: absolute;
+        z-index: 20;
+        top: 60px;
+        left: 125px;
+        background-image: url("../img/slider-circle-2-active.png");
+        background-size: cover;
+        width: 26.3888888889vw;
+        height: 26.3888888889vw;
+      }
+    }
+
+    &--smdp {
+      width: 40.2777777778vw;
+      height: 40.2777777778vw;
+
+      .circles__img {
+        display: flex;
+        position: absolute;
+        top: 35px;
+        left: 100px;
+        z-index: 5;
+        background-image: url("../img/slider-circle-1-active.png");
+        background-size: cover;
+        width: 40.2777777778vw;
+        height: 40.2777777778vw;
+      }
+    }
+
+    &--smdp-2 {
+
+      width: 88.8888888889vw;
+      height: 73.3333333333vw;
+      z-index: 20;
+
+      .circles__img {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url("../img/slider-circle-0-active.png");
+        background-size: cover;
+        width: 88.8888888889vw;
+        height: 73.3333333333vw;
+      }
+    }
+  }
+}
+
+.circles[data-id="1"] {
+  .circles__circle--smdp {
+    z-index: 21;
+    left: -50px;
+    top: -50px;
+  }
+
+  .circles__circle--otap {
+    .circles__img {
+      background-image: url("../img/slider-circle-1.png");
+    }
+  }
+
+  .circles__circle--smdp-2 {
+    .circles__img {
+      background-image: url("../img/slider-circle-0.png");
+    }
+  }
+}
+
+.circles[data-id="2"] {
+  .circles__circle--smdp {
+    .circles__img {
+      background-image: url("../img/slider-circle-2.png");
+    }
+  }
+
+  .circles__circle--otap {
+    .circles__img {
+      background-image: url("../img/slider-circle-1.png");
+    }
+  }
+
+  .circles__circle--smdp-2 {
+    left: -50px;
+    top: -50px;
+  }
+}
+
+.circles[data-id="3"] {
+  .circles__circle--smdp {
+    .circles__img {
+      background-image: url("../img/slider-circle-2.png");
+    }
+  }
+
+  .circles__circle--smdp-2 {
+    .circles__img {
+      background-image: url("../img/slider-circle-0.png");
+    }
+  }
+
+  .circles__circle--otap {
+    z-index: 22;
+    left: -50px;
+    top: -50px;
+  }
+}

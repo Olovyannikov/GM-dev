@@ -10,6 +10,12 @@
   }
 }
 
+@mixin xxl-block {
+  @media (min-width: (1600px)) {
+    @content;
+  }
+}
+
 @mixin xl-block {
   @media (min-width: (1200px)) {
     @content;
@@ -29,7 +35,7 @@
 }
 
 @mixin sm-block {
-  @media (min-width: (480px)) {
+  @media (min-width: (768px)) {
     @content;
   }
 }

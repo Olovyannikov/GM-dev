@@ -1,0 +1,26 @@
+-
+    var links = [
+        {isActive: true, text: "Платформа GMDP"},
+        {isActive: false, text: "GSM операторам"},
+        {isActive: false, text: "Производителям eSIM"},
+        {isActive: false, text: "Дистрибьюторам"},
+        {isActive: false, text: "О проекте"},
+    ];
+
+nav.header__navigation.navigation#navigation
+    ul.navigation__list
+        each link in links
+            if link.isActive
+                li.navigation__item
+                    a.navigation__link.navigation__link--active #{link.text}
+            else
+                li.navigation__item
+                    a(href="#").navigation__link #{link.text}
+    button(type="button").navigation__button.btn.btn--link Регистрация
+    .navigation__lang
+        button(type="button" aria-label="Изменить язык на Русский").navigation__lang-btn.navigation__lang-btn--active#ru Ru
+        button(type="button" aria-label="Изменить язык на Английский").navigation__lang-btn#eng Eng
+    .navigation__copy
+        a(href="#") Политика обработки персональных данных
+        span Copyright ©
+            output#currentYear

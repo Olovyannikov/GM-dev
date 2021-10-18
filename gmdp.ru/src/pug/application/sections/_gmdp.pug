@@ -1,0 +1,59 @@
+-
+    var btns = ['GMDP', 'SM-DP', 'SM-DP+', 'OTAP'];
+    var slides = [
+        {
+            id: 0,
+            text: "Программно-аппаратный комплекс, созданный в соответствии со спецификациями GSMA и поддерживающий работу с операторскими профилями посредством SM-DP+/SM-DP/OTA"
+        },
+        {
+            id: 1,
+            text: "Отвечает за безопасную доставку операторского профиля на абонентские (Consumer) устройства, поддерживающие технологию eSIM. Управляется непосредственно Абонентом через мобильное приложение Android/iOS"
+        },
+        {
+            id: 2,
+            text: "Обеспечивает доставку операторского профиля на М2М / IoT устройства поддерживающие технологию eSIM, посредством SM-SR в ручном или автоматическом режиме. Управляется администратором системы через партнерский кабинет (ПК)"
+        },
+        {
+            id: 3,
+            text: "Обеспечивает хранение и доставку в защищенном виде обновлений SIM карты, а также операторских профилей по приоритетным протоколам. SIM карта оснащается интеллектуальным апплетом и может быть инсталлирована в любое устройство (Consumer/M2M/IoT)"
+        }
+    ];
+
+section.gmdp
+    .gmdp__container.container
+        h2.gmdp__title.title
+            | Уникальная RSP
+            span  платформа GMDP
+        .gmdp__slider.slider-gmdp.swiper
+            .slider-gmdp__controls
+                each btn in btns
+                    button(type="button").slider-gmdp__btn #{btn}
+            .slider-gmdp__slides.swiper-wrapper
+                each slide in slides
+                    .slider-gmdp__slide.swiper-slide(id=slide.id)
+                        p.slider-gmdp__text
+                            | #{slide.text}
+                        if slide.id === 0
+                            a(href="#") О проекте
+                                +svg('arrow', 17, 17)
+            .slider-gmdp__circles.circles(data-id="-1")
+                .circles__circle.circles__circle--smdp
+                    span.circles__img
+                    //button.circles__btn
+                        //p.circles__subtitle Simple Multimedia service Description Protocol +
+                        //h5.circles__title SM-DP+
+                        //span.circles__cross
+                .circles__circle.circles__circle--smdp-2
+                    span.circles__img
+                    //button.circles__btn
+                        //p.circles__subtitle Simple Multimedia service Description Protocol
+                        //h5.circles__title SM-DP
+                        //span.circles__cross
+                .circles__circle.circles__circle--otap
+                    span.circles__img
+                    //button.circles__btn
+                    //    p.circles__subtitle Over-the-Air Provisioning
+                    //    h5.circles__title OTAP
+                    //    span.circles__cross
+
+

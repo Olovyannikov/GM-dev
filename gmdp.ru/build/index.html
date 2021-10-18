@@ -27,10 +27,11 @@
     </script>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
       <div class="wrapper__image">
         <picture>
-          <source srcset="./img/round-1-big@2x.png 2x, ./img/round-1-big.png" media="(min-width: 480px)"/><img srcset="./img/round-1@2x.png 2x" src="./img/round-1.png"/>
+          <source srcset="./img/round-1-big@2x.png 2x, ./img/round-1-big.png" media="(min-width: 768px)"/>
+          <source srcset="./img/round-1@2x.webp 2x, ./img/round.webp"/><img srcset="./img/round-1@2x.png 2x" src="./img/round-1.png"/>
         </picture>
       </div>
       <header class="header" id="header">
@@ -39,15 +40,74 @@
           <nav class="header__navigation navigation" id="navigation">
             <ul class="navigation__list">
               <li class="navigation__item"><a class="navigation__link navigation__link--active">Платформа GMDP</a></li>
-              <li class="navigation__item"><a class="navigation__link">Платформа GMDP</a></li>
-              <li class="navigation__item"><a class="navigation__link">GSM операторам</a></li>
-              <li class="navigation__item"><a class="navigation__link">Производителям eSIM</a></li>
-              <li class="navigation__item"><a class="navigation__link">Дистрибьюторам</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#">GSM операторам</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#">Производителям eSIM</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#">Дистрибьюторам</a></li>
+              <li class="navigation__item"><a class="navigation__link" href="#">О проекте</a></li>
             </ul>
+            <button class="navigation__button btn btn--link" type="button">Регистрация</button>
+            <div class="navigation__lang">
+              <button class="navigation__lang-btn navigation__lang-btn--active" type="button" aria-label="Изменить язык на Русский" id="ru">Ru</button>
+              <button class="navigation__lang-btn" type="button" aria-label="Изменить язык на Английский" id="eng">Eng</button>
+            </div>
+            <div class="navigation__copy"><a href="#">Политика обработки персональных данных</a><span>Copyright ©
+                <output id="currentYear"></output></span></div>
           </nav>
         </div>
       </header>
       <main class="main">
+        <section class="gmdp">
+          <div class="gmdp__container container">
+            <h2 class="gmdp__title title">Уникальная RSP<span> платформа GMDP</span></h2>
+            <div class="gmdp__slider slider-gmdp swiper">
+              <div class="slider-gmdp__controls">
+                <button class="slider-gmdp__btn" type="button">GMDP</button>
+                <button class="slider-gmdp__btn" type="button">SM-DP</button>
+                <button class="slider-gmdp__btn" type="button">SM-DP+</button>
+                <button class="slider-gmdp__btn" type="button">OTAP</button>
+              </div>
+              <div class="slider-gmdp__slides swiper-wrapper">
+                <div class="slider-gmdp__slide swiper-slide" id="0">
+                  <p class="slider-gmdp__text">Программно-аппаратный комплекс, созданный в соответствии со спецификациями GSMA и поддерживающий работу с операторскими профилями посредством SM-DP+/SM-DP/OTA</p><a href="#">О проекте
+                    <svg id="arrow-icon" width="17" height="17">
+                      <use href="img/sprite.svg#arrow"></use>
+                    </svg></a>
+                </div>
+                <div class="slider-gmdp__slide swiper-slide" id="1">
+                  <p class="slider-gmdp__text">Отвечает за безопасную доставку операторского профиля на абонентские (Consumer) устройства, поддерживающие технологию eSIM. Управляется непосредственно Абонентом через мобильное приложение Android/iOS</p>
+                </div>
+                <div class="slider-gmdp__slide swiper-slide" id="2">
+                  <p class="slider-gmdp__text">Обеспечивает доставку операторского профиля на М2М / IoT устройства поддерживающие технологию eSIM, посредством SM-SR в ручном или автоматическом режиме. Управляется администратором системы через партнерский кабинет (ПК)</p>
+                </div>
+                <div class="slider-gmdp__slide swiper-slide" id="3">
+                  <p class="slider-gmdp__text">Обеспечивает хранение и доставку в защищенном виде обновлений SIM карты, а также операторских профилей по приоритетным протоколам. SIM карта оснащается интеллектуальным апплетом и может быть инсталлирована в любое устройство (Consumer/M2M/IoT)</p>
+                </div>
+              </div>
+              <div class="slider-gmdp__circles circles" data-id="-1">
+                <div class="circles__circle circles__circle--smdp"><span class="circles__img"></span>
+                  <!--button.circles__btn
+                  //p.circles__subtitle Simple Multimedia service Description Protocol +
+                  //h5.circles__title SM-DP+
+                  //span.circles__cross
+                  -->
+                </div>
+                <div class="circles__circle circles__circle--smdp-2"><span class="circles__img"></span>
+                  <!--button.circles__btn
+                  //p.circles__subtitle Simple Multimedia service Description Protocol
+                  //h5.circles__title SM-DP
+                  //span.circles__cross
+                  -->
+                </div>
+                <div class="circles__circle circles__circle--otap"><span class="circles__img"></span>
+                  <!--button.circles__btn-->
+                  <!--    p.circles__subtitle Over-the-Air Provisioning-->
+                  <!--    h5.circles__title OTAP-->
+                  <!--    span.circles__cross-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
     <script src="js/script.min.js"></script>
