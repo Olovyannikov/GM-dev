@@ -31,7 +31,7 @@
       <div class="wrapper__image">
         <picture>
           <source srcset="./img/round-1-big@2x.png 2x, ./img/round-1-big.png" media="(min-width: 768px)"/>
-          <source srcset="./img/round-1@2x.webp 2x, ./img/round.webp"/><img srcset="./img/round-1@2x.png 2x" src="./img/round-1.png"/>
+          <source srcset="./img/round-1@2x.webp 2x, ./img/round-1.webp"/><img srcset="./img/round-1@2x.png 2x" src="./img/round-1.png"/>
         </picture>
       </div>
       <header class="header" id="header">
@@ -58,51 +58,86 @@
       <main class="main">
         <section class="gmdp">
           <div class="gmdp__container container">
-            <h2 class="gmdp__title title">Уникальная RSP<span> платформа GMDP</span></h2>
-            <div class="gmdp__slider slider-gmdp swiper">
-              <div class="slider-gmdp__controls">
-                <button class="slider-gmdp__btn" type="button">GMDP</button>
-                <button class="slider-gmdp__btn" type="button">SM-DP</button>
-                <button class="slider-gmdp__btn" type="button">SM-DP+</button>
-                <button class="slider-gmdp__btn" type="button">OTAP</button>
-              </div>
-              <div class="slider-gmdp__slides swiper-wrapper">
-                <div class="slider-gmdp__slide swiper-slide" id="0">
-                  <p class="slider-gmdp__text">Программно-аппаратный комплекс, созданный в соответствии со спецификациями GSMA и поддерживающий работу с операторскими профилями посредством SM-DP+/SM-DP/OTA</p><a href="#">О проекте
-                    <svg id="arrow-icon" width="17" height="17">
-                      <use href="img/sprite.svg#arrow"></use>
-                    </svg></a>
+            <h2 class="gmdp__title title" data-aos="fade-down" data-aos-duration="500">Уникальная RSP<span> платформа GMDP</span></h2>
+            <div class="gmdp__slider slider-gmdp">
+              <div class="slider-gmdp__wrapper swiper">
+                <div class="slider-gmdp__controls" data-aos="fade-up">
+                  <button class="slider-gmdp__btn" type="button">GMDP</button>
+                  <button class="slider-gmdp__btn" type="button">SM-DP</button>
+                  <button class="slider-gmdp__btn" type="button">SM-DP+</button>
+                  <button class="slider-gmdp__btn" type="button">OTAP</button>
                 </div>
-                <div class="slider-gmdp__slide swiper-slide" id="1">
-                  <p class="slider-gmdp__text">Отвечает за безопасную доставку операторского профиля на абонентские (Consumer) устройства, поддерживающие технологию eSIM. Управляется непосредственно Абонентом через мобильное приложение Android/iOS</p>
+                <div class="slider-gmdp__slides swiper-wrapper">
+                  <div class="slider-gmdp__slide swiper-slide" id="0">
+                    <h3 class="slider-gmdp__title">GMDP (GLONASS Mobile Distribution Platform)</h3>
+                    <p class="slider-gmdp__text" data-aos="fade-up">Программно-аппаратный комплекс, созданный в соответствии со спецификациями GSMA и поддерживающий работу с операторскими профилями посредством SM-DP+/SM-DP/OTA<a href="#">О проекте
+                        <svg id="arrow-icon" width="17" height="17">
+                          <use href="./img/sprite.svg#arrow"></use>
+                        </svg></a>
+                    </p>
+                  </div>
+                  <div class="slider-gmdp__slide swiper-slide" id="1">
+                    <h3 class="slider-gmdp__title">SM-DP +</h3>
+                    <p class="slider-gmdp__text" data-aos="fade-up">Отвечает за безопасную доставку операторского профиля на абонентские (Consumer) устройства, поддерживающие технологию eSIM. Управляется непосредственно Абонентом через мобильное приложение Android/iOS
+                    </p>
+                  </div>
+                  <div class="slider-gmdp__slide swiper-slide" id="2">
+                    <h3 class="slider-gmdp__title">SM-DP</h3>
+                    <p class="slider-gmdp__text" data-aos="fade-up">Обеспечивает доставку операторского профиля на М2М / IoT устройства поддерживающие технологию eSIM, посредством SM-SR в ручном или автоматическом режиме. Управляется администратором системы через партнерский кабинет (ПК)
+                    </p>
+                  </div>
+                  <div class="slider-gmdp__slide swiper-slide" id="3">
+                    <h3 class="slider-gmdp__title">OTAP</h3>
+                    <p class="slider-gmdp__text" data-aos="fade-up">Обеспечивает хранение и доставку в защищенном виде обновлений SIM карты, а также операторских профилей по приоритетным протоколам. SIM карта оснащается интеллектуальным апплетом и может быть инсталлирована в любое устройство (Consumer/M2M/IoT)
+                    </p>
+                  </div>
                 </div>
-                <div class="slider-gmdp__slide swiper-slide" id="2">
-                  <p class="slider-gmdp__text">Обеспечивает доставку операторского профиля на М2М / IoT устройства поддерживающие технологию eSIM, посредством SM-SR в ручном или автоматическом режиме. Управляется администратором системы через партнерский кабинет (ПК)</p>
-                </div>
-                <div class="slider-gmdp__slide swiper-slide" id="3">
-                  <p class="slider-gmdp__text">Обеспечивает хранение и доставку в защищенном виде обновлений SIM карты, а также операторских профилей по приоритетным протоколам. SIM карта оснащается интеллектуальным апплетом и может быть инсталлирована в любое устройство (Consumer/M2M/IoT)</p>
-                </div>
-              </div>
-              <div class="slider-gmdp__circles circles" data-id="-1">
-                <div class="circles__circle circles__circle--smdp"><span class="circles__img"></span>
-                  <!--button.circles__btn
-                  //p.circles__subtitle Simple Multimedia service Description Protocol +
-                  //h5.circles__title SM-DP+
-                  //span.circles__cross
-                  -->
-                </div>
-                <div class="circles__circle circles__circle--smdp-2"><span class="circles__img"></span>
-                  <!--button.circles__btn
-                  //p.circles__subtitle Simple Multimedia service Description Protocol
-                  //h5.circles__title SM-DP
-                  //span.circles__cross
-                  -->
-                </div>
-                <div class="circles__circle circles__circle--otap"><span class="circles__img"></span>
-                  <!--button.circles__btn-->
-                  <!--    p.circles__subtitle Over-the-Air Provisioning-->
-                  <!--    h5.circles__title OTAP-->
-                  <!--    span.circles__cross-->
+                <div class="slider-gmdp__circles-wrapper">
+                  <div class="slider-gmdp__circles circles" data-id="-1">
+                    <div class="circles__circle circles__circle--smdp">
+                      <button class="circles__cross-wrap">
+                        <p class="circles__subtitle">Simple Multimedia service Description Protocol</p>
+                        <h5 class="circles__title">SM-DP</h5><span class="circles__cross"></span>
+                      </button><span class="circles__img"></span>
+                    </div>
+                    <div class="circles__circle circles__circle--smdp-2">
+                      <button class="circles__cross-wrap">
+                        <p class="circles__subtitle">Simple Multimedia service Description Protocol +</p>
+                        <h5 class="circles__title">SM-DP+</h5><span class="circles__cross"></span>
+                      </button><span class="circles__img"></span>
+                    </div>
+                    <div class="circles__circle circles__circle--otap">
+                      <button class="circles__cross-wrap">
+                        <p class="circles__subtitle">Over-the-Air Provisioning</p>
+                        <h5 class="circles__title">OTAP</h5><span class="circles__cross"></span>
+                      </button><span class="circles__img"></span>
+                    </div>
+                  </div>
+                  <div class="slider-gmdp__arrows">
+                    <button class="slider-gmdp__arrow slider-gmdp__arrow-prev" type="button">
+                      <svg viewBox="0 0 53 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.999999 21L51 21M51 21L32.6328 0.999999M51 21L32.6328 41" stroke="url(#paint0_linear_2778:133)" stroke-width="2" stroke-linecap="round"></path>
+                        <defs>
+                          <lineargradient id="paint0_linear_2778:133" x1="0.999999" y1="21" x2="51" y2="21" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#69D4CE" stop-opacity="0"></stop>
+                            <stop offset="1" stop-color="#69D4CE"></stop>
+                          </lineargradient>
+                        </defs>
+                      </svg>
+                    </button>
+                    <div class="slider-gmdp__bullets"></div>
+                    <button class="slider-gmdp__arrow slider-gmdp__arrow-next" type="button">
+                      <svg viewBox="0 0 53 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.999999 21L51 21M51 21L32.6328 0.999999M51 21L32.6328 41" stroke="url(#paint0_linear_2778:133)" stroke-width="2" stroke-linecap="round"></path>
+                        <defs>
+                          <lineargradient id="paint0_linear_2778:133" x1="0.999999" y1="21" x2="51" y2="21" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#69D4CE" stop-opacity="0"></stop>
+                            <stop offset="1" stop-color="#69D4CE"></stop>
+                          </lineargradient>
+                        </defs>
+                      </svg>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

@@ -1,8 +1,14 @@
 .gmdp {
   margin-top: rem-calc(65);
 
+  &__container {
+    @include sm-block {
+      padding-left: 9.5vw;
+    }
+  }
+
   &__title {
-    margin-bottom: rem-calc(40);
+    margin-bottom: rem-calc(42);
     font-family: $font-alt;
     font-size: rem-calc(30);
     line-height: 115%;
@@ -12,24 +18,49 @@
     span {
       color: $color-accent;
     }
+
+    @include sm-block {
+      font-size: rem-calc(54);
+      line-height: rem-calc(62);
+      margin-bottom: rem-calc(40);
+    }
+  }
+
+  @include sm-block {
+    margin-top: rem-calc(102);
   }
 }
 
 .slider-gmdp {
   overflow: hidden;
 
+  &__wrapper {
+    @include sm-block {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      overflow: visible;
+    }
+  }
+
   &__controls {
     margin-bottom: rem-calc(20);
-    display: grid;
-    grid-auto-flow: column;
+    display: flex;
+    justify-content: space-between;
     gap: rem-calc(20);
     font-family: "Raleway", $font-alt;
     font-weight: 500;
     font-size: rem-calc(20);
     line-height: 115%;
+
+    @include sm-block {
+      display: none;
+    }
   }
 
   &__btn {
+    text-align: left;
+    width: fit-content;
     color: #FFFFFF;
     opacity: 0.4;
 
@@ -39,16 +70,32 @@
     }
   }
 
+  &__title {
+    display: none;
+
+    @include sm-block {
+      margin: 0 0 rem-calc(25);
+      display: block;
+      font-family: "Raleway", $font-alt;
+      font-weight: 400;
+      font-size: rem-calc(22);
+      line-height: rem-calc(25);
+      color: #fff;
+    }
+  }
+
   &__text {
-    margin: 0 0 rem-calc(35);
+    margin: 0;
     font-family: "Raleway", $font-alt;
     font-size: rem-calc(16);
     line-height: 145%;
     color: rgba(#fff, 0.8);
 
-    + a {
+    a {
       display: flex;
+      width: 100%;
       align-items: center;
+      margin-top: rem-calc(35);
       font-family: "Stapel", $font-alt;
       font-style: normal;
       font-weight: 500;
@@ -60,13 +107,36 @@
 
       svg {
         margin-left: rem-calc(10);
+
+        @include sm-block {
+          margin-left: rem-calc(15);
+          width: rem-calc(20);
+          height: rem-calc(20);
+        }
       }
+
+      @include sm-block {
+        margin-top: rem-calc(25);
+        font-size: rem-calc(14);
+        line-height: rem-calc(20);
+      }
+    }
+
+    @include sm-block {
+      font-size: rem-calc(18);
+      line-height: rem-calc(26);
     }
   }
 
   &__slides {
     display: flex;
     margin-bottom: rem-calc(37);
+
+    @include sm-block {
+      width: 650px;
+      margin-bottom: 0;
+      margin-right: rem-calc(80);
+    }
   }
 
   &__slide {
@@ -80,5 +150,115 @@
     &--prev {
       opacity: 0;
     }
+
+    @include sm-block {
+      max-width: 650px !important;
+    }
+  }
+
+  &__arrows {
+    position: relative;
+    z-index: 1000;
+    margin-top: rem-calc(7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    @include sm-block {
+      position: absolute;
+      left: -38.1vw;
+      top: 90.3vh;
+      gap: rem-calc(37);
+    }
+  }
+
+  &__arrow {
+    position: relative;
+    width: 53px;
+    height: 60px;
+
+    svg {
+      object-fit: cover;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &-prev {
+      svg {
+        transform: rotate(180deg) translate(50%, 50%);
+        transform-origin: center;
+      }
+    }
+
+    &.swiper-button-disabled {
+      opacity: 0.3;
+    }
+  }
+
+  &__bullets {
+    display: flex;
+    gap: 5px;
+
+    .swiper-pagination-bullet {
+      position: relative;
+      margin: 0;
+      width: rem-calc(25);
+      height: rem-calc(2);
+      background: #51595F;
+      opacity: 0.4;
+      border-radius: 0;
+      counter-increment: counter;
+
+      &-active {
+        opacity: 1;
+        background-color: $color-accent;
+      }
+
+      @include sm-block {
+        width: rem-calc(2);
+        height: rem-calc(60);
+
+        &::before {
+          position: absolute;
+          top: -29px;
+          left: -8px;
+          content: "0"counter(counter);
+          font-family: "Raleway", $font-alt;
+          font-size: rem-calc(18);
+          line-height: rem-calc(22);
+          color: #51595f;
+        }
+
+        &-active::before {
+          color: $color-accent;
+        }
+      }
+    }
+
+    @include sm-block {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      left: -6.35vw;
+      top: -66.1vh;
+      gap: rem-calc(47);
+      z-index: 200;
+    }
+  }
+
+  &__circles-wrapper {
+    @include sm-block {
+      position: relative;
+      width: 100%;
+      top: rem-calc(-275);
+    }
+  }
+
+  @include sm-block {
+    overflow: visible;
   }
 }

@@ -1,9 +1,75 @@
 .circles {
   position: relative;
-  min-height: 35vh;
+  height: 73.3vw;
 
   &__img {
     transition: 0.7s ease-in-out;
+  }
+
+  &__btn {
+    white-space: nowrap;
+    position: absolute;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    gap: rem-calc(10);
+    width: auto;
+    font-family: "Raleway", $font-alt;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: rem-calc(18);
+    color: #FFFFFF;
+    opacity: 0.8;
+  }
+
+  &__subtitle {
+    display: none;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: "Raleway", $font-alt;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: rem-calc(18);
+  }
+
+  &__cross-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    white-space: nowrap;
+    color: rgba(#fff, 0.8);
+    z-index: 200;
+  }
+
+  &__cross {
+    position: relative;
+    display: block;
+    width: rem-calc(35);
+    height: rem-calc(35);
+    border-radius: 50%;
+    background: rgba(#fff, 0.05);
+    backdrop-filter: blur(6px);
+    transition: 0.3s ease-in-out;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: rem-calc(16);
+      height: rem-calc(2);
+      background-color: $color-accent;
+    }
+
+    &::before {
+      width: rem-calc(2);
+      height: rem-calc(16);
+    }
   }
 
   &__circle {
@@ -13,66 +79,98 @@
     left: 0;
 
     &--otap {
-
-      width: 26.3888888889vw;
-      height: 26.3888888889vw;
       z-index: 19;
 
       .circles__img {
         display: flex;
         position: absolute;
         z-index: 20;
-        top: 60px;
-        left: 125px;
-        background-image: url("../img/slider-circle-2-active.png");
+        top: 21vw;
+        left: 31vw;
+        background-image: url("./../img/slider-circle-2-active.png");
         background-size: cover;
-        width: 26.3888888889vw;
-        height: 26.3888888889vw;
+        width: 30vw;
+        height: 30vw;
+
+        @include sm-block {
+          width: 8.5vw;
+          height: 8.5vw;
+          top: 12.7vw;
+          left: 6.2vw;
+        }
+      }
+
+      .circles__cross-wrap {
+        top: vw(850);
+        right: -37vw;
       }
     }
 
     &--smdp {
-      width: 40.2777777778vw;
-      height: 40.2777777778vw;
-
       .circles__img {
         display: flex;
         position: absolute;
-        top: 35px;
-        left: 100px;
-        z-index: 5;
-        background-image: url("../img/slider-circle-1-active.png");
+        top: 16vw;
+        left: 24vw;
+        background-image: url("./../img/slider-circle-1-active.png");
         background-size: cover;
-        width: 40.2777777778vw;
-        height: 40.2777777778vw;
+        width: 43.5vw;
+        height: 43.5vw;
+
+        @include sm-block {
+          width: 14.8vw;
+          height: 15vw;
+          top: 9.4vw;
+          left: 3vw;
+        }
+      }
+
+      .circles__cross-wrap {
+        top: vw(265);
+        right: -57vw;
       }
     }
 
     &--smdp-2 {
-
-      width: 88.8888888889vw;
-      height: 73.3333333333vw;
-      z-index: 20;
-
       .circles__img {
         display: flex;
         position: absolute;
-        top: 0;
-        left: 0;
+        top: vw(100);
+        left: vw(-150);
         background-image: url("../img/slider-circle-0-active.png");
         background-size: cover;
-        width: 88.8888888889vw;
-        height: 73.3333333333vw;
+        width: 90vw;
+        height: 80vw;
+
+        @include sm-block {
+          width: 34vw;
+          height: 28vw;
+        }
+      }
+
+      .circles__cross-wrap {
+        top: vw(650);
+        left: unset;
+        right: -68vw;
       }
     }
+  }
+
+  @include sm-block {
+    position: static;
+    height: 34vw;
   }
 }
 
 .circles[data-id="1"] {
   .circles__circle--smdp {
-    z-index: 21;
-    left: -50px;
-    top: -50px;
+    left: vw(-250);
+    top: vw(-250);
+    z-index: 123;
+
+    .circles__cross {
+      transform: rotate(45deg);
+    }
   }
 
   .circles__circle--otap {
@@ -93,6 +191,11 @@
     .circles__img {
       background-image: url("../img/slider-circle-2.png");
     }
+
+
+    .circles__cross-wrap {
+      z-index: 20;
+    }
   }
 
   .circles__circle--otap {
@@ -102,8 +205,12 @@
   }
 
   .circles__circle--smdp-2 {
-    left: -50px;
-    top: -50px;
+    left: vw(-250);
+    top: vw(-250);
+
+    .circles__cross {
+      transform: rotate(45deg);
+    }
   }
 }
 
@@ -112,6 +219,7 @@
     .circles__img {
       background-image: url("../img/slider-circle-2.png");
     }
+
   }
 
   .circles__circle--smdp-2 {
@@ -121,8 +229,11 @@
   }
 
   .circles__circle--otap {
-    z-index: 22;
-    left: -50px;
-    top: -50px;
+    left: vw(-250);
+    top: vw(-250);
+
+    .circles__cross {
+      transform: rotate(45deg);
+    }
   }
 }

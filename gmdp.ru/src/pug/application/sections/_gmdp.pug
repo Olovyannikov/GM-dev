@@ -3,57 +3,82 @@
     var slides = [
         {
             id: 0,
-            text: "Программно-аппаратный комплекс, созданный в соответствии со спецификациями GSMA и поддерживающий работу с операторскими профилями посредством SM-DP+/SM-DP/OTA"
+            title: "GMDP (GLONASS Mobile Distribution Platform)",
+            text: "Программно-аппаратный комплекс, созданный в соответствии со спецификациями GSMA и поддерживающий работу с операторскими профилями посредством SM-DP+/SM-DP/OTA"
         },
         {
             id: 1,
+            title: "SM-DP +",
             text: "Отвечает за безопасную доставку операторского профиля на абонентские (Consumer) устройства, поддерживающие технологию eSIM. Управляется непосредственно Абонентом через мобильное приложение Android/iOS"
         },
         {
             id: 2,
+            title: "SM-DP",
             text: "Обеспечивает доставку операторского профиля на М2М / IoT устройства поддерживающие технологию eSIM, посредством SM-SR в ручном или автоматическом режиме. Управляется администратором системы через партнерский кабинет (ПК)"
         },
         {
             id: 3,
+            title: "OTAP",
             text: "Обеспечивает хранение и доставку в защищенном виде обновлений SIM карты, а также операторских профилей по приоритетным протоколам. SIM карта оснащается интеллектуальным апплетом и может быть инсталлирована в любое устройство (Consumer/M2M/IoT)"
         }
     ];
 
 section.gmdp
     .gmdp__container.container
-        h2.gmdp__title.title
+        h2.gmdp__title.title(data-aos="fade-down" data-aos-duration="500")
             | Уникальная RSP
             span  платформа GMDP
-        .gmdp__slider.slider-gmdp.swiper
-            .slider-gmdp__controls
-                each btn in btns
-                    button(type="button").slider-gmdp__btn #{btn}
-            .slider-gmdp__slides.swiper-wrapper
-                each slide in slides
-                    .slider-gmdp__slide.swiper-slide(id=slide.id)
-                        p.slider-gmdp__text
-                            | #{slide.text}
-                        if slide.id === 0
-                            a(href="#") О проекте
-                                +svg('arrow', 17, 17)
-            .slider-gmdp__circles.circles(data-id="-1")
-                .circles__circle.circles__circle--smdp
-                    span.circles__img
-                    //button.circles__btn
-                        //p.circles__subtitle Simple Multimedia service Description Protocol +
-                        //h5.circles__title SM-DP+
-                        //span.circles__cross
-                .circles__circle.circles__circle--smdp-2
-                    span.circles__img
-                    //button.circles__btn
-                        //p.circles__subtitle Simple Multimedia service Description Protocol
-                        //h5.circles__title SM-DP
-                        //span.circles__cross
-                .circles__circle.circles__circle--otap
-                    span.circles__img
-                    //button.circles__btn
-                    //    p.circles__subtitle Over-the-Air Provisioning
-                    //    h5.circles__title OTAP
-                    //    span.circles__cross
+        .gmdp__slider.slider-gmdp
+            .slider-gmdp__wrapper.swiper
+                .slider-gmdp__controls(data-aos="fade-up")
+                    each btn in btns
+                        button(type="button").slider-gmdp__btn #{btn}
+                .slider-gmdp__slides.swiper-wrapper
+                    each slide in slides
+                        .slider-gmdp__slide.swiper-slide(id=slide.id)
+                            h3.slider-gmdp__title #{slide.title}
+                            p.slider-gmdp__text(data-aos="fade-up")
+                                | #{slide.text}
+                                if slide.id === 0
+                                    a(href="#") О проекте
+                                        +svg('arrow', 17, 17)
+                .slider-gmdp__circles-wrapper
+                    .slider-gmdp__circles.circles(data-id="-1")
+                        .circles__circle.circles__circle--smdp
+                            button.circles__cross-wrap
+                                p.circles__subtitle Simple Multimedia service Description Protocol
+                                h5.circles__title SM-DP
+                                span.circles__cross
+                            span.circles__img
+
+                        .circles__circle.circles__circle--smdp-2
+                            button.circles__cross-wrap
+                                p.circles__subtitle Simple Multimedia service Description Protocol +
+                                h5.circles__title SM-DP+
+                                span.circles__cross
+                            span.circles__img
+
+                        .circles__circle.circles__circle--otap
+                            button.circles__cross-wrap
+                                p.circles__subtitle Over-the-Air Provisioning
+                                h5.circles__title OTAP
+                                span.circles__cross
+                            span.circles__img
+                    .slider-gmdp__arrows
+                        button(type="button").slider-gmdp__arrow.slider-gmdp__arrow-prev
+                            svg( viewBox='0 0 53 42' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                path(d='M0.999999 21L51 21M51 21L32.6328 0.999999M51 21L32.6328 41' stroke='url(#paint0_linear_2778:133)' stroke-width='2' stroke-linecap='round')
+                                defs
+                                    lineargradient(id='paint0_linear_2778:133' x1='0.999999' y1='21' x2='51' y2='21' gradientUnits='userSpaceOnUse')
+                                        stop(stop-color='#69D4CE' stop-opacity='0')
+                                        stop(offset='1' stop-color='#69D4CE')
+                        .slider-gmdp__bullets
+                        button(type="button").slider-gmdp__arrow.slider-gmdp__arrow-next
+                            svg(viewBox='0 0 53 42' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                path(d='M0.999999 21L51 21M51 21L32.6328 0.999999M51 21L32.6328 41' stroke='url(#paint0_linear_2778:133)' stroke-width='2' stroke-linecap='round')
+                                defs
+                                    lineargradient(id='paint0_linear_2778:133' x1='0.999999' y1='21' x2='51' y2='21' gradientUnits='userSpaceOnUse')
+                                        stop(stop-color='#69D4CE' stop-opacity='0')
+                                        stop(offset='1' stop-color='#69D4CE')
 
 

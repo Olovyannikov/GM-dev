@@ -35,7 +35,7 @@
 }
 
 @mixin sm-block {
-  @media (min-width: (768px)) {
+  @media (min-width: (750px)) {
     @content;
   }
 }
@@ -146,7 +146,6 @@
 }
 
 @mixin btn-reset {
-  margin: 0;
   outline: none;
   border: none;
   padding: 0;
