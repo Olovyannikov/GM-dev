@@ -1,9 +1,10 @@
 .header {
   position: relative;
+  z-index: 200;
   padding-top: rem-calc(23);
 
   @include sm-block {
-    padding-top: rem-calc(38);
+    padding-top: rem-calc(39);
   }
 
   &__container {

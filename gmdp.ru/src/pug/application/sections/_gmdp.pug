@@ -1,5 +1,5 @@
 -
-    var btns = ['GMDP', 'SM-DP', 'SM-DP+', 'OTAP'];
+    var btns = ['GMDP', 'SM-DP+', 'SM-DP', 'OTAP'];
     var slides = [
         {
             id: 0,
@@ -23,6 +23,7 @@
         }
     ];
 
+include ../../application/components/wrapper/_index-wrapper
 section.gmdp
     .gmdp__container.container
         h2.gmdp__title.title(data-aos="fade-down" data-aos-duration="500")
@@ -44,17 +45,17 @@ section.gmdp
                                         +svg('arrow', 17, 17)
                 .slider-gmdp__circles-wrapper
                     .slider-gmdp__circles.circles(data-id="-1")
-                        .circles__circle.circles__circle--smdp
+                        .circles__circle.circles__circle--smdp-2
                             button.circles__cross-wrap
-                                p.circles__subtitle Simple Multimedia service Description Protocol
-                                h5.circles__title SM-DP
+                                p.circles__subtitle Simple Multimedia service <br> Description Protocol +
+                                h5.circles__title SM-DP+
                                 span.circles__cross
                             span.circles__img
 
-                        .circles__circle.circles__circle--smdp-2
+                        .circles__circle.circles__circle--smdp
                             button.circles__cross-wrap
-                                p.circles__subtitle Simple Multimedia service Description Protocol +
-                                h5.circles__title SM-DP+
+                                p.circles__subtitle Simple Multimedia service <br> Description Protocol
+                                h5.circles__title SM-DP
                                 span.circles__cross
                             span.circles__img
 

@@ -4,10 +4,12 @@
   &__container {
     @include sm-block {
       padding-left: 9.5vw;
+      height: 50vh;
     }
   }
 
   &__title {
+    position: relative;
     margin-bottom: rem-calc(42);
     font-family: $font-alt;
     font-size: rem-calc(30);
@@ -20,14 +22,14 @@
     }
 
     @include sm-block {
-      font-size: rem-calc(54);
-      line-height: rem-calc(62);
-      margin-bottom: rem-calc(40);
+      font-size: vw(54);
+      line-height: vw(62);
+      margin-bottom: vw(40);
     }
   }
 
   @include sm-block {
-    margin-top: rem-calc(102);
+    margin-top: vw(102);
   }
 }
 
@@ -74,12 +76,12 @@
     display: none;
 
     @include sm-block {
-      margin: 0 0 rem-calc(25);
+      margin: 0 0 vw(25);
       display: block;
       font-family: "Raleway", $font-alt;
       font-weight: 400;
-      font-size: rem-calc(22);
-      line-height: rem-calc(25);
+      font-size: vw(22);
+      line-height: vw(25);
       color: #fff;
     }
   }
@@ -116,15 +118,15 @@
       }
 
       @include sm-block {
-        margin-top: rem-calc(25);
-        font-size: rem-calc(14);
-        line-height: rem-calc(20);
+        margin-top: vw(25);
+        font-size: vw(14);
+        line-height: vw(20);
       }
     }
 
     @include sm-block {
-      font-size: rem-calc(18);
-      line-height: rem-calc(26);
+      font-size: vw(18);
+      line-height: vw(26);
     }
   }
 
@@ -133,7 +135,7 @@
     margin-bottom: rem-calc(37);
 
     @include sm-block {
-      width: 650px;
+      width: 34.667vw;
       margin-bottom: 0;
       margin-right: rem-calc(80);
     }
@@ -152,7 +154,7 @@
     }
 
     @include sm-block {
-      max-width: 650px !important;
+      max-width: 34.667vw !important;
     }
   }
 
@@ -167,8 +169,8 @@
 
     @include sm-block {
       position: absolute;
-      left: -38.1vw;
-      top: 90.3vh;
+      right: calc(100% + 30.5vw);
+      top: 25.5vw;
       gap: rem-calc(37);
     }
   }
@@ -197,6 +199,11 @@
     &.swiper-button-disabled {
       opacity: 0.3;
     }
+
+    @include sm-block {
+      width: vw(53);
+      height: vw(60);
+    }
   }
 
   &__bullets {
@@ -219,17 +226,17 @@
       }
 
       @include sm-block {
-        width: rem-calc(2);
-        height: rem-calc(60);
+        width: vw(2);
+        height: vw(60);
 
         &::before {
           position: absolute;
-          top: -29px;
-          left: -8px;
+          top: vw(-29);
+          left: vw(-8);
           content: "0"counter(counter);
           font-family: "Raleway", $font-alt;
-          font-size: rem-calc(18);
-          line-height: rem-calc(22);
+          font-size: vw(18);
+          line-height: vw(22);
           color: #51595f;
         }
 
@@ -243,10 +250,14 @@
       position: absolute;
       display: flex;
       flex-direction: column;
-      left: -6.35vw;
-      top: -66.1vh;
-      gap: rem-calc(47);
+      right: calc(100% + 13vh);
+      top: calc(100% - 21.8vw);
+      gap: vw(47);
       z-index: 200;
+    }
+
+    @media (min-width: 750px) and (max-width: 1024px) {
+      right: calc(100% + 9vw);
     }
   }
 
@@ -254,7 +265,8 @@
     @include sm-block {
       position: relative;
       width: 100%;
-      top: rem-calc(-275);
+      top: vw(-275);
+      left: -0.75vw;
     }
   }
 

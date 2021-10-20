@@ -41,8 +41,13 @@ export const slider = () => {
 
     circles.forEach((btn, idx) => {
         btn.addEventListener('click', (e) => {
-            slider.slideTo(idx + 1);
-        })
+
+            if (btn.closest('[data-id]').getAttribute('data-id') === "-1") {
+                slider.slideTo(idx + 1);
+            } else {
+                slider.slideTo(0);
+            }
+        });
     });
 }
 

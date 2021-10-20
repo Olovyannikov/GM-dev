@@ -1,0 +1,31 @@
+section.features
+    .features__image
+        picture
+            source(srcset="./img/round-2-big@2x.png 2x, ./img/round-2-big.png" media="(min-width: 768px)")
+            source(srcset="./img/round-2@2x.webp 2x, ./img/round-2.webp")
+            img(srcset="./img/round-2@2x.png 2x" src="./img/round-2.png" aria-hidden="true" alt="")
+    .features__container.container
+        h2.features__title.title Преимущества
+            span платформы GMDP
+        ul.features__list
+            li.features__item.feature
+                .feature__icon
+                h5.feature__title Российское ПО
+                ul.feature__list
+                    li ПО зарегистрировано в РФ
+                    li Платформа хостится в России
+                    li Лицензии на услуги связи
+            li.features__item.feature
+                .feature__icon
+                h5.feature__title Безопасность
+                ul.feature__list
+                    li Национальный УЦ
+                    li Российские криптоалгоритмы
+                    li Российский HSM
+            li.features__item.feature
+                .feature__icon
+                h5.feature__title Кастомизация
+                ul.feature__list
+                    li Партнерский WEB кабинет
+                    li Встроенный биллинг
+                    li Приложения iOS/Andriod

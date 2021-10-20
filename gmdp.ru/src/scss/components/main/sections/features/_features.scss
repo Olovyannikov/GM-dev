@@ -1,0 +1,21 @@
+.features {
+  position: relative;
+  padding-top: rem-calc(120);
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+  &__container {
+    position: relative;
+    z-index: 1;
+    padding-left: rem-calc(162);
+    padding-right: rem-calc(81);
+  }
+}
+
+/* Sublist */
+.feature {}
