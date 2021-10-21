@@ -3,7 +3,7 @@
 
   &__container {
     @include sm-block {
-      padding-left: 9.5vw;
+      padding-left: 11.3rem;
       height: 50vh;
     }
   }
@@ -15,21 +15,22 @@
     font-size: rem-calc(30);
     line-height: 115%;
     letter-spacing: 0.03em;
-    color: #F0F0F0;
+    color: #f0f0f0;
 
     span {
       color: $color-accent;
     }
 
     @include sm-block {
+      margin-bottom: vw(40);
       font-size: vw(54);
       line-height: vw(62);
-      margin-bottom: vw(40);
     }
   }
 
   @include sm-block {
     margin-top: vw(102);
+    height: 24vw;
   }
 }
 
@@ -40,20 +41,20 @@
     @include sm-block {
       display: flex;
       flex-direction: row;
-      margin: 0;
       overflow: visible;
+      margin: 0;
     }
   }
 
   &__controls {
-    margin-bottom: rem-calc(20);
     display: flex;
     justify-content: space-between;
-    gap: rem-calc(20);
+    margin-bottom: rem-calc(20);
     font-family: "Raleway", $font-alt;
     font-weight: 500;
     font-size: rem-calc(20);
     line-height: 115%;
+    gap: rem-calc(20);
 
     @include sm-block {
       display: none;
@@ -61,9 +62,9 @@
   }
 
   &__btn {
-    text-align: left;
     width: fit-content;
-    color: #FFFFFF;
+    text-align: left;
+    color: #fff;
     opacity: 0.4;
 
     &--active {
@@ -76,8 +77,8 @@
     display: none;
 
     @include sm-block {
-      margin: 0 0 vw(25);
       display: block;
+      margin: 0 0 vw(25);
       font-family: "Raleway", $font-alt;
       font-weight: 400;
       font-size: vw(22);
@@ -95,20 +96,22 @@
 
     a {
       display: flex;
-      width: 100%;
       align-items: center;
       margin-top: rem-calc(35);
+      width: 100%;
       font-family: "Stapel", $font-alt;
-      font-style: normal;
       font-weight: 500;
+      font-style: normal;
       font-size: rem-calc(12);
       line-height: rem-calc(18);
       letter-spacing: 0.03em;
       text-transform: uppercase;
-      color: #00FBEE;
+      color: #00fbee;
+      transition: 0.3s ease-in-out;
 
       svg {
         margin-left: rem-calc(10);
+        transition: 0.3s ease-in-out;
 
         @include sm-block {
           margin-left: rem-calc(15);
@@ -122,11 +125,18 @@
         font-size: vw(14);
         line-height: vw(20);
       }
+
+      &:hover {
+        svg {
+          margin-left: rem-calc(25);
+        }
+      }
     }
 
     @include sm-block {
       font-size: vw(18);
       line-height: vw(26);
+      max-width: vw(560);
     }
   }
 
@@ -135,9 +145,9 @@
     margin-bottom: rem-calc(37);
 
     @include sm-block {
-      width: 34.667vw;
-      margin-bottom: 0;
       margin-right: rem-calc(80);
+      margin-bottom: 0;
+      width: 34.667vw;
     }
   }
 
@@ -161,15 +171,15 @@
   &__arrows {
     position: relative;
     z-index: 1000;
-    margin-top: rem-calc(7);
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: rem-calc(7);
     gap: 15px;
 
     @include sm-block {
       position: absolute;
-      right: calc(100% + 30.5vw);
+      right: calc(100% + 30.6vw);
       top: 25.5vw;
       gap: rem-calc(37);
     }
@@ -180,17 +190,16 @@
     width: 53px;
     height: 60px;
 
-    svg {
-      object-fit: cover;
-      width: 100%;
+    img {
       position: absolute;
-      top: 50%;
       left: 50%;
+      top: 50%;
+      object-fit: contain;
       transform: translate(-50%, -50%);
     }
 
     &-prev {
-      svg {
+      img {
         transform: rotate(180deg) translate(50%, 50%);
         transform-origin: center;
       }
@@ -198,6 +207,10 @@
 
     &.swiper-button-disabled {
       opacity: 0.3;
+
+      img {
+        opacity: 0.3;
+      }
     }
 
     @include sm-block {
@@ -211,18 +224,18 @@
     gap: 5px;
 
     .swiper-pagination-bullet {
+      counter-increment: counter;
       position: relative;
       margin: 0;
+      border-radius: 0;
       width: rem-calc(25);
       height: rem-calc(2);
-      background: #51595F;
+      background: #51595f;
       opacity: 0.4;
-      border-radius: 0;
-      counter-increment: counter;
 
       &-active {
-        opacity: 1;
         background-color: $color-accent;
+        opacity: 1;
       }
 
       @include sm-block {
@@ -230,10 +243,10 @@
         height: vw(60);
 
         &::before {
-          position: absolute;
-          top: vw(-29);
-          left: vw(-8);
           content: "0"counter(counter);
+          position: absolute;
+          left: vw(-8);
+          top: vw(-29);
           font-family: "Raleway", $font-alt;
           font-size: vw(18);
           line-height: vw(22);
@@ -248,12 +261,12 @@
 
     @include sm-block {
       position: absolute;
+      right: calc(100% + 11.7vh);
+      top: calc(100% - 21.8vw);
+      z-index: 200;
       display: flex;
       flex-direction: column;
-      right: calc(100% + 13vh);
-      top: calc(100% - 21.8vw);
       gap: vw(47);
-      z-index: 200;
     }
 
     @media (min-width: 750px) and (max-width: 1024px) {
@@ -264,9 +277,9 @@
   &__circles-wrapper {
     @include sm-block {
       position: relative;
-      width: 100%;
-      top: vw(-275);
       left: -0.75vw;
+      top: vw(-275);
+      width: 100%;
     }
   }
 

@@ -1,21 +1,129 @@
 .features {
   position: relative;
+  margin-bottom: rem-calc(120);
   padding-top: rem-calc(120);
 
   &__image {
     position: absolute;
-    top: 0;
     left: 0;
-    z-index: 0;
+    top: 0;
+    z-index: 1;
+
+    &--gradient {
+      @include sm-block {
+        bottom: vw(-700);
+        width: vw(750);
+      }
+    }
+
+    &--atom {
+      left: unset;
+      right: -88%;
+      top: unset;
+      bottom: -178px;
+      width: 135%;
+
+      @include sm-block {
+        left: -8vw;
+        right: unset;
+        bottom: -5vw;
+        width: vw(700);
+      }
+    }
   }
 
   &__container {
     position: relative;
     z-index: 1;
-    padding-left: rem-calc(162);
-    padding-right: rem-calc(81);
+
+    @include sm-block {
+      padding-right: rem-calc(81);
+      padding-left: rem-calc(181);
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(312px, 1fr));
+    gap: rem-calc(35);
+
+    @include sm-block {
+      grid-auto-flow: column;
+      grid-template-columns: auto;
+      gap: vw(87);
+    }
+  }
+
+  &__title {
+    margin-bottom: vw(81);
+  }
+
+  @include sm-block {
+    margin-bottom: vw(200);
+    padding-top: 10.4vw;
   }
 }
 
 /* Sublist */
-.feature {}
+.feature {
+  display: grid;
+  justify-content: space-between;
+
+  &__icon {
+    margin-bottom: rem-calc(25);
+
+    img {
+      width: rem-calc(56);
+      height: rem-calc(56);
+
+      @include sm-block {
+        width: vw(81);
+        height: vw(81);
+      }
+    }
+
+    @include sm-block {
+      margin-bottom: vw(25);
+      width: vw(81);
+      height: vw(81);
+    }
+  }
+
+  &__title {
+    margin-bottom: rem-calc(20);
+    font-family: "Raleway", $font-alt;
+    font-weight: 500;
+    font-size: rem-calc(24);
+    line-height: rem-calc(28);
+    letter-spacing: 0.03em;
+    color: #f0f0f0;
+
+    @include sm-block {
+      margin-bottom: vw(25);
+      font-size: vw(32);
+      line-height: vw(37);
+    }
+  }
+
+  &__list {
+    display: grid;
+    gap: rem-calc(20);
+
+    li {
+      display: grid;
+      align-items: center;
+      justify-content: flex-start;
+      grid-auto-flow: column;
+      font-family: "Raleway", $font-alt;
+      font-size: rem-calc(16);
+      line-height: rem-calc(23);
+      color: rgba(#fff, 0.8);
+      gap: rem-calc(10);
+
+      @include sm-block {
+        font-size: vw(18);
+        line-height: vw(26);
+      }
+    }
+  }
+}

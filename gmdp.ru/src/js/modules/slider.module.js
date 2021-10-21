@@ -30,7 +30,6 @@ export const slider = () => {
             }
         }
     });
-
     buttons.forEach((btn, idx) => {
         btn.addEventListener('click', (e) => {
             buttons.forEach(btn => btn.classList.remove('slider-gmdp__btn--active'));
@@ -38,7 +37,6 @@ export const slider = () => {
             slider.slideTo(idx);
         });
     });
-
     circles.forEach((btn, idx) => {
         btn.addEventListener('click', (e) => {
 
@@ -49,5 +47,15 @@ export const slider = () => {
             }
         });
     });
+
+    const sliderFeatures = new Swiper('.slider__wrapper', {
+        wrapperClass: 'slider__content',
+        slideClass: 'slider__slide',
+        navigation: {
+            nextEl: '.slider__button--next',
+            prevEl: '.slider__button--prev'
+        },
+        spaceBetween: 24
+    })
 }
 

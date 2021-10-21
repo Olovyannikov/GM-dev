@@ -12,10 +12,26 @@
 }
 
 .title {
+  position: relative;
   display: flex;
   flex-direction: column;
-  margin: 0;
-  font: $font-title;
+  margin: 0 0 rem-calc(42);
+  font-family: $font-alt;
+  font-size: rem-calc(30);
+  line-height: 115%;
+  letter-spacing: 0.03em;
+  color: #F0F0F0;
+  font-weight: 400;
+
+  span {
+    color: $color-accent;
+  }
+
+  @include sm-block {
+    font-size: vw(54);
+    line-height: vw(62);
+    margin-bottom: vw(40);
+  }
 }
 
 .btn-reset {

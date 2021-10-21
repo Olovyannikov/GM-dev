@@ -200,6 +200,7 @@ const watchFiles = () => {
         server: {
             baseDir: "./" + project_folder + "/",
         },
+        https: true
     });
 
     watch(path.watch.css, styles);

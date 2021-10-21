@@ -7,28 +7,32 @@
   }
 
   &__btn {
-    white-space: nowrap;
     position: absolute;
     z-index: 200;
     display: flex;
     align-items: center;
-    gap: rem-calc(10);
     width: auto;
     font-family: "Raleway", $font-alt;
     font-weight: 500;
     font-size: 1rem;
     line-height: rem-calc(18);
-    color: #FFFFFF;
+    white-space: nowrap;
+    color: #fff;
     opacity: 0.8;
+    gap: rem-calc(10);
   }
 
   &__subtitle {
-    margin: rem-calc(5) 0;
-    display: none;
+    overflow: hidden;
+    margin: 0;
+    width: 0;
     font-family: "Raleway", $font-alt;
     font-size: vw(15);
     line-height: vw(22);
     text-align: right;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
   }
 
   &__title {
@@ -45,35 +49,38 @@
   }
 
   &__cross-wrap {
+    position: absolute;
+    z-index: 200;
     display: flex;
     align-items: center;
-    gap: 10px;
-    position: absolute;
+    padding-top: rem-calc(5);
+    padding-bottom: rem-calc(5);
     white-space: nowrap;
     color: rgba(#fff, 0.8);
-    z-index: 200;
+    transition: 0.5s ease-in-out;
+    gap: 10px;
   }
 
   &__cross {
     position: relative;
     display: block;
+    border-radius: 50%;
     width: rem-calc(35);
     height: rem-calc(35);
-    border-radius: 50%;
     background: rgba(#fff, 0.05);
-    backdrop-filter: blur(6px);
     transition: 0.3s ease-in-out;
+    backdrop-filter: blur(6px);
 
     &::after,
     &::before {
       content: "";
       position: absolute;
-      top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      top: 50%;
       width: rem-calc(16);
       height: rem-calc(2);
       background-color: $color-accent;
+      transform: translate(-50%, -50%);
 
       @include sm-block {
         width: vw(14);
@@ -98,36 +105,36 @@
   }
 
   &__circle {
-    transition: all 0.7s ease 0s;
     position: absolute;
-    top: 0;
     left: 0;
+    top: 0;
+    transition: all 0.7s ease 0s;
 
     &--otap {
       z-index: 19;
 
       .circles__img {
-        display: flex;
         position: absolute;
-        z-index: 20;
-        top: 21vw;
         left: 31vw;
-        background-image: url("./../img/slider-circle-2-active.png");
-        background-size: cover;
+        top: 21vw;
+        z-index: 20;
+        display: flex;
         width: 30vw;
         height: 30vw;
+        background-image: url("./../img/slider-circle-2-active.png");
+        background-size: cover;
 
         @include sm-block {
+          left: 6.2vw;
+          top: 12.7vw;
           width: 8.5vw;
           height: 8.5vw;
-          top: 12.7vw;
-          left: 6.2vw;
         }
       }
 
       .circles__cross-wrap {
-        top: vw(850);
         right: -37vw;
+        top: vw(850);
 
         @include sm-block {
           right: -14.8vw;
@@ -138,26 +145,26 @@
 
     &--smdp {
       .circles__img {
-        display: flex;
         position: absolute;
-        top: 16vw;
         left: 24vw;
-        background-image: url("./../img/slider-circle-1-active.png");
-        background-size: cover;
+        top: 16vw;
+        display: flex;
         width: 43.5vw;
         height: 43.5vw;
+        background-image: url("./../img/slider-circle-1-active.png");
+        background-size: cover;
 
         @include sm-block {
+          left: 3vw;
+          top: 9.4vw;
           width: 14.8vw;
           height: 15vw;
-          top: 9.4vw;
-          left: 3vw;
         }
       }
 
       .circles__cross-wrap {
-        top: vw(265);
         right: -57vw;
+        top: vw(265);
 
         @include sm-block {
           right: -12.1vw;
@@ -168,14 +175,14 @@
 
     &--smdp-2 {
       .circles__img {
-        display: flex;
         position: absolute;
-        top: vw(100);
         left: vw(-150);
-        background-image: url("../img/slider-circle-0-active.png");
-        background-size: cover;
+        top: vw(100);
+        display: flex;
         width: 90vw;
         height: 80vw;
+        background-image: url("../img/slider-circle-0-active.png");
+        background-size: cover;
 
         @include sm-block {
           width: 34vw;
@@ -184,9 +191,9 @@
       }
 
       .circles__cross-wrap {
-        top: vw(650);
         left: unset;
         right: -68vw;
+        top: vw(650);
 
         @include sm-block {
           right: -19.52vw;
@@ -218,11 +225,11 @@
       z-index: 20;
 
       .circles__cross-wrap {
+        border-radius: 30px;
+        padding-right: vw(4);
+        padding-left: vw(40);
         background: rgba(255, 255, 255, 0.05);
         backdrop-filter: blur(8px);
-        border-radius: 30px;
-        padding-left: vw(40);
-        padding-right: vw(4);
       }
 
       .circles__title {
@@ -230,8 +237,11 @@
       }
 
       .circles__subtitle {
-        display: block;
+        overflow: auto;
+        width: auto;
         color: rgba(#fff, 0.5);
+        opacity: 1;
+        visibility: visible;
       }
     }
   }
@@ -254,7 +264,6 @@
     .circles__img {
       background-image: url("../img/slider-circle-2.png");
     }
-
 
     .circles__cross-wrap {
       z-index: 20;
@@ -282,11 +291,11 @@
       z-index: 20;
 
       .circles__cross-wrap {
+        border-radius: 30px;
+        padding-right: vw(4);
+        padding-left: vw(40);
         background: rgba(255, 255, 255, 0.05);
         backdrop-filter: blur(8px);
-        border-radius: 30px;
-        padding-left: vw(40);
-        padding-right: vw(4);
       }
 
       .circles__title {
@@ -294,8 +303,11 @@
       }
 
       .circles__subtitle {
-        display: block;
+        overflow: auto;
+        width: auto;
         color: rgba(#fff, 0.5);
+        opacity: 1;
+        visibility: visible;
       }
     }
   }
@@ -306,7 +318,6 @@
     .circles__img {
       background-image: url("../img/slider-circle-2.png");
     }
-
   }
 
   .circles__circle--smdp-2 {
@@ -330,11 +341,11 @@
       z-index: 20;
 
       .circles__cross-wrap {
+        border-radius: 30px;
+        padding-right: vw(4);
+        padding-left: vw(40);
         background: rgba(255, 255, 255, 0.05);
         backdrop-filter: blur(8px);
-        border-radius: 30px;
-        padding-left: vw(40);
-        padding-right: vw(4);
       }
 
       .circles__title {
@@ -342,9 +353,12 @@
       }
 
       .circles__subtitle {
-        display: block;
-        color: rgba(#fff, 0.5);
+        overflow: auto;
         margin: 0;
+        width: auto;
+        color: rgba(#fff, 0.5);
+        opacity: 1;
+        visibility: visible;
       }
     }
   }

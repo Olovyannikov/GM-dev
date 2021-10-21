@@ -115,29 +115,9 @@
                   </div>
                 </div>
                 <div class="slider-gmdp__arrows">
-                  <button class="slider-gmdp__arrow slider-gmdp__arrow-prev" type="button">
-                    <svg viewBox="0 0 53 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.999999 21L51 21M51 21L32.6328 0.999999M51 21L32.6328 41" stroke="url(#paint0_linear_2778:133)" stroke-width="2" stroke-linecap="round"></path>
-                      <defs>
-                        <lineargradient id="paint0_linear_2778:133" x1="0.999999" y1="21" x2="51" y2="21" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#69D4CE" stop-opacity="0"></stop>
-                          <stop offset="1" stop-color="#69D4CE"></stop>
-                        </lineargradient>
-                      </defs>
-                    </svg>
-                  </button>
+                  <button class="slider-gmdp__arrow slider-gmdp__arrow-prev" type="button"><img src="./img/svg/arrow-slider.svg"/></button>
                   <div class="slider-gmdp__bullets"></div>
-                  <button class="slider-gmdp__arrow slider-gmdp__arrow-next" type="button">
-                    <svg viewBox="0 0 53 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.999999 21L51 21M51 21L32.6328 0.999999M51 21L32.6328 41" stroke="url(#paint0_linear_2778:133)" stroke-width="2" stroke-linecap="round"></path>
-                      <defs>
-                        <lineargradient id="paint0_linear_2778:133" x1="0.999999" y1="21" x2="51" y2="21" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#69D4CE" stop-opacity="0"></stop>
-                          <stop offset="1" stop-color="#69D4CE"></stop>
-                        </lineargradient>
-                      </defs>
-                    </svg>
-                  </button>
+                  <button class="slider-gmdp__arrow slider-gmdp__arrow-next" type="button"><img src="./img/svg/arrow-slider.svg"/></button>
                 </div>
               </div>
             </div>
@@ -145,43 +125,183 @@
         </div>
       </section>
       <section class="features">
-        <div class="features__image">
+        <div class="features__image features__image--gradient">
           <picture>
             <source srcset="./img/round-2-big@2x.png 2x, ./img/round-2-big.png" media="(min-width: 768px)"/>
             <source srcset="./img/round-2@2x.webp 2x, ./img/round-2.webp"/><img srcset="./img/round-2@2x.png 2x" src="./img/round-2.png" aria-hidden="true" alt=""/>
+          </picture>
+        </div>
+        <div class="features__image features__image--atom">
+          <picture>
+            <source srcset="./img/atom@2x.png 2x, ./img/atom.png" media="(min-width: 768px)"/>
+            <source srcset="./img/atom@2x.webp 2x, ./img/atom.webp"/><img srcset="./img/atom@2x.png 2x" src="./img/atom.png" aria-hidden="true" alt=""/>
           </picture>
         </div>
         <div class="features__container container">
           <h2 class="features__title title">Преимущества<span>платформы GMDP</span></h2>
           <ul class="features__list">
             <li class="features__item feature">
-              <div class="feature__icon"></div>
+              <div class="feature__icon"><img src="./img/svg/soft.svg" alt="Российское ПО, иконка"/></div>
               <h5 class="feature__title">Российское ПО</h5>
               <ul class="feature__list">
-                <li>ПО зарегистрировано в РФ</li>
-                <li>Платформа хостится в России</li>
-                <li>Лицензии на услуги связи</li>
+                <li>
+                  <svg id="yes-icon" width="20" height="20">
+                    <use href="./img/sprite.svg#yes"></use>
+                  </svg>ПО зарегистрировано в РФ
+                </li>
+                <li>
+                  <svg id="yes-icon" width="20" height="20">
+                    <use href="./img/sprite.svg#yes"></use>
+                  </svg>Платформа хостится в России
+                </li>
+                <li>
+                  <svg id="yes-icon" width="20" height="20">
+                    <use href="./img/sprite.svg#yes"></use>
+                  </svg>Лицензии на услуги связи
+                </li>
               </ul>
             </li>
             <li class="features__item feature">
-              <div class="feature__icon"></div>
+              <div class="feature__icon"><img src="./img/svg/shield.svg" alt="Российское ПО, иконка"/></div>
               <h5 class="feature__title">Безопасность</h5>
               <ul class="feature__list">
-                <li>Национальный УЦ</li>
-                <li>Российские криптоалгоритмы</li>
-                <li>Российский HSM</li>
+                <li>
+                  <svg id="yes-icon" width="20" height="20">
+                    <use href="./img/sprite.svg#yes"></use>
+                  </svg>Национальный УЦ
+                </li>
+                <li>
+                  <svg id="yes-icon" width="20" height="20">
+                    <use href="./img/sprite.svg#yes"></use>
+                  </svg>Российские криптоалгоритмы
+                </li>
+                <li>
+                  <svg id="yes-icon" width="20" height="20">
+                    <use href="./img/sprite.svg#yes"></use>
+                  </svg>Российский HSM
+                </li>
               </ul>
             </li>
             <li class="features__item feature">
-              <div class="feature__icon"></div>
+              <div class="feature__icon"><img src="./img/svg/equalizer.svg" alt="Российское ПО, иконка"/></div>
               <h5 class="feature__title">Кастомизация</h5>
               <ul class="feature__list">
-                <li>Партнерский WEB кабинет</li>
-                <li>Встроенный биллинг</li>
-                <li>Приложения iOS/Andriod</li>
+                <li>
+                  <svg id="yes-icon" width="20" height="20">
+                    <use href="./img/sprite.svg#yes"></use>
+                  </svg>Партнерский WEB кабинет
+                </li>
+                <li>
+                  <svg id="yes-icon" width="20" height="20">
+                    <use href="./img/sprite.svg#yes"></use>
+                  </svg>Встроенный биллинг
+                </li>
+                <li>
+                  <svg id="yes-icon" width="20" height="20">
+                    <use href="./img/sprite.svg#yes"></use>
+                  </svg>Приложения iOS/Andriod
+                </li>
               </ul>
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="partners">
+        <div class="partners__container container">
+          <h2 class="partners__title title">Ключевым<span>партнерам GMDP</span></h2>
+        </div>
+        <div class="partners__wrapper container">
+          <div class="partners__cards"><a class="partners__card partners-card" href="#">
+              <div class="partners-card__image">
+                <picture>
+                  <source srcset="./img/partners-1@2x.webp 2x, ./img/partners-1.webp 1x" type="image/webp"/><img srcset="./img/partners-1@2x.jpg 2x" src="./img/partners-1.jpg" alt="Ссылка, операторам GSM и MVNO"/>
+                </picture>
+              </div>
+              <div class="partners-card__text">
+                <h5>Операторам</h5>
+                <p>GSM и MVNO</p>
+              </div></a><a class="partners__card partners-card" href="#">
+              <div class="partners-card__image">
+                <picture>
+                  <source srcset="./img/partners-2@2x.webp 2x, ./img/partners-2.webp 1x" type="image/webp"/><img srcset="./img/partners-2@2x.jpg 2x" src="./img/partners-2.jpg" alt="Ссылка, операторам GSM и MVNO"/>
+                </picture>
+              </div>
+              <div class="partners-card__text">
+                <h5>Производителям</h5>
+                <p>eSIM девайсов</p>
+              </div></a><a class="partners__card partners-card" href="#">
+              <div class="partners-card__image">
+                <picture>
+                  <source srcset="./img/partners-3@2x.webp 2x, ./img/partners-3.webp 1x" type="image/webp"/><img srcset="./img/partners-3@2x.jpg 2x" src="./img/partners-3.jpg" alt="Ссылка, операторам GSM и MVNO"/>
+                </picture>
+              </div>
+              <div class="partners-card__text">
+                <h5>Дистрибьюторам</h5>
+                <p>eSIM, M2M и IoT</p>
+              </div></a>
+          </div>
+        </div>
+      </section>
+      <section class="slider">
+        <div class="slider__container container">
+          <h2 class="title slider__title">Используйте<span>все возможности</span>вашего бизнеса</h2>
+        </div>
+        <div class="slider__wrapper container">
+          <div class="slider__content">
+            <article class="slider__slide slide">
+              <div class="slide__icon"><img src="./img/svg/ship.svg"/></div>
+              <h5 class="slide__title">Международные перевозки</h5>
+              <p class="slide__text">Удаленный мониторинг грузоперевозок и качественных характеристик самого груза с помощью M2M карт</p><a class="slide__link" href="#">Смотреть кейс
+                <svg id="eye-icon" width="20" height="15">
+                  <use href="./img/sprite.svg#eye"></use>
+                </svg></a>
+            </article>
+            <article class="slider__slide slide">
+              <div class="slide__icon"><img src="./img/svg/bank.svg"/></div>
+              <h5 class="slide__title">Банковский и страховой сервис</h5>
+              <p class="slide__text">Возможность банков и страховых компаний делать более персонифицированные предложения</p><a class="slide__link" href="#">Смотреть кейс
+                <svg id="eye-icon" width="20" height="15">
+                  <use href="./img/sprite.svg#eye"></use>
+                </svg></a>
+            </article>
+            <article class="slider__slide slide">
+              <div class="slide__icon"><img src="./img/svg/medicine.svg"/></div>
+              <h5 class="slide__title">Здравоохранение и медицина</h5>
+              <p class="slide__text">Медицинское оборудование оснащенное IoT обеспечивает постоянный контроль за состоянием здоровья пациентов</p><a class="slide__link" href="#">Смотреть кейс
+                <svg id="eye-icon" width="20" height="15">
+                  <use href="./img/sprite.svg#eye"></use>
+                </svg></a>
+            </article>
+            <article class="slider__slide slide">
+              <div class="slide__icon"><img src="./img/svg/smart.svg"/></div>
+              <h5 class="slide__title">Продажа смартфонов</h5>
+              <p class="slide__text">Возможность предоставлять абонентам лучшие тарифы на связь и получать вознаграждение с трафика</p><a class="slide__link" href="#">Смотреть кейс
+                <svg id="eye-icon" width="20" height="15">
+                  <use href="./img/sprite.svg#eye"></use>
+                </svg></a>
+            </article>
+            <article class="slider__slide slide">
+              <div class="slide__icon"><img src="./img/svg/gas.svg"/></div>
+              <h5 class="slide__title">Газовая и нефтяная промышленность</h5>
+              <p class="slide__text">Автоматизированный деформационный мониторинг удаленных объектов в газовой, нефтяной промышленности</p><a class="slide__link" href="#">Смотреть кейс
+                <svg id="eye-icon" width="20" height="15">
+                  <use href="./img/sprite.svg#eye"></use>
+                </svg></a>
+            </article>
+            <article class="slider__slide slide">
+              <div class="slide__icon"><img src="./img/svg/iot.svg"/></div>
+              <h5 class="slide__title">Продажа IoT девайсов</h5>
+              <p class="slide__text">Возможность предоставлять абонентам лучшие тарифы на связь и получать вознаграждение с трафика</p><a class="slide__link" href="#">Смотреть кейс
+                <svg id="eye-icon" width="20" height="15">
+                  <use href="./img/sprite.svg#eye"></use>
+                </svg></a>
+            </article>
+          </div>
+          <div class="slider__controls">
+            <button class="slider__button slider__button--prev" type="button"><img src="./img/svg/arrow-slider.svg"/></button>
+            <div class="slider__bullets"></div>
+            <button class="slider__button slider__button--next" type="button"><img src="./img/svg/arrow-slider.svg"/></button>
+          </div>
         </div>
       </section>
     </main>

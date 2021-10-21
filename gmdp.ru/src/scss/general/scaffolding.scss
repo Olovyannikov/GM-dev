@@ -53,6 +53,8 @@ picture {
 
 img {
   max-width: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -62,4 +64,8 @@ button {
 
 ul {
   @include list-reset;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
 }

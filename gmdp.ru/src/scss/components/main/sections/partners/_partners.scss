@@ -1,0 +1,114 @@
+.partners {
+  position: relative;
+  z-index: 1;
+  margin-bottom: rem-calc(120);
+
+  &__container {
+    @include sm-block {
+      padding-left: rem-calc(181);
+    }
+  }
+
+  &__cards {
+    display: grid;
+    gap: rem-calc(20);
+
+    @include sm-block {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: vw(81);
+    }
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: rem-calc(40);
+
+    @include sm-block {
+      margin-bottom: vw(81);
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: vw(-82 * 2);
+        width: vw(80);
+        height: vw(2);
+        background-color: rgba($color-accent, 0.3);
+      }
+    }
+  }
+}
+
+.partners-card {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: rem-calc(-35);
+    bottom: rem-calc(-35);
+    border-radius: 50%;
+    width: vw(120);
+    height: vw(120);
+    background-image: url("../img/svg/arrow-slider.svg");
+    background-position: vw(30) vw(35);
+    background-size: vw(40) vw(31);
+    background-repeat: no-repeat;
+    background-color: $color-accent;
+    background-blend-mode: difference;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+  }
+
+  &__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      background: linear-gradient(180deg, rgba(38, 47, 55, 0.8) 0%, rgba(38, 47, 55, 0) 100%);
+    }
+  }
+
+  &__text {
+    padding: rem-calc(120) rem-calc(25) rem-calc(25);
+    font-family: "Raleway", $font-alt;
+    letter-spacing: 0.03em;
+    color: #f0f0f0;
+
+    h5 {
+      margin-bottom: rem-calc(5);
+      font-weight: 500;
+      font-size: rem-calc(24);
+      line-height: rem-calc(28);
+
+      @include sm-block {
+        font-size: vw(24);
+        line-height: vw(28);
+      }
+    }
+
+    p {
+      margin: 0;
+      font-size: 1rem;
+
+      @include sm-block {
+        font-size: vw(18);
+        line-height: vw(26);
+      }
+    }
+  }
+
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+}
