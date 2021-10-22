@@ -1,3 +1,6 @@
+@import "../general/variables";
+@import "../general/mixins";
+
 .swiper {
   position: relative;
 
@@ -64,8 +67,6 @@
 
 .swiper-pagination {
   z-index: 10;
-
-  //position: absolute;
   order: 2;
   text-align: center;
   transform: translate3d(0, 0, 0);
@@ -76,13 +77,9 @@
   }
 }
 
-/* Common Styles */
-.swiper-pagination-fraction,
-.swiper-pagination-custom,
-.swiper-container-horizontal > .swiper-pagination-bullets {
-  left: 0;
-  bottom: 10px;
-  width: 100%;
+.swiper-pagination-bullets {
+  display: flex;
+  gap: 5px;
 }
 
 /* Bullets */
@@ -197,5 +194,42 @@
   .swiper-slide-active {
 
     opacity: 1 !important;
+  }
+}
+
+
+.swiper-pagination-bullet {
+  counter-increment: counter;
+  position: relative;
+  margin: 0;
+  border-radius: 0;
+  width: rem-calc(25);
+  height: rem-calc(2);
+  background: #51595f;
+  opacity: 0.4;
+
+  &-active {
+    background-color: $color-accent;
+    opacity: 1;
+  }
+
+  @include sm-block {
+    width: vw(2);
+    height: vw(60);
+
+    &::before {
+      content: "0"counter(counter);
+      position: absolute;
+      left: vw(-8);
+      top: vw(-29);
+      font-family: "Raleway", $font-alt;
+      font-size: vw(18);
+      line-height: vw(22);
+      color: #51595f;
+    }
+
+    &-active::before {
+      color: $color-accent;
+    }
   }
 }

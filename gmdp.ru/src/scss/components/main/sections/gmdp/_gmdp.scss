@@ -220,44 +220,6 @@
   }
 
   &__bullets {
-    display: flex;
-    gap: 5px;
-
-    .swiper-pagination-bullet {
-      counter-increment: counter;
-      position: relative;
-      margin: 0;
-      border-radius: 0;
-      width: rem-calc(25);
-      height: rem-calc(2);
-      background: #51595f;
-      opacity: 0.4;
-
-      &-active {
-        background-color: $color-accent;
-        opacity: 1;
-      }
-
-      @include sm-block {
-        width: vw(2);
-        height: vw(60);
-
-        &::before {
-          content: "0"counter(counter);
-          position: absolute;
-          left: vw(-8);
-          top: vw(-29);
-          font-family: "Raleway", $font-alt;
-          font-size: vw(18);
-          line-height: vw(22);
-          color: #51595f;
-        }
-
-        &-active::before {
-          color: $color-accent;
-        }
-      }
-    }
 
     @include sm-block {
       position: absolute;

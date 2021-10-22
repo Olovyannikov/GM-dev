@@ -30,9 +30,35 @@
   }
 
   &__slide {
-    flex-shrink: 0;
-    width: 100%;
     margin-right: rem-calc(24);
+    width: 100%;
+    flex-shrink: 0;
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    gap: rem-calc(15);
+  }
+
+  &__button {
+    position: relative;
+    width: rem-calc(53);
+    height: rem-calc(60);
+
+    &--prev {
+      transform: rotate(180deg);
+    }
+
+    img {
+      pointer-events: none;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%;
+      height: rem-calc(40);
+    }
   }
 }
 

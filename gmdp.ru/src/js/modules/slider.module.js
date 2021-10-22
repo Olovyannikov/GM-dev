@@ -55,7 +55,27 @@ export const slider = () => {
             nextEl: '.slider__button--next',
             prevEl: '.slider__button--prev'
         },
-        spaceBetween: 24
-    })
+        bulletElement: 'slider__bullets',
+        pagination: {
+            el: '.slider__bullets',
+            type: 'bullets'
+        },
+        disabled: false,
+        spaceBetween: 24,
+        on: {
+            slideChange: (swiper) => {
+                if (swiper.activeIndex + 1 === swiper.$wrapperEl[0].childElementCount) {
+                    document.querySelector('.slider__button--next').setAttribute('disabled', false)
+                    document.querySelector('.slider__button--next').addEventListener('click', () => {
+                        console.log('asd')
+                    })
+                }
+            }
+        }
+    });
+
+    // if (sliderFeatures.$wrapperEl[0].childElementCount === )
+
+
 }
 
