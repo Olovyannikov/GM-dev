@@ -1,5 +1,7 @@
 export const copyright = () => {
     const copyrightYear = document.querySelector('#currentYear');
 
-    copyrightYear.innerHTML = `2008-${new Date().getFullYear()}`;
+    try {
+        copyrightYear.innerHTML = `2008-${new Date().getFullYear()}`;
+    } catch (e) {}
 }

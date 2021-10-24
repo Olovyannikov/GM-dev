@@ -1,0 +1,116 @@
+.footer {
+  margin-top: auto;
+  padding: rem-calc(35) 0;
+  background-color: #2a303a;
+
+  &__container {
+    @include sm-block {
+      display: grid;
+      grid-template-columns: vw(176) vw(150) 1fr 1fr;
+    }
+  }
+
+  &__logo {
+    margin-bottom: rem-calc(25);
+
+    img {
+      width: rem-calc(176);
+      height: auto;
+    }
+  }
+
+  &__nav {
+    margin-bottom: rem-calc(25);
+
+    @include sm-block {
+      display: grid;
+      grid-auto-flow: column;
+      align-items: center;
+      gap: vw(25);
+      white-space: nowrap;
+      grid-row-start: 1;
+      grid-column-start: 3;
+    }
+
+  }
+
+  &__about {
+    margin-bottom: rem-calc(25);
+
+    @include sm-block {
+      display: flex;
+      align-items: center;
+      grid-row-start: 1;
+      grid-column-start: -1;
+      justify-self: end;
+    }
+  }
+
+  &__contacts {
+    margin-bottom: rem-calc(25);
+    display: grid;
+    gap: rem-calc(15);
+
+    @include sm-block {
+      grid-auto-flow: column;
+      justify-content: flex-start;
+      grid-column-start: 3;
+      grid-row-start: 2;
+      gap: vw(71);
+    }
+  }
+
+  &__link {
+    font-family: "Stapel", $font-alt;
+    font-size: rem-calc(14);
+    line-height: rem-calc(17);
+    color: rgba(#fff, 0.6);
+  }
+
+  &__politics {
+    margin-bottom: rem-calc(15);
+    max-width: rem-calc(200);
+
+    @include sm-block {
+      grid-column-start: -1;
+      grid-row-start: 2;
+      max-width: 100%;
+    }
+
+    @include xxl-block {
+      white-space: nowrap;
+    }
+  }
+
+  &__copy {
+    font-family: "Stapel", $font-alt;
+    font-size: rem-calc(14);
+    line-height: rem-calc(17);
+    color: rgba(#fff, 0.2);
+
+    @include sm-block {
+      grid-column-start: 1;
+      grid-row-start: 2;
+    }
+
+    @include xxl-block {
+      white-space: nowrap;
+    }
+  }
+}
+
+.nav-footer {
+  display: grid;
+  gap: rem-calc(15);
+
+  @include sm-block {
+    gap: vw(25);
+  }
+
+  &__link {
+    font-family: "Stapel", $font-alt;
+    font-size: rem-calc(14);
+    line-height: rem-calc(17);
+    color: #f0f0f0;
+  }
+}

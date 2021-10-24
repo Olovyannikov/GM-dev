@@ -1,8 +1,13 @@
 extends ../templates/_layout
 include ../mixins/_svg
 
+block variables
+    - var active = 'index'
+
 block content
     include ../application/sections/_gmdp
     include ../application/sections/_features
     include ../application/sections/_partners
     include ../application/sections/_slider
+    include ../application/sections/_connect
+

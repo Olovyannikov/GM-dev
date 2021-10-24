@@ -1,36 +1,36 @@
 .visually-hidden {
   position: absolute;
+  clip-path: inset(100%);
+  overflow: hidden;
   margin: -1px;
+  border: 0;
   padding: 0;
   width: 1px;
   height: 1px;
   white-space: nowrap;
-  border: 0;
-  clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .title {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 0 0 rem-calc(42);
+  margin: 0 0 rem-calc(40);
   font-family: $font-alt;
+  font-weight: 400;
   font-size: rem-calc(30);
   line-height: 115%;
   letter-spacing: 0.03em;
-  color: #F0F0F0;
-  font-weight: 400;
+  color: #f0f0f0;
 
   span {
     color: $color-accent;
   }
 
   @include sm-block {
+    margin-bottom: vw(40);
     font-size: vw(54);
     line-height: vw(62);
-    margin-bottom: vw(40);
   }
 }
 
@@ -45,18 +45,18 @@
 .btn {
   @include btn-reset;
 
-  box-sizing: border-box;
-  border-radius: 50px;
-  color: #f0f0f0;
-  padding: 17px 0 15px 0;
-  text-transform: uppercase;
-  text-align: center;
   border: 1px solid transparent;
+  border-radius: 50px;
+  padding: 17px 0 15px;
+  box-sizing: border-box;
   font-family: $font-alt;
   font-weight: 500;
   font-size: rem-calc(14);
   line-height: rem-calc(18);
   letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f0f0f0;
   transition: 0.3s ease-in-out;
 
   &--link {
@@ -69,7 +69,14 @@
     }
 
     @include sm-block {
-      padding: 9px 0 7px 0;
+      padding: 9px 0 7px;
     }
+  }
+
+  &--primary {
+    font-size: rem-calc(12);
+    line-height: rem-calc(17);
+    color: #69d4ce;
+    background: #2a303a;
   }
 }

@@ -9,7 +9,9 @@ html {
 
 body,
 html {
-  overflow-x: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -18,10 +20,6 @@ html {
   font-size: 16px;
   line-height: 1.1;
   background-color: $color-background;
-}
-
-main {
-  position: relative;
 }
 
 .container {

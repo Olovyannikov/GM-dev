@@ -1,10 +1,18 @@
 .slider {
+  overflow: hidden;
+  position: relative;
+  z-index: 200;
   margin-bottom: rem-calc(120);
 
   &__container {
     @include sm-block {
-      padding-left: vw(181);
+      padding-left: rem-calc(181);
     }
+  }
+
+  &__image {
+    display: none;
+    position: absolute;
   }
 
   &__title {
@@ -29,16 +37,42 @@
     display: flex;
   }
 
+  &__wrapper {
+    @include sm-block {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
   &__slide {
     margin-right: rem-calc(24);
-    width: 100%;
     flex-shrink: 0;
+    width: 100%;
+
+    @include sm-block {
+      max-width: vw(400);
+      width: 100% !important;
+    }
   }
 
   &__controls {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: rem-calc(15);
+
+    @include sm-block {
+      position: absolute;
+      right: 14vw;
+      top: vw(133);
+      order: -1;
+    }
+  }
+
+  &__bullets {
+    @include sm-block {
+      display: none;
+    }
   }
 
   &__button {
@@ -59,14 +93,30 @@
       width: 100%;
       height: rem-calc(40);
     }
+
+    @include sm-block {
+      width: vw(40);
+      height: vw(50);
+
+      img {
+        height: auto;
+        object-fit: cover;
+      }
+    }
   }
 }
 
 .slide {
+  position: relative;
+
   &__icon {
     margin-bottom: rem-calc(25);
     width: rem-calc(42);
     height: rem-calc(42);
+
+    @include sm-block {
+      margin-bottom: vw(30);
+    }
   }
 
   &__title {
@@ -77,6 +127,13 @@
     line-height: rem-calc(28);
     letter-spacing: 0.03em;
     color: #f0f0f0;
+
+    @include sm-block {
+      margin-bottom: vw(20);
+      max-width: vw(320);
+      font-size: vw(32);
+      line-height: vw(37);
+    }
   }
 
   &__text {
@@ -85,6 +142,12 @@
     font-size: 1rem;
     line-height: rem-calc(23);
     color: rgba(#fff, 0.8);
+
+    @include sm-block {
+      margin-bottom: vw(30);
+      font-size: vw(18);
+      line-height: vw(26);
+    }
   }
 
   &__link {
@@ -101,5 +164,31 @@
     svg {
       margin-left: rem-calc(10);
     }
+
+    @include sm-block {
+      margin-top: auto;
+      font-size: vw(14);
+      line-height: vw(20);
+    }
+  }
+
+  &__background {
+    position: absolute;
+    right: 0;
+    bottom: rem-calc(14);
+    z-index: -1;
+    width: rem-calc(130);
+    height: rem-calc(130);
+
+    @include sm-block {
+      bottom: 0;
+      width: vw(190);
+      height: vw(190);
+    }
+  }
+
+  @include sm-block {
+    display: flex;
+    flex-direction: column;
   }
 }

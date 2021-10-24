@@ -1,0 +1,17 @@
+-
+    var list = [
+        {id: 1, title: "Выбор сотрудничества", text: "Дистрибьютор выбирает вариант подключения и перечень необходимых услуг, которые будут доступны в Партнерском кабинете GMDP."},
+        {id: 2, title: "Интеграция и настройка", text: "Проводим работы по интеграции с биллинговой системой, CRM, программой лояльности и пр. программными продуктами Дистрибьютора."},
+        {id: 3, title: "Выплата вознаграждений", text: "Дистрибьютор получает вознаграждение как за первичное подключение Абонента (продажа QR кода), так и с трафика потребляемого Абонентом."}
+    ];
+
+section.business
+    .business__container.container
+        h2.business__title.title Бизнес-модель
+            span сотрудничества
+        ul.business__list
+            each item in list
+                li.business__item
+                    span.business__counter 0#{item.id}
+                    h5.business__item-title #{item.title}
+                    p.business__item-text #{item.text}

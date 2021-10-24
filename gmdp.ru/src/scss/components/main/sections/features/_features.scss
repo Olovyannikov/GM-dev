@@ -1,7 +1,8 @@
 .features {
+  overflow: hidden;
   position: relative;
-  margin-bottom: rem-calc(120);
-  padding-top: rem-calc(120);
+  margin-bottom: 0;
+  padding-bottom: rem-calc(120);
 
   &__image {
     position: absolute;
@@ -11,7 +12,7 @@
 
     &--gradient {
       @include sm-block {
-        bottom: vw(-700);
+        bottom: -15vw;
         width: vw(750);
       }
     }
@@ -20,13 +21,13 @@
       left: unset;
       right: -88%;
       top: unset;
-      bottom: -178px;
+      bottom: 0;
       width: 135%;
 
       @include sm-block {
         left: -8vw;
         right: unset;
-        bottom: -5vw;
+        bottom: 12vw;
         width: vw(700);
       }
     }
@@ -58,9 +59,14 @@
     margin-bottom: vw(81);
   }
 
+  @include custom-breakpoint(712px) {
+    padding-bottom: rem-calc(340);
+  }
+
   @include sm-block {
-    margin-bottom: vw(200);
-    padding-top: 10.4vw;
+    margin-bottom: vw(-80);
+    padding-top: vw(340);
+    padding-bottom: vw(200);
   }
 }
 

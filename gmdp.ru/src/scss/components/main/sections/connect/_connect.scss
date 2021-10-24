@@ -1,0 +1,188 @@
+.connect {
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  margin-bottom: rem-calc(60);
+  padding-top: rem-calc(190);
+  margin-top: rem-calc(-190);
+
+  &__image {
+    position: absolute;
+    right: -50vw;
+    top: vw(-400);
+    z-index: 0;
+    width: 150%;
+    transform: rotate(-160deg);
+
+    @include sm-block {
+      right: 55vw;
+      top: -2vw;
+      width: vw(720);
+      transform: rotate(0);
+    }
+  }
+
+  &__container {
+    position: relative;
+    z-index: 2;
+
+    @include sm-block {
+      padding-left: rem-calc(181);
+    }
+  }
+
+  &__title {
+    position: relative;
+    display: block;
+
+    p {
+      margin: 0;
+
+      span:last-child {
+        color: #f0f0f0;
+      }
+
+      &:last-of-type {
+        color: $color-accent;
+      }
+    }
+
+    @include sm-block {
+      margin-bottom: vw(40);
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: vw(-82 * 2);
+        top: 0;
+        width: vw(80);
+        height: vw(2);
+        background-color: rgba($color-accent, 0.3);
+      }
+    }
+  }
+
+  &__wrapper {
+    @include sm-block {
+      display: grid;
+      grid-auto-flow: column;
+      gap: rem-calc(26);
+    }
+  }
+
+  &__descr {
+    margin: 0 0 rem-calc(35);
+    font-size: 1rem;
+    line-height: rem-calc(23);
+    color: rgba(#fff, 0.8);
+
+    @include sm-block {
+      max-width: vw(571);
+      font-size: vw(18);
+      line-height: vw(26);
+    }
+  }
+
+  @include sm-block {
+    margin-bottom: vw(120);
+  }
+}
+
+.form-connect {
+  padding: rem-calc(45) rem-calc(35);
+  background: linear-gradient(to top, #69d4ce 0%, #00fbee 100%);
+
+  &__label {
+    position: relative;
+    display: flex;
+    padding-bottom: 8px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: rem-calc(2);
+      background-color: #28303b;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: rem-calc(25);
+
+      @include sm-block {
+        margin-bottom: vw(35);
+      }
+    }
+
+    &:last-of-type {
+      margin-bottom: rem-calc(35);
+
+      @include sm-block {
+        margin-bottom: vw(60);
+      }
+    }
+
+    @include sm-block {
+      padding-bottom: vw(15);
+    }
+  }
+
+  &__input {
+    border: none;
+    padding: 0;
+    width: 100%;
+    font-family: "Raleway", $font-alt;
+    font-size: rem-calc(18);
+    line-height: rem-calc(26);
+    color: rgba(#28303b, 0.6);
+    background-color: transparent;
+
+    &:-webkit-autofill {
+      padding: 10px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    @include sm-block {
+      font-size: vw(20);
+      line-height: vw(29);
+    }
+  }
+
+  &__button {
+    margin-bottom: rem-calc(15);
+    width: 100%;
+
+    @include sm-block {
+      margin-bottom: vw(12);
+    }
+
+    &.not-allowed {
+      background-color: gray;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+  }
+
+  &__descr {
+    margin: 0 auto;
+    font-family: "Raleway", $font-alt;
+    font-size: rem-calc(10);
+    line-height: rem-calc(14);
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: rgba(#000, 0.6);
+
+    @include sm-block {
+      max-width: vw(265);
+      font-size: vw(12);
+      line-height: vw(17);
+    }
+  }
+
+  @include sm-block {
+    width: vw(568);
+  }
+}

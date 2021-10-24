@@ -1,0 +1,54 @@
+-
+    var items = [
+        {id: "money", title: "Дополнительный доход", text: "Вознаграждение с каждого проданного eSIM устройства - как за первичное подключение Абонента, так и с потребляемого трафика."},
+        {id: "branching", title: "Преимущества перед конкурентами", text: "Абонент приобретает устройство, подключенное более чем к 70 операторам по всему миру, с возможностью общения без роуминга."},
+        {id: "pie-chart", title: "Программа лояльности", text: "Программы лояльности интегрированные в собственные продукты дистрибьютора. Бонусы, баллы, кэшбэк за услуги связи."},
+    ]
+
+section.ecosystem
+    .ecosystem__image
+        picture
+            source(srcset="./img/ecosystem-big@2x.webp 2x, ./img/ecosystem-big.webp" media="(min-width: 992px)" type="image/webp")
+            source(srcset="./img/ecosystem@2x.webp 2x, ./img/ecosystem.webp" type="image/webp")
+            img(srcset="./img/ecosystem-big@2x.png 2x" src="./img/ecosystem-big.png" aria-hidden="true" alt="")
+    .ecosystem__container.container
+        .ecosystem__distributors
+            .ecosystem__distributors-wrapper
+                h2.ecosystem__title.title Экосистема для
+                    span дистрибьюторов
+                ul.ecosystem__descr
+                    li
+                        p eSIM смартфоны, M2M и IoT устройства поставляются в Дистрибьюторскую сеть уже подключенные к услугам связи в 200 странах мира
+                    li
+                        p Абонент приобретает eSIM устройство и активирует услуги связи от любого оператора, через QR код или мобильное приложение GMDP.
+                    li
+                        p Мобильное приложение iOS/Android позволяет выбрать оптимальный тариф оператора, пополнять баланс и контролировать расход трафика.
+                    li
+                        p Дистрибьютор получает вознаграждение использование услуг связи конечным пользователем через Партнерский кабинет GMDP.
+                button#modal-show.ecosystem__link Проверить экосистему
+                    +svg('eye', 20, 15)
+            .ecosystem__distributors-image#modal
+                button(type="button" id="close-modal").ecosystem__distributors-button.ecosystem__distributors-button--active
+                h3.ecosystem__title.title Экосистема для
+                    span дистрибьюторов
+                picture
+                    source(srcset="./img/distributors@2x.png 2x, ./img/distributors.png" type="image/webp")
+                    img(srcset="./img/distributors@2x.png 2x" src="./img/distributors.png" alt="Экосистема для дистрибьюторов, график")
+        .ecosystem__features.features-ecosystem
+            .features-ecosystem__image
+                source(srcset="./img/distr@2x.webp 2x, ./img/distr.webp" type="image/webp")
+                img(srcset="./img/distr@2x.png 2x" src="./img/distr.png" aria-hidden="true" alt="")
+            h2.features-ecosystem__title.ecosystem__title.title Ключевые преимущества
+                span для дистрибьюторов
+            ul.features-ecosystem__list
+                each item in items
+                    li.features-ecosystem__item
+                        .features-ecosystem__icon
+                            img(src="./img/svg/" + item.id + ".svg")
+                        h5.features-ecosystem__item-title #{item.title}
+                        p.features-ecosystem__text #{item.text}
+            .ecosystem__phone
+                picture
+                    source(srcset="./img/ecosystem-phone-big@2x.webp 2x, ./img/ecosystem-phone-big.webp" media="(min-width: 992px)" type="image/webp")
+                    source(srcset="./img/ecosystem-phone@2x.webp 2x, ./img/ecosystem-phone.webp" type="image/webp")
+                    img(srcset="./img/ecosystem-phone-big@2x.png 2x" src="./img/ecosystem-big-phone.jpg" aria-hidden="true" alt="")

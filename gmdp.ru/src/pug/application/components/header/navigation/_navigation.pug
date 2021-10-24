@@ -1,10 +1,10 @@
 -
     var links = [
-        {isActive: true, text: "Платформа GMDP"},
-        {isActive: false, text: "GSM операторам"},
-        {isActive: false, text: "Производителям eSIM"},
-        {isActive: false, text: "Дистрибьюторам"},
-        {isActive: false, text: "О проекте"},
+        {isActive: true, text: "Платформа GMDP", link: "platform.html"},
+        {isActive: false, text: "GSM операторам", link: "gsm.html"},
+        {isActive: false, text: "Производителям eSIM", link: "maintainers.html"},
+        {isActive: false, text: "Дистрибьюторам", link: "distributors.html"},
+        {isActive: false, text: "О проекте", link: "about.html"},
     ];
 
 nav.header__navigation.navigation#navigation
@@ -15,7 +15,7 @@ nav.header__navigation.navigation#navigation
                     a.navigation__link.navigation__link--active #{link.text}
             else
                 li.navigation__item
-                    a(href="#").navigation__link #{link.text}
+                    a(href="/" + link.link).navigation__link #{link.text}
     button(type="button").navigation__button.btn.btn--link Регистрация
     .navigation__lang
         button(type="button" aria-label="Изменить язык на Русский").navigation__lang-btn.navigation__lang-btn--active#ru Ru

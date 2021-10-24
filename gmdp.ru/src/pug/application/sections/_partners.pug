@@ -1,18 +1,18 @@
 -
     var partners = [
-        {id: 1, title: "Операторам", text: "GSM и MVNO"},
-        {id: 2, title: "Производителям", text: "eSIM девайсов"},
-        {id: 3, title: "Дистрибьюторам", text: "eSIM, M2M и IoT"},
+        {id: 1, title: "Операторам", text: "GSM и MVNO", link: "gsm.html"},
+        {id: 2, title: "Производителям", text: "eSIM девайсов", link: "maintainers.html"},
+        {id: 3, title: "Дистрибьюторам", text: "eSIM, M2M и IoT", link: "distributors.html"},
     ]
 
 section.partners
     .partners__container.container
-        h2.partners__title.title Ключевым
+        h2.partners__title.title(data-aos="fade-down" data-aos-duration="500") Ключевым
             span партнерам GMDP
     .partners__wrapper.container
         .partners__cards
             each partner in partners
-                a(href="#").partners__card.partners-card
+                a(href="/" + partner.link).partners__card.partners-card(data-aos="flip-left")
                     .partners-card__image
                         picture
                             source(srcset="./img/partners-" + partner.id + "@2x.webp 2x, ./img/partners-" + partner.id + ".webp 1x" type="image/webp")

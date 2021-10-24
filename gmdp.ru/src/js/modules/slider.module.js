@@ -49,6 +49,7 @@ export const slider = () => {
     });
 
     const sliderFeatures = new Swiper('.slider__wrapper', {
+        containerClass: 'slider__wrapper',
         wrapperClass: 'slider__content',
         slideClass: 'slider__slide',
         navigation: {
@@ -65,17 +66,19 @@ export const slider = () => {
         on: {
             slideChange: (swiper) => {
                 if (swiper.activeIndex + 1 === swiper.$wrapperEl[0].childElementCount) {
-                    document.querySelector('.slider__button--next').setAttribute('disabled', false)
+                    document.querySelector('.slider__button--next').removeAttribute('disabled')
                     document.querySelector('.slider__button--next').addEventListener('click', () => {
-                        console.log('asd')
-                    })
+                        swiper.slideTo(0);
+                    }, {once: true});
                 }
+            }
+        },
+        breakpoints: {
+            992: {
+                spaceBetween: 87,
+                slidesPerView: 'auto',
+                slidesPerGroup: 1,
             }
         }
     });
-
-    // if (sliderFeatures.$wrapperEl[0].childElementCount === )
-
-
 }
-

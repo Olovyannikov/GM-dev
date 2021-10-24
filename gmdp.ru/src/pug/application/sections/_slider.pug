@@ -3,17 +3,21 @@
         {id: "ship", title: "Международные перевозки", text: "Удаленный мониторинг грузоперевозок и качественных характеристик самого груза с помощью M2M карт"},
         {id: "bank", title: "Банковский и страховой сервис", text: "Возможность банков и страховых компаний делать более персонифицированные предложения"},
         {id: "medicine", title: "Здравоохранение и медицина", text: "Медицинское оборудование оснащенное IoT обеспечивает постоянный контроль за состоянием здоровья пациентов"},
-        {id: "smart", title: "Продажа смартфонов", text: "Возможность предоставлять абонентам лучшие тарифы на связь и получать вознаграждение с трафика"},
+        {id: "smart", title: "Продажа смартфонов", text: "Возможность предоставлять абонентам лучшие тарифы на связь и получать вознаграждение с трафика"},
         {id: "gas", title: "Газовая и нефтяная промышленность", text: "Автоматизированный деформационный мониторинг удаленных объектов в газовой, нефтяной промышленности"},
         {id: "iot", title: "Продажа IoT девайсов", text: "Возможность предоставлять абонентам лучшие тарифы на связь и получать вознаграждение с трафика"},
     ];
 
 section.slider
     .slider__container.container
-        h2.title.slider__title Используйте
+        h2(data-aos="fade-down" data-aos-duration="500").title.slider__title Используйте
             span все возможности
             | вашего бизнеса
-    .slider__wrapper.container
+        .slider__image
+            picture
+                source(srcset="./img/mesh@2x.webp 2x, ./img/mesh.webp 1x" type="image/webp")
+                img(srcset="./img/mesh@2x.jpg 2x" src="./img/mesh.jpg" alt="" aria-hidden="true")
+    .slider__wrapper.container(data-aos="fade" data-aos-delay="200")
         .slider__content
             each slide in slides
                 article.slider__slide.slide

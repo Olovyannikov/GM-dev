@@ -1,0 +1,28 @@
+section.connect
+    .connect__image
+        picture
+            source(srcset="./img/ring@2x.webp 2x, ./img/ring.webp")
+            img(srcset="./img/ring@2x.png 2x" src="./img/ring.png" aria-hidden="true" alt="")
+    .connect__container.container
+        .connect__wrapper
+            .connect__text
+                h2(data-aos="fade-down" data-aos-duration="500").connect__title.title
+                    p
+                        span Участвуйте 
+                        span в проекте
+                    p по развертыванию
+                    p eSIM в России
+                p.connect__descr
+                    | Укажите свои контакты и в течение одного рабочего дня с Вами свяжется персональный менеджер, который уточнит информацию о Вашей компании и ответит на все Ваши вопросы.
+            form.connect__form.form-connect#connect
+                label.form-connect__label
+                    input(type="text" placeholder="Фамилия Имя" name="name").form-connect__input#input-name
+                label.form-connect__label
+                    input(type="text" placeholder="+7 (___) ___-__-__" name="phone").form-connect__input#input-tel
+                label.form-connect__label
+                    input(type="text" placeholder="example@gmail.com" name="email").form-connect__input#input-email
+                label.form-connect__label
+                    input(type="text" placeholder="Название компании" name="company").form-connect__input#input-company
+                button(type="button").form-connect__button.btn.btn--primary Получить  предложение
+                p.form-connect__descr
+                    | Нажимая на кнопку, вы принимаете политику обработки персональных данных

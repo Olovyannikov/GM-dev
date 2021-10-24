@@ -1,19 +1,19 @@
 section.features
     .features__image.features__image--gradient
         picture
-            source(srcset="./img/round-2-big@2x.png 2x, ./img/round-2-big.png" media="(min-width: 768px)")
+            source(srcset="./img/round-2-big@2x.png 2x, ./img/round-2-big.png" media="(min-width: 992px)")
             source(srcset="./img/round-2@2x.webp 2x, ./img/round-2.webp")
             img(srcset="./img/round-2@2x.png 2x" src="./img/round-2.png" aria-hidden="true" alt="")
     .features__image.features__image--atom
         picture
-            source(srcset="./img/atom@2x.png 2x, ./img/atom.png" media="(min-width: 768px)")
+            source(srcset="./img/atom@2x.png 2x, ./img/atom.png" media="(min-width: 992px)")
             source(srcset="./img/atom@2x.webp 2x, ./img/atom.webp")
             img(srcset="./img/atom@2x.png 2x" src="./img/atom.png" aria-hidden="true" alt="")
     .features__container.container
-        h2.features__title.title Преимущества
+        h2(data-aos="fade-down").features__title.title Преимущества
             span платформы GMDP
         ul.features__list
-            li.features__item.feature
+            li(data-aos="flip-left" data-aos-duration="500").features__item.feature
                 .feature__icon
                     img(src="./img/svg/soft.svg"  alt="Российское ПО, иконка")
                 h5.feature__title Российское ПО
@@ -27,7 +27,7 @@ section.features
                     li
                         +svg('yes', 20, 20)
                         | Лицензии на услуги связи
-            li.features__item.feature
+            li.features__item.feature(data-aos="flip-left" data-aos-duration="500")
                 .feature__icon
                     img(src="./img/svg/shield.svg"  alt="Российское ПО, иконка")
                 h5.feature__title Безопасность
@@ -41,7 +41,7 @@ section.features
                     li
                         +svg('yes', 20, 20)
                         | Российский HSM
-            li.features__item.feature
+            li.features__item.feature(data-aos="flip-left" data-aos-duration="500")
                 .feature__icon
                     img(src="./img/svg/equalizer.svg"  alt="Российское ПО, иконка")
                 h5.feature__title Кастомизация
