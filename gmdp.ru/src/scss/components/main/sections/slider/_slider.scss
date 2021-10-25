@@ -39,6 +39,7 @@
 
   &__wrapper {
     @include sm-block {
+      position: relative;
       display: flex;
       flex-direction: column;
     }
@@ -63,9 +64,10 @@
 
     @include sm-block {
       position: absolute;
-      right: 14vw;
-      top: vw(133);
+      right: 0;
+      top: vw(-140);
       order: -1;
+      z-index: 2000;
     }
   }
 
@@ -103,6 +105,10 @@
         object-fit: cover;
       }
     }
+  }
+
+  @include sm-block {
+    margin-bottom: vw(200);
   }
 }
 

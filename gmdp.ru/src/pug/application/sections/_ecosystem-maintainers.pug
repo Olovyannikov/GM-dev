@@ -1,0 +1,50 @@
+-
+    var items = [
+        {id: "globe", title: "Глобальная связь", text: "eSIM устройство имеет максимальное количество подключенных операторских сетей по всему миру."},
+        {id: "pie-chart-green", title: "Увеличение доли рынка", text: "Благодаря готовности eSIM устройств к продаже сразу после их поступления в дистрибьюторскую сеть."},
+        {id: "money-man", title: "Новые каналы продаж", text: "Партнерский кабинет GMDP позволяет наладить новые каналы продаж с  дистрибьюторами для различных сегментов в разных странах мира."},
+    ]
+
+section.ecosystem
+    .ecosystem__image
+        picture
+            source(srcset="./img/maintainers-big@2x.webp 2x, ./img/maintainers-big.webp" media="(min-width: 992px)" type="image/webp")
+            img(srcset="./img/maintainers-big@2x.png 2x" src="./img/maintainers-big.png" aria-hidden="true" alt="")
+    .ecosystem__container.container
+        .ecosystem__distributors
+            .ecosystem__distributors-wrapper
+                h2.ecosystem__title.ecosystem__title--maintainers.title Экосистема для
+                    span производителей
+                ul.ecosystem__descr.ecosystem__descr--maintainers
+                    li
+                        p Производитель M2M получает спецификацию и bootstrap профиль для последующей инсталляции на eSIM устройства
+                    li
+                        p Производителю Consumer устройств установка bootstrap профиля необязательна
+                    li
+                        p bootstrap профиль загружается на eSIM чип в заводских условиях (на сборочной линии производителя)
+                    li
+                        p Благодаря нашим технологиям Пользователь получает eSIM устройство, уже подключенное к услугам связи по всему миру
+                button#modal-show.ecosystem__link Проверить экосистему
+                    +svg('eye', 20, 15)
+            .ecosystem__distributors-image#modal
+                button(type="button" id="close-modal").ecosystem__distributors-button.ecosystem__distributors-button--active
+                h3.ecosystem__title.title Экосистема для
+                    span производителей
+                picture
+                    source(srcset="./img/maintainers-image@2x.png 2x, ./img/maintainers-image.png" type="image/webp")
+                    img(srcset="./img/maintainers-image@2x.png 2x" src="./img/maintainers-image.png" alt="Экосистема для производителей, график")
+        .ecosystem__features.features-ecosystem
+            h2.features-ecosystem__title.ecosystem__title.title Ключевые преимущества
+                span для производителей
+            ul.features-ecosystem__list
+                each item in items
+                    li.features-ecosystem__item
+                        .features-ecosystem__icon
+                            img(src="./img/svg/" + item.id + ".svg")
+                        h5.features-ecosystem__item-title #{item.title}
+                        p.features-ecosystem__text #{item.text}
+    .ecosystem__grad
+        picture
+            source(srcset="./img/gradient-green-1@2x.webp 2x, ./img/gradient-green-1.webp" media="(min-width: 992px)" type="image/webp")
+            source(srcset="./img/gradient-green-small@2x.webp 2x, ./img/gradient-green-small.webp" type="image/webp")
+            img(srcset="./img/gradient-green-small@2x.png 2x" src="./img/gradient-green-small.jpg" aria-hidden="true" alt="")

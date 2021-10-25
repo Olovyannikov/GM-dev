@@ -36,6 +36,7 @@
   &__item {
     display: flex;
     align-items: center;
+
     &:last-child {
       display: none;
     }
@@ -62,6 +63,52 @@
           height: 1px;
           background-color: $color-accent;
         }
+      }
+
+      &.navigation__link--gsm {
+        color: $color-accent-4;
+
+        @include sm-block {
+          &::after {
+            background-color: $color-accent-4;
+          }
+        }
+      }
+      &.navigation__link--maintainers {
+        color: $color-accent-3;
+
+        @include sm-block {
+          &::after {
+            background-color: $color-accent-3;
+          }
+        }
+      }
+      &.navigation__link--distributors {
+        color: $color-accent-2;
+
+        @include sm-block {
+          &::after {
+            background-color: $color-accent-2;
+          }
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      &--active {
+        color: $color-accent-4;
+      }
+    }
+
+    &:nth-child(3) {
+      &--active {
+        color: $color-accent-3;
+      }
+    }
+
+    &:nth-child(4) {
+      &--active {
+        color: $color-accent-2;
       }
     }
 

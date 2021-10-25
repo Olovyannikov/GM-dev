@@ -68,6 +68,16 @@
       background-color: $color-accent;
     }
 
+    &.btn-maintainers {
+      border-color: $color-accent-3;
+    }
+    &.btn-gsm {
+      border-color: $color-accent-4;
+    }
+    &.btn-distributors {
+      border-color: $color-accent-2;
+    }
+
     @include sm-block {
       padding: 9px 0 7px;
     }

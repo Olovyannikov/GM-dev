@@ -12,7 +12,7 @@ section.partners
     .partners__wrapper.container
         .partners__cards
             each partner in partners
-                a(href="/" + partner.link).partners__card.partners-card(data-aos="flip-left")
+                a(data-aos="flip-left" href="/" + partner.link).partners__card.partners-card
                     .partners-card__image
                         picture
                             source(srcset="./img/partners-" + partner.id + "@2x.webp 2x, ./img/partners-" + partner.id + ".webp 1x" type="image/webp")

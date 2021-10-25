@@ -37,6 +37,10 @@
       }
     }
   }
+
+  @include sm-block {
+    margin-bottom: vw(200);
+  }
 }
 
 .partners-card {

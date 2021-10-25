@@ -8,17 +8,35 @@
 
   &__image {
     position: absolute;
-    right: -50vw;
-    top: vw(-400);
+    top: 0;
+    right: -45vw;
     z-index: 0;
     width: 150%;
     transform: rotate(-160deg);
 
+    @include custom-breakpoint(768px) {
+      top: vw(-200);
+    }
+
     @include sm-block {
       right: 55vw;
-      top: -2vw;
+      top: 7vw;
       width: vw(720);
       transform: rotate(0);
+    }
+  }
+
+  &__gradient {
+    position: absolute;
+    display: none;
+
+    &--index {
+      bottom: -5vw;
+      @include sm-block {
+        display: block;
+        width: 40%;
+        z-index: -1;
+      }
     }
   }
 
@@ -84,7 +102,8 @@
   }
 
   @include sm-block {
-    margin-bottom: vw(120);
+    padding-bottom: vw(120);
+    margin-bottom: 0;
   }
 }
 

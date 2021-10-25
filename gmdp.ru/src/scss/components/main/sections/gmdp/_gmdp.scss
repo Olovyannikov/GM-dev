@@ -1,4 +1,6 @@
 .gmdp {
+  position: relative;
+  z-index: 2000;
   margin-top: rem-calc(65);
 
   &__container {

@@ -12,8 +12,11 @@
 
     &--gradient {
       @include sm-block {
-        bottom: -15vw;
+        bottom: -25vw;
         width: vw(750);
+        img {
+          object-fit: contain;
+        }
       }
     }
 
@@ -27,7 +30,7 @@
       @include sm-block {
         left: -8vw;
         right: unset;
-        bottom: 12vw;
+        bottom: 18vw;
         width: vw(700);
       }
     }
@@ -64,9 +67,10 @@
   }
 
   @include sm-block {
-    margin-bottom: vw(-80);
-    padding-top: vw(340);
-    padding-bottom: vw(200);
+    margin-top: vw(-200);
+    margin-bottom: vw(-200);
+    padding-top: vw(400);
+    padding-bottom: vw(400);
   }
 }
 

@@ -32,16 +32,15 @@
         <button class="header__burger" id="burger" aria-label="Управлять меню" type="button"></button>
         <nav class="header__navigation navigation" id="navigation">
           <ul class="navigation__list">
-            <li class="navigation__item"><a class="navigation__link navigation__link--active">Платформа GMDP</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="/index.html">Платформа GMDP</a></li>
             <li class="navigation__item"><a class="navigation__link" href="/gsm.html">GSM операторам</a></li>
             <li class="navigation__item"><a class="navigation__link" href="/maintainers.html">Производителям eSIM</a></li>
             <li class="navigation__item"><a class="navigation__link" href="/distributors.html">Дистрибьюторам</a></li>
             <li class="navigation__item"><a class="navigation__link" href="/about.html">О проекте</a></li>
-          </ul>
-          <button class="navigation__button btn btn--link" type="button">Регистрация</button>
+          </ul><a class="navigation__button btn btn--link" href="#registration">Регистрация</a>
           <div class="navigation__lang">
-            <button class="navigation__lang-btn navigation__lang-btn--active" type="button" aria-label="Изменить язык на Русский" id="ru">Ru</button>
-            <button class="navigation__lang-btn" type="button" aria-label="Изменить язык на Английский" id="eng">Eng</button>
+            <button class="navigation__lang-btn navigation__lang-btn--active" type="button" aria-label="Изменить язык на русский (Switch to Russian)" id="ru">Ru</button>
+            <button class="navigation__lang-btn" type="button" aria-label="Изменить язык на английский (Switch to English)" id="eng">Eng</button>
           </div>
           <div class="navigation__copy"><a href="#">Политика обработки персональных данных</a><span>Copyright ©
               <output id="currentYear"></output></span></div>
@@ -138,10 +137,15 @@
           </ul>
         </div>
       </section>
-      <section class="connect">
+      <section class="connect" id="registration">
         <div class="connect__image">
           <picture>
             <source srcset="./img/ring@2x.webp 2x, ./img/ring.webp"/><img srcset="./img/ring@2x.png 2x" src="./img/ring.png" aria-hidden="true" alt=""/>
+          </picture>
+        </div>
+        <div class="connect__gradient connect__gradient--index">
+          <picture>
+            <source srcset="./img/grad-bottom@2x.webp 2x, ./img/grad-bottom.webp"/><img srcset="./img/grad-bottom@2x.png 2x" src="./img/grad-bottom.png" aria-hidden="true" alt=""/>
           </picture>
         </div>
         <div class="connect__container container">

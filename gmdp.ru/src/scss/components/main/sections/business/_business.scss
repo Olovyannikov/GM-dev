@@ -9,6 +9,39 @@
     }
   }
 
+  &__wrapper {
+    position: relative;
+    padding: rem-calc(55) rem-calc(35);
+    margin-bottom: rem-calc(60);
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: calc(100% + 24px);
+      min-height: rem-calc(496);
+      background: linear-gradient(180deg, rgba(0, 235, 200, 0.15) 0%, rgba(0, 194, 255, 0.15) 100%);
+      border-top-left-radius: rem-calc(12);
+      border-bottom-left-radius: rem-calc(12);
+    }
+
+    @include md-block {
+      margin-bottom: vw(80);
+      padding: vw(45) vw(85) vw(45) vw(163);
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+
+      &::after {
+        width: 100%;
+        min-height: vw(291);
+        height: 100%;
+        border-radius: rem-calc(12);
+      }
+    }
+  }
+
   &__title {
     color: $color-accent-2;
 
@@ -26,6 +59,16 @@
         width: vw(80);
         height: vw(2);
         background-color: rgba($color-accent-2, 0.3);
+      }
+    }
+
+    &--maintainers {
+      color: $color-accent-3;
+
+      @include sm-block {
+        &::after {
+          background-color: rgba($color-accent-3, 0.3);
+        }
       }
     }
   }
@@ -48,7 +91,7 @@
       background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #00E0FF 100%);
 
       @include sm-block {
-        top: vw(70);
+        top: vw(85);
         width: 100%;
         height: rem-calc(2);
         background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #00E0FF 100%);
@@ -58,6 +101,18 @@
     @include sm-block {
       grid-auto-flow: column;
       gap: rem-calc(86);
+    }
+
+    &--maintainers {
+      &::after {
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, $color-accent-3 100%);
+      }
+
+      @include sm-block {
+        &::after {
+          background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, $color-accent-3 100%);
+        }
+      }
     }
   }
 
@@ -69,7 +124,8 @@
       font-size: rem-calc(52);
       line-height: rem-calc(73);
       margin-bottom: rem-calc(10);
-      color: rgba(#00e0ff, 0.5);
+      color: #00e0ff;
+      opacity: 0.5;
 
       @include sm-block {
         margin-bottom: vw(47);
@@ -77,14 +133,22 @@
     }
 
     &:nth-child(2) {
+      width: 80%;
+
       span {
-        color: rgba(#00e0ff, 0.8);
+        opacity: 0.8;
       }
     }
 
     &:last-child {
       span {
-        color: rgba(#00e0ff, 1);
+        opacity: 1;
+      }
+    }
+
+    &--maintainers {
+      span {
+        color: $color-accent-3;
       }
     }
   }
@@ -120,12 +184,182 @@
     margin-bottom: vw(200);
   }
 
+  &__way {
+    display: grid;
+    grid-auto-flow: column;
+
+    @include sm-block {
+      grid-auto-flow: row;
+      gap: vw(40);
+    }
+  }
+
+  &__way-col {
+    display: grid;
+    grid-auto-flow: row;
+
+    img {
+      display: block;
+      width: rem-calc(20);
+      height: rem-calc(10);
+      margin-bottom: rem-calc(35);
+
+      @include sm-block {
+        margin: 0;
+        transform: rotate(-90deg);
+        justify-self: center;
+      }
+    }
+
+    @include sm-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-auto-flow: column;
+      align-items: center;
+    }
+  }
+
+  &__way-title {
+    margin: 0 0 rem-calc(35);
+    font-family: "Raleway", $font-alt;
+    font-size: rem-calc(24);
+    line-height: rem-calc(28);
+    letter-spacing: 0.03em;
+    color: #f0f0f0;
+
+    @include sm-block {
+      margin-bottom: 0;
+      font-size: vw(32);
+      line-height: vw(37);
+    }
+  }
+
+  &__way-text {
+    margin: 0 0 rem-calc(35);
+    font-family: "Raleway", $font-alt;
+    font-size: rem-calc(16);
+    line-height: rem-calc(23);
+    color: #fff;
+
+    @include sm-block {
+      white-space: nowrap;
+      margin-bottom: 0;
+      font-size: vw(18);
+      line-height: vw(26);
+    }
+  }
+
+  &__subtitle {
+    margin: 0 0 rem-calc(25);
+    font-family: "Raleway", $font-alt;
+    font-weight: 500;
+    font-size: rem-calc(16);
+    line-height: rem-calc(18);
+    letter-spacing: 0.03em;
+    background: linear-gradient(180deg, #05D3B4 0%, rgba(5, 211, 180, 0.4) 100%),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include sm-block {
+      font-size: vw(18);
+      line-height: vw(26);
+    }
+  }
+
+  &__features {
+    display: grid;
+    gap: rem-calc(20);
+  }
+
+  &__feature {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: start;
+    gap: rem-calc(5);
+    font-size: rem-calc(16);
+    line-height: rem-calc(23);
+    background: linear-gradient(180deg, #05D3B4 0%, rgba(5, 211, 180, 0.4) 100%),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    &:last-child {
+      svg {
+        align-self: flex-start;
+      }
+    }
+
+    @include md-block {
+      font-size: vw(18);
+      line-height: vw(26);
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &__image {
+    position: absolute;
+    bottom: -90px;
+    right: -24px;
+    width: rem-calc(156);
+    height: rem-calc(163);
+
+    @include sm-block {
+      left: vw(-180);
+      bottom: unset;
+      top: 0;
+      width: vw(289);
+      height: vw(302);
+    }
+  }
+
+  &__download {
+    border-radius: rem-calc(50);
+    border: 1px solid rgba(7, 200, 173, 0.8);
+    padding: 1rem;
+    display: block;
+    margin: rem-calc(40) auto 0;
+    width: 100%;
+    font-family: "Stapel", $font-alt;
+    font-weight: 500;
+    font-size: rem-calc(14);
+    line-height: rem-calc(20);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #00EFCB;
+
+    @include sm-block {
+      width: vw(487);
+      margin-top: vw(80);
+
+      &:hover {
+        background-color: #00EFCB;
+        color: #1f2326;
+      }
+    }
+  }
+
   + .connect {
+    z-index: 2000;
+    margin-top: vw(-200);
+    margin-bottom: vw(-200);
+    padding-top: vw(200);
+    padding-bottom: vw(200);
+
     .connect__title {
       p span:first-child,
       p:last-child {
         color: $color-accent-2;
       }
+    }
+
+    .connect__gradient--index {
+      display: none;
     }
 
     .connect__form {
@@ -139,11 +373,9 @@
 
   + .connect + .slider {
     position: relative;
-    z-index: -1;
-    padding-top: vw(1000);
-    margin-top: vw(-1000);
-    padding-bottom: vw(80);
-    margin-bottom: vw(40);
+    margin-bottom: 0;
+    padding-top: vw(200);
+    padding-bottom: vw(120);
 
     .slider__title {
       span {
@@ -157,7 +389,7 @@
 
     .slider__image {
       display: block;
-      top: 0;
+      bottom: vw(650);
       left: 0;
       z-index: -2000;
       width: vw(1822 / 2.5);

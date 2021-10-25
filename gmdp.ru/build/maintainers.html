@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <title></title>
+    <script async="async" src="https://mc.yandex.ru/metrika/tag.js"></script>
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+          m[i] = m[i] || function () {
+              (m[i].a = m[i].a || []).push(arguments)
+          };
+          m[i].l = 1 * new Date();
+          k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+      })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+      ym(65610949, "init", {
+          clickmap: true,
+          trackLinks: true,
+          accurateTrackBounce: true,
+          webvisor: true
+      });
+      
+    </script>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container header__container"><a class="header__logo" href="/"><img src="./img/logo.svg" alt="Логотип Глонасс"/></a>
+        <button class="header__burger" id="burger" aria-label="Управлять меню" type="button"></button>
+        <nav class="header__navigation navigation" id="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link" href="/index.html">Платформа GMDP</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="/gsm.html">GSM операторам</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="/maintainers.html">Производителям eSIM</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="/distributors.html">Дистрибьюторам</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="/about.html">О проекте</a></li>
+          </ul><a class="navigation__button btn btn--link" href="#registration">Регистрация</a>
+          <div class="navigation__lang">
+            <button class="navigation__lang-btn navigation__lang-btn--active" type="button" aria-label="Изменить язык на русский (Switch to Russian)" id="ru">Ru</button>
+            <button class="navigation__lang-btn" type="button" aria-label="Изменить язык на английский (Switch to English)" id="eng">Eng</button>
+          </div>
+          <div class="navigation__copy"><a href="#">Политика обработки персональных данных</a><span>Copyright ©
+              <output id="currentYear"></output></span></div>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="ecosystem">
+        <div class="ecosystem__image">
+          <picture>
+            <source srcset="./img/maintainers-big@2x.webp 2x, ./img/maintainers-big.webp" media="(min-width: 992px)" type="image/webp"/><img srcset="./img/maintainers-big@2x.png 2x" src="./img/maintainers-big.png" aria-hidden="true" alt=""/>
+          </picture>
+        </div>
+        <div class="ecosystem__container container">
+          <div class="ecosystem__distributors">
+            <div class="ecosystem__distributors-wrapper">
+              <h2 class="ecosystem__title ecosystem__title--maintainers title">Экосистема для<span>производителей</span></h2>
+              <ul class="ecosystem__descr ecosystem__descr--maintainers">
+                <li>
+                  <p>Производитель M2M получает спецификацию и bootstrap профиль для последующей инсталляции на eSIM устройства</p>
+                </li>
+                <li>
+                  <p>Производителю Consumer устройств установка bootstrap профиля необязательна</p>
+                </li>
+                <li>
+                  <p>bootstrap профиль загружается на eSIM чип в заводских условиях (на сборочной линии производителя)</p>
+                </li>
+                <li>
+                  <p>Благодаря нашим технологиям Пользователь получает eSIM устройство, уже подключенное к услугам связи по всему миру</p>
+                </li>
+              </ul>
+              <button class="ecosystem__link" id="modal-show">Проверить экосистему
+                <svg id="eye-icon" width="20" height="15">
+                  <use href="./img/sprite.svg#eye"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="ecosystem__distributors-image" id="modal">
+              <button class="ecosystem__distributors-button ecosystem__distributors-button--active" type="button" id="close-modal"></button>
+              <h3 class="ecosystem__title title">Экосистема для<span>производителей</span></h3>
+              <picture>
+                <source srcset="./img/maintainers-image@2x.png 2x, ./img/maintainers-image.png" type="image/webp"/><img srcset="./img/maintainers-image@2x.png 2x" src="./img/maintainers-image.png" alt="Экосистема для производителей, график"/>
+              </picture>
+            </div>
+          </div>
+          <div class="ecosystem__features features-ecosystem">
+            <h2 class="features-ecosystem__title ecosystem__title title">Ключевые преимущества<span>для производителей</span></h2>
+            <ul class="features-ecosystem__list">
+              <li class="features-ecosystem__item">
+                <div class="features-ecosystem__icon"><img src="./img/svg/globe.svg"/></div>
+                <h5 class="features-ecosystem__item-title">Глобальная связь</h5>
+                <p class="features-ecosystem__text">eSIM устройство имеет максимальное количество подключенных операторских сетей по всему миру.</p>
+              </li>
+              <li class="features-ecosystem__item">
+                <div class="features-ecosystem__icon"><img src="./img/svg/pie-chart-green.svg"/></div>
+                <h5 class="features-ecosystem__item-title">Увеличение доли рынка</h5>
+                <p class="features-ecosystem__text">Благодаря готовности eSIM устройств к продаже сразу после их поступления в дистрибьюторскую сеть.</p>
+              </li>
+              <li class="features-ecosystem__item">
+                <div class="features-ecosystem__icon"><img src="./img/svg/money-man.svg"/></div>
+                <h5 class="features-ecosystem__item-title">Новые каналы продаж</h5>
+                <p class="features-ecosystem__text">Партнерский кабинет GMDP позволяет наладить новые каналы продаж с  дистрибьюторами для различных сегментов в разных странах мира.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="ecosystem__grad">
+          <picture>
+            <source srcset="./img/gradient-green-1@2x.webp 2x, ./img/gradient-green-1.webp" media="(min-width: 992px)" type="image/webp"/>
+            <source srcset="./img/gradient-green-small@2x.webp 2x, ./img/gradient-green-small.webp" type="image/webp"/><img srcset="./img/gradient-green-small@2x.png 2x" src="./img/gradient-green-small.jpg" aria-hidden="true" alt=""/>
+          </picture>
+        </div>
+      </section>
+      <section class="business">
+        <div class="container business__container">
+          <h2 class="business__title business__title--maintainers title">Бизнес-модель</h2>
+          <div class="business__wrapper">
+            <div class="business__way">
+              <div class="business__way-col"><span class="business__way-title">M2M</span><img src="./img/svg/chevron.svg"/><span class="business__way-text">Бутстрап</span><img src="./img/svg/chevron.svg"/></div>
+              <div class="business__way-col"><span class="business__way-title">Consumer</span><img src="./img/svg/chevron.svg"/><span class="business__way-text">QR-код / SIM-карта</span><img src="./img/svg/chevron.svg"/></div>
+            </div>
+            <div class="business__features-wrapper">
+              <h5 class="business__subtitle">Глобальная Мультисвязь:</h5>
+              <ul class="business__features">
+                <li class="business__feature">
+                  <svg id="yes-icon" width="20" height="20">
+                    <use href="./img/sprite.svg#yes"></use>
+                  </svg>4 оператора в РФ
+                </li>
+                <li class="business__feature">
+                  <svg id="yes-icon" width="20" height="20">
+                    <use href="./img/sprite.svg#yes"></use>
+                  </svg>Дополнительные услуги связи
+                </li>
+                <li class="business__feature">
+                  <svg id="yes-icon" width="20" height="20">
+                    <use href="./img/sprite.svg#yes"></use>
+                  </svg>Безроуминговые тарифы в <br> 200 странах мира
+                </li>
+              </ul>
+            </div>
+            <div class="business__image">
+              <picture>
+                <source srcset="./img/simcard-b@2x.webp 2x, ./img/simcard-b.webp" type="image/webp" media="(min-width: 992px"/>
+                <source srcset="./img/simcard@2x.webp 2x, ./img/simcard.webp" type="image/webp"/><img srcset="./img/simcard@2x.png 2x" src="./img/simcard.png" aria-hidden="true" alt=""/>
+              </picture>
+            </div>
+          </div>
+          <ul class="business__list business__list--maintainers">
+            <li class="business__item business__item--maintainers"><span class="business__counter">01</span>
+              <h5 class="business__item-title">Условия сотрудничества</h5>
+              <p class="business__item-text">Производитель выбирает вариант подключения и перечень необходимых услуг, которые будут доступны в Партнерском кабинете GMDP.</p>
+            </li>
+            <li class="business__item business__item--maintainers"><span class="business__counter">02</span>
+              <h5 class="business__item-title">Процесс производства</h5>
+              <p class="business__item-text">- Инсталляция Bootstrap профиля - QR код для Consumer устройств - Интеграция с информационными системами Производителя</p>
+            </li>
+            <li class="business__item business__item--maintainers"><span class="business__counter">03</span>
+              <h5 class="business__item-title">Выплата вознаграждений</h5>
+              <p class="business__item-text">Производитель выпускает на рынок новое торговое предложение с уникальными свойствами, готовое к работе «из коробки» во всех странах мира по выгодным тарифам.</p>
+            </li>
+          </ul><a class="business__download" href="#" download="download">Скачать презентацию</a>
+        </div>
+      </section>
+      <section class="slider">
+        <div class="slider__container container">
+          <h2 class="title slider__title" data-aos="fade-down" data-aos-duration="500">Используйте<span>все возможности</span>вашего бизнеса</h2>
+          <div class="slider__image">
+            <picture>
+              <source srcset="./img/mesh@2x.webp 2x, ./img/mesh.webp 1x" type="image/webp"/><img srcset="./img/mesh@2x.jpg 2x" src="./img/mesh.jpg" alt="" aria-hidden="true"/>
+            </picture>
+          </div>
+        </div>
+        <div class="slider__wrapper container" data-aos="fade" data-aos-delay="200">
+          <div class="slider__content">
+            <article class="slider__slide slide">
+              <div class="slide__icon"><img src="./img/svg/ship.svg"/></div>
+              <h5 class="slide__title">Международные перевозки</h5>
+              <p class="slide__text">Удаленный мониторинг грузоперевозок и качественных характеристик самого груза с помощью M2M карт</p><a class="slide__link" href="#">Смотреть кейс
+                <svg id="eye-icon" width="20" height="15">
+                  <use href="./img/sprite.svg#eye"></use>
+                </svg></a>
+            </article>
+            <article class="slider__slide slide">
+              <div class="slide__icon"><img src="./img/svg/bank.svg"/></div>
+              <h5 class="slide__title">Банковский и страховой сервис</h5>
+              <p class="slide__text">Возможность банков и страховых компаний делать более персонифицированные предложения</p><a class="slide__link" href="#">Смотреть кейс
+                <svg id="eye-icon" width="20" height="15">
+                  <use href="./img/sprite.svg#eye"></use>
+                </svg></a>
+            </article>
+            <article class="slider__slide slide">
+              <div class="slide__icon"><img src="./img/svg/medicine.svg"/></div>
+              <h5 class="slide__title">Здравоохранение и медицина</h5>
+              <p class="slide__text">Медицинское оборудование оснащенное IoT обеспечивает постоянный контроль за состоянием здоровья пациентов</p><a class="slide__link" href="#">Смотреть кейс
+                <svg id="eye-icon" width="20" height="15">
+                  <use href="./img/sprite.svg#eye"></use>
+                </svg></a>
+            </article>
+            <article class="slider__slide slide">
+              <div class="slide__icon"><img src="./img/svg/smart.svg"/></div>
+              <h5 class="slide__title">Продажа смартфонов</h5>
+              <p class="slide__text">Возможность предоставлять абонентам лучшие тарифы на связь и получать вознаграждение с трафика</p><a class="slide__link" href="#">Смотреть кейс
+                <svg id="eye-icon" width="20" height="15">
+                  <use href="./img/sprite.svg#eye"></use>
+                </svg></a>
+            </article>
+            <article class="slider__slide slide">
+              <div class="slide__icon"><img src="./img/svg/gas.svg"/></div>
+              <h5 class="slide__title">Газовая и нефтяная промышленность</h5>
+              <p class="slide__text">Автоматизированный деформационный мониторинг удаленных объектов в газовой, нефтяной промышленности</p><a class="slide__link" href="#">Смотреть кейс
+                <svg id="eye-icon" width="20" height="15">
+                  <use href="./img/sprite.svg#eye"></use>
+                </svg></a>
+            </article>
+            <article class="slider__slide slide">
+              <div class="slide__icon"><img src="./img/svg/iot.svg"/></div>
+              <h5 class="slide__title">Продажа IoT девайсов</h5>
+              <p class="slide__text">Возможность предоставлять абонентам лучшие тарифы на связь и получать вознаграждение с трафика</p><a class="slide__link" href="#">Смотреть кейс
+                <svg id="eye-icon" width="20" height="15">
+                  <use href="./img/sprite.svg#eye"></use>
+                </svg></a>
+            </article>
+          </div>
+          <div class="slider__controls">
+            <button class="slider__button slider__button--prev" type="button"><img src="./img/svg/arrow-slider.svg"/></button>
+            <div class="slider__bullets"></div>
+            <button class="slider__button slider__button--next" type="button"><img src="./img/svg/arrow-slider.svg"/></button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__logo"><img src="./img/logo.svg" alt="Логотип Глонасс"/></div>
+        <ul class="footer__nav nav-footer">
+          <li class="nav-footer__item"><a class="nav-footer__link" href="#">Платформа GMDP</a></li>
+          <li class="nav-footer__item"><a class="nav-footer__link" href="#">GSM операторам</a></li>
+          <li class="nav-footer__item"><a class="nav-footer__link" href="#">Производителям eSIM</a></li>
+          <li class="nav-footer__item"><a class="nav-footer__link" href="#">Дистрибьюторам</a></li>
+        </ul>
+        <div class="footer__about"><a class="nav-footer__link" href="#">О проекте</a></div>
+        <div class="footer__contacts"><a class="footer__link" href="mailto:info@glonassmobile.com">info@glonassmobile.com</a><a class="footer__link" href="tel:+79003543434">+7 (900) 354-34-34</a></div>
+        <div class="footer__politics"><a class="footer__link" href="#">Политика обработки персональных данных</a></div><span class="footer__copy">Copyright © 2008-2018</span>
+      </div>
+    </footer>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

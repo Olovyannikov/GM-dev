@@ -1,0 +1,46 @@
+-
+    var list = [
+        {id: 1, title: "Условия сотрудничества", text: "Производитель выбирает вариант подключения и перечень необходимых услуг, которые будут доступны в Партнерском кабинете GMDP."},
+        {id: 2, title: "Процесс производства", text: "- Инсталляция Bootstrap профиля - QR код для Consumer устройств - Интеграция с информационными системами Производителя"},
+        {id: 3, title: "Выплата вознаграждений", text: "Производитель выпускает на рынок новое торговое предложение с уникальными свойствами, готовое к работе «из коробки» во всех странах мира по выгодным тарифам."}
+    ];
+
+section.business
+    .container.business__container
+        h2.business__title.business__title--maintainers.title Бизнес-модель
+        .business__wrapper
+            .business__way
+                .business__way-col
+                    span.business__way-title M2M
+                    img(src='./img/svg/chevron.svg')
+                    span.business__way-text Бутстрап
+                    img(src='./img/svg/chevron.svg')
+                .business__way-col
+                    span.business__way-title Consumer
+                    img(src='./img/svg/chevron.svg')
+                    span.business__way-text QR-код / SIM-карта
+                    img(src='./img/svg/chevron.svg')
+            .business__features-wrapper
+                h5.business__subtitle Глобальная Мультисвязь:
+                ul.business__features
+                    li.business__feature
+                        +svg('yes', 20, 20)
+                        | 4 оператора в РФ
+                    li.business__feature
+                        +svg('yes', 20, 20)
+                        | Дополнительные услуги связи
+                    li.business__feature
+                        +svg('yes', 20, 20)
+                        | Безроуминговые тарифы в <br> 200 странах мира
+            .business__image
+                picture
+                    source(srcset="./img/simcard-b@2x.webp 2x, ./img/simcard-b.webp" type="image/webp" media="(min-width: 992px")
+                    source(srcset="./img/simcard@2x.webp 2x, ./img/simcard.webp" type="image/webp")
+                    img(srcset="./img/simcard@2x.png 2x" src="./img/simcard.png" aria-hidden="true" alt="")
+        ul.business__list.business__list--maintainers
+            each item in list
+                li.business__item.business__item--maintainers
+                    span.business__counter 0#{item.id}
+                    h5.business__item-title #{item.title}
+                    p.business__item-text #{item.text}
+        a(href="#" download).business__download Скачать презентацию

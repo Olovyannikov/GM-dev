@@ -6,9 +6,17 @@
     left: 0;
     right: 0;
     z-index: 0;
+
+    img {
+      @include sm-block {
+        object-fit: none;
+        object-position: 100% 0;
+      }
+    }
   }
 
   &__container {
+    overflow: hidden;
     padding-top: rem-calc(65);
     position: relative;
     z-index: 2000;
@@ -33,16 +41,23 @@
   &__distributors-image {
     display: none;
     max-width: vw(620);
+    padding: 0 rem-calc(15);
 
     img {
-      height: auto;
+      display: block;
+      margin: 0 auto;
+      max-width: rem-calc(360);
+
+      @include sm-block {
+        max-width: 100%;
+      }
     }
 
     &--active {
       position: fixed;
       top: 0;
       left: 0;
-      padding-top: vm(120);
+      padding-top: rem-calc(120);
       width: 100%;
       height: 100vh;
       max-width: 100%;
@@ -122,11 +137,11 @@
 
   &__title {
     span {
-      color: $color-accent-2;
+      color: $color-accent-3;
     }
 
     &::after {
-      background-color: $color-accent-2;
+      background-color: $color-accent-3;
     }
   }
 
@@ -164,6 +179,12 @@
     @include sm-block {
       gap: rem-calc(25);
     }
+
+    &--maintainers {
+      p::before {
+        background-color: $color-accent-3;
+      }
+    }
   }
 
   &__link {
@@ -190,7 +211,30 @@
     @include sm-block {
       position: absolute;
       top: vw(100);
-      right: vw(-250);
+      right: 0;
+      width: vw(683);
+      z-index: -1;
+    }
+
+    @include xxl-block {
+    }
+  }
+
+  &__grad {
+    position: absolute;
+    bottom: -98vw;
+    right: 0;
+    z-index: -2000;
+
+    @include sm-block {
+      max-width: vw(750);
+      bottom: -58vw;
+      right: 0;
+    }
+
+    @include xxl-block {
+      max-width: vw(650);
+      bottom: -50vw;
     }
   }
 }
@@ -251,6 +295,7 @@
     }
 
     @include sm-block {
+      margin: 0;
       grid-row-start: 1;
     }
   }
@@ -264,6 +309,7 @@
     color: #fff;
 
     @include sm-block {
+      margin: 0;
       grid-row-start: 1;
       justify-self: start;
       font-size: vw(32);
@@ -287,6 +333,8 @@
   }
 
   @include sm-block {
+    padding-top: vw(200);
+    margin-top: vw(-200);
     padding-left: rem-calc(181);
     position: relative;
     margin-bottom: vw(200);
