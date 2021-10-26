@@ -1,0 +1,90 @@
+.about {
+  position: relative;
+  margin-top: rem-calc(65);
+  margin-bottom: rem-calc(120);
+  z-index: 2000;
+
+  @include sm-block {
+    margin-top: vw(104);
+    margin-bottom: vw(140);
+  }
+
+  &__container {
+    @include sm-block {
+      padding-left: 11.3125rem;
+    }
+  }
+
+  &__title {
+    position: relative;
+    color: #00fbee;
+
+    @include sm-block {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: vw(-82 * 2);
+        width: vw(80);
+        height: vw(2);
+        background-color: rgba(#00fbee, 0.2);
+      }
+    }
+  }
+
+  &__descr {
+    margin-bottom: rem-calc(120);
+    font-family: "Raleway", $font-alt;
+    font-weight: 500;
+    font-size: rem-calc(22);
+    line-height: rem-calc(32);
+    color: #fff;
+
+    @include sm-block {
+      max-width: vw(979);
+      font-size: vw(32);
+      line-height: vw(46);
+    }
+  }
+
+  &__list {
+    display: grid;
+    gap: rem-calc(35);
+    max-width: rem-calc(260);
+
+    @include sm-block {
+      grid-auto-flow: column;
+      width: 100%;
+      max-width: 100%;
+      gap: vw(81);
+      justify-content: space-between;
+    }
+  }
+
+  &__item-title {
+    margin: 0 0 rem-calc(10);
+    font-family: "Raleway", $font-alt;
+    font-weight: 600;
+    font-size: rem-calc(42);
+    line-height: rem-calc(59);
+    color: #00fbee;
+
+    @include sm-block {
+      font-size: vw(52);
+      line-height: vw(73);
+    }
+  }
+
+  &__item-descr {
+    margin: 0;
+    font-family: "Raleway", $font-alt;
+    font-size: 1rem;
+    line-height: rem-calc(23);
+    color: rgba(#fff, 0.8);
+
+    @include sm-block {
+      font-size: vw(18);
+      line-height: vw(26);
+    }
+  }
+}

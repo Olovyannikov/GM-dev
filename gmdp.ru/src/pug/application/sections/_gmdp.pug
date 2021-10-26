@@ -37,7 +37,7 @@ section.gmdp
                 .slider-gmdp__slides.swiper-wrapper
                     each slide in slides
                         .slider-gmdp__slide.swiper-slide(id=slide.id)
-                            h3.slider-gmdp__title #{slide.title}
+                            h3.slider-gmdp__title(data-aos="fade-up" data-aos-duration="300") #{slide.title}
                             p.slider-gmdp__text(data-aos="fade-up")
                                 | #{slide.text}
                                 if slide.id === 0

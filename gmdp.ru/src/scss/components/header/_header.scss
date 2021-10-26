@@ -59,8 +59,8 @@
     &--active {
       &::after,
       &::before {
-        top: 90%;
-        left: 30%;
+        top: 100%;
+        left: 50%;
         box-shadow: none;
         width: 110%;
         height: 2.8px;
@@ -69,14 +69,55 @@
       }
 
       &::after {
-        top: 10%;
-        left: 40%;
+        top: 23%;
+        left: 55%;
         transform: rotate(-45deg) translate(-50%, -50%);
       }
     }
 
     @include sm-block {
       display: none;
+    }
+  }
+}
+
+body {
+  &.maintainers {
+    .header__burger {
+      &::after,
+      &::before {
+        background-color: $color-accent-3;
+      }
+    }
+
+    .swiper-pagination-bullet {
+      background-color: $color-accent-3;
+    }
+  }
+
+  &.distributors {
+    .header__burger {
+      &::after,
+      &::before {
+        background-color: $color-accent-2;
+      }
+    }
+
+    .swiper-pagination-bullet {
+      background-color: $color-accent-2;
+    }
+  }
+
+  &.gsm {
+    .header__burger {
+      &::after,
+      &::before {
+        background-color: $color-accent-4;
+      }
+    }
+
+    .swiper-pagination-bullet {
+      background-color: $color-accent-4;
     }
   }
 }

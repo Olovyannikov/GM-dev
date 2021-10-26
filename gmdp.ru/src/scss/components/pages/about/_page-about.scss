@@ -1,0 +1,16 @@
+.page-about {
+  &__top-image {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+
+    @include sm-block {
+      max-width: vw(1212);
+      max-height: vw(1244);
+    }
+  }
+}

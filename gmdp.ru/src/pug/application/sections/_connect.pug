@@ -16,9 +16,9 @@ section.connect#registration
                         span в проекте
                     p по развертыванию
                     p eSIM в России
-                p.connect__descr
+                p.connect__descr(data-aos="fade-up" data-aos-duration="500")
                     | Укажите свои контакты и в течение одного рабочего дня с Вами свяжется персональный менеджер, который уточнит информацию о Вашей компании и ответит на все Ваши вопросы.
-            form.connect__form.form-connect#connect
+            form.connect__form.form-connect#connect(method="POST" action="/ru" data-aos="flip-left" data-aos-duration="500")
                 label.form-connect__label
                     input(type="text" placeholder="Фамилия Имя" name="name").form-connect__input#input-name
                 label.form-connect__label

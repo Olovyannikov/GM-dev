@@ -7,8 +7,8 @@
 
 section.business
     .container.business__container
-        h2.business__title.business__title--maintainers.title Бизнес-модель
-        .business__wrapper
+        h2(data-aos="fade-down" data-aos-duration="500").business__title.business__title--maintainers.title Бизнес-модель
+        .business__wrapper(data-aos="flip-up" data-aos-duration="500")
             .business__way
                 .business__way-col
                     span.business__way-title M2M
@@ -39,8 +39,8 @@ section.business
                     img(srcset="./img/simcard@2x.png 2x" src="./img/simcard.png" aria-hidden="true" alt="")
         ul.business__list.business__list--maintainers
             each item in list
-                li.business__item.business__item--maintainers
+                li(data-aos="flip-right" data-aos-duration="500").business__item.business__item--maintainers
                     span.business__counter 0#{item.id}
                     h5.business__item-title #{item.title}
                     p.business__item-text #{item.text}
-        a(href="#" download).business__download Скачать презентацию
+        a(href="#" download data-aos="flip-up" data-aos-duration="500").business__download Скачать презентацию

@@ -20,7 +20,8 @@
 
     @include sm-block {
       right: 55vw;
-      top: 7vw;
+      top: unset;
+      bottom: vh(1);
       width: vw(720);
       transform: rotate(0);
     }
@@ -29,13 +30,30 @@
   &__gradient {
     position: absolute;
     display: none;
+    z-index: -1;
+    width: 40%;
 
     &--index {
       bottom: -5vw;
       @include sm-block {
         display: block;
-        width: 40%;
-        z-index: -1;
+      }
+    }
+
+    &--maintainers {
+      bottom: -6.5vw;
+      width: 20%;
+
+      @include sm-block {
+        display: block;
+      }
+    }
+
+    &--gsm {
+      @include sm-block {
+        display: block;
+        right: 0;
+        bottom: -10%;
       }
     }
   }
@@ -78,11 +96,18 @@
         background-color: rgba($color-accent, 0.3);
       }
     }
+
+    &--about {
+      p span:last-child {
+        color: $color-accent;
+      }
+    }
   }
 
   &__wrapper {
     @include sm-block {
       display: grid;
+      justify-content: space-between;
       grid-auto-flow: column;
       gap: rem-calc(26);
     }
@@ -104,6 +129,14 @@
   @include sm-block {
     padding-bottom: vw(120);
     margin-bottom: 0;
+  }
+
+  &--gsm {
+    @include sm-block {
+      z-index: -2001 !important;
+      padding-top: vw(500) !important;
+      margin-top: vw(-500) !important;
+    }
   }
 }
 

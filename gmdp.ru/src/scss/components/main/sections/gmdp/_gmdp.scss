@@ -191,6 +191,8 @@
     position: relative;
     width: 53px;
     height: 60px;
+    transition: 0.3s ease-in-out;
+    will-change: opacity;
 
     img {
       position: absolute;

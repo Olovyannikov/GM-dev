@@ -13,32 +13,32 @@ section.ecosystem
     .ecosystem__container.container
         .ecosystem__distributors
             .ecosystem__distributors-wrapper
-                h2.ecosystem__title.ecosystem__title--maintainers.title Экосистема для
+                h2.ecosystem__title.ecosystem__title--maintainers.title(data-aos="fade-down" data-aos-duration="500") Экосистема для
                     span производителей
                 ul.ecosystem__descr.ecosystem__descr--maintainers
                     li
-                        p Производитель M2M получает спецификацию и bootstrap профиль для последующей инсталляции на eSIM устройства
+                        p(data-aos="flip-up" data-aos-duration="500") Производитель M2M получает спецификацию и bootstrap профиль для последующей инсталляции на eSIM устройства
                     li
-                        p Производителю Consumer устройств установка bootstrap профиля необязательна
+                        p(data-aos="flip-up" data-aos-duration="500") Производителю Consumer устройств установка bootstrap профиля необязательна
                     li
-                        p bootstrap профиль загружается на eSIM чип в заводских условиях (на сборочной линии производителя)
+                        p(data-aos="flip-up" data-aos-duration="500") bootstrap профиль загружается на eSIM чип в заводских условиях (на сборочной линии производителя)
                     li
-                        p Благодаря нашим технологиям Пользователь получает eSIM устройство, уже подключенное к услугам связи по всему миру
-                button#modal-show.ecosystem__link Проверить экосистему
+                        p(data-aos="flip-up" data-aos-duration="500") Благодаря нашим технологиям Пользователь получает eSIM устройство, уже подключенное к услугам связи по всему миру
+                button#modal-show.ecosystem__link.ecosystem__link--maintainers Проверить экосистему
                     +svg('eye', 20, 15)
             .ecosystem__distributors-image#modal
-                button(type="button" id="close-modal").ecosystem__distributors-button.ecosystem__distributors-button--active
+                button(type="button" id="close-modal").ecosystem__distributors-button.ecosystem__distributors-button--maintainers.ecosystem__distributors-button--active
                 h3.ecosystem__title.title Экосистема для
                     span производителей
                 picture
                     source(srcset="./img/maintainers-image@2x.png 2x, ./img/maintainers-image.png" type="image/webp")
                     img(srcset="./img/maintainers-image@2x.png 2x" src="./img/maintainers-image.png" alt="Экосистема для производителей, график")
         .ecosystem__features.features-ecosystem
-            h2.features-ecosystem__title.ecosystem__title.title Ключевые преимущества
+            h2.features-ecosystem__title.ecosystem__title.title(data-aos="fade-down" data-aos-duration="500") Ключевые преимущества
                 span для производителей
             ul.features-ecosystem__list
                 each item in items
-                    li.features-ecosystem__item
+                    li(data-aos="flip-down" data-aos-duration="500").features-ecosystem__item
                         .features-ecosystem__icon
                             img(src="./img/svg/" + item.id + ".svg")
                         h5.features-ecosystem__item-title #{item.title}

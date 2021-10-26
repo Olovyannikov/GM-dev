@@ -35,6 +35,11 @@
 
   &__content {
     display: flex;
+    margin-bottom: rem-calc(37);
+
+    @include sm-block {
+      margin-bottom: 0;
+    }
   }
 
   &__wrapper {
@@ -64,7 +69,7 @@
 
     @include sm-block {
       position: absolute;
-      right: 0;
+      right: calc(0px + 24px);
       top: vw(-140);
       order: -1;
       z-index: 2000;
@@ -174,7 +179,7 @@
     @include sm-block {
       margin-top: auto;
       font-size: vw(14);
-      line-height: vw(20);
+      line-height: 1;
     }
   }
 
@@ -196,5 +201,51 @@
   @include sm-block {
     display: flex;
     flex-direction: column;
+  }
+}
+
+.slider--maintainers {
+  .slider__title span {
+    color: $color-accent-3 !important;
+  }
+
+  .slider__title::after {
+    background-color: rgba($color-accent-3, 0.3) !important;
+  }
+
+  .slide__link {
+    color: $color-accent-3 !important;
+  }
+
+  .slider__image--maintainers {
+    display: none !important;
+
+    @include sm-block {
+      display: block!important;
+      bottom: -6.6vw !important;
+    }
+  }
+}
+
+.slider--gsm {
+  .slider__title span {
+    color: $color-accent-4 !important;
+  }
+
+  .slider__title::after {
+    background-color: rgba($color-accent-4, 0.3) !important;
+  }
+
+  .slide__link {
+    color: $color-accent-4 !important;
+  }
+
+  .slider__image--gsm {
+    display: none !important;
+
+    @include sm-block {
+      display: block!important;
+      bottom: -6.6vw !important;
+    }
   }
 }

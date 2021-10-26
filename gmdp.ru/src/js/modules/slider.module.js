@@ -30,6 +30,7 @@ export const slider = () => {
             }
         }
     });
+
     buttons.forEach((btn, idx) => {
         btn.addEventListener('click', (e) => {
             buttons.forEach(btn => btn.classList.remove('slider-gmdp__btn--active'));

@@ -35,15 +35,19 @@ export const menu = () => {
         if (route === '' || route === 'index.html') {
             $registrationBtn.classList.add('btn-link');
             $links[0].classList.add('navigation__link--active');
+            document.body.classList.add('index');
         } else if (route === 'gsm.html') {
             $registrationBtn.classList.add('btn-gsm');
             $links[1].classList.add('navigation__link--active', 'navigation__link--gsm');
+            document.body.classList.add('gsm');
         } else if (route === 'maintainers.html') {
             $registrationBtn.classList.add('btn-maintainers');
             $links[2].classList.add('navigation__link--active', 'navigation__link--maintainers');
+            document.body.classList.add('maintainers');
         } else if (route === 'distributors.html') {
             $registrationBtn.classList.add('btn-distributors');
             $links[3].classList.add('navigation__link--active', 'navigation__link--distributors');
+            document.body.classList.add('distributors');
         }
     });
 

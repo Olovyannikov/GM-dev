@@ -1,0 +1,41 @@
+.tabs {
+  &__controls {
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: start;
+    gap: rem-calc(20);
+    margin-bottom: rem-calc(35);
+
+    @include sm-block {
+      grid-auto-flow: column;
+      gap: vw(35);
+    }
+  }
+
+  &__button {
+    font-family: "Raleway", $font-alt;
+    font-weight: 500;
+    font-size: rem-calc(24);
+    line-height: rem-calc(28);
+    letter-spacing: 0.03em;
+    color: rgba(#fff, 0.4);
+    text-align: left;
+
+    &--active {
+      color: $color-accent-4;
+    }
+
+    @include sm-block {
+      font-size: vw(32);
+      line-height: vw(37);
+    }
+  }
+
+  &__item {
+    display: none;
+
+    &--active {
+      display: grid;
+    }
+  }
+}

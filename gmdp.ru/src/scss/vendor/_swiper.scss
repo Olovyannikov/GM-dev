@@ -83,39 +83,6 @@
 }
 
 /* Bullets */
-.swiper-pagination-bullets-dynamic {
-  overflow: hidden;
-  font-size: 0;
-
-  .swiper-pagination-bullet {
-    position: relative;
-    transform: scale(0.33);
-  }
-
-  .swiper-pagination-bullet-active {
-    transform: scale(1);
-  }
-
-  .swiper-pagination-bullet-active-main {
-    transform: scale(1);
-  }
-
-  .swiper-pagination-bullet-active-prev {
-    transform: scale(0.66);
-  }
-
-  .swiper-pagination-bullet-active-prev-prev {
-    transform: scale(0.33);
-  }
-
-  .swiper-pagination-bullet-active-next {
-    transform: scale(0.66);
-  }
-
-  .swiper-pagination-bullet-active-next-next {
-    transform: scale(0.33);
-  }
-}
 
 .swiper-pagination-bullet {
   display: inline-block;
@@ -124,6 +91,8 @@
   height: 12px;
   background: #d1d1d1;
   opacity: 0.2;
+  will-change: opacity;
+  transition: opacity 0.3s ease-in-out;
 
   .swiper-pagination-clickable & {
     cursor: pointer;

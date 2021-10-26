@@ -1,0 +1,55 @@
+-
+    var items = [
+        {id: "globe-blue", title: "Соответствие спецификациям GSMA", text: "Совмещение двух GSMA-архитектур (Consumer и M2M), плюс расширенная функциональность (OTA)."},
+        {id: "pie-chart-blue", title: "Ориентация на отечественный рынок", text: "Соответствие требованиям российского законодательства и регуляторов (в частности, по использованию криптоалгоритмов)."},
+        {id: "money-man-blue", title: "Финансовая и технологическая гибкость", text: "Адаптация бизнес-моделей сотрудничества и функциональности системы под требования оператора."},
+    ];
+
+section.ecosystem.ecosystem--gsm
+    .ecosystem__image
+        picture
+            source(srcset="./img/gsm-top@2x.webp 2x, ./img/gsm-top.webp" media="(min-width: 992px)" type="image/webp")
+            source(srcset="" type="image/webp")
+            img(srcset="" src="" aria-hidden="true" alt="")
+    .ecosystem__container.container
+        .ecosystem__distributors
+            .ecosystem__distributors-wrapper
+                h2.ecosystem__title.ecosystem__title--gsm.title(data-aos="fade-down" data-aos-duration="500") Экосистема для
+                    span операторов
+                ul.ecosystem__descr.ecosystem__descr--gsm
+                    li
+                        p(data-aos="flip-up" data-aos-duration="500") Оператор направляет в GMDP данные для формирования eSIM профиля
+                    li
+                        p(data-aos="flip-up" data-aos-duration="500") GMDP формирует eSIM профили для загрузки на смартфоны, М2М и iOT устройства
+                    li
+                        p(data-aos="flip-up" data-aos-duration="500") Абонент выбирает тарифный план оператора. GMDP загружает eSIM профили на абонентские устройства
+                    li
+                        p(data-aos="flip-up" data-aos-duration="500") Абонент предоставляем персональные данные и регистрируется в сети оператора связи
+                button#modal-show.ecosystem__link Проверить экосистему
+                    +svg('eye', 20, 15)
+            .ecosystem__distributors-image#modal
+                button(type="button" id="close-modal").ecosystem__distributors-button.ecosystem__distributors-button--gsm.ecosystem__distributors-button--active
+                h3.ecosystem__title.title Экосистема для
+                    span дистрибьюторов
+                picture
+                    source(srcset="./img/ecosystem-big-blue@2x.png 2x, ./img/ecosystem-big-blue.png" type="image/webp" media="(min-width: 992px)")
+                    source(srcset="./img/ecosystem-blue@2x.png 2x, ./img/ecosystem-blue.png" type="image/webp")
+                    img(srcset="./img/ecosystem-blue@2x.png 2x" src="./img/ecosystem-blue.png" alt="Экосистема для операторов, график")
+        .ecosystem__features.features-ecosystem
+            .features-ecosystem__image
+                source(srcset="./img/distr@2x.webp 2x, ./img/distr.webp" type="image/webp")
+                img(srcset="./img/distr@2x.png 2x" src="./img/distr.png" aria-hidden="true" alt="")
+            h2.features-ecosystem__title.ecosystem__title.ecosystem__title--gsm.title(data-aos="fade-down" data-aos-duration="500") Ключевые преимущества
+                span для операторов
+            ul.features-ecosystem__list
+                each item in items
+                    li(data-aos="flip-down" data-aos-duration="500").features-ecosystem__item
+                        .features-ecosystem__icon
+                            img(src="./img/svg/" + item.id + ".svg")
+                        h5.features-ecosystem__item-title #{item.title}
+                        p.features-ecosystem__text #{item.text}
+            .ecosystem__phone
+                picture
+                    source(srcset="./img/ecosystem-tablet-big@2x.webp 2x, ./img/ecosystem-tablet-big.webp" media="(min-width: 992px)" type="image/webp")
+                    source(srcset="./img/ecosystem-tablet@2x.webp 2x, ./img/ecosystem-tablet.webp" type="image/webp")
+                    img(srcset="./img/ecosystem-tablet-big@2x.png 2x" src="./img/ecosystem-big-tablet.jpg" aria-hidden="true" alt="")

@@ -16,7 +16,6 @@
   }
 
   &__container {
-    overflow: hidden;
     padding-top: rem-calc(65);
     position: relative;
     z-index: 2000;
@@ -76,14 +75,12 @@
       .ecosystem__distributors-button {
         position: absolute;
         top: vm(32);
-        right:vm(24);
+        right: vm(24);
         width: vm(18);
         height: vm(18);
 
         &::after,
         &::before {
-          $full-width: 18px;
-          $size: 6px;
           content: "";
           position: absolute;
           width: 6px;
@@ -92,7 +89,6 @@
           top: 0;
           left: 0;
           border-radius: 1px;
-          box-shadow: ($full-width - $size) 0 0 0 $color-accent;
           transition: 0.3s ease-in-out;
         }
 
@@ -104,10 +100,10 @@
         &--active {
           &::after,
           &::before {
-            top: 88%;
+            top: 85%;
             left: 36%;
             box-shadow: none;
-            width: 110%;
+            width: 100%;
             height: 2.8px;
             transform: rotate(45deg) translate(-50%, -50%);
             border-radius: 2px;
@@ -122,6 +118,13 @@
 
         @include sm-block {
           display: none;
+        }
+
+        &--maintainers {
+          &::after,
+          &::before {
+            background-color: $color-accent-3;
+          }
         }
       }
     }
@@ -142,6 +145,26 @@
 
     &::after {
       background-color: $color-accent-3;
+    }
+
+    &--distributors {
+      span {
+        color: $color-accent-2;
+      }
+
+      &::after {
+        background-color: $color-accent-2;
+      }
+    }
+
+    &--gsm {
+      span {
+        color: $color-accent-4;
+      }
+
+      &::after {
+        background-color: $color-accent-4;
+      }
     }
   }
 
@@ -185,6 +208,12 @@
         background-color: $color-accent-3;
       }
     }
+
+    &--gsm {
+      p::before {
+        background-color: $color-accent-4;
+      }
+    }
   }
 
   &__link {
@@ -202,6 +231,10 @@
 
     @include sm-block {
       display: none;
+    }
+
+    &--maintainers {
+      color: $color-accent-3;
     }
   }
 

@@ -1,0 +1,34 @@
+-
+    var list = [
+        {id: 1, title: "Схема агент-коллектор", text: "Агентское вознаграждение за продажу тарифных планов операторов и идентификация пользователей."},
+        {id: 2, title: "Процесс производства", text: "Отказ от пластика и замена физических sim карт на виртуальные. Снижение логистических затрат оператора"},
+        {id: 3, title: "Тарифная политика", text: "Продажа тарифов операторов «как есть» без наценки, а также интеграция в собственные пакетные тарифы."}
+    ];
+-
+    var service = [
+        {id: 1, title: "Модель SaaS", text: "Оператор получает доступ ко всей функциональности GMDP по защищенным каналам передачи данных."},
+        {id: 2, title: "Работа с профилями eSim", text: "Формирование, загрузка и безопасное хранение профилей. Необходимая техническая поддержка."},
+        {id: 3, title: "Гибкая бизнес-модель", text: "Фиксированная оплата только загруженных профилей и профилей находящихся в обработке."}
+    ];
+
+section.business.business--gsm
+    .container.business__container
+        h2(data-aos="fade-down" data-aos-duration="500").business__title.business__title--gsm.title Бизнес-модель
+            span для сотрудничества
+        .business__tabs.tabs
+            .tabs__controls
+                button(type="button").tabs__button.tabs__button--active Агентская модель
+                button(type="button").tabs__button Сервисная модель
+            .tabs__items
+                ul.tabs__item.tabs__item--active.business__list.business__list--gsm
+                    each item in list
+                        li(data-aos="flip-right" data-aos-duration="500").business__item.business__item--gsm
+                            span.business__counter 0#{item.id}
+                            h5.business__item-title #{item.title}
+                            p.business__item-text #{item.text}
+                ul.tabs__item.business__list.business__list--gsm
+                    each item in service
+                        li(data-aos="flip-right" data-aos-duration="500").business__item.business__item--gsm
+                            span.business__counter 0#{item.id}
+                            h5.business__item-title #{item.title}
+                            p.business__item-text #{item.text}

@@ -1,0 +1,13 @@
+extends ../templates/_layout
+include ../mixins/_svg
+
+block content
+    .page-about
+        include ../application/sections/_about
+        include ../application/sections/_slider
+        include ../application/sections/_connect-about
+        .page-about__top-image
+            picture
+                source(srcset="./img/about-top-big@2x.webp 2x, ./img/about-top-big.webp" media="(min-width: 992px)" type="image/webp")
+                source(srcset="./img/about-top.webp 2x, ./img/about-top.webp" media="(max-width: 992px)" type="image/webp")
+                img(srcset="./img/about-top-big@2x.png 2x" src="./img/about-top-big.png" aria-hidden="true" alt="")

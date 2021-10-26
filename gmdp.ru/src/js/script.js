@@ -4,6 +4,7 @@ import {copyright} from "./modules/copyright.module";
 import {slider} from "./modules/slider.module";
 import {form} from "./modules/form.module";
 import {modal} from "./modules/modal.module";
+import {tabs} from "./modules/tabs.module";
 
 window.addEventListener('DOMContentLoaded', () => {
     menu();
@@ -11,5 +12,6 @@ window.addEventListener('DOMContentLoaded', () => {
     slider();
     form('connect');
     modal();
+    tabs();
     aos();
 })

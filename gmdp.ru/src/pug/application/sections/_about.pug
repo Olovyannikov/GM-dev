@@ -1,0 +1,22 @@
+-
+    var items = [
+        {title: "35", text: "Операторских подключений по всему миру"},
+        {title: "Big 4 ", text: "Подключение к «большой четверке» операторов в РФ"},
+        {title: "100+", text: "Корпоративных клиентов в разных странах мира"},
+        {title: "6 лет", text: "Развития в России, странах СНГ, ЕС и Азиатском регионе"}
+    ];
+
+.about
+    .about__container.container
+        h2.about__title.title(data-aos="fade-down" data-aos-duration="500") О проекте
+        p.about__descr(data-aos="fade-down" data-aos-duration="500") Наша цель – обеспечивать абонентов инновационными услугами связи, доступными на любых мобильных устройствах
+        ul.about__list
+            each item, index in items
+                if index === 0 || index === 1
+                    li.about__item(data-aos="fade-right" data-aos-duration="500")
+                        h3.about__item-title #{item.title}
+                        p.about__item-descr #{item.text}
+                else
+                    li.about__item(data-aos="fade-left" data-aos-duration="500")
+                        h3.about__item-title #{item.title}
+                        p.about__item-descr #{item.text}
