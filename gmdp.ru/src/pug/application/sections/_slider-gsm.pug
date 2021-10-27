@@ -21,6 +21,10 @@ section.slider.slider--gsm
         .slider__content
             each slide in slides
                 article.slider__slide.slide
+                    .slide__background
+                        picture
+                            source(srcset="./img/" + slide.id + "@2x.webp 2x, ./img/" + slide.id + ".webp 1x" type="image/webp")
+                            img(srcset="./img/" + slide.id + "@2x.png 2x" src="./img/" + slide.id + ".png" aria-hidden="true" alt="")
                     .slide__icon
                         img(src='./img/svg/'+ slide.id + '.svg')
                     h5.slide__title #{slide.title}
