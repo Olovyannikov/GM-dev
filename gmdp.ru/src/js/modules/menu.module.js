@@ -5,7 +5,7 @@ export const menu = () => {
     const $links = document.querySelectorAll('.navigation__link');
     const $registrationBtn = document.querySelector('.navigation__button');
     const menuOpenClass = 'menu--open';
-    const route = window.location.pathname.split('/')[1];
+    const route = window.location.pathname.split('/').at(-1);
 
     const getHeight = (element) => {
         if (element.style.maxHeight === "0px" || +element.style.maxHeight === 0) {
