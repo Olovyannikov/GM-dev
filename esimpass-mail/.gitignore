@@ -1,0 +1,12 @@
+./node_modules
+.idea/inspectionProfiles/Project_Default.xml
+.idea/workspace.xml
+.DS_Store
+.idea
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
+node_modules/
+Thumbs.db

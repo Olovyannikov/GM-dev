@@ -1,0 +1,25 @@
+<mjml>
+    <mj-head>
+        <mj-title>eSIM</mj-title>
+        <mj-style inline="inline">
+        </mj-style>
+    </mj-head>
+    <mj-body background-color="#FFFFFF">
+
+        <mj-section padding="0" background-color="#ffffff">
+            <mj-column padding="0" width="full">
+                <mj-image padding="0" width="full" src="./img/hero-big.jpg" />
+                <mj-text align="center">
+
+                </mj-text>
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column width="35%" padding-left="0" padding-right="0">
+                <mj-text padding="0" padding-left="8px" padding-right="8px">
+
+                </mj-text>
+            </mj-column>
+        </mj-section>
+    </mj-body>
+</mjml>
