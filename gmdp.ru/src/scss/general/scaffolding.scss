@@ -27,14 +27,14 @@ html {
   padding: 0 $gutter;
 
   @include sm-block {
-    padding: 0 20px;
-    max-width: calc(1380px + 40px);
+    padding: 0 vw(20);
+    max-width: vw(1380 + 40);
   }
 }
 
 .container-inner {
   margin: 0 auto;
-  max-width: 1294px;
+  max-width: vw(1294);
 }
 
 a {

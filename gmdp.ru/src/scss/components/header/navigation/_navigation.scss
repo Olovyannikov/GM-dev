@@ -28,7 +28,7 @@
 
     @include sm-block {
       grid-auto-flow: column;
-      gap: rem-calc(30);
+      gap: vw(30);
       margin-bottom: 0;
     }
   }

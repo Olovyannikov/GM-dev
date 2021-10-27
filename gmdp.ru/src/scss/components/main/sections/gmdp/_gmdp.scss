@@ -5,7 +5,7 @@
 
   &__container {
     @include sm-block {
-      padding-left: 11.3rem;
+      padding-left: vw(181);
       height: 50vh;
     }
   }
@@ -40,6 +40,8 @@
   overflow: hidden;
 
   &__wrapper {
+    position: relative;
+
     @include sm-block {
       display: flex;
       flex-direction: row;
@@ -181,8 +183,8 @@
 
     @include sm-block {
       position: absolute;
-      right: calc(100% + 30.6vw);
-      top: 25.5vw;
+      left: 0;
+      top: 10vw;
       gap: rem-calc(37);
     }
   }
