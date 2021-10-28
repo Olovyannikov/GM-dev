@@ -238,8 +238,8 @@
     overflow: hidden;
     margin: 0 auto;
     height: 800px;
-    max-width: rem-calc(950);
-    gap: 88px;
+    max-width: rem-calc(1038);
+    gap: rem-calc(88);
   }
 
   @media (min-width: 1200px) and (max-width: 1536px) {
@@ -290,7 +290,7 @@
   }
 
   @include xl-block {
-    width: 520px;
+    width: rem-calc(604);
     height: 100%;
 
     :global {
@@ -350,6 +350,11 @@
           margin: 0 0 rem-calc(25);
           font: $font-heading-3;
           color: $color-ash;
+
+          @media (min-width: 1200px) and (max-width: 1536px) {
+            font-size: rem-calc(32);
+            line-height: rem-calc(36);
+          }
         }
       }
 
@@ -364,6 +369,7 @@
 
     .sliderContent {
       display: none;
+      max-width: rem-calc(520);
     }
   }
 }

@@ -2,9 +2,13 @@
   width: 100%;
   height: 100%;
 
+  @media (min-width: 1200px) and (max-width: 1536px) {
+    height: vw(742);
+  }
+
   @include xl-block {
-    height: fit-content;
-    max-width: 628px;
+    max-width: vw(628);
+    height: auto;
   }
 }
 
@@ -12,9 +16,9 @@
   &::after {
     content: "";
     position: absolute;
-    left: -$gutter;
+    left: vw(-20);
     bottom: 0;
-    width: calc(100% + #{$gutter * 2});
+    width: calc(100% + #{20 * 2});
     height: 1px;
     background-color: $color-line;
 
@@ -24,59 +28,63 @@
   }
 
   @include xl-block {
-    padding-top: 32px;
+    padding-top: vw(32);
   }
 }
 
 .main {
-  padding-top: $middle-offset;
+  padding-top: vw(24);
 
   p {
-    margin: 0 0 $strong-offset;
+    margin: 0 0 rem-calc(32);
     font: $font-body-regular-m;
+    font-size: rem-calc(16);
     text-align: center;
     color: $color-off-black;
 
     @include xl-block {
-      margin-bottom: $middle-offset;
+      margin-bottom: vw(24);
       text-align: left;
     }
   }
 
   form {
-    @include xl-block {
-    }
-
     display: flex;
     flex-direction: column;
 
     .label {
-      margin-bottom: $rare-offset;
+      margin-bottom: rem-calc(16);
 
       input {
-        height: 72px;
+        height: rem-calc(72);
       }
     }
 
     textarea {
-      margin-bottom: $middle-offset;
-      min-height: 144px;
+      margin-bottom: rem-calc(24);
+      min-height: rem-calc(144);
       resize: none;
 
       &:focus {
         background-color: #fff;
       }
+
+      @media (min-width: 1200px) and (max-width: 1536px) {
+        min-height: vw(144 / 1.25);
+      }
     }
 
     button {
+      margin-top: auto;
+
       @include xl-block {
         margin: 0 auto;
-        max-width: 311px;
+        max-width: vw(311);
       }
     }
   }
 
   @include xl-block {
-    padding-top: $rare-offset;
+    padding-top: vw(16);
   }
 }

@@ -1,0 +1,33 @@
+.paragraph {
+  margin-bottom: rem-calc(28);
+  font-size: rem-calc(12);
+  line-height: rem-calc(18);
+
+  @include md-block {
+    margin-bottom: rem-calc(32);
+    font-size: rem-calc(16);
+    line-height: rem-calc(24);
+  }
+}
+
+.subtitle {
+  margin-bottom: rem-calc(28);
+  font-weight: 700;
+
+  @include md-block {
+    margin-bottom: rem-calc(32);
+    font-size: rem-calc(16);
+    line-height: rem-calc(24);
+  }
+}
+
+.title {
+  margin-bottom: rem-calc(20);
+  font-size: rem-calc(24);
+  line-height: rem-calc(28);
+
+  @include md-block {
+    margin-bottom: rem-calc(30);
+    text-align: center;
+  }
+}

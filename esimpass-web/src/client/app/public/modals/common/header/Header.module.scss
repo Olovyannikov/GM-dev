@@ -2,8 +2,8 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  padding-right: $gutter;
-  padding-left: $gutter;
+  padding-right: vw(20);
+  padding-left: vw(20);
   text-align: center;
 }
 
@@ -11,18 +11,19 @@
   @include burger(24px, 24px, 2px);
 
   position: absolute;
-  right: $gutter;
-  top: 4px;
+  right: vw(20);
+  top: vw(4);
 
   @include xl-block {
-    right: 34px;
-    top: 34px;
+    right: vw(34);
+    top: vw(34);
   }
 }
 
 .title {
-  margin-bottom: 20px;
+  margin-bottom: vw(20);
   font: $font-subtitle-m;
+  font-size: rem-calc(24);
   line-height: rem-calc(28);
   text-align: left;
   color: $color-ash;

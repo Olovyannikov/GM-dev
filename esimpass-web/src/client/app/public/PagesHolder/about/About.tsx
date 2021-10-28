@@ -1,9 +1,9 @@
 import s from './About.module.scss';
 import {Container} from "../../../components/container/Container";
-import {Swiper, SwiperSlide} from "swiper/react";
+
 import {Button} from "../../../components/button/Button";
 import slide from '../../../../resources/img/aboutslide-1.jpg';
-import {BackArr} from "../../../components/icons";
+
 import {STATE_API} from "../../../../redux/StateApi";
 import Image from "next/image";
 
@@ -35,26 +35,7 @@ export const About = () => {
                         <Button onClick={handleOpenPartnersModal}>Хочу сотрудничать</Button>
                     </div>
                     <div className={s.slider}>
-                        <Swiper
-                            loop={true}
-                            navigation={{
-                                prevEl: `.${s.prev}`,
-                                nextEl: `.${s.next}`,
-                            }}
-                            updateOnWindowResize={true}
-                            slidesPerView={1}
-                            pagination={{clickable: true}}
-                        >
-                            <SwiperSlide>
-                                <Image src={slide} alt="About" aria-hidden={true}/>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                            </SwiperSlide>
-                        </Swiper>
-                        <button className={`btn-reset ${s.prev}`}><BackArr stroke={'#fff'}/></button>
-                        <button className={`btn-reset ${s.next}`}><BackArr stroke={'#fff'}/></button>
+                        <Image src={slide} alt="About" aria-hidden={true}/>
                     </div>
                 </Container>
             </section>

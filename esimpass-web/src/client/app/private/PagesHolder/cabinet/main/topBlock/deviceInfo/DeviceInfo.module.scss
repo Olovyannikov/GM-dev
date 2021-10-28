@@ -159,8 +159,15 @@
   left: -24px;
   top: rem-calc(245);
   padding-left: 24px;
+  padding-right: calc(24px + 8px);
   width: calc(100% + 48px);
   max-height: calc(100vh - 300px);
+
+  :global {
+    .swiper-slide {
+      width: 100%;
+    }
+  }
 }
 
 .progress {
@@ -178,5 +185,4 @@
   margin-bottom: rem-calc(32);
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
-  width: 77.7%;
 }

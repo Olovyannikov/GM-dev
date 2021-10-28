@@ -38,6 +38,7 @@
 
   &.active {
     transform: translateX(0);
+    z-index: 3000;
   }
 
   .top {
@@ -95,8 +96,13 @@
 }
 
 .mobileControls {
+  position: relative;
   display: flex;
   flex-direction: column;
+  background-color: #f7f7fc;
+  z-index: 2000;
+  overflow: scroll;
+  height: 100vh;
 
   @include xl-block {
     display: none;
@@ -107,7 +113,8 @@
   position: relative;
   padding-top: 24px;
   padding-bottom: 40px;
-  max-height: 100%;
+  max-height: rem-calc(260);
+  overflow: scroll;
 
   li {
     position: relative;
@@ -139,6 +146,15 @@
         background-size: 16px 2px;
       }
     }
+  }
+
+  &::after {
+    position: fixed;
+    content: "";
+    bottom: rem-calc(242);
+    width: 100%;
+    height: rem-calc(120);
+    background: linear-gradient(180deg, rgba(247, 247, 252, 0) 0%, #F7F7FC 99.45%);
   }
 }
 

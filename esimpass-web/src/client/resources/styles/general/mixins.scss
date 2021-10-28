@@ -171,3 +171,11 @@
 
   @return #{$remSize}rem;
 }
+
+@function vw($x){
+  @return #{math.div(100 * $x, 1920)}vw;
+}
+
+@function vm($x){
+  @return #{math.div(100 * $x, 360)}vw;
+}

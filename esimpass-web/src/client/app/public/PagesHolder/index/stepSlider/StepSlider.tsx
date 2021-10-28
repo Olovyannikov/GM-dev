@@ -40,7 +40,7 @@ export const StepSlider = () => {
                             observer={true}
                             resizeObserver={true}
                             watchSlidesProgress={true}
-                            autoplay={true}
+                            // autoplay={true}
                             onInit={swiper => {
                                 setStep(1);
                                 setLength(swiper.$wrapperEl[0].childElementCount);
@@ -96,7 +96,7 @@ export const StepSlider = () => {
                             onReachEnd={swiper => swiper.params.slidesOffsetBefore = -200}
                             slidesPerView={1}
                             watchOverflow={false}
-                            autoplay={true}
+                            // autoplay={true}
                             breakpoints={{
                                 1200: {
                                     direction: 'vertical',
@@ -115,7 +115,7 @@ export const StepSlider = () => {
                                 <div className={s.sliderContent}>
                                     <p className={s.sliderText}>Приложение eSIM pass позволяет быстро работать с
                                         подключением и управлением пакетами интернет-трафика. В приложении отражается
-                                        текущий баланс, количество оставшегося интернет-трафика и срок действия
+                                        текущий баланс, количество оставшегося <br/> интернет-трафика и срок действия
                                         подключенного роумингового пакета. Также вы можете сделать это и в Личном
                                         кабинете.</p>
                                     <p className={s.subTitle}>*Рекомендуем установить приложение заранее до поездки т.к.

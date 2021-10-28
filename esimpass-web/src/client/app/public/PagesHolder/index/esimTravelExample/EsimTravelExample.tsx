@@ -2,9 +2,14 @@ import s from './EsimTravelExample.module.scss';
 import {Container} from "../../../../components/container/Container";
 import SwiperCore, {Navigation, Pagination} from 'swiper';
 import {Swiper, SwiperSlide} from 'swiper/react';
-import sliderImage1 from '../../../../../resources/img/slider-1@2x.jpg';
-import sliderImage2 from '../../../../../resources/img/slider-2@2x.jpg';
-import sliderImage4 from '../../../../../resources/img/slider-4@2x.jpg';
+import bali from '../../../../../resources/img/bali.jpg';
+import cyprus from '../../../../../resources/img/cypres.jpg';
+import dominicana from '../../../../../resources/img/dominicana.jpg';
+import egypt from '../../../../../resources/img/egypt.jpg';
+import greece from '../../../../../resources/img/greece.jpg';
+import mexico from '../../../../../resources/img/mexica.jpg';
+import turkey from '../../../../../resources/img/turkey.jpg';
+import uae from '../../../../../resources/img/uae.jpg';
 import {Button} from "../../../../components/button/Button";
 import {BackArr} from "../../../../components/icons";
 import {STATE_API} from 'redux/StateApi';
@@ -49,9 +54,9 @@ export const EsimTravelExample = (props: {title?: string, stroke?: string}) => {
                             }
                         }}>
                         <SwiperSlide>
-                            <Image src={sliderImage1} alt=""/>
+                            <Image src={greece} alt=""/>
                             <div className={s.card}>
-                                <h3>Франция</h3>
+                                <h3>Греция</h3>
                                 <div className={s.info}>
                                     <div className={s.left}>
                                         <span>100 мб</span>
@@ -67,9 +72,9 @@ export const EsimTravelExample = (props: {title?: string, stroke?: string}) => {
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Image src={sliderImage2} alt=""/>
+                            <Image src={cyprus} alt=""/>
                             <div className={s.card}>
-                                <h3>New-York</h3>
+                                <h3>Кипр</h3>
                                 <div className={s.info}>
                                     <div className={s.left}>
                                         <span>100 мб</span>
@@ -85,9 +90,9 @@ export const EsimTravelExample = (props: {title?: string, stroke?: string}) => {
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Image src={sliderImage1} alt=""/>
+                            <Image src={turkey} alt=""/>
                             <div className={s.card}>
-                                <h3>Папуа–Новая Гвинея</h3>
+                                <h3>Турция</h3>
                                 <div className={s.info}>
                                     <div className={s.left}>
                                         <span>100 мб</span>
@@ -103,9 +108,9 @@ export const EsimTravelExample = (props: {title?: string, stroke?: string}) => {
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Image src={sliderImage4} alt=""/>
+                            <Image src={dominicana} alt=""/>
                             <div className={s.card}>
-                                <h3>Ростов-на-Дону</h3>
+                                <h3>Доминиканка</h3>
                                 <div className={s.info}>
                                     <div className={s.left}>
                                         <span>1000 мб</span>
@@ -121,9 +126,45 @@ export const EsimTravelExample = (props: {title?: string, stroke?: string}) => {
                             </div>
                         </SwiperSlide>
                         <SwiperSlide onClick={() => STATE_API.showPublicWizard('auth')}>
-                            <Image src={sliderImage1} alt=""/>
+                            <Image src={mexico} alt=""/>
                             <div className={s.card}>
-                                <h3>Франция</h3>
+                                <h3>Мексика</h3>
+                                <div className={s.info}>
+                                    <div className={s.left}>
+                                        <span>100 мб</span>
+                                        <p>217 ₽</p>
+                                    </div>
+                                    <div className={s.right}>
+                                        <span>1 гб</span>
+                                        <p>1967 ₽</p>
+                                    </div>
+                                </div>
+                                <Button onClick={() => STATE_API.showPublicWizard('auth')}
+                                        color={'dark'}>Подключить</Button>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide onClick={() => STATE_API.showPublicWizard('auth')}>
+                            <Image src={uae} alt=""/>
+                            <div className={s.card}>
+                                <h3>ОАЭ</h3>
+                                <div className={s.info}>
+                                    <div className={s.left}>
+                                        <span>100 мб</span>
+                                        <p>217 ₽</p>
+                                    </div>
+                                    <div className={s.right}>
+                                        <span>1 гб</span>
+                                        <p>1967 ₽</p>
+                                    </div>
+                                </div>
+                                <Button onClick={() => STATE_API.showPublicWizard('auth')}
+                                        color={'dark'}>Подключить</Button>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide onClick={() => STATE_API.showPublicWizard('auth')}>
+                            <Image src={egypt} alt=""/>
+                            <div className={s.card}>
+                                <h3>Египет</h3>
                                 <div className={s.info}>
                                     <div className={s.left}>
                                         <span>100 мб</span>

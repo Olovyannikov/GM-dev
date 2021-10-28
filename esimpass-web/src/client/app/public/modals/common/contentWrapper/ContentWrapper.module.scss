@@ -3,7 +3,7 @@
   left: -1000%;
   top: 0;
   z-index: 4;
-  padding-top: 30px;
+  padding-top: vw(30);
   background-color: $color-background;
   transition: 0.8s ease-in-out;
 
@@ -26,7 +26,7 @@
     visibility: hidden;
     border-radius: $middle-offset;
     padding-top: 0;
-    padding-bottom: $strong-offset;
+    padding-bottom: vw(32);
     transform: translate(-50%, -50%);
   }
 }

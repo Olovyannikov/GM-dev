@@ -40,7 +40,7 @@ export const DeviceCheck = () => {
                 <ul className={`list-reset ${s.features}`}>
                     <li>
                         <PhoneIcon/>
-                        <span>Не нужно никуда ехать,<br/> быстро оформим онлайн</span>
+                        <span>Быстро оформим онлайн</span>
                     </li>
                     <li>
                         <Globe/>

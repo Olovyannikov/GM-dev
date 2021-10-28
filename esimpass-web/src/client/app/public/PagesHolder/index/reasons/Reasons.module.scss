@@ -118,33 +118,6 @@
     }
   }
 
-  + button {
-    display: none;
-    margin: 0 auto;
-    max-width: 461px;
-
-    svg {
-      transform: rotate(90deg);
-    }
-
-    @include xl-block {
-      display: flex;
-      text-align: center;
-    }
-
-    @media (min-width: 1200px) and (max-width: 1536px) {
-      max-width: 410px;
-      font-size: 15px;
-      line-height: 24px;
-      gap: 7px;
-
-      svg {
-        width: 14px;
-        height: 14px;
-      }
-    }
-  }
-
   @include lg-block {
     flex-flow: row wrap;
     justify-content: space-around;
@@ -260,6 +233,47 @@
     &::after {
       left: -18px;
       width: 293px;
+    }
+  }
+}
+
+.controls {
+  display: grid;
+  justify-content: center;
+  gap: rem-calc(20);
+
+  button {
+    display: block;
+    width: 410px;
+
+    @include xl-block {
+      width: 461px;
+    }
+  }
+
+  .toTop {
+    display: none;
+    margin: 0 auto;
+
+    svg {
+      transform: rotate(90deg);
+    }
+
+    @include xl-block {
+      display: flex;
+      text-align: center;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1536px) {
+      max-width: 410px;
+      font-size: 15px;
+      line-height: 24px;
+      gap: 7px;
+
+      svg {
+        width: 14px;
+        height: 14px;
+      }
     }
   }
 }

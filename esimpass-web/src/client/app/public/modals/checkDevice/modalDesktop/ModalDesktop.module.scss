@@ -7,9 +7,10 @@
 .mainDesktop {
   display: none;
   padding-top: 21px;
-  max-height: 350px;
+  max-height: 600px;
 
   @include xl-block {
+    padding-top: 0;
     display: flex;
   }
 }
@@ -160,5 +161,21 @@
         background-size: 16px 2px;
       }
     }
+  }
+}
+
+.controls {
+  position: absolute;
+  z-index: 4000;
+  bottom: rem-calc(96);
+  display: grid;
+  align-items: center;
+  justify-content: end;
+  gap: rem-calc(22);
+
+  @include md-block {
+    position: static;
+    margin-top: rem-calc(47);
+    grid-auto-flow: column;
   }
 }

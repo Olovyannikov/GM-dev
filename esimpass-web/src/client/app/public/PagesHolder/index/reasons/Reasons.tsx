@@ -4,6 +4,7 @@ import {Airplane, BackArr, Bag, Clock, Dualsim, Globe, RU, Shield, Wallet} from 
 import {Button} from "../../../../components/button/Button";
 import {scrollToTop} from 'utils';
 import {STATE_API} from 'redux/StateApi';
+import * as React from "react";
 
 
 export const Reasons = () => (
@@ -47,7 +48,7 @@ export const Reasons = () => (
                     <div className={s.icon}>
                         <Clock/>
                     </div>
-                    <p>Практически неограниченный срок действия eSIM  </p>
+                    <p>Практически неограниченный срок действия eSIM </p>
                 </li>
                 <li>
                     <div className={s.icon}>
@@ -67,15 +68,18 @@ export const Reasons = () => (
                         <Button onClick={() => STATE_API.showPublicWizard('auth')} size={'small'}
                                 color={'dark'}>Подключить</Button>
                         <Button onClick={() => STATE_API.showPublicWizard('downloadApp')} size={'small'}
-                                color={'secondary'} >Приложение</Button>
+                                color={'secondary'}>Приложение</Button>
                     </div>
                     <small>Для того, чтобы виртуальная eSIM была активна, необходимо
                         хотя бы 1 раз в 2 года совершать платную транзакцию от ХХ руб. </small>
                 </li>
             </ul>
-            <Button color={'secondary'} onClick={scrollToTop}>
-                <><BackArr/> В начало</>
-            </Button>
+            <div className={s.controls}>
+                <Button className={s.order} color="primary">Заказать стандартную SIM-карту</Button>
+                <Button className={s.toTop} color={'secondary'} onClick={scrollToTop}>
+                    <><BackArr/> В начало</>
+                </Button>
+            </div>
         </Container>
     </section>
 )

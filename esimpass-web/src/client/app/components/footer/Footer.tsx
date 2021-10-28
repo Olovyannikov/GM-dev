@@ -30,10 +30,10 @@ export const Footer = () => {
                 </div>
                 <div className={s.column}>
                     <ul className={`list-reset ${s.menu}`}>
-                        <li><Link href='#'><a>Политика конфединциальности</a></Link></li>
-                        <li><Link href='#'><a>Условия оказания услуг связи</a></Link></li>
-                        <li><Link href='#'><a>Устройства, поддерживающие eSIM</a></Link></li>
-                        <li><Link href='#'><a>О нас</a></Link></li>
+                        <li><Link href='/policy'><a>Политика конфиденциальности</a></Link></li>
+                        <li><Link href='/terms'><a>Условия оказания услуг связи</a></Link></li>
+                        <li><Link href='/refund'><a>Условия возврата денежных средств</a></Link></li>
+                        <li><Link href='/about'><a>О нас</a></Link></li>
                     </ul>
                 </div>
             </Container>
