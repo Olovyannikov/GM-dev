@@ -1,0 +1,49 @@
+<mj-head>
+    <mj-title>eSIM</mj-title>
+    <mj-attributes>
+        <mj-breakpoint width="480px"/>
+        <mj-all font-family="Arial"/>
+    </mj-attributes>
+    <mj-style>
+        .background {
+            background-color: #e3f6fa;
+        }
+
+        .container td {
+            padding: 0 !important;
+            padding-left: 5px !important;
+            padding-right: 5px !important;
+        }
+
+        .title div {
+            padding-bottom: 20px !important;
+            font-weight: bold !important;
+            font-size: 20px !important;
+            line-height: 23px !important;
+            color: #005F87 !important;
+        }
+
+        .text div {
+            font-size: 16px !important;
+            line-height: 18px !important;
+            color: #005F87 !important;
+        }
+
+        @media (min-width: 480px) {
+            .container td {
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+            }
+
+            .title div {
+                font-size: 19px !important;
+                line-height: 22px !important;
+            }
+
+            .text div {
+                font-size: 14px !important;
+                line-height: 16px !important;
+            }
+        }
+    </mj-style>
+</mj-head>

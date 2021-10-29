@@ -1,0 +1,11 @@
+<mj-section css-class="background">
+    <mj-column css-class="container">
+        <mj-text css-class="title">
+            Если твоё мобильное устройство не поддерживает eSIM – не страшно!
+        </mj-text>
+        <mj-text css-class="text" padding-bottom="30px !important">
+            Закажи доставку обычной SIM-карты, и наш курьер привезет ее в удобное время. <a style="color: #00a9ce" href="#">Разница</a> с eSIM лишь в наличии
+            или отсутствии физического носителя в виде SIM-карты, мобильное приложение и роуминговые тарифы будут те же.
+        </mj-text>
+    </mj-column>
+</mj-section>

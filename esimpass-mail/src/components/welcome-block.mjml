@@ -1,0 +1,11 @@
+<mj-section padding="0" padding-bottom="20px">
+    <mj-column css-class="container">
+        <mj-text css-class="title">
+            Благодарим за интерес, проявленный к eSIM pass!
+        </mj-text>
+        <mj-text css-class="text">
+            Для того, чтобы воспользоваться eSIM pass с выгодными ценами на роуминг не нужно куда-то ехать и с
+            паспортом оформлять специальную SIM-карту.
+        </mj-text>
+    </mj-column>
+</mj-section>
