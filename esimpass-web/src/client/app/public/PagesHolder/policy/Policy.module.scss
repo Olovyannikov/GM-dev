@@ -31,3 +31,20 @@
     text-align: center;
   }
 }
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: rem-calc(32);
+    line-height: rem-calc(36);
+  }
+
+  .paragraph {
+    font-size: rem-calc(16);
+    line-height: rem-calc(24);
+  }
+
+  .subtitle {
+    font-size: rem-calc(16);
+    line-height: rem-calc(24);
+  }
+}

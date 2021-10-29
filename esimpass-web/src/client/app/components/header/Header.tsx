@@ -81,15 +81,15 @@ export const Header = () => {
                     </div>
                     <div className={`${s.menu} ${isActive ? s.active : ''}`}>
                         <ul className={`list-reset ${s.links}`}>
-                            <li><Link href='#tarrifs'><a onClick={() => {
+                            <li><Link href='/#tarrifs'><a onClick={() => {
                                 setActive('');
                                 document.body.classList.remove('menu-active');
                             }} className={s.active}>Тарифы</a></Link></li>
-                            <li><Link href='#setup'><a onClick={() => {
+                            <li><Link href='/#setup'><a onClick={() => {
                                 setActive('');
                                 document.body.classList.remove('menu-active');
                             }}>Как подключить?</a></Link></li>
-                            <li><Link href='#speciality'><a onClick={() => {
+                            <li><Link href='/#speciality'><a onClick={() => {
                                 setActive('');
                                 document.body.classList.remove('menu-active');
                             }}>Особенности eSIM</a></Link></li>

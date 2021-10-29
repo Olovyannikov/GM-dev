@@ -237,16 +237,20 @@
   }
 }
 
-.controls {
+.controlsBottom {
   display: grid;
   justify-content: center;
   gap: rem-calc(20);
 
   button {
-    display: block;
+    display: none;
     width: 410px;
 
     @include xl-block {
+      display: block;
+    }
+
+    @include custom-breakpoint(1537px) {
       width: 461px;
     }
   }

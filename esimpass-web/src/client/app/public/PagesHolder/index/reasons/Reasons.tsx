@@ -74,7 +74,7 @@ export const Reasons = () => (
                         хотя бы 1 раз в 2 года совершать платную транзакцию от ХХ руб. </small>
                 </li>
             </ul>
-            <div className={s.controls}>
+            <div className={s.controlsBottom}>
                 <Button className={s.order} color="primary">Заказать стандартную SIM-карту</Button>
                 <Button className={s.toTop} color={'secondary'} onClick={scrollToTop}>
                     <><BackArr/> В начало</>
