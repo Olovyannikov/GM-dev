@@ -1,11 +1,31 @@
 <mj-section css-class="background">
-    <mj-column css-class="container">
+    <mj-column width="100%" css-class="container">
         <mj-text css-class="title">
             Если твоё мобильное устройство не поддерживает eSIM – не страшно!
         </mj-text>
-        <mj-text css-class="text" padding-bottom="30px !important">
-            Закажи доставку обычной SIM-карты, и наш курьер привезет ее в удобное время. <a style="color: #00a9ce" href="#">Разница</a> с eSIM лишь в наличии
-            или отсутствии физического носителя в виде SIM-карты, мобильное приложение и роуминговые тарифы будут те же.
-        </mj-text>
+    </mj-column>
+</mj-section>
+<mj-section css-class="background">
+    <mj-wrapper css-class="container-adaptive">
+        <mj-column width="39%" >
+            <mj-text css-class="text text-big">
+                Закажи доставку обычной SIM-карты, и наш курьер привезет ее в удобное время. <a style="color: #00a9ce"
+                                                                                                href="#">Разница
+            </a> с eSIM лишь в наличии
+                или отсутствии физического носителя в виде SIM-карты, мобильное приложение и роуминговые тарифы будут те
+                же.
+            </mj-text>
+        </mj-column>
+        <mj-column css-class="image">
+            <mj-image padding="0!important" padding-bottom="40 !important" src="./img/simcard.png" width="85"
+                      height="115"/>
+        </mj-column>
+    </mj-wrapper>
+</mj-section>
+<mj-section css-class="background">
+    <mj-column width="100%" padding="0" padding-top="30px">
+        <mj-button href="#" border-radius="16px" css-class="button-container">
+            Заказать SIM-карту
+        </mj-button>
     </mj-column>
 </mj-section>
