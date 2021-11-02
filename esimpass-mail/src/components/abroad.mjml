@@ -1,0 +1,20 @@
+<mj-wrapper full-width="100%" padding="0" css-class="color-container wrapper">
+    <mj-section full-width="100%" padding="0!important">
+        <mj-column padding="0!important">
+            <mj-text css-class="title-adaptive" font-weight="700" font-size="18px" line-height="21px" color="#005f87">Подключить и
+                активировать виртуальную eSIM pass можно даже находясь уже за границей
+            </mj-text>
+        </mj-column>
+    </mj-section>
+    <mj-section>
+        <mj-column width="40%" css-class="padding-left">
+            <mj-text font-size="14px" line-height="16px" color="#005f87">
+                Для этого потребуется доступ к Интернету. Однако мы рекомендуем подключить и настроить eSIM pass заранее
+                до поездки, подключенный пакет Интернет-трафика активируется только по прибытии в выбранную страну.
+            </mj-text>
+        </mj-column>
+        <mj-column width="40%"  padding-bottom="30px!important" css-class="padding-right">
+            <mj-image width="140" src="./img/airplane.png"/>
+        </mj-column>
+    </mj-section>
+</mj-wrapper>

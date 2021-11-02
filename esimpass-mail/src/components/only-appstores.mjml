@@ -1,0 +1,37 @@
+<mj-wrapper padding="0" css-class="wrapper">
+    <mj-section>
+        <mj-column padding-bottom="30px!important">
+            <mj-text font-size="16px" line-height="18px" align="center" color="#005f87">
+                Подключать и управлять тарифами можно как в личном кабинете на сайте <a style="color: #aadb1e" href="https://www.esimpass.ru">www.esimpass.ru</a>, так и в удобном
+                мобильном приложении eSIM pass.
+            </mj-text>
+        </mj-column>
+    </mj-section>
+    <mj-section padding-bottom="14px!important">
+        <mj-column padding="0!important" width="140px!important">
+            <mj-button padding-bottom="0!important" padding-top="0!important" padding-right="0!important"
+                       padding-left="0!important" inner-padding="0" align="left" width="140px" padding="0" border-radius="0"
+                       border="0" background-color="#ffffff" href="#">
+                <img width="137" src="./img/appstore.png"/>
+            </mj-button>
+        </mj-column>
+        <mj-column width="12px"/>
+        <mj-column padding="0!important" width="140px!important">
+            <mj-button padding-bottom="0!important" padding-top="0!important" padding-right="0!important"
+                       padding-left="0!important" inner-padding="0" align="right" width="140px" padding="0"
+                       border-radius="0" border="0" background-color="#ffffff" href="#">
+                <img width="137" src="./img/googleplay.png"/>
+            </mj-button>
+        </mj-column>
+    </mj-section>
+
+    <mj-section padding="0!important">
+        <mj-column padding="0!important">
+            <mj-button padding-bottom="0!important" padding-top="0!important" padding-right="0!important"
+                       padding-left="0!important" inner-padding="0" align="center" width="140px" padding="0"
+                       border-radius="0" border="0" background-color="#ffffff" href="#">
+                <img width="137" src="./img/appgallery.png"/>
+            </mj-button>
+        </mj-column>
+    </mj-section>
+</mj-wrapper>

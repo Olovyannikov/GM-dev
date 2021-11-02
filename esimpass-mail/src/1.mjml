@@ -3,11 +3,10 @@
     <mj-body background-color="#FFFFFF">
         <mj-include path="./components/hero-image.mjml"/>
         <mj-include path="./components/welcome-block.mjml"/>
-        <mj-include path="./components/welcome-warning.mjml"/>
         <mj-include path="./components/order-sim.mjml"/>
-        <mj-include path="./components/abroad.mjml"/>
-        <mj-include path="./components/virtual-activate.mjml"/>
-        <mj-include path="./components/activate.mjml"/>
+        <mj-include path="./components/only-appstores.mjml"/>
+        <mj-include path="./components/abroad-blue-white.mjml"/>
+        <mj-include path="./components/add-esim.mjml"/>
         <mj-include path="./components/disclaimer.mjml"/>
         <mj-include path="./components/footer.mjml"/>
     </mj-body>

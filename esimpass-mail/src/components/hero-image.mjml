@@ -1,5 +1,5 @@
 <mj-section padding="0" padding-bottom="30px" background-color="#ffffff">
     <mj-column padding="0">
-        <mj-image padding="0" src="./img/hero-big.jpg"/>
+        <mj-image padding="0" src="https://olovyannikov.github.io/GM-dev/esimpass-mail/dist/img/hero-big.jpg"/>
     </mj-column>
 </mj-section>

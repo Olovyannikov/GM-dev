@@ -1,0 +1,151 @@
+<mj-wrapper>
+    <mj-section padding-top="30px!important" padding-bottom="20px!important">
+        <mj-column>
+            <mj-text font-size="20px" font-weight="700" line-height="23px" color="#005f87" align="center">Подключение
+                eSIM pass
+            </mj-text>
+        </mj-column>
+    </mj-section>
+</mj-wrapper>
+
+<mj-section>
+    <mj-group width="100%">
+        <mj-column css-class="padding-left" background-color="#309dbd" width="34px" border-radius="8px">
+            <mj-text padding="0!important" padding-left="11px!important" padding-right="11px!important"
+                     font-weight="900" font-size="26px" line-height="36px" color="#ffffff">1
+            </mj-text>
+        </mj-column>
+        <mj-column css-class="col-73">
+            <mj-text css-class="text" padding="0">
+                Для автоматической настройки eSIM, отсканируй камерой смартфона уникальный QR-код из данного письма или
+                введи вручную в настройках смартфона согласно <a href="#" style="color: #aadb1e">инструкции</a>.
+            </mj-text>
+        </mj-column>
+    </mj-group>
+    <mj-column padding-bottom="0px!important" width="100%">
+        <mj-image width="160" src="./img/qr.png"/>
+    </mj-column>
+</mj-section>
+<mj-section>
+    <mj-group>
+        <mj-column padding-left="16%!important" padding-bottom="25px!important">
+            <mj-table width="100%">
+                <tr style="text-align: left;">
+                    <td style="width: 30%; font-weight: 700; font-size: 14px; line-height: 16px; color: #005f87;">
+                        SIM ID
+                    </td>
+                    <td style="font-size: 14px; line-height: 16px; color: #005f87;">123456</td>
+                </tr>
+                <tr style="height: 10px"></tr>
+                <tr style="text-align: left">
+                    <td style="width: 30%; font-weight: 700; font-size: 14px; line-height: 16px; color: #005f87;">
+                        Пароль
+                    </td>
+                    <td style="font-size: 14px; line-height: 16px; color: #005f87;">123456</td>
+                </tr>
+            </mj-table>
+        </mj-column>
+    </mj-group>
+</mj-section>
+<mj-section>
+    <mj-group>
+        <mj-column padding="0!important" padding-bottom="20px!important" padding-left="16%!important">
+            <mj-text font-size="14px" line-height="16px" color="#005f87">
+                Для активации вручную в настройках смартфона:
+            </mj-text>
+        </mj-column>
+    </mj-group>
+</mj-section>
+<mj-section>
+    <mj-group>
+        <mj-column padding="0!important" padding-bottom="30px!important" padding-left="16%!important">
+            <mj-table>
+                <tr style="text-align: left;">
+                    <td style="width: 50%; font-weight: 700; font-size: 14px; line-height: 16px; color: #005f87;">
+                        Адрес SM-DP
+                    </td>
+                    <td style="font-size: 14px; line-height: 16px; color: #005f87;">123456</td>
+                </tr>
+                <tr style="height: 10px"></tr>
+                <tr style="text-align: left">
+                    <td style="width: 50%; font-weight: 700; font-size: 14px; line-height: 16px; color: #005f87;">
+                        Код активации
+                    </td>
+                    <td style="font-size: 14px; line-height: 16px; color: #005f87;">123456</td>
+                </tr>
+            </mj-table>
+        </mj-column>
+    </mj-group>
+</mj-section>
+<mj-section>
+    <mj-group width="100%">
+        <mj-column css-class="padding-left" background-color="#309dbd" width="34px" border-radius="8px">
+            <mj-text padding="0!important" padding-left="11px!important" padding-right="11px!important"
+                     font-weight="900" font-size="26px" line-height="36px" color="#ffffff">2
+            </mj-text>
+        </mj-column>
+        <mj-column css-class="col-73">
+            <mj-text css-class="text" padding="0">
+                В приложении или на сайте в Личном кабинете заполни персональные данные для идентификации.
+            </mj-text>
+        </mj-column>
+    </mj-group>
+    <mj-column padding-bottom="30px!important" width="100%">
+        <mj-image width="204" src="./img/registration.png"/>
+    </mj-column>
+    <mj-group width="100%">
+        <mj-column css-class="padding-left" background-color="#309dbd" width="34px" border-radius="8px">
+            <mj-text padding="0!important" padding-left="11px!important" padding-right="11px!important"
+                     font-weight="900" font-size="26px" line-height="36px" color="#ffffff">3
+            </mj-text>
+        </mj-column>
+        <mj-column css-class="col-73">
+            <mj-text css-class="text" padding="0">
+                До поездки в нужную страну или по прибытии в нее, проверь достаточно ли средств на балансе для
+                подключения нужного роумингового пакета интернет-трафика. При необходимости пополни баланс, это можно
+                сделать как в мобильном приложении, так
+                и на сайте в Личном Кабинете.
+            </mj-text>
+        </mj-column>
+
+        <mj-column padding-bottom="30px!important" width="100%">
+            <mj-image width="157" src="./img/online.png"/>
+        </mj-column>
+    </mj-group>
+    <mj-group width="100%">
+        <mj-column css-class="padding-left" background-color="#309dbd" width="34px" border-radius="8px">
+            <mj-text padding="0!important" padding-left="11px!important" padding-right="11px!important"
+                     font-weight="900" font-size="26px" line-height="36px" color="#ffffff">4
+            </mj-text>
+        </mj-column>
+        <mj-column css-class="col-73">
+            <mj-text css-class="text" padding="0">
+                Выбери в приложении или на сайте в Личном кабинете нужную страну и подключи необходимый пакет из списка
+                доступных для данной страны. Подключенный пакет Интернет-трафика активируется при приезде в выбранную
+                страну.
+            </mj-text>
+        </mj-column>
+        <mj-column padding-bottom="30px!important" width="100%">
+            <mj-image width="183" src="./img/arrows.png"/>
+        </mj-column>
+    </mj-group>
+
+    <mj-group width="100%">
+        <mj-column css-class="padding-left" background-color="#309dbd" width="34px" border-radius="8px">
+            <mj-text padding="0!important" padding-left="11px!important" padding-right="11px!important"
+                     font-weight="900" font-size="26px" line-height="36px" color="#ffffff">5
+            </mj-text>
+        </mj-column>
+        <mj-column css-class="col-73">
+            <mj-text css-class="text" padding="0">
+                До начала использования пакета интернет-трафика убедись, что передача данных включена именно через
+                виртуальную eSIM, а не твою стандартную SIM-карту.
+            </mj-text>
+        </mj-column>
+        <mj-column padding-bottom="30px!important" width="100%">
+            <mj-image width="183" src="./img/esim.png"/>
+        </mj-column>
+    </mj-group>
+
+
+</mj-section>

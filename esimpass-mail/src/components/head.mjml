@@ -7,8 +7,26 @@
         <mj-all font-family="Arial, Open Sans, Roboto, Segoe UI, sans-serif"/>
     </mj-attributes>
     <mj-style>
+        .color-container {
+            background-color: #ffffff;
+        }
+
+        .color-container-blue {
+            background-color: #e3f6fa;
+        }
+
+        .title-adaptive {
+            padding: 0!important;
+            padding-left: 16px!important;
+            padding-right: 16px!important;
+        }
+
         td {
             padding: 0!important;
+        }
+
+        a {
+            text-decoration: underline;
         }
 
         .background {
@@ -32,10 +50,11 @@
             width: 202px;
             padding-top: 8px!important;
             padding-bottom: 8px!important;
-            background-color: #b9f348;
+            background-color: #b9f348 !important;
         }
 
         .button-container a {
+            padding: 0!important;
             font-family: "Roboto", "Arial", sans-serif !important;
             background: transparent!important;
             font-weight: 600!important;
@@ -52,10 +71,12 @@
 
         .padding-left {
             padding: 0!important;
+            padding-left: 16px!important;
         }
 
         .padding-right {
             padding: 0!important;
+            padding-right: 16px!important;
         }
 
         .title div {
@@ -74,11 +95,82 @@
             color: #005F87 !important;
         }
 
+        div.col-73 {
+            padding-left: 49px!important;
+            width: 73% !important;
+        }
+
+        .group {
+            padding: 0!important;
+            padding-left: 16px!important;
+            padding-right: 16px!important;
+        }
+
         .image {
             padding-bottom: 40px !important;
         }
 
+        .mj-column-px-140 {
+            width: 140px!important;
+        }
+
+        .mj-column-px-12 {
+            width: 12px!important;
+            height: 12px!important;
+        }
+
+        .wrapper {
+            padding-top: 30px!important;
+            padding-bottom: 30px!important;
+            padding-left: 16px!important;
+            padding-right: 16px!important;
+        }
+
+        .btn-reset td,
+        .btn-reset a {
+            margin: 0!important;
+            padding: 0!important;
+            background: transparent!important;
+        }
+
+        .width-50-to-100 {
+            width: 100%;
+        }
+
         @media (min-width: 520px) {
+            .width-50-to-100 {
+                width: 50%;
+            }
+
+            .wrapper {
+                padding-left: 50px!important;
+                padding-right: 50px!important;
+            }
+
+            .color-container {
+                background-color: #e3f6fa;
+            }
+
+            .color-container-blue {
+                background-color: #e3f6fa;
+            }
+
+            .title-adaptive {
+                padding: 0!important;
+                padding-left: 50px!important;
+                padding-right: 50px!important;
+            }
+
+            div.col-73 {
+                padding-left: 14px!important;
+                max-width: 75%;
+                width: 75% !important;
+            }
+
+            div.col-73 td div {
+                font-size: 14px!important;
+                line-height: 16px!important;
+            }
 
             .container-adaptive td td {
                 padding: 0 16px!important;

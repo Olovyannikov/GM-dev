@@ -1,0 +1,9 @@
+<mj-section css-class="background">
+    <mj-column css-class="container" padding="0!important" padding-top="30px !important">
+        <mj-text css-class="text">Воспользоваться специальными ценами в роуминге можно и без подключения интернет-пакета. При активации
+            eSIM pass и включенной передаче данных в роуминге через данную eSIM, автоматически будет доступна
+            помегабайтная тарификация. Полную информацию и тарифы по стране пребывания смотри в мобильном приложении или
+            на <a style="color: #aadb1e" href="#">сайте</a> в Личном Кабинете.
+        </mj-text>
+    </mj-column>
+</mj-section>

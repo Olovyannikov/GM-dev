@@ -1,10 +1,27 @@
-<mjml>
-    <mj-head>
-        <mj-preview>
-            <!-- TODO Add mail preview -->
-        </mj-preview>
-    </mj-head>
-    <mj-body>
-        
-    </mj-body>
-</mjml>
+<mj-wrapper full-width="100%" background-color="#00a9ce">
+    <mj-section padding="0!important">
+        <mj-column width="100%" css-class="container" padding-top="30px!important" padding-bottom="60px!important">
+            <mj-text padding="0!important" font-size="12px" line-height="14px" color="#ffffff">
+                Вы получили эту информацию в соответствии с согласованными Вами условиями ... Чтобы не получать письма,
+                нажмите на ссылку <a style="color: #fff" href="#">отписаться</a>.
+            </mj-text>
+        </mj-column>
+        <mj-column width="100%" css-class="container" padding-bottom="30px!important">
+            <mj-text padding="0!important" padding-bottom="10px!important" font-size="12px" line-height="14px"
+                     color="#ffffff">
+                ООО "ГЛОНАСС МОБАЙЛ"
+            </mj-text>
+            <mj-text padding="0!important" padding-bottom="10px!important" font-size="12px" line-height="14px"
+                     color="#ffffff">
+                ОГРН 1197746459460
+            </mj-text>
+            <mj-text padding="0!important" padding-bottom="10px!important" font-size="12px" line-height="14px"
+                     color="#ffffff">
+                ИНН 7719494560
+            </mj-text>
+            <mj-text padding="0!important" font-size="12px" line-height="14px" color="#ffffff">
+                Юр. адрес: 107023, г. Москва, Семеновская площадь, 1а
+            </mj-text>
+        </mj-column>
+    </mj-section>
+</mj-wrapper>
