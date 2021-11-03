@@ -7,8 +7,16 @@
         <mj-all font-family="Arial, Open Sans, Roboto, Segoe UI, sans-serif"/>
     </mj-attributes>
     <mj-style>
+        .p-0 tr td {
+            padding: 0!important;
+        }
+
         .color-container {
             background-color: #ffffff;
+        }
+
+        .color-container-big {
+            background-color: #e3f6fa;
         }
 
         .color-container-blue {
@@ -100,6 +108,11 @@
             width: 73% !important;
         }
 
+        div.col-50 {
+            padding-left: 49px!important;
+            width: 73% !important;
+        }
+
         .group {
             padding: 0!important;
             padding-left: 16px!important;
@@ -122,8 +135,6 @@
         .wrapper {
             padding-top: 30px!important;
             padding-bottom: 30px!important;
-            padding-left: 16px!important;
-            padding-right: 16px!important;
         }
 
         .btn-reset td,
@@ -134,20 +145,35 @@
         }
 
         .width-50-to-100 {
-            width: 100%;
+            width: 100% !important;
+        }
+
+        .adaptive-image {
+            width: 100% !important;
+        }
+
+        .padding-for-number {
+            width: 1% !important;
         }
 
         @media (min-width: 520px) {
-            .width-50-to-100 {
-                width: 50%;
+            .padding-for-number {
+                width: 6% !important;
             }
 
-            .wrapper {
-                padding-left: 50px!important;
-                padding-right: 50px!important;
+            .adaptive-image {
+                width: 30% !important;
+            }
+
+            .width-50-to-100 {
+                width: 50% !important;
             }
 
             .color-container {
+                background-color: #e3f6fa;
+            }
+
+            .color-container-big {
                 background-color: #e3f6fa;
             }
 
@@ -165,6 +191,12 @@
                 padding-left: 14px!important;
                 max-width: 75%;
                 width: 75% !important;
+            }
+
+            div.col-50 {
+                padding-left: 14px!important;
+                max-width: 50% !important;
+                width: 50% !important;
             }
 
             div.col-73 td div {

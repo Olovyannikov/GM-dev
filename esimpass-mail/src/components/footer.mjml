@@ -12,14 +12,14 @@
                 ООО "ГЛОНАСС МОБАЙЛ"
             </mj-text>
             <mj-text padding="0!important" padding-bottom="10px!important" font-size="12px" line-height="14px"
-                     color="#ffffff">
+                     color="#ffffff!important">
                 ОГРН 1197746459460
             </mj-text>
             <mj-text padding="0!important" padding-bottom="10px!important" font-size="12px" line-height="14px"
-                     color="#ffffff">
+                     color="#ffffff!important">
                 ИНН 7719494560
             </mj-text>
-            <mj-text padding="0!important" font-size="12px" line-height="14px" color="#ffffff">
+            <mj-text padding="0!important" font-size="12px" line-height="14px" color="#ffffff!important">
                 Юр. адрес: 107023, г. Москва, Семеновская площадь, 1а
             </mj-text>
         </mj-column>

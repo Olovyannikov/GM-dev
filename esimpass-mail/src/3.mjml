@@ -1,0 +1,12 @@
+<mjml>
+    <mj-include path="./components/head.mjml"/>
+    <mj-body background-color="#FFFFFF">
+        <mj-include path="./components/hero-image.mjml"/>
+        <mj-include path="./components/welcome-block.mjml"/>
+        <mj-include path="./components/abroad-blue.mjml"/>
+        <mj-include path="./components/only-appstores.mjml"/>
+        <mj-include path="./components/virtual-activate-esimpass.mjml"/>
+        <mj-include path="./components/disclaimer.mjml"/>
+        <mj-include path="./components/footer.mjml"/>
+    </mj-body>
+</mjml>

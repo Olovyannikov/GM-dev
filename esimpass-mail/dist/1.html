@@ -47,20 +47,22 @@
     <style type="text/css">
       @media only screen and (min-width:480px) {
         .mj-column-per-100 { width:100% !important; max-width: 100%; }
-.mj-column-per-39 { width:39% !important; max-width: 39%; }
 .mj-column-per-50 { width:50% !important; max-width: 50%; }
 .mj-column-px-140 { width:140px!important !important; max-width: 140px!important; }
 .mj-column-px-12 { width:12px !important; max-width: 12px; }
+.mj-column-per-43 { width:43% !important; max-width: 43%; }
+.mj-column-per-45 { width:45% !important; max-width: 45%; }
 .mj-column-px-34 { width:34px !important; max-width: 34px; }
 .mj-column-per-33-333333333333336 { width:33.333333333333336% !important; max-width: 33.333333333333336%; }
       }
     </style>
     <style media="screen and (min-width:480px)">
       .moz-text-html .mj-column-per-100 { width:100% !important; max-width: 100%; }
-.moz-text-html .mj-column-per-39 { width:39% !important; max-width: 39%; }
 .moz-text-html .mj-column-per-50 { width:50% !important; max-width: 50%; }
 .moz-text-html .mj-column-px-140 { width:140px!important !important; max-width: 140px!important; }
 .moz-text-html .mj-column-px-12 { width:12px !important; max-width: 12px; }
+.moz-text-html .mj-column-per-43 { width:43% !important; max-width: 43%; }
+.moz-text-html .mj-column-per-45 { width:45% !important; max-width: 45%; }
 .moz-text-html .mj-column-px-34 { width:34px !important; max-width: 34px; }
 .moz-text-html .mj-column-per-33-333333333333336 { width:33.333333333333336% !important; max-width: 33.333333333333336%; }
     </style>
@@ -76,8 +78,16 @@
     }
   
         </style>
-        <style type="text/css">.color-container {
+        <style type="text/css">.p-0 tr td {
+            padding: 0!important;
+        }
+
+        .color-container {
             background-color: #ffffff;
+        }
+
+        .color-container-big {
+            background-color: #e3f6fa;
         }
 
         .color-container-blue {
@@ -169,6 +179,11 @@
             width: 73% !important;
         }
 
+        div.col-50 {
+            padding-left: 49px!important;
+            width: 73% !important;
+        }
+
         .group {
             padding: 0!important;
             padding-left: 16px!important;
@@ -191,8 +206,6 @@
         .wrapper {
             padding-top: 30px!important;
             padding-bottom: 30px!important;
-            padding-left: 16px!important;
-            padding-right: 16px!important;
         }
 
         .btn-reset td,
@@ -203,20 +216,35 @@
         }
 
         .width-50-to-100 {
-            width: 100%;
+            width: 100% !important;
+        }
+
+        .adaptive-image {
+            width: 100% !important;
+        }
+
+        .padding-for-number {
+            width: 1% !important;
         }
 
         @media (min-width: 520px) {
-            .width-50-to-100 {
-                width: 50%;
+            .padding-for-number {
+                width: 6% !important;
             }
 
-            .wrapper {
-                padding-left: 50px!important;
-                padding-right: 50px!important;
+            .adaptive-image {
+                width: 30% !important;
+            }
+
+            .width-50-to-100 {
+                width: 50% !important;
             }
 
             .color-container {
+                background-color: #e3f6fa;
+            }
+
+            .color-container-big {
                 background-color: #e3f6fa;
             }
 
@@ -234,6 +262,12 @@
                 padding-left: 14px!important;
                 max-width: 75%;
                 width: 75% !important;
+            }
+
+            div.col-50 {
+                padding-left: 14px!important;
+                max-width: 50% !important;
+                width: 50% !important;
             }
 
             div.col-73 td div {
@@ -480,10 +514,10 @@
       </div>
     
       
-      <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="background-outlook container-adaptive-outlook" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+      <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="background-outlook container-outlook" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     
       
-      <div  class="background container-adaptive" style="margin:0px auto;max-width:600px;">
+      <div  class="background container" style="margin:0px auto;max-width:600px;">
         
         <table
            align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"
@@ -493,10 +527,15 @@
               <td
                  style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;"
               >
-                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:234px;" ><![endif]-->
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="width:600px;" ><![endif]-->
             
       <div
-         class="mj-column-per-39 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0;line-height:0;text-align:left;display:inline-block;width:100%;direction:ltr;"
+      >
+        <!--[if mso | IE]><table border="0" cellpadding="0" cellspacing="0" role="presentation" ><tr><td style="vertical-align:top;width:300px;" ><![endif]-->
+                
+      <div
+         class="mj-column-per-50 mj-outlook-group-fix p-0 width-50-to-100" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:50%;"
       >
         
       <table
@@ -512,10 +551,10 @@
       <div
          style="font-family:Arial, Open Sans, Roboto, Segoe UI, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;"
       >Закажи доставку обычной SIM-карты, и наш курьер привезет ее в удобное время. <a style="color: #00a9ce"
-                                                                                            href="#">Разница
-        </a> с eSIM лишь в наличии
-            или отсутствии физического носителя в виде SIM-карты, мобильное приложение и роуминговые тарифы будут те
-            же.</div>
+                                                                                                href="#">Разница
+            </a> с eSIM лишь в наличии
+                или отсутствии физического носителя в виде SIM-карты, мобильное приложение и роуминговые тарифы будут те
+                же.</div>
     
                 </td>
               </tr>
@@ -525,10 +564,10 @@
     
       </div>
     
-          <!--[if mso | IE]></td><td class="image-outlook" style="vertical-align:top;width:300px;" ><![endif]-->
-            
+              <!--[if mso | IE]></td><td style="vertical-align:top;width:300px;" ><![endif]-->
+                
       <div
-         class="mj-column-per-50 mj-outlook-group-fix image" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+         class="mj-column-per-50 mj-outlook-group-fix image  width-50-to-100" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:50%;"
       >
         
       <table
@@ -563,6 +602,9 @@
         </tbody>
       </table>
     
+      </div>
+    
+              <!--[if mso | IE]></td></tr></table><![endif]-->
       </div>
     
           <!--[if mso | IE]></td></tr></table><![endif]-->
@@ -957,10 +999,10 @@
       </div>
     
       
-      <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="color-container-blue-outlook wrapper-outlook" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+      <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="color-container-blue-outlook" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     
       
-      <div  class="color-container-blue wrapper" style="margin:0px auto;max-width:600px;">
+      <div  class="color-container-blue" style="margin:0px auto;max-width:600px;">
         
         <table
            align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"
@@ -968,7 +1010,7 @@
           <tbody>
             <tr>
               <td
-                 style="direction:ltr;font-size:0px;padding:0!important;text-align:center;"
+                 style="direction:ltr;font-size:0px;padding:0!important;padding-top:30px!important;text-align:center;"
               >
                 <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     
@@ -1003,7 +1045,7 @@
           
               <tr>
                 <td
-                   align="left" class="title-adaptive" style="font-size:0px;padding:0!important;word-break:break-word;"
+                   align="left" class="title-adaptive" style="font-size:0px;padding:10px 25px;word-break:break-word;"
                 >
                   
       <div
@@ -1033,7 +1075,29 @@
       </div>
     
       
-      <!--[if mso | IE]></td></tr></table></td></tr><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+      <!--[if mso | IE]></td></tr></table></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="color-container-blue-outlook" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    
+      
+      <div  class="color-container-blue" style="margin:0px auto;max-width:600px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:0!important;text-align:center;"
+              >
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     
       
       <div  style="margin:0px auto;max-width:600px;">
@@ -1046,10 +1110,10 @@
               <td
                  style="direction:ltr;font-size:0px;padding:0!important;text-align:center;"
               >
-                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="width-50-to-100-outlook" style="vertical-align:top;width:300px;" ><![endif]-->
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:258px;" ><![endif]-->
             
       <div
-         class="mj-column-per-50 mj-outlook-group-fix width-50-to-100" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+         class="mj-column-per-43 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
       >
         
       <table
@@ -1057,7 +1121,7 @@
       >
         <tbody>
           <tr>
-            <td  style="vertical-align:top;padding-bottom:30px!important;padding-left:0!important;">
+            <td  style="vertical-align:top;padding-right:16px!important;padding-bottom:20px!important;padding-left:16px!important;">
               
       <table
          border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%"
@@ -1087,10 +1151,10 @@
     
       </div>
     
-          <!--[if mso | IE]></td><td class="width-50-to-100-outlook" style="vertical-align:top;width:300px;" ><![endif]-->
+          <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:270px;" ><![endif]-->
             
       <div
-         class="mj-column-per-50 mj-outlook-group-fix width-50-to-100" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+         class="mj-column-per-45 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
       >
         
       <table
@@ -2267,7 +2331,7 @@
                 >
                   
       <div
-         style="font-family:Arial, Open Sans, Roboto, Segoe UI, sans-serif;font-size:12px;line-height:14px;text-align:left;color:#ffffff;"
+         style="font-family:Arial, Open Sans, Roboto, Segoe UI, sans-serif;font-size:12px;line-height:14px;text-align:left;color:#ffffff!important;"
       >ОГРН 1197746459460</div>
     
                 </td>
@@ -2279,7 +2343,7 @@
                 >
                   
       <div
-         style="font-family:Arial, Open Sans, Roboto, Segoe UI, sans-serif;font-size:12px;line-height:14px;text-align:left;color:#ffffff;"
+         style="font-family:Arial, Open Sans, Roboto, Segoe UI, sans-serif;font-size:12px;line-height:14px;text-align:left;color:#ffffff!important;"
       >ИНН 7719494560</div>
     
                 </td>
@@ -2291,7 +2355,7 @@
                 >
                   
       <div
-         style="font-family:Arial, Open Sans, Roboto, Segoe UI, sans-serif;font-size:12px;line-height:14px;text-align:left;color:#ffffff;"
+         style="font-family:Arial, Open Sans, Roboto, Segoe UI, sans-serif;font-size:12px;line-height:14px;text-align:left;color:#ffffff!important;"
       >Юр. адрес: 107023, г. Москва, Семеновская площадь, 1а</div>
     
                 </td>

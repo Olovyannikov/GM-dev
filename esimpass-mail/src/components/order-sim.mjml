@@ -5,21 +5,24 @@
         </mj-text>
     </mj-column>
 </mj-section>
-<mj-section css-class="background container-adaptive">
-    <mj-column width="39%">
-        <mj-text css-class="text text-big">
-            Закажи доставку обычной SIM-карты, и наш курьер привезет ее в удобное время. <a style="color: #00a9ce"
-                                                                                            href="#">Разница
-        </a> с eSIM лишь в наличии
-            или отсутствии физического носителя в виде SIM-карты, мобильное приложение и роуминговые тарифы будут те
-            же.
-        </mj-text>
-    </mj-column>
-    <mj-column css-class="image">
-        <mj-image padding="0!important" padding-bottom="40 !important"
-                  src="https://olovyannikov.github.io/GM-dev/esimpass-mail/dist/img/simcard.png" width="85"
-                  height="115"/>
-    </mj-column>
+<mj-section css-class="background container">
+    <mj-group width="100%">
+        <mj-column css-class="p-0 width-50-to-100">
+            <mj-text css-class="text text-big">
+                Закажи доставку обычной SIM-карты, и наш курьер привезет ее в удобное время. <a style="color: #00a9ce"
+                                                                                                href="#">Разница
+            </a> с eSIM лишь в наличии
+                или отсутствии физического носителя в виде SIM-карты, мобильное приложение и роуминговые тарифы будут те
+                же.
+            </mj-text>
+        </mj-column>
+        <mj-column width="50%" css-class="image  width-50-to-100">
+            <mj-image padding="0!important" padding-bottom="40 !important"
+                      src="https://olovyannikov.github.io/GM-dev/esimpass-mail/dist/img/simcard.png" width="85"
+                      height="115"/>
+
+        </mj-column>
+    </mj-group>
 </mj-section>
 <mj-section css-class="background">
     <mj-column width="100%" padding="0" padding-top="30px">

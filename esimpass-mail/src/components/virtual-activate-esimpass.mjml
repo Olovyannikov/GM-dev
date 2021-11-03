@@ -1,7 +1,7 @@
 <mj-section>
     <mj-column width="100%" css-class="container" padding-bottom="20px !important" padding-top="30px!important">
-        <mj-text font-size="20px" font-weight="700" line-height="23px" color="#005f87" align="center">Для активации
-            обычной&nbsp;SIM
+        <mj-text font-size="20px" font-weight="700" line-height="23px" color="#005f87" align="center">
+            Подключение eSIM pass
         </mj-text>
     </mj-column>
     <mj-group width="100%">
