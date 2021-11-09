@@ -1,7 +1,7 @@
 <mj-section padding="0!important" padding-bottom="30px!important">
-    <mj-column padding-top="0!important" padding-bottom="30!important" css-class="container">
-        <mj-text padding="0!important" font-size="16px" line-height="18px" color="#005f87" font-weight="700">
-            Убедись, что твое мобильное устройство поддерживает <a style="color: #aadb1e">технологию</a> виртуальной
+    <mj-column padding-bottom="30px!important" css-class="container">
+        <mj-text  font-size="16px" line-height="18px" color="#005f87" font-weight="700">
+            Убедись, что твое мобильное устройство поддерживает <a href="#" style="color: #aadb1e">технологию</a> виртуальной
             eSIM, скачай и установи
             приложение eSIM pass и наслаждайся выгодными ценами в роуминге!
         </mj-text>

@@ -7,7 +7,7 @@
 </mj-section>
 <mj-section css-class="background container">
     <mj-group width="100%">
-        <mj-column css-class="p-0 width-50-to-100">
+        <mj-column padding="0!important" css-class="p-0 width-50-to-100">
             <mj-text css-class="text text-big">
                 Закажи доставку обычной SIM-карты, и наш курьер привезет ее в удобное время. <a style="color: #00a9ce"
                                                                                                 href="#">Разница
@@ -16,7 +16,7 @@
                 же.
             </mj-text>
         </mj-column>
-        <mj-column width="50%" css-class="image  width-50-to-100">
+        <mj-column padding="0!important" width="50%" css-class="image  width-50-to-100">
             <mj-image padding="0!important" padding-bottom="40 !important"
                       src="https://olovyannikov.github.io/GM-dev/esimpass-mail/dist/img/simcard.png" width="85"
                       height="115"/>
@@ -25,8 +25,8 @@
     </mj-group>
 </mj-section>
 <mj-section css-class="background">
-    <mj-column width="100%" padding="0" padding-top="30px">
-        <mj-button href="#" border-radius="16px" css-class="button-container">
+    <mj-column width="100%" padding="0!important" padding-top="30px" css-class="button-container">
+        <mj-button href="#" padding="0!important">
             Заказать SIM-карту
         </mj-button>
     </mj-column>

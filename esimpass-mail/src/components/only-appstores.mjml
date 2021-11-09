@@ -1,6 +1,6 @@
 <mj-wrapper padding="0" css-class="wrapper">
     <mj-section>
-        <mj-column padding-bottom="30px!important">
+        <mj-column  width="75%" padding="0!important" padding-bottom="30px!important">
             <mj-text font-size="16px" line-height="18px" align="center" color="#005f87">
                 Подключать и управлять тарифами можно как в личном кабинете на сайте <a style="color: #aadb1e" href="https://www.esimpass.ru">www.esimpass.ru</a>, так и в удобном
                 мобильном приложении eSIM pass.

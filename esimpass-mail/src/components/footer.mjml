@@ -1,12 +1,12 @@
 <mj-wrapper full-width="100%" background-color="#00a9ce">
     <mj-section padding="0!important">
-        <mj-column width="100%" css-class="container" padding-top="30px!important" padding-bottom="60px!important">
+        <mj-column padding="0" width="100%"  padding-top="30px!important" padding-bottom="60px!important" css-class="container">
             <mj-text padding="0!important" font-size="12px" line-height="14px" color="#ffffff">
                 Вы получили эту информацию в соответствии с согласованными Вами условиями ... Чтобы не получать письма,
                 нажмите на ссылку <a style="color: #fff" href="#">отписаться</a>.
             </mj-text>
         </mj-column>
-        <mj-column width="100%" css-class="container" padding-bottom="30px!important">
+        <mj-column padding="0" width="100%" css-class="container" padding-bottom="30px!important">
             <mj-text padding="0!important" padding-bottom="10px!important" font-size="12px" line-height="14px"
                      color="#ffffff">
                 ООО "ГЛОНАСС МОБАЙЛ"

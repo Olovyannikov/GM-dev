@@ -54,11 +54,15 @@
             padding: 0 16px!important;
         }
 
+        .button-container {
+            width: 202px!important;
+        }
+
         .button-container td {
-            width: 202px;
+            background-color: #b9f348 !important;
             padding-top: 8px!important;
             padding-bottom: 8px!important;
-            background-color: #b9f348 !important;
+            border-radius: 16px!important;
         }
 
         .button-container a {
@@ -241,9 +245,12 @@
                 padding-right: 0;
             }
             
-            .button-container {
-                text-align: left !important;
-                padding-left: 50px!important;
+            .button-container table {
+                width: 202px !important;
+            }
+
+            .button-container  {
+                width: 85%!important;
             }
         }
     </mj-style>

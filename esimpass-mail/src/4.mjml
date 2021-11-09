@@ -5,7 +5,7 @@
         <mj-include path="./components/welcome-block.mjml"/>
         <mj-include path="./components/welcome-warning.mjml"/>
         <mj-include path="./components/order-sim.mjml"/>
-        <mj-include path="./components/abroad-blue.mjml"/>
+        <mj-include path="./components/abroad-white-single.mjml"/>
         <mj-include path="./components/virtual-activate.mjml"/>
         <mj-include path="./components/activate.mjml"/>
         <mj-include path="./components/disclaimer.mjml"/>

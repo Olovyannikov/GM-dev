@@ -1,5 +1,5 @@
 <mj-section padding="0" padding-bottom="20px">
-    <mj-column css-class="container">
+    <mj-column padding="0!important" css-class="container">
         <mj-text css-class="title">
             Благодарим за интерес, проявленный к eSIM pass!
         </mj-text>

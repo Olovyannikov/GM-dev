@@ -1,0 +1,8 @@
+<mj-section background-color="#fff" padding-top="30px!important" padding-bottom="30px!important" padding-left="50px!important" padding-right="50px!important">
+    <mj-column width="65%" padding-bottom="30px!important">
+        <mj-text padding-bottom="30px!important" font-size="14px" line-height="16px" color="#005f87" font-weight="700">
+            Мы рекомендуем подключить и настроить SIM-карту в приложении eSIM pass или на сайте Личном кабинете заранее до поездки. Подключенный пакет Интернет-трафика активируется только при приезде в выбранную страну.
+        </mj-text>
+    </mj-column>
+    <mj-column width="35%"><mj-image width="140px" src="./img/airplane.png"/></mj-column>
+</mj-section>

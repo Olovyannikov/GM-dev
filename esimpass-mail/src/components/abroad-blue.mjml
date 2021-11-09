@@ -8,15 +8,15 @@
     </mj-section>
 </mj-wrapper>
 
-<mj-wrapper padding="0!important" css-class="color-container-big ">
-    <mj-section padding="0!important">
-        <mj-column width="43%" padding-bottom="20px!important" padding-left="16px!important" padding-right="16px!important">
+<mj-wrapper padding="0!important" css-class="color-container-big" padding-bottom="30px!important">
+    <mj-section padding="0!important" full-width="50%">
+        <mj-column padding="0!important" width="43%" padding-bottom="20px!important" padding-left="16px!important" padding-right="16px!important">
             <mj-text font-size="14px" line-height="16px" color="#005f87">
                 Для этого потребуется доступ к Интернету. Однако мы рекомендуем подключить и настроить eSIM pass заранее
                 до поездки, подключенный пакет Интернет-трафика активируется только по прибытии в выбранную страну.
             </mj-text>
         </mj-column>
-        <mj-column width="45%"  padding-bottom="30px!important">
+        <mj-column width="45%"  >
             <mj-image width="140" src="./img/airplane.png"/>
         </mj-column>
     </mj-section>

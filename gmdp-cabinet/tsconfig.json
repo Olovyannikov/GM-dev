@@ -23,6 +23,7 @@
     "resolveJsonModule": true,
     "baseUrl": "./src/client/",
     "isolatedModules": true,
+    "incremental": true
   },
   "files": [
     "./src/pages/index.tsx"
@@ -35,5 +36,5 @@
   "exclude": [
     "src/**/*.proto",
     "node_modules"
-  ],
+  ]
 }
