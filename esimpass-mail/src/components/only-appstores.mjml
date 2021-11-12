@@ -12,7 +12,7 @@
             <mj-button padding-bottom="0!important" padding-top="0!important" padding-right="0!important"
                        padding-left="0!important" inner-padding="0" align="left" width="140px" padding="0" border-radius="0"
                        border="0" background-color="#ffffff" href="#">
-                <img width="137" src="./img/appstore.png"/>
+                <img width="137" src="https://olovyannikov.github.io/GM-dev/esimpass-mail/dist/img/appstore.png"/>
             </mj-button>
         </mj-column>
         <mj-column width="12px"/>
@@ -20,7 +20,7 @@
             <mj-button padding-bottom="0!important" padding-top="0!important" padding-right="0!important"
                        padding-left="0!important" inner-padding="0" align="right" width="140px" padding="0"
                        border-radius="0" border="0" background-color="#ffffff" href="#">
-                <img width="137" src="./img/googleplay.png"/>
+                <img width="137" src="https://olovyannikov.github.io/GM-dev/esimpass-mail/dist/img/googleplay.png"/>
             </mj-button>
         </mj-column>
     </mj-section>
@@ -30,7 +30,7 @@
             <mj-button padding-bottom="0!important" padding-top="0!important" padding-right="0!important"
                        padding-left="0!important" inner-padding="0" align="center" width="140px" padding="0"
                        border-radius="0" border="0" background-color="#ffffff" href="#">
-                <img width="137" src="./img/appgallery.png"/>
+                <img width="137" src="https://olovyannikov.github.io/GM-dev/esimpass-mail/dist/img/appgallery.png"/>
             </mj-button>
         </mj-column>
     </mj-section>

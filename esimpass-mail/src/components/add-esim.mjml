@@ -23,7 +23,7 @@
         </mj-column>
     </mj-group>
     <mj-column padding-bottom="0px!important" width="100%">
-        <mj-image width="185" src="./img/qr.png"/>
+        <mj-image width="185" src="https://olovyannikov.github.io/GM-dev/esimpass-mail/dist/img/qr.png"/>
     </mj-column>
 </mj-section>
 <mj-section>
@@ -91,7 +91,7 @@
         </mj-column>
     </mj-group>
     <mj-column padding="0!important" padding-bottom="30px!important" width="100%">
-        <mj-image width="204" src="./img/registration.png"/>
+        <mj-image width="204" src="https://olovyannikov.github.io/GM-dev/esimpass-mail/dist/img/registration.png"/>
     </mj-column>
     <mj-group width="100%">
         <mj-column padding="0!important" css-class="padding-left" background-color="#309dbd" width="34px" border-radius="8px">
@@ -109,7 +109,7 @@
         </mj-column>
 
         <mj-column padding="0!important" padding-bottom="30px!important" width="100%">
-            <mj-image width="157" src="./img/online.png"/>
+            <mj-image width="157" src="https://olovyannikov.github.io/GM-dev/esimpass-mail/dist/img/online.png"/>
         </mj-column>
     </mj-group>
     <mj-group width="100%">
@@ -126,7 +126,7 @@
             </mj-text>
         </mj-column>
         <mj-column padding="0!important" padding-bottom="30px!important" width="100%">
-            <mj-image width="183" src="./img/arrows.png"/>
+            <mj-image width="183" src="https://olovyannikov.github.io/GM-dev/esimpass-mail/dist/img/arrows.png"/>
         </mj-column>
     </mj-group>
 
@@ -143,7 +143,7 @@
             </mj-text>
         </mj-column>
         <mj-column padding="0!important" padding-bottom="30px!important" width="100%">
-            <mj-image width="183" src="./img/esim.png"/>
+            <mj-image width="183" src="https://olovyannikov.github.io/GM-dev/esimpass-mail/dist/img/esim.png"/>
         </mj-column>
     </mj-group>
 

@@ -17,7 +17,7 @@
             </mj-text>
         </mj-column>
         <mj-column padding="0!important" width="45%"  padding-bottom="30px!important">
-            <mj-image width="140" src="./img/airplane.png"/>
+            <mj-image width="140" src="https://olovyannikov.github.io/GM-dev/esimpass-mail/dist/img/airplane.png"/>
         </mj-column>
     </mj-section>
 </mj-wrapper>

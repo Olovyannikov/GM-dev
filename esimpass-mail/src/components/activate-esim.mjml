@@ -53,7 +53,7 @@
     <mj-section text-align="center" padding="0!important" padding-bottom="30px!important">
         <mj-group width="100%">
             <mj-column padding="0!important" width="100%">
-                <mj-image align="center" width="176px" src="./img/virtual-sim.png"/>
+                <mj-image align="center" width="176px" src="https://olovyannikov.github.io/GM-dev/esimpass-mail/dist/img/virtual-sim.png"/>
             </mj-column>
         </mj-group>
     </mj-section>
@@ -74,7 +74,7 @@
             </mj-column>
         </mj-group>
         <mj-column padding="0!important" padding-bottom="30px!important" width="100%">
-            <mj-image width="204" src="./img/registration.png"/>
+            <mj-image width="204" src="https://olovyannikov.github.io/GM-dev/esimpass-mail/dist/img/registration.png"/>
         </mj-column>
     </mj-section>
 </mj-wrapper>
@@ -97,7 +97,7 @@
             </mj-column>
         </mj-group>
         <mj-column padding="0!important" padding-bottom="30px!important" width="100%">
-            <mj-image width="204" src="./img/online.png"/>
+            <mj-image width="204" src="https://olovyannikov.github.io/GM-dev/esimpass-mail/dist/img/online.png"/>
         </mj-column>
     </mj-section>
 </mj-wrapper>
@@ -120,7 +120,7 @@
             </mj-column>
         </mj-group>
         <mj-column padding="0!important" padding-bottom="30px!important" width="100%">
-            <mj-image width="204" src="./img/arrows.png"/>
+            <mj-image width="204" src="https://olovyannikov.github.io/GM-dev/esimpass-mail/dist/img/arrows.png"/>
         </mj-column>
     </mj-section>
 </mj-wrapper>
@@ -141,7 +141,7 @@
             </mj-column>
         </mj-group>
         <mj-column padding="0!important" padding-bottom="30px!important" width="100%">
-            <mj-image width="204" src="./img/esim.png"/>
+            <mj-image width="204" src="https://olovyannikov.github.io/GM-dev/esimpass-mail/dist/img/esim.png"/>
         </mj-column>
     </mj-section>
 </mj-wrapper>
