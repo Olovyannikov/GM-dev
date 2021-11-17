@@ -10,7 +10,7 @@
 
 <mj-section>
     <mj-group width="100%">
-        <mj-column padding="0!important" css-class="padding-left" background-color="#309dbd" width="34px" border-radius="8px">
+        <mj-column padding="0!important" css-class="padding-left" background-color="#309dbd" width="34px!important" border-radius="8px">
             <mj-text padding="0!important" padding-left="9px!important" padding-right="9px!important"
                      font-weight="900" font-size="26px" line-height="35px" color="#ffffff">1
             </mj-text>
@@ -79,7 +79,7 @@
 </mj-section>
 <mj-section>
     <mj-group width="100%">
-        <mj-column padding="0!important" css-class="padding-left" background-color="#309dbd" width="34px" border-radius="8px">
+        <mj-column padding="0!important" css-class="padding-left" background-color="#309dbd" width="34px!important" border-radius="8px">
             <mj-text padding="0!important" padding-left="9px!important" padding-right="9px!important"
                      font-weight="900" font-size="26px" line-height="35px" color="#ffffff">2
             </mj-text>
@@ -94,7 +94,7 @@
         <mj-image width="204" src="https://olovyannikov.github.io/GM-dev/esimpass-mail/dist/img/registration.png"/>
     </mj-column>
     <mj-group width="100%">
-        <mj-column padding="0!important" css-class="padding-left" background-color="#309dbd" width="34px" border-radius="8px">
+        <mj-column padding="0!important" css-class="padding-left" background-color="#309dbd" width="34px!important" border-radius="8px">
             <mj-text padding="0!important" padding-left="9px!important" padding-right="9px!important"
                      font-weight="900" font-size="26px" line-height="35px" color="#ffffff">3
             </mj-text>
@@ -113,7 +113,7 @@
         </mj-column>
     </mj-group>
     <mj-group width="100%">
-        <mj-column css-class="padding-left" background-color="#309dbd" width="34px" border-radius="8px">
+        <mj-column css-class="padding-left" background-color="#309dbd" width="34px!important" border-radius="8px">
             <mj-text padding="0!important" padding-left="9px!important" padding-right="9px!important"
                      font-weight="900" font-size="26px" line-height="35px" color="#ffffff">4
             </mj-text>
@@ -131,7 +131,7 @@
     </mj-group>
 
     <mj-group width="100%">
-        <mj-column css-class="padding-left" background-color="#309dbd" width="34px" border-radius="8px">
+        <mj-column css-class="padding-left" background-color="#309dbd" width="34px!important" border-radius="8px">
             <mj-text padding="0!important" padding-left="9px!important" padding-right="9px!important"
                      font-weight="900" font-size="26px" line-height="35px" color="#ffffff">5
             </mj-text>
