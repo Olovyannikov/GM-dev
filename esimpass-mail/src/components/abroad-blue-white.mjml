@@ -9,8 +9,8 @@
 </mj-wrapper>
 
 <mj-wrapper padding="0!important" css-class="color-container-blue">
-    <mj-section padding="0!important">
-        <mj-column padding="0!important"  width="43%" padding-bottom="20px!important" padding-left="16px!important">
+    <mj-section padding="0!important" css-class="container">
+        <mj-column padding="0!important"  width="43%" padding-bottom="20px!important">
             <mj-text font-size="14px" line-height="16px" color="#005f87">
                 Для этого потребуется доступ к Интернету. Однако мы рекомендуем подключить и настроить eSIM pass заранее
                 до поездки, подключенный пакет Интернет-трафика активируется только по прибытии в выбранную страну.
