@@ -12,8 +12,8 @@
 <mj-wrapper>
     <mj-section>
         <mj-group width="100%">
-            <mj-column padding="0!important" css-class="padding-left" background-color="#309dbd" width="34px" border-radius="8px">
-                <mj-text padding="0!important" padding-left="9px!important" padding-right="12px!important"
+            <mj-column padding="0!important" css-class="padding-left padding-for-number" background-color="#309dbd" width="34px" border-radius="8px">
+                <mj-text padding="0!important" padding-left="9px!important" padding-right="9px!important"
                          font-weight="900" font-size="26px" line-height="36px" color="#ffffff">1
                 </mj-text>
             </mj-column>
@@ -32,7 +32,7 @@
 <mj-wrapper>
     <mj-section>
         <mj-group width="100%">
-            <mj-column padding="0!important" css-class="padding-left" background-color="#309dbd" width="34px" border-radius="8px">
+            <mj-column padding="0!important" css-class="padding-left padding-for-number" background-color="#309dbd" width="34px" border-radius="8px">
                 <mj-text padding="0!important" padding-left="9px!important" padding-right="9px!important"
                          font-weight="900" font-size="26px" line-height="36px" color="#ffffff">2
                 </mj-text>
@@ -62,7 +62,7 @@
 <mj-wrapper>
     <mj-section>
         <mj-group  width="100%">
-            <mj-column padding="0!important" css-class="padding-left" background-color="#309dbd" width="34px" border-radius="8px">
+            <mj-column padding="0!important" css-class="padding-left padding-for-number" background-color="#309dbd" width="34px" border-radius="8px">
                 <mj-text padding="0!important" padding-left="9px!important" padding-right="9px!important"
                          font-weight="900" font-size="26px" line-height="36px" color="#ffffff">3
                 </mj-text>
@@ -82,9 +82,9 @@
 <mj-wrapper>
     <mj-section>
         <mj-group  width="100%">
-            <mj-column padding="0!important" css-class="padding-left" background-color="#309dbd" width="34px" border-radius="8px">
+            <mj-column padding="0!important" css-class="padding-left padding-for-number" background-color="#309dbd" width="34px" border-radius="8px">
                 <mj-text padding="0!important" padding-left="9px!important" padding-right="9px!important"
-                         font-weight="900" font-size="26px" line-height="36px" color="#ffffff">4
+                         font-weight="900" font-size="26px" line-height="36px" color="#ffffff">1
                 </mj-text>
             </mj-column>
             <mj-column padding="0!important" css-class="col-73">
@@ -105,10 +105,9 @@
 <mj-wrapper>
     <mj-section>
         <mj-group  width="100%">
-            <mj-column padding="0!important" css-class="padding-left" background-color="#309dbd" width="34px" border-radius="8px">
+            <mj-column padding="0!important" css-class="padding-left padding-for-number" background-color="#309dbd" width="34px" border-radius="8px">
                 <mj-text padding="0!important" padding-left="9px!important" padding-right="9px!important"
-                         font-weight="900" font-size="26px" line-height="36px" color="#ffffff">
-                    5
+                         font-weight="900" font-size="26px" line-height="36px" color="#ffffff">5
                 </mj-text>
             </mj-column>
             <mj-column padding="0!important" css-class="col-73">
@@ -128,10 +127,9 @@
 <mj-wrapper>
     <mj-section>
         <mj-group  width="100%">
-            <mj-column padding="0!important" css-class="padding-left" background-color="#309dbd" width="34px" border-radius="8px">
+            <mj-column padding="0!important" css-class="padding-left padding-for-number" background-color="#309dbd" width="34px" border-radius="8px">
                 <mj-text padding="0!important" padding-left="9px!important" padding-right="9px!important"
-                         font-weight="900" font-size="26px" line-height="36px" color="#ffffff">
-                    6
+                         font-weight="900" font-size="26px" line-height="36px" color="#ffffff">6
                 </mj-text>
             </mj-column>
             <mj-column padding="0!important" css-class="col-73">
