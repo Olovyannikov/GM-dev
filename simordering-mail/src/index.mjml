@@ -48,7 +48,7 @@
         </mj-section>
         <mj-section padding="0" padding-bottom="30px">
             <mj-column padding="0">
-                <mj-image padding="0" src="./img/banner.jpg"/>
+                <mj-image padding="0" src="https://raw.githubusercontent.com/Olovyannikov/GM-dev/master/simordering-mail/dist/img/banner.jpg"/>
             </mj-column>
         </mj-section>
         <mj-section padding="0" padding-bottom="20px" css-class="container">
@@ -103,7 +103,7 @@
                 <mj-column padding="0" width="159px">
                     <mj-text padding="0" align="center">
                         <a href="#">
-                            <img align="center" width="159px" padding="0" src="./img/appstore.jpg"/>
+                            <img align="center" width="159px" padding="0" src="https://raw.githubusercontent.com/Olovyannikov/GM-dev/master/simordering-mail/dist/img/appstore.jpg"/>
                         </a>
                     </mj-text>
                 </mj-column>
@@ -111,7 +111,7 @@
                 <mj-column padding="0" width="159px" padding-bottom="30px">
                     <mj-text padding="0" align="center">
                         <a href="#">
-                            <img align="center" width="159px" padding="0" src="./img/googleplay.jpg"/>
+                            <img align="center" width="159px" padding="0" src="https://raw.githubusercontent.com/Olovyannikov/GM-dev/master/simordering-mail/dist/img/googleplay.jpg"/>
                         </a>
                     </mj-text>
                 </mj-column>
@@ -138,12 +138,12 @@
         <mj-section padding="0" padding-top="30px" padding-bottom="30px" css-class="container">
             <mj-column padding="0" width="45%" padding-bottom="30px">
                 <mj-text padding="0" align="center">
-                    <img align="center" width="159px" padding="0" src="./img/phone-1.jpg"/>
+                    <img align="center" width="159px" padding="0" src="https://raw.githubusercontent.com/Olovyannikov/GM-dev/master/simordering-mail/dist/img/phone-1.jpg"/>
                 </mj-text>
             </mj-column>
             <mj-column padding="0" width="45%" padding-bottom="30px">
                 <mj-text padding="0" align="center">
-                    <img align="center" width="159px" padding="0" src="./img/phone-2.jpg"/>
+                    <img align="center" width="159px" padding="0" src="https://raw.githubusercontent.com/Olovyannikov/GM-dev/master/simordering-mail/dist/img/phone-2.jpg"/>
                 </mj-text>
             </mj-column>
         </mj-section>
@@ -160,7 +160,7 @@
             </mj-section>
             <mj-section padding="0">
                 <mj-column padding="0" padding-top="40px" width="185px">
-                    <mj-image padding="0" padding-bottom="15px" align="center" width="79px" src="./img/icon-1.png"/>
+                    <mj-image padding="0" padding-bottom="15px" align="center" width="79px" src="https://raw.githubusercontent.com/Olovyannikov/GM-dev/master/simordering-mail/dist/img/icon-1.png"/>
                     <mj-text
                             align="center"
                             font-weight="700"
@@ -185,7 +185,7 @@
                 </mj-column>
                 <mj-column width="10%"/>
                 <mj-column padding="0" padding-top="40px" width="185px">
-                    <mj-image padding="0" padding-bottom="15px" align="center" width="79px" src="./img/icon-2.png"/>
+                    <mj-image padding="0" padding-bottom="15px" align="center" width="79px" src="https://raw.githubusercontent.com/Olovyannikov/GM-dev/master/simordering-mail/dist/img/icon-2.png"/>
                     <mj-text
                             align="center"
                             font-weight="700"
@@ -210,7 +210,7 @@
             </mj-section>
             <mj-section padding="0">
                 <mj-column padding="0" padding-top="40px" width="185px">
-                    <mj-image padding="0" padding-bottom="15px" align="center" width="79px" src="./img/icon-3.png"/>
+                    <mj-image padding="0" padding-bottom="15px" align="center" width="79px" src="https://raw.githubusercontent.com/Olovyannikov/GM-dev/master/simordering-mail/dist/img/icon-3.png"/>
                     <mj-text
                             align="center"
                             font-weight="700"
@@ -237,7 +237,7 @@
                 </mj-column>
                 <mj-column width="10%"/>
                 <mj-column padding="0" padding-top="40px" width="185px">
-                    <mj-image padding="0" padding-bottom="15px" align="center" width="79px" src="./img/icon-4.png"/>
+                    <mj-image padding="0" padding-bottom="15px" align="center" width="79px" src="https://raw.githubusercontent.com/Olovyannikov/GM-dev/master/simordering-mail/dist/img/icon-4.png"/>
                     <mj-text
                             align="center"
                             font-weight="700"
@@ -265,7 +265,7 @@
             </mj-section>
             <mj-section padding="0">
                 <mj-column padding="0" padding-top="40px" width="185px">
-                    <mj-image padding="0" padding-bottom="15px" align="center" width="79px" src="./img/icon-5.png"/>
+                    <mj-image padding="0" padding-bottom="15px" align="center" width="79px" src="https://raw.githubusercontent.com/Olovyannikov/GM-dev/master/simordering-mail/dist/img/icon-5.png"/>
                     <mj-text
                             align="center"
                             font-weight="700"
