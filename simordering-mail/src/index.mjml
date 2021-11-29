@@ -1,0 +1,362 @@
+<mjml>
+    <mj-head>
+        <mj-font name="Roboto" href="https://fonts.googleapis.com/css?family=Roboto"/>
+        <mj-title>CwSIM</mj-title>
+        <mj-attributes>
+            <mj-all font-family="Roboto, Arial"/>
+        </mj-attributes>
+
+        <mj-breakpoint width="510px"/>
+        <mj-style>
+            .container {
+                padding: 0 15px;
+            }
+
+            .adaptive-width {
+                width: 0%;
+            }
+
+            .mj-column-px-185 {
+                width: 185px !important;
+            }
+
+            @media (min-width: 480px) {
+                .container {
+                    padding: 0 50px;
+                }
+
+                .adaptive-width {
+                    width: 12%;
+                }
+            }
+        </mj-style>
+    </mj-head>
+    <mj-body>
+        <mj-section padding="0" css-class="container" background-color="#0567b1">
+            <mj-column padding="0">
+                <mj-text
+                        align="center"
+                        font-size="16px"
+                        line-height="19px"
+                        padding="0"
+                        padding-bottom="20px"
+                        padding-top="20px"
+                        color="#ffffff">
+                    Выгодный роуминг с CwSIM!
+                </mj-text>
+            </mj-column>
+        </mj-section>
+        <mj-section padding="0" padding-bottom="30px">
+            <mj-column padding="0">
+                <mj-image padding="0" src="./img/banner.jpg"/>
+            </mj-column>
+        </mj-section>
+        <mj-section padding="0" padding-bottom="20px" css-class="container">
+            <mj-column padding="0">
+                <mj-text
+                        padding="0"
+                        color="#0567b1"
+                        align="left"
+                        font-family="Arial, Roboto"
+                        font-weight="700"
+                        font-size="19px"
+                        line-height="22px">
+                    Путешествуй по миру с выгодой!
+                </mj-text>
+            </mj-column>
+        </mj-section>
+        <mj-section padding="0" padding-bottom="30px" css-class="container">
+            <mj-column padding="0">
+                <mj-text
+                        padding="0"
+                        color="#0567b1"
+                        align="left"
+                        font-family="Arial, Roboto"
+                        font-weight="400"
+                        font-size="14px"
+                        line-height="16px">
+                    Благодарим за интерес, проявленный к CwSIM!
+                    Ваша заявка на приобретение SIM-карты для путешествий принята.
+                    В ближайшее время мы свяжемся с Вами и предложим удобные варианты доставки.
+                </mj-text>
+            </mj-column>
+        </mj-section>
+        <mj-wrapper padding="0" padding-top="30px" background-color="#cde1ef"
+                    css-class="container">
+            <mj-section padding="0" padding-bottom="30px">
+                <mj-column padding="0">
+                    <mj-text
+                            padding="0"
+                            color="#0567b1"
+                            align="center"
+                            font-family="Arial, Roboto"
+                            font-weight="700"
+                            font-size="14px"
+                            line-height="16px">
+                        Подключать и управлять тарифами
+                        <br/>
+                        можно в приложении CwSIM
+                    </mj-text>
+                </mj-column>
+            </mj-section>
+            <mj-section padding="0">
+                <mj-column padding="0" width="159px">
+                    <mj-text padding="0" align="center">
+                        <a href="#">
+                            <img align="center" width="159px" padding="0" src="./img/appstore.jpg"/>
+                        </a>
+                    </mj-text>
+                </mj-column>
+                <mj-column width="2%" padding-bottom="8px"/>
+                <mj-column padding="0" width="159px" padding-bottom="30px">
+                    <mj-text padding="0" align="center">
+                        <a href="#">
+                            <img align="center" width="159px" padding="0" src="./img/googleplay.jpg"/>
+                        </a>
+                    </mj-text>
+                </mj-column>
+            </mj-section>
+        </mj-wrapper>
+        <mj-section padding="0" padding-top="30px" padding-bottom="30px" css-class="container">
+            <mj-column padding="0">
+                <mj-text
+                        padding="0"
+                        color="#0567b1"
+                        align="left"
+                        font-family="Arial, Roboto"
+                        font-weight="400"
+                        font-size="14px"
+                        line-height="16px"
+                >
+                    <b>После получения:</b>
+                    скачайте приложение, введите SIM ID и пароль,
+                    <br/>
+                    указанный на Вашей новой SIM-карте CwSIM и следуйте инструкциям в приложении.
+                </mj-text>
+            </mj-column>
+        </mj-section>
+        <mj-section padding="0" padding-top="30px" padding-bottom="30px" css-class="container">
+            <mj-column padding="0" width="45%" padding-bottom="30px">
+                <mj-text padding="0" align="center">
+                    <img align="center" width="159px" padding="0" src="./img/phone-1.jpg"/>
+                </mj-text>
+            </mj-column>
+            <mj-column padding="0" width="45%" padding-bottom="30px">
+                <mj-text padding="0" align="center">
+                    <img align="center" width="159px" padding="0" src="./img/phone-2.jpg"/>
+                </mj-text>
+            </mj-column>
+        </mj-section>
+
+        <mj-wrapper padding="0" padding-top="30px" padding-bottom="30px" background-color="#cde1ef"
+                    css-class="container">
+            <mj-section padding="0">
+                <mj-column padding="0">
+                    <mj-text align="center" font-weight="700" font-size="19px" line-height="22px" color="#0567B1"
+                             padding="0">
+                        СwSIM это
+                    </mj-text>
+                </mj-column>
+            </mj-section>
+            <mj-section padding="0">
+                <mj-column padding="0" padding-top="40px" width="185px">
+                    <mj-image padding="0" padding-bottom="15px" align="center" width="79px" src="./img/icon-1.png"/>
+                    <mj-text
+                            align="center"
+                            font-weight="700"
+                            font-size="14px"
+                            line-height="16px"
+                            padding="0"
+                            padding-bottom="10px"
+                            color="#0567b1"
+                    >Лёгкое подключение
+                    </mj-text>
+                    <mj-text
+                            align="center"
+                            font-size="14px"
+                            line-height="16px"
+                            color="#0567b1"
+                            padding="0"
+                    >
+                        Вы подключаетесь к
+                        местному оператору, поэтому Ваши расходы
+                        на связь сравнимы с жителями этой страны
+                    </mj-text>
+                </mj-column>
+                <mj-column width="10%"/>
+                <mj-column padding="0" padding-top="40px" width="185px">
+                    <mj-image padding="0" padding-bottom="15px" align="center" width="79px" src="./img/icon-2.png"/>
+                    <mj-text
+                            align="center"
+                            font-weight="700"
+                            font-size="14px"
+                            line-height="16px"
+                            padding="0"
+                            padding-bottom="10px"
+                            color="#0567b1"
+                    >
+                        Выгодные тарифы по всему миру
+                    </mj-text>
+                    <mj-text
+                            align="center"
+                            font-size="14px"
+                            line-height="16px"
+                            color="#0567b1"
+                            padding="0"
+                    >
+                        Роуминговые тарифы за рубежом для вас дешевле, чем у домашних операторов РФ
+                    </mj-text>
+                </mj-column>
+            </mj-section>
+            <mj-section padding="0">
+                <mj-column padding="0" padding-top="40px" width="185px">
+                    <mj-image padding="0" padding-bottom="15px" align="center" width="79px" src="./img/icon-3.png"/>
+                    <mj-text
+                            align="center"
+                            font-weight="700"
+                            font-size="14px"
+                            line-height="16px"
+                            padding="0"
+                            padding-bottom="10px"
+                            color="#0567b1"
+                    >
+                        Надежная связь
+                        <br/>
+                        во всем мире
+                    </mj-text>
+                    <mj-text
+                            align="center"
+                            font-size="14px"
+                            line-height="16px"
+                            color="#0567b1"
+                            padding="0"
+                    >
+                        В роуминге вы пользуетесь только государственными операторами, которые обеспечивают связью всю
+                        страну, и им доверяют многие абоненты
+                    </mj-text>
+                </mj-column>
+                <mj-column width="10%"/>
+                <mj-column padding="0" padding-top="40px" width="185px">
+                    <mj-image padding="0" padding-bottom="15px" align="center" width="79px" src="./img/icon-4.png"/>
+                    <mj-text
+                            align="center"
+                            font-weight="700"
+                            font-size="14px"
+                            line-height="16px"
+                            padding="0"
+                            padding-bottom="10px"
+                            color="#0567b1"
+                    >
+                        Бессрочная sim-карта
+                        <br/>
+                        без абонентской платы
+                    </mj-text>
+                    <mj-text
+                            align="center"
+                            font-size="14px"
+                            line-height="16px"
+                            color="#0567b1"
+                            padding="0"
+                    >
+                        У SIM-карты нет срока действия и абонентской платы. Вы можете ей пользоваться тогда, когда едите
+                        в путешествие или командировку
+                    </mj-text>
+                </mj-column>
+            </mj-section>
+            <mj-section padding="0">
+                <mj-column padding="0" padding-top="40px" width="185px">
+                    <mj-image padding="0" padding-bottom="15px" align="center" width="79px" src="./img/icon-5.png"/>
+                    <mj-text
+                            align="center"
+                            font-weight="700"
+                            font-size="14px"
+                            line-height="16px"
+                            padding="0"
+                            padding-bottom="10px"
+                            color="#0567b1"
+                    >
+                        5€ в подарок
+                    </mj-text>
+                    <mj-text
+                            align="center"
+                            font-size="14px"
+                            line-height="16px"
+                            color="#0567b1"
+                            padding="0"
+                    >
+                        Вас ждет приятный бонус: 5€ уже на балансе
+                    </mj-text>
+                </mj-column>
+            </mj-section>
+        </mj-wrapper>
+
+        <mj-section padding="0" padding-top="30px" padding-bottom="30px">
+            <mj-column padding="0">
+                <mj-text font-family="Arial, Roboto" align="center" font-size="19px" line-height="22px" color="#0567b1"
+                         font-weight="700" padding="0">
+                    С уважением,
+                    <br/>
+                    Команда CwSIM
+                </mj-text>
+            </mj-column>
+        </mj-section>
+        <mj-section padding="0" padding-bottom="30px">
+            <mj-column padding="0">
+                <mj-text font-family="Arial, Roboto" align="center" font-size="19px" line-height="22px" color="#0567b1"
+                         font-weight="700" padding="0">
+                    <a style="text-decoration: none; color: #0567B1; font-family: Arial, Roboto, sans-serif; font-weight: 700"
+                       href="https://cwsim.com">cwsim.com</a>,
+                    <br/>
+                    <a style="text-decoration: none; color: #0567B1; font-family: Arial, Roboto, sans-serif; font-weight: 700"
+                       href="tel:+78003336686">+7 800 333 66 86
+                    </a>
+                </mj-text>
+            </mj-column>
+        </mj-section>
+
+        <mj-wrapper padding="0" padding-top="30px" padding-bottom="81px" background-color="#0567B1"
+                    css-class="container">
+            <mj-section padding="0" padding-bottom="89px">
+                <mj-column padding="0">
+                    <mj-text color="#ffffff" font-size="12px" line-height="14px" font-family="Arial, Roboto, sans-serif"
+                             padding="0">
+                        Вы получили эту информацию в соответствии с согласованными Вами условиями ... Чтобы не получать
+                        письма, нажмите на ссылку <a style="color: #ffffff;" href="#">отписаться</a>.
+                    </mj-text>
+                </mj-column>
+            </mj-section>
+            <mj-section padding="0" padding-bottom="10px">
+                <mj-column padding="0">
+                    <mj-text color="#ffffff" font-size="12px" line-height="14px" font-family="Arial, Roboto, sans-serif"
+                             padding="0">
+                        ООО "Технотрэвел"
+                    </mj-text>
+                </mj-column>
+            </mj-section>
+            <mj-section padding="0" padding-bottom="10px">
+                <mj-column padding="0">
+                    <mj-text color="#ffffff" font-size="12px" line-height="14px" font-family="Arial, Roboto, sans-serif"
+                             padding="0">
+                        ОГРН 1157746408753
+                    </mj-text>
+                </mj-column>
+            </mj-section>
+            <mj-section padding="0" padding-bottom="10px">
+                <mj-column padding="0">
+                    <mj-text color="#ffffff" font-size="12px" line-height="14px" font-family="Arial, Roboto, sans-serif"
+                             padding="0">
+                        ИНН 7720302135
+                    </mj-text>
+                </mj-column>
+            </mj-section>
+            <mj-section padding="0" padding-bottom="81px">
+                <mj-column padding="0">
+                    <mj-text color="#ffffff" font-size="12px" line-height="14px" font-family="Arial, Roboto, sans-serif"
+                             padding="0">
+                        Юр. адрес: 127055, г. Москва, ул. Сущевская, д. 12, стр. 1
+                    </mj-text>
+                </mj-column>
+            </mj-section>
+        </mj-wrapper>
+    </mj-body>
+</mjml>
