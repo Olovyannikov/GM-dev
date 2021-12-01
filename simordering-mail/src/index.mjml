@@ -48,7 +48,7 @@
         </mj-section>
         <mj-section padding="0" padding-bottom="30px">
             <mj-column padding="0">
-                <mj-image padding="0" src="https://raw.githubusercontent.com/Olovyannikov/GM-dev/master/simordering-mail/dist/img/banner.png"/>
+                <mj-image padding="0" src="https://raw.githubusercontent.com/Olovyannikov/GM-dev/master/simordering-mail/dist/img/banner.jpg"/>
             </mj-column>
         </mj-section>
         <mj-section padding="0" padding-bottom="20px" css-class="container">
