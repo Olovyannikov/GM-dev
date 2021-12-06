@@ -102,7 +102,7 @@
             <mj-section padding="0">
                 <mj-column padding="0" width="159px">
                     <mj-text padding="0" align="center">
-                        <a href="#">
+                        <a href="https://apps.apple.com/ru/app/cwsim/id542646378">
                             <img align="center" width="159px" padding="0" src="https://raw.githubusercontent.com/Olovyannikov/GM-dev/master/simordering-mail/dist/img/appstore.png"/>
                         </a>
                     </mj-text>
@@ -110,7 +110,7 @@
                 <mj-column width="2%" padding-bottom="8px"/>
                 <mj-column padding="0" width="159px" padding-bottom="30px">
                     <mj-text padding="0" align="center">
-                        <a href="#">
+                        <a href="https://play.google.com/store/apps/details?id=com.metr.comfortway">
                             <img align="center" width="159px" padding="0" src="https://raw.githubusercontent.com/Olovyannikov/GM-dev/master/simordering-mail/dist/img/googleplay.png"/>
                         </a>
                     </mj-text>
