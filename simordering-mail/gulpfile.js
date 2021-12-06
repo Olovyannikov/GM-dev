@@ -43,8 +43,8 @@ const generateHtml = async () => {
 //
 const images = () => {
     return src(paths.images.src)
-        .pipe(newer(paths.images.dist))
-        .pipe(image())
+        // .pipe(newer(paths.images.dist))
+        // .pipe(image())
         .pipe(dest(paths.images.dist))
 }
 
