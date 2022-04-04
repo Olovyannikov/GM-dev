@@ -1,0 +1,29 @@
+<mjml>
+    <mj-head>
+        <mj-title>Tapmobile | Спасибо за регистрацию</mj-title>
+        <mj-preview>Tapmobile | Спасибо за регистрацию</mj-preview>
+        <mj-font name="IBM Plex Sans"
+                 href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans"/>
+    </mj-head>
+    <mj-body>
+        <mj-hero
+                background-url=
+                        "https://tapmobile.ru/img/mail/bg.jpg"
+                background-color="#2a3448"
+                padding="71px 0px 120px 0">
+            <mj-image width="137px" height="24px" padding="0" padding-top="33px" container-background-color="#ffffff"
+                      src="https://tapmobile.ru/img/mail/logo.jpg" alt="Логотип Tapmobile" align="center"/>
+            <mj-text
+                    container-background-color="#ffffff"
+                    padding="30px 18%"
+                    color="#000000"
+                    font-family="IBM Plex Sans, Roboto, Arial"
+                    align="center"
+                    font-size="16px"
+                    line-height="21px"
+                    font-weight="300">
+                Спасибо за&nbsp;регистрацию, мы&nbsp;проверяем ваши данные, в&nbsp;ближайшее время вы&nbsp;сможете воспользоваться нашими сервисами.
+            </mj-text>
+        </mj-hero>
+    </mj-body>
+</mjml>
